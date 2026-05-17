@@ -1,0 +1,34 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - python@3.12.13
+  view: false
+  concretizer:
+    unify: when_possible
+  config:
+    install_hash_length: 7
+  modules:
+    default:
+      enable:
+        - tcl
+      roots:
+        tcl: /software/spack_v1_1_1/install/modules/env-zen4-test/
+      tcl:
+        hash_length: 0
+        naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
+        projections:
+          cuda: 'cuda/{version}'
+  packages:
+    gcc:
+      externals:
+      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
