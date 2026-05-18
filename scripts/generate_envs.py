@@ -21,12 +21,31 @@ BESPOKE_DIR = ENV_ROOT / "bespoke"
 INDEX_FILE = ENV_ROOT / "index.yaml"
 
 
-def deep_merge(dst: dict[str, Any], src: dict[str, Any]) -> dict[str, Any]:
+def normalize_spack_spec(spec: str) -> str:
+    return "".join(spec.split())
+
+
+def is_equivalent_list_item(left: Any, right: Any, normalize_strings: bool) -> bool:
+    if normalize_strings and isinstance(left, str) and isinstance(right, str):
+        return normalize_spack_spec(left) == normalize_spack_spec(right)
+    return left == right
+
+
+def merge_list_unique(dst_list: list[Any], src_list: list[Any], normalize_strings: bool = False) -> list[Any]:
+    merged = list(dst_list)
+    for item in src_list:
+        if not any(is_equivalent_list_item(item, existing, normalize_strings) for existing in merged):
+            merged.append(copy.deepcopy(item))
+    return merged
+
+
+def deep_merge(dst: dict[str, Any], src: dict[str, Any], path: tuple[str, ...] = ()) -> dict[str, Any]:
     for key, value in src.items():
         if key in dst and isinstance(dst[key], dict) and isinstance(value, dict):
-            deep_merge(dst[key], value)
+            deep_merge(dst[key], value, path + (key,))
         elif key in dst and isinstance(dst[key], list) and isinstance(value, list):
-            dst[key] = dst[key] + value
+            normalize_strings = path + (key,) == ("spack", "specs")
+            dst[key] = merge_list_unique(dst[key], value, normalize_strings=normalize_strings)
         else:
             dst[key] = copy.deepcopy(value)
     return dst
