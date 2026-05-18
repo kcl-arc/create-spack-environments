@@ -1,0 +1,8 @@
+spack:
+  packages:
+    cuda:
+      version: ["11.8"]
+    lammps:
+      variants: +cuda cuda_arch=70
+    nccl:
+      variants: +cuda cuda_arch=70

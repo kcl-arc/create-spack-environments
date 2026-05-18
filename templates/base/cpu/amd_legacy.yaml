@@ -1,0 +1,10 @@
+spack:
+  view: false
+  concretizer:
+    unify: when_possible
+  packages:
+    all:
+      target: [zen2, zen3]
+  specs:
+    - zlib
+    - cmake
