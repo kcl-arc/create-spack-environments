@@ -1,0 +1,65 @@
+# CPU x GPU family matrix used to generate concrete environments.
+
+settings:
+  modules_root_base: /software/spack_v1_1_1/install/modules
+  container_format: singularity
+
+cpu_families:
+  amd_legacy:
+    slurm_features: [zen2, zen3]
+  intel_legacy:
+    slurm_features: [skylake_avx512, cascadelake]
+  icelake:
+    slurm_features: [icelake]
+  zen4_spr:
+    slurm_features: [zen4, sapphirerapids]
+  x86v4:
+    slurm_features: [x86_64_v4]
+
+gpu_families:
+  cpu:
+    cuda_enabled: false
+    slurm_features: []
+  legacy:
+    cuda_enabled: true
+    preferred_cuda_version: "11.8"
+    preferred_cuda_arch: "70"
+    slurm_features: [rtx2070, rtx2080, rtx3070, rtx3090, titan_x, titan_xp, titan_v, titan_rtx]
+  sm80:
+    cuda_enabled: true
+    preferred_cuda_version: "12.2"
+    preferred_cuda_arch: "80"
+    slurm_features: [a30, a40, a100, a100_40g, a100_80g]
+  sm90:
+    cuda_enabled: true
+    preferred_cuda_version: "12.4"
+    preferred_cuda_arch: "90"
+    slurm_features: [h100, h200]
+  sm100:
+    cuda_enabled: true
+    preferred_cuda_version: "12.8"
+    preferred_cuda_arch: "100"
+    slurm_features: [b200]
+  rtx6000_l40s:
+    cuda_enabled: true
+    preferred_cuda_version: "12.8"
+    preferred_cuda_arch: "89"
+    slurm_features: [rtx6000, l40s]
+
+# Enabled environment pairs to render.
+enabled_pairs:
+  - [amd_legacy, cpu]
+  - [amd_legacy, sm80]
+  - [intel_legacy, cpu]
+  - [intel_legacy, legacy]
+  - [icelake, cpu]
+  - [icelake, sm80]
+  - [icelake, sm90]
+  - [zen4_spr, cpu]
+  - [zen4_spr, sm80]
+  - [zen4_spr, sm90]
+  - [zen4_spr, sm100]
+  - [zen4_spr, rtx6000_l40s]
+  - [x86v4, cpu]
+  - [x86v4, sm80]
+  - [x86v4, rtx6000_l40s]

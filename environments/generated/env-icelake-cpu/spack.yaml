@@ -1,0 +1,24 @@
+spack:
+  view: false
+  concretizer:
+    unify: when_possible
+  packages:
+    all:
+      target:
+      - icelake
+    cuda:
+      buildable: false
+  specs:
+  - zlib
+  - cmake
+  modules:
+    default:
+      enable:
+      - tcl
+      roots:
+        tcl: /software/spack_v1_1_1/install/modules/env-icelake-cpu/
+      tcl:
+        hash_length: 0
+        naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
+  container:
+    format: singularity

@@ -1,0 +1,10 @@
+spack:
+  view: false
+  concretizer:
+    unify: when_possible
+  packages:
+    all:
+      target: [zen4, sapphirerapids]
+  specs:
+    - zlib
+    - cmake
