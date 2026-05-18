@@ -9,8 +9,8 @@ spack:
   view: false
   concretizer:
     unify: when_possible
-  config:
-    install_hash_length: 7
+  container:
+    format: singularity
   modules:
     default:
       enable:
