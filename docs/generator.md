@@ -45,6 +45,7 @@ This means local execution is optional; CI can maintain generated outputs.
 - `matrix/env_matrix.yaml`
 - `templates/base/cpu/*.yaml`
 - `templates/overlay/gpu/*.yaml`
+- `templates/overlay/test/*.yaml` (optional, for test-specific overrides)
 
 ## Outputs
 

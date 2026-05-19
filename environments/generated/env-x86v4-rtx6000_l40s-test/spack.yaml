@@ -21,7 +21,7 @@ spack:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-x86v4-rtx6000_l40s/
+        tcl: /software/spack_v1_1_1/install/modules/env-x86v4-rtx6000_l40s-test/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
