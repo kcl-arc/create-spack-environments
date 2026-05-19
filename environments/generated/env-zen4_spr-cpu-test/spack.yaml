@@ -18,9 +18,7 @@ spack:
             fortran: /usr/bin/gfortran
     cuda:
       buildable: false
-  specs:
-  - zlib
-  - cmake
+  specs: []
   modules:
     default:
       enable:
