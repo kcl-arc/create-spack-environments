@@ -17,7 +17,7 @@ spack:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-intel_legacy-cpu/
+        tcl: /software/spack_v1_1_1/install/modules/env-intel_legacy-cpu-test/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
