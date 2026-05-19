@@ -7,6 +7,15 @@ spack:
       target:
       - zen2
       - zen3
+    gcc:
+      externals:
+      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
     cuda:
       version:
       - '12.2'
