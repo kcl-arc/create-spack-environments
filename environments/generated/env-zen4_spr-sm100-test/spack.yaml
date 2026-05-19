@@ -23,9 +23,6 @@ spack:
       variants: +cuda cuda_arch=100
     nccl:
       variants: +cuda cuda_arch=100
-  specs:
-  - zlib
-  - cmake
   modules:
     default:
       enable:
