@@ -9,4 +9,4 @@ Notes:
 
 - Keep names in the required form `env-<arch>` and `env-<arch>-test`.
 - Re-run `python scripts/generate_envs.py` after adding bespoke manifests so
-  `environments/index.yaml` is refreshed.
+  `environments/index.yaml` is refreshed (does run on push to the Github repository).
