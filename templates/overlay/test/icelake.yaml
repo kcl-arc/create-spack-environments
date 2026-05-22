@@ -1,5 +1,12 @@
 specs:
   - zlib@1.3.1
 packages:
-  all:
-    compiler: [gcc@13.4.0]
+  c:
+    prefer:
+      - gcc@13.4.0
+  cxx:
+    prefer:
+      - gcc@13.4.0
+  fortran:
+    prefer:
+      - gcc@13.4.0
