@@ -58,6 +58,30 @@ def load_yaml(path: pathlib.Path) -> dict[str, Any]:
     return data or {}
 
 
+def normalize_fragment(doc: dict[str, Any]) -> dict[str, Any]:
+    if "spack" in doc:
+        return doc
+
+    # Treat shorthand fragments as content for the spack root section.
+    spack_fragment_keys = {
+        "specs",
+        "packages",
+        "concretizer",
+        "view",
+        "modules",
+        "container",
+        "config",
+        "upstreams",
+        "develop",
+        "repos",
+        "mirrors",
+    }
+    if any(key in doc for key in spack_fragment_keys):
+        return {"spack": copy.deepcopy(doc)}
+
+    return doc
+
+
 def write_yaml(path: pathlib.Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
@@ -67,8 +91,8 @@ def write_yaml(path: pathlib.Path, data: dict[str, Any]) -> None:
 def render(cpu_family: str, gpu_family: str, is_test: bool = False) -> dict[str, Any]:
     cpu_path = CPU_TEMPLATE_DIR / f"{cpu_family}.yaml"
     gpu_path = GPU_TEMPLATE_DIR / f"{gpu_family}.yaml"
-    cpu_doc = load_yaml(cpu_path)
-    gpu_doc = load_yaml(gpu_path)
+    cpu_doc = normalize_fragment(load_yaml(cpu_path))
+    gpu_doc = normalize_fragment(load_yaml(gpu_path))
 
     merged: dict[str, Any] = {}
     deep_merge(merged, cpu_doc)
@@ -78,10 +102,10 @@ def render(cpu_family: str, gpu_family: str, is_test: bool = False) -> dict[str,
         test_cpu_path = TEST_TEMPLATE_DIR / f"{cpu_family}.yaml"
         test_gpu_path = TEST_TEMPLATE_DIR / f"{gpu_family}.yaml"
         if test_cpu_path.exists():
-            test_cpu_doc = load_yaml(test_cpu_path)
+            test_cpu_doc = normalize_fragment(load_yaml(test_cpu_path))
             deep_merge(merged, test_cpu_doc)
         if test_gpu_path.exists():
-            test_gpu_doc = load_yaml(test_gpu_path)
+            test_gpu_doc = normalize_fragment(load_yaml(test_gpu_path))
             deep_merge(merged, test_gpu_doc)
     
     return merged

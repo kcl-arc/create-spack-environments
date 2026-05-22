@@ -6,6 +6,8 @@ spack:
     all:
       target:
       - icelake
+      compiler:
+      - gcc@13.4.0
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
@@ -17,7 +19,8 @@ spack:
             fortran: /usr/bin/gfortran
     cuda:
       buildable: false
-  specs: []
+  specs:
+  - zlib@1.3.1
   modules:
     default:
       enable:
@@ -29,9 +32,3 @@ spack:
         naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
   container:
     format: singularity
-specs:
-- zlib@1.3.1
-packages:
-  all:
-    compiler:
-    - gcc@13.4.0
