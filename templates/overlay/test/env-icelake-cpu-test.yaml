@@ -1,0 +1,3 @@
+spack:
+  specs:
+    - zlib@1.3.1
