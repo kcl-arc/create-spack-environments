@@ -88,7 +88,12 @@ def write_yaml(path: pathlib.Path, data: dict[str, Any]) -> None:
         yaml.safe_dump(data, f, sort_keys=False)
 
 
-def render(cpu_family: str, gpu_family: str, is_test: bool = False) -> dict[str, Any]:
+def render(
+    cpu_family: str,
+    gpu_family: str,
+    is_test: bool = False,
+    test_env_name: str | None = None,
+) -> dict[str, Any]:
     cpu_path = CPU_TEMPLATE_DIR / f"{cpu_family}.yaml"
     gpu_path = GPU_TEMPLATE_DIR / f"{gpu_family}.yaml"
     cpu_doc = normalize_fragment(load_yaml(cpu_path))
@@ -101,12 +106,16 @@ def render(cpu_family: str, gpu_family: str, is_test: bool = False) -> dict[str,
     if is_test:
         test_cpu_path = TEST_TEMPLATE_DIR / f"{cpu_family}.yaml"
         test_gpu_path = TEST_TEMPLATE_DIR / f"{gpu_family}.yaml"
+        test_env_path = TEST_TEMPLATE_DIR / f"{test_env_name}.yaml" if test_env_name else None
         if test_cpu_path.exists():
             test_cpu_doc = normalize_fragment(load_yaml(test_cpu_path))
             deep_merge(merged, test_cpu_doc)
         if test_gpu_path.exists():
             test_gpu_doc = normalize_fragment(load_yaml(test_gpu_path))
             deep_merge(merged, test_gpu_doc)
+        if test_env_path and test_env_path.exists():
+            test_env_doc = normalize_fragment(load_yaml(test_env_path))
+            deep_merge(merged, test_env_doc)
     
     return merged
 
@@ -187,8 +196,8 @@ def main() -> None:
         prod_path = GENERATED_DIR / env_name / "spack.yaml"
         
         # Test environment
-        test_data = render(cpu_family, gpu_family, is_test=True)
         test_env_name = f"{env_name}-test"
+        test_data = render(cpu_family, gpu_family, is_test=True, test_env_name=test_env_name)
         test_data = ensure_generated_structure(test_data, test_env_name, settings)
         test_path = GENERATED_DIR / test_env_name / "spack.yaml"
 
