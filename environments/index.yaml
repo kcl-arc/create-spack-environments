@@ -69,54 +69,104 @@ environments:
   constraint: icelake
   source: generated
   enabled: true
-- name: env-zen4_spr-cpu
-  manifest: environments/generated/env-zen4_spr-cpu/spack.yaml
-  constraint: null
+- name: env-sprrds-cpu
+  manifest: environments/generated/env-sprrds-cpu/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-cpu-test
-  manifest: environments/generated/env-zen4_spr-cpu-test/spack.yaml
-  constraint: null
+- name: env-sprrds-cpu-test
+  manifest: environments/generated/env-sprrds-cpu-test/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-sm80
-  manifest: environments/generated/env-zen4_spr-sm80/spack.yaml
-  constraint: null
+- name: env-sprrds-sm80
+  manifest: environments/generated/env-sprrds-sm80/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-sm80-test
-  manifest: environments/generated/env-zen4_spr-sm80-test/spack.yaml
-  constraint: null
+- name: env-sprrds-sm80-test
+  manifest: environments/generated/env-sprrds-sm80-test/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-sm90
-  manifest: environments/generated/env-zen4_spr-sm90/spack.yaml
-  constraint: null
+- name: env-sprrds-sm90
+  manifest: environments/generated/env-sprrds-sm90/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-sm90-test
-  manifest: environments/generated/env-zen4_spr-sm90-test/spack.yaml
-  constraint: null
+- name: env-sprrds-sm90-test
+  manifest: environments/generated/env-sprrds-sm90-test/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-sm100
-  manifest: environments/generated/env-zen4_spr-sm100/spack.yaml
-  constraint: null
+- name: env-sprrds-sm100
+  manifest: environments/generated/env-sprrds-sm100/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-sm100-test
-  manifest: environments/generated/env-zen4_spr-sm100-test/spack.yaml
-  constraint: null
+- name: env-sprrds-sm100-test
+  manifest: environments/generated/env-sprrds-sm100-test/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-rtx6000_l40s
-  manifest: environments/generated/env-zen4_spr-rtx6000_l40s/spack.yaml
-  constraint: null
+- name: env-sprrds-rtx6000_l40s
+  manifest: environments/generated/env-sprrds-rtx6000_l40s/spack.yaml
+  constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-zen4_spr-rtx6000_l40s-test
-  manifest: environments/generated/env-zen4_spr-rtx6000_l40s-test/spack.yaml
-  constraint: null
+- name: env-sprrds-rtx6000_l40s-test
+  manifest: environments/generated/env-sprrds-rtx6000_l40s-test/spack.yaml
+  constraint: sapphirerapids
+  source: generated
+  enabled: true
+- name: env-zen4-cpu
+  manifest: environments/generated/env-zen4-cpu/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-cpu-test
+  manifest: environments/generated/env-zen4-cpu-test/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm80
+  manifest: environments/generated/env-zen4-sm80/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm80-test
+  manifest: environments/generated/env-zen4-sm80-test/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm90
+  manifest: environments/generated/env-zen4-sm90/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm90-test
+  manifest: environments/generated/env-zen4-sm90-test/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm100
+  manifest: environments/generated/env-zen4-sm100/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm100-test
+  manifest: environments/generated/env-zen4-sm100-test/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-rtx6000_l40s
+  manifest: environments/generated/env-zen4-rtx6000_l40s/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-rtx6000_l40s-test
+  manifest: environments/generated/env-zen4-rtx6000_l40s-test/spack.yaml
+  constraint: zen4
   source: generated
   enabled: true
 - name: env-x86v4-cpu
