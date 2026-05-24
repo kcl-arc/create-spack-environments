@@ -5,7 +5,6 @@ spack:
   packages:
     all:
       target:
-      - zen4
       - sapphirerapids
     gcc:
       externals:
@@ -17,14 +16,18 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
     cuda:
-      buildable: false
-  specs: []
+      version:
+      - '12.4'
+    lammps:
+      variants: +cuda cuda_arch=90
+    nccl:
+      variants: +cuda cuda_arch=90
   modules:
     default:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-zen4_spr-cpu-test/
+        tcl: /software/spack_v1_1_1/install/modules/env-sprrds-sm90-test/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
