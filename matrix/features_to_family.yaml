@@ -12,7 +12,7 @@ mappings:
     cpu_family: icelake
     gpu_family: sm80
   - features: [zen4]
-    cpu_family: zen4_spr
+    cpu_family: zen4
     gpu_family: cpu
   - features: [zen2, a100, a100_40g]
     cpu_family: amd_legacy
@@ -51,7 +51,7 @@ mappings:
     cpu_family: intel_legacy
     gpu_family: legacy
   - features: [zen3]
-    cpu_family: amd_legacy
+    cpu_family: zen3
     gpu_family: cpu
   - features: [icelake, a30]
     cpu_family: icelake
@@ -60,37 +60,37 @@ mappings:
     cpu_family: icelake
     gpu_family: sm80
   - features: [zen3, a100, a100_80g]
-    cpu_family: amd_legacy
+    cpu_family: zen3
     gpu_family: sm80
   - features: [icelake]
     cpu_family: icelake
     gpu_family: cpu
   - features: [zen4, a100, a100_80g]
-    cpu_family: zen4_spr
+    cpu_family: zen4
     gpu_family: sm80
   - features: [zen4, l40s]
-    cpu_family: zen4_spr
+    cpu_family: zen4
     gpu_family: rtx6000_l40s
   - features: [zen4, h100]
-    cpu_family: zen4_spr
+    cpu_family: zen4
     gpu_family: sm90
   - features: [icelake, h100]
     cpu_family: icelake
     gpu_family: sm90
   - features: [sapphirerapids]
-    cpu_family: zen4_spr
+    cpu_family: sprrds
     gpu_family: cpu
   - features: [zen4, rtx6000]
-    cpu_family: zen4_spr
+    cpu_family: zen4
     gpu_family: rtx6000_l40s
   - features: [sapphirerapids, rtx6000]
-    cpu_family: zen4_spr
+    cpu_family: sprrds
     gpu_family: rtx6000_l40s
   - features: [sapphirerapids, h200]
-    cpu_family: zen4_spr
+    cpu_family: sprrds
     gpu_family: sm90
   - features: [sapphirerapids, b200]
-    cpu_family: zen4_spr
+    cpu_family: sprrds
     gpu_family: sm100
   - features: [x86_64_v4, l40s]
     cpu_family: x86v4
