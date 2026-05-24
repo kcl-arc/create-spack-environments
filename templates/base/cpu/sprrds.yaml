@@ -4,7 +4,7 @@ spack:
     unify: when_possible
   packages:
     all:
-      target: [zen4, sapphirerapids]
+      target: [sapphirerapids]
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
