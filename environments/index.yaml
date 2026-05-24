@@ -119,6 +119,26 @@ environments:
   constraint: sapphirerapids
   source: generated
   enabled: true
+- name: env-zen3-cpu
+  manifest: environments/generated/env-zen3-cpu/spack.yaml
+  constraint: zen3
+  source: generated
+  enabled: true
+- name: env-zen3-cpu-test
+  manifest: environments/generated/env-zen3-cpu-test/spack.yaml
+  constraint: zen3
+  source: generated
+  enabled: true
+- name: env-zen3-sm80
+  manifest: environments/generated/env-zen3-sm80/spack.yaml
+  constraint: zen3
+  source: generated
+  enabled: true
+- name: env-zen3-sm80-test
+  manifest: environments/generated/env-zen3-sm80-test/spack.yaml
+  constraint: zen3
+  source: generated
+  enabled: true
 - name: env-zen4-cpu
   manifest: environments/generated/env-zen4-cpu/spack.yaml
   constraint: zen4
