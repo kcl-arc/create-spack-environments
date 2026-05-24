@@ -64,6 +64,8 @@ enabled_pairs:
   - [sprrds, sm90]
   - [sprrds, sm100]
   - [sprrds, rtx6000_l40s]
+  - [zen3, cpu]
+  - [zen3, sm80]
   - [zen4, cpu]
   - [zen4, sm80]
   - [zen4, sm90]
