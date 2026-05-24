@@ -7,18 +7,18 @@ settings:
 cpu_families:
   amd_legacy:
     slurm_features: [zen2]
-  intel_legacy:
-    slurm_features: [skylake_avx512, cascadelake]
-  zen3:
-    slurm_features: [zen3]
   icelake:
     slurm_features: [icelake]
-  zen4:
-    slurm_features: [zen4]
+  intel_legacy:
+    slurm_features: [skylake_avx512, cascadelake]
   sprrds:
     slurm_features: [sapphirerapids]
   x86v4:
     slurm_features: [x86_64_v4]
+  zen3:
+    slurm_features: [zen3]
+  zen4:
+    slurm_features: [zen4]
 
 gpu_families:
   cpu:
