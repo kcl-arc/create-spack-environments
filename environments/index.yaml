@@ -71,52 +71,52 @@ environments:
   enabled: true
 - name: env-zen4_spr-cpu
   manifest: environments/generated/env-zen4_spr-cpu/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-cpu-test
   manifest: environments/generated/env-zen4_spr-cpu-test/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-sm80
   manifest: environments/generated/env-zen4_spr-sm80/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-sm80-test
   manifest: environments/generated/env-zen4_spr-sm80-test/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-sm90
   manifest: environments/generated/env-zen4_spr-sm90/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-sm90-test
   manifest: environments/generated/env-zen4_spr-sm90-test/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-sm100
   manifest: environments/generated/env-zen4_spr-sm100/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-sm100-test
   manifest: environments/generated/env-zen4_spr-sm100-test/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-rtx6000_l40s
   manifest: environments/generated/env-zen4_spr-rtx6000_l40s/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-zen4_spr-rtx6000_l40s-test
   manifest: environments/generated/env-zen4_spr-rtx6000_l40s-test/spack.yaml
-  constraint: zen4
+  constraint: null
   source: generated
   enabled: true
 - name: env-x86v4-cpu
