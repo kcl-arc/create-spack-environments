@@ -1,12 +1,20 @@
 spack:
   view: false
   concretizer:
-    unify: false
-    reuse: false
+    unify: when_possible
   packages:
     all:
       target:
       - icelake
+    gcc:
+      externals:
+      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
     cuda:
       buildable: false
     c:
