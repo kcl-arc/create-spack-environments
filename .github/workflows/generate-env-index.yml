@@ -12,7 +12,7 @@ on:
           - pr
           - direct-staging
   push:
-    branches-ignore: [staging, production, main]
+    branches-ignore: [staging, production]
     paths:
       - matrix/env_matrix.yaml
       - templates/**
