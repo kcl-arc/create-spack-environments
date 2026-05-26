@@ -1,0 +1,31 @@
+spack:
+  view: false
+  concretizer:
+    unify: when_possible
+  packages:
+    all:
+      target:
+      - cascadelake
+    gcc:
+      externals:
+      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
+    cuda:
+      buildable: false
+  specs: []
+  modules:
+    default:
+      enable:
+      - tcl
+      roots:
+        tcl: /software/spack_v1_1_1/install/modules/env-cascadelake-cpu/
+      tcl:
+        hash_length: 0
+        naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
+  container:
+    format: singularity

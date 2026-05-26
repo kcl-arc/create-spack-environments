@@ -5,16 +5,18 @@ settings:
   container_format: singularity
 
 cpu_families:
-  amd_legacy:
-    slurm_features: [zen2]
   icelake:
     slurm_features: [icelake]
-  intel_legacy:
-    slurm_features: [skylake_avx512, cascadelake]
-  sprrds:
+  skylake:
+    slurm_features: [skylake_avx512]
+  cascadelake:
+    slurm_features: [cascadelake]
+  sapphirerapids:
     slurm_features: [sapphirerapids]
   x86v4:
     slurm_features: [x86_64_v4]
+  zen2:
+    slurm_features: [zen2]
   zen3:
     slurm_features: [zen3]
   zen4:
@@ -52,18 +54,20 @@ gpu_families:
 
 # Enabled environment pairs to render.
 enabled_pairs:
-  - [amd_legacy, cpu]
-  - [amd_legacy, sm80]
-  - [intel_legacy, cpu]
-  - [intel_legacy, legacy]
+  - [zen2, cpu]
+  - [zen2, sm80]
+  - [skylake, cpu]
+  - [skylake, legacy]
+  - [cascadelake, cpu]
+  - [cascadelake, legacy]
   - [icelake, cpu]
   - [icelake, sm80]
   - [icelake, sm90]
-  - [sprrds, cpu]
-  - [sprrds, sm80]
-  - [sprrds, sm90]
-  - [sprrds, sm100]
-  - [sprrds, rtx6000_l40s]
+  - [sapphirerapids, cpu]
+  - [sapphirerapids, sm80]
+  - [sapphirerapids, sm90]
+  - [sapphirerapids, sm100]
+  - [sapphirerapids, rtx6000_l40s]
   - [zen3, cpu]
   - [zen3, sm80]
   - [zen4, cpu]
