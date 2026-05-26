@@ -4,14 +4,15 @@ This directory contains optional test-specific overrides for Spack environment c
 
 ## How it works
 
-When `generate_envs.py` creates test environments (e.g., `env-amd_legacy-cpu-test`), it applies the standard CPU and GPU templates, then optionally merges test-specific overlays **if they exist**.
+When `generate_envs.py` creates test environments (e.g., `env-amd_legacy-cpu-test`), it applies the standard CPU and GPU base templates, then optionally merges env/test overlays **if they exist**.
 
 ### Merge order for test environments:
 1. `templates/base/cpu/{cpu_family}.yaml`  
-2. `templates/overlay/gpu/{gpu_family}.yaml`  
-3. `templates/overlay/test/{cpu_family}.yaml` (if exists)  
-4. `templates/overlay/test/{gpu_family}.yaml` (if exists)
-5. `templates/overlay/test/env-<cpu_family>-<gpu_family>-test.yaml` (if exists)
+2. `templates/base/gpu/{gpu_family}.yaml`  
+3. `templates/overlay/env/env-<cpu_family>-<gpu_family>-test.yaml` (if exists)
+4. `templates/overlay/test/{cpu_family}.yaml` (if exists)  
+5. `templates/overlay/test/{gpu_family}.yaml` (if exists)
+6. `templates/overlay/test/env-<cpu_family>-<gpu_family>-test.yaml` (if exists)
 
 The env-specific overlay applies only to the matching generated test environment name.
 
@@ -38,7 +39,7 @@ This would override/augment the specs in the prod `amd_legacy.yaml` template for
 
 ## Notes
 
-- Test overlays use the same merge logic as GPU overlays: dictionaries are deep-merged, lists are deduplicated (with whitespace-normalization for Spack specs).
+- Env and test overlays use the same merge logic as base templates: dictionaries are deep-merged, lists are deduplicated (with whitespace-normalization for Spack specs). Some policy lists (compiler/version preferences) are intentionally replaced by later overlays.
 - Prod environments ignore test overlays entirely.
 - Both CPU and GPU test overlays can exist independently—use only what you need.
 - Env-specific test overlays have the highest priority among test overlays and are merged last.

@@ -3,10 +3,11 @@
 This repository implements a family-based environment approach:
 
 1. CPU base templates
-2. GPU overlay templates
+2. GPU base templates
 3. CPU x GPU matrix
-4. Generator script for concrete `env-<cpuFamily>-<gpuFamily>` manifests
-5. CI check for stale generated files
+4. Optional env/test overlays
+5. Generator script for concrete `env-<cpuFamily>-<gpuFamily>` manifests
+6. CI check for stale generated files
 
 Additional `README.md` files are in `templates/overlay/test/` and `environments/bespoke/`
 
@@ -16,7 +17,8 @@ Additional `README.md` files are in `templates/overlay/test/` and `environments/
 
 - `matrix/env_matrix.yaml`
 - `templates/base/cpu/*.yaml`
-- `templates/overlay/gpu/*.yaml`
+- `templates/base/gpu/*.yaml`
+- `templates/overlay/env/*.yaml` (optional, for named environment overrides)
 - `templates/overlay/test/*.yaml` (optional, for test-specific overrides)
 
 ### Generator outputs
@@ -92,5 +94,5 @@ This means local execution is optional (although still useful to check the resul
 ## CUDA policy in this model
 
 - Keep `+cuda` package build intent in `er-spack-packages/package_installs/*.yaml`.
-- Set preferred CUDA toolkit and package-level `cuda_arch` in GPU overlays.
+- Set preferred CUDA toolkit and package-level `cuda_arch` in GPU base templates.
 - Do not set global `cuda_arch` in repo-level `config/packages.yaml`.

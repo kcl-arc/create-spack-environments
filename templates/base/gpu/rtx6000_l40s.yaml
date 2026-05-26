@@ -6,3 +6,7 @@ spack:
       variants: +cuda cuda_arch=89
     nccl:
       variants: +cuda cuda_arch=89
+    llvm:
+      version: [18.1.8]
+    clang:
+      version: [18.1.8]
