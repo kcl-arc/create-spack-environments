@@ -1,3 +1,6 @@
+concretizer:
+  unify: when_possible
+  reuse: dependencies
 packages:
   c:
     prefer:
