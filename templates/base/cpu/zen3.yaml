@@ -6,7 +6,6 @@ spack:
   packages:
     all:
       target: [zen3]
-      compiler: [gcc@12.5.0]
     c:
       prefer:
         - gcc@12.5.0

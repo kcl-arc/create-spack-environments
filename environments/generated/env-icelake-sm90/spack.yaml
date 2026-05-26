@@ -7,8 +7,6 @@ spack:
     all:
       target:
       - icelake
-      compiler:
-      - gcc@12.5.0
     c:
       prefer:
       - gcc@12.5.0
