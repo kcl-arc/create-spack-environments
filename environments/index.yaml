@@ -1,42 +1,62 @@
 environments:
-- name: env-amd_legacy-cpu
-  manifest: environments/generated/env-amd_legacy-cpu/spack.yaml
+- name: env-zen2-cpu
+  manifest: environments/generated/env-zen2-cpu/spack.yaml
   constraint: zen2
   source: generated
   enabled: true
-- name: env-amd_legacy-cpu-test
-  manifest: environments/generated/env-amd_legacy-cpu-test/spack.yaml
+- name: env-zen2-cpu-test
+  manifest: environments/generated/env-zen2-cpu-test/spack.yaml
   constraint: zen2
   source: generated
   enabled: true
-- name: env-amd_legacy-sm80
-  manifest: environments/generated/env-amd_legacy-sm80/spack.yaml
+- name: env-zen2-sm80
+  manifest: environments/generated/env-zen2-sm80/spack.yaml
   constraint: zen2
   source: generated
   enabled: true
-- name: env-amd_legacy-sm80-test
-  manifest: environments/generated/env-amd_legacy-sm80-test/spack.yaml
+- name: env-zen2-sm80-test
+  manifest: environments/generated/env-zen2-sm80-test/spack.yaml
   constraint: zen2
   source: generated
   enabled: true
-- name: env-intel_legacy-cpu
-  manifest: environments/generated/env-intel_legacy-cpu/spack.yaml
+- name: env-skylake-cpu
+  manifest: environments/generated/env-skylake-cpu/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-intel_legacy-cpu-test
-  manifest: environments/generated/env-intel_legacy-cpu-test/spack.yaml
+- name: env-skylake-cpu-test
+  manifest: environments/generated/env-skylake-cpu-test/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-intel_legacy-legacy
-  manifest: environments/generated/env-intel_legacy-legacy/spack.yaml
+- name: env-skylake-legacy
+  manifest: environments/generated/env-skylake-legacy/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-intel_legacy-legacy-test
-  manifest: environments/generated/env-intel_legacy-legacy-test/spack.yaml
+- name: env-skylake-legacy-test
+  manifest: environments/generated/env-skylake-legacy-test/spack.yaml
   constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-cascadelake-cpu
+  manifest: environments/generated/env-cascadelake-cpu/spack.yaml
+  constraint: cascadelake
+  source: generated
+  enabled: true
+- name: env-cascadelake-cpu-test
+  manifest: environments/generated/env-cascadelake-cpu-test/spack.yaml
+  constraint: cascadelake
+  source: generated
+  enabled: true
+- name: env-cascadelake-legacy
+  manifest: environments/generated/env-cascadelake-legacy/spack.yaml
+  constraint: cascadelake
+  source: generated
+  enabled: true
+- name: env-cascadelake-legacy-test
+  manifest: environments/generated/env-cascadelake-legacy-test/spack.yaml
+  constraint: cascadelake
   source: generated
   enabled: true
 - name: env-icelake-cpu
@@ -69,53 +89,53 @@ environments:
   constraint: icelake
   source: generated
   enabled: true
-- name: env-sprrds-cpu
-  manifest: environments/generated/env-sprrds-cpu/spack.yaml
+- name: env-sapphirerapids-cpu
+  manifest: environments/generated/env-sapphirerapids-cpu/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-cpu-test
-  manifest: environments/generated/env-sprrds-cpu-test/spack.yaml
+- name: env-sapphirerapids-cpu-test
+  manifest: environments/generated/env-sapphirerapids-cpu-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-sm80
-  manifest: environments/generated/env-sprrds-sm80/spack.yaml
+- name: env-sapphirerapids-sm80
+  manifest: environments/generated/env-sapphirerapids-sm80/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-sm80-test
-  manifest: environments/generated/env-sprrds-sm80-test/spack.yaml
+- name: env-sapphirerapids-sm80-test
+  manifest: environments/generated/env-sapphirerapids-sm80-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-sm90
-  manifest: environments/generated/env-sprrds-sm90/spack.yaml
+- name: env-sapphirerapids-sm90
+  manifest: environments/generated/env-sapphirerapids-sm90/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-sm90-test
-  manifest: environments/generated/env-sprrds-sm90-test/spack.yaml
+- name: env-sapphirerapids-sm90-test
+  manifest: environments/generated/env-sapphirerapids-sm90-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-sm100
-  manifest: environments/generated/env-sprrds-sm100/spack.yaml
+- name: env-sapphirerapids-sm100
+  manifest: environments/generated/env-sapphirerapids-sm100/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-sm100-test
-  manifest: environments/generated/env-sprrds-sm100-test/spack.yaml
+- name: env-sapphirerapids-sm100-test
+  manifest: environments/generated/env-sapphirerapids-sm100-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-rtx6000_l40s
-  manifest: environments/generated/env-sprrds-rtx6000_l40s/spack.yaml
+- name: env-sapphirerapids-rtx6000_l40s
+  manifest: environments/generated/env-sapphirerapids-rtx6000_l40s/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sprrds-rtx6000_l40s-test
-  manifest: environments/generated/env-sprrds-rtx6000_l40s-test/spack.yaml
+- name: env-sapphirerapids-rtx6000_l40s-test
+  manifest: environments/generated/env-sapphirerapids-rtx6000_l40s-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
