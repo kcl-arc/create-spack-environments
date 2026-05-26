@@ -34,12 +34,17 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: ''
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti
         extra_attributes:
           compilers:
-            c: ''
-            cxx: ''
-            fortran: ''
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gfortran
+          environment:
+            set:
+              CUDAFLAGS: -allow-unsupported-compiler
+              NVCCFLAGS: -allow-unsupported-compiler
+              NVCC_APPEND_FLAGS: -allow-unsupported-compiler
     cuda:
       version:
       - '12.2'

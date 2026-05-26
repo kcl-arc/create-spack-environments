@@ -34,12 +34,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: ''
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-x86_64_v4/gcc-13.3.0/gcc-13.4.0-isfd57qmlx2vukaklr5djoupyudhqdh6
         extra_attributes:
           compilers:
-            c: ''
-            cxx: ''
-            fortran: ''
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-x86_64_v4/gcc-13.3.0/gcc-13.4.0-isfd57qmlx2vukaklr5djoupyudhqdh6/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-x86_64_v4/gcc-13.3.0/gcc-13.4.0-isfd57qmlx2vukaklr5djoupyudhqdh6/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-x86_64_v4/gcc-13.3.0/gcc-13.4.0-isfd57qmlx2vukaklr5djoupyudhqdh6/bin/gfortran
     cuda:
       version:
       - '12.2'

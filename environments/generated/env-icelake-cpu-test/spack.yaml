@@ -34,12 +34,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@12.5.0 languages:='c,c++,fortran'
-        prefix: ''
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2
         extra_attributes:
           compilers:
-            c: ''
-            cxx: ''
-            fortran: ''
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/gfortran
     cuda:
       buildable: false
   specs:
