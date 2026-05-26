@@ -9,7 +9,7 @@ on:
       - scripts/export_root_install_queue.py
       - .github/workflows/export-root-install-queue.yml
   push:
-    branches: [production]
+    branches-ignore: [staging, production]
     paths:
       - environments/index.yaml
       - environments/generated/**
