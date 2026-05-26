@@ -2,7 +2,6 @@ spack:
   view: false
   concretizer:
     unify: when_possible
-    reuse: dependencies
   packages:
     all:
       target:
