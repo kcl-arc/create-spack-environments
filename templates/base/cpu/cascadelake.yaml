@@ -4,7 +4,7 @@ spack:
     unify: when_possible
   packages:
     all:
-      target: [cascadelake, skylake_avx512]
+      target: [cascadelake]
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
