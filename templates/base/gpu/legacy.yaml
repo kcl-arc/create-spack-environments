@@ -6,3 +6,7 @@ spack:
       variants: +cuda cuda_arch=70
     nccl:
       variants: +cuda cuda_arch=70
+    llvm:
+      version: [15.0.7]
+    clang:
+      version: [15.0.7]

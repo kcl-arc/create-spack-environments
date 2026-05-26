@@ -1,0 +1,23 @@
+spack:
+  packages:
+    gcc:
+      externals:
+      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
+      - spec: gcc@13.4.0 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/gfortran
+          environment:
+            set:
+              CUDAFLAGS: -allow-unsupported-compiler
+              NVCCFLAGS: -allow-unsupported-compiler
+              NVCC_APPEND_FLAGS: -allow-unsupported-compiler

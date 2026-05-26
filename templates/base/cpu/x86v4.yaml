@@ -6,6 +6,7 @@ spack:
   packages:
     all:
       target: [x86_64_v4]
+      compiler: [gcc@13.4.0]
     c:
       prefer:
         - gcc@13.4.0
@@ -15,6 +16,10 @@ spack:
     fortran:
       prefer:
         - gcc@13.4.0
+    llvm:
+      version: [17.0.6, 18.1.8]
+    clang:
+      version: [17.0.6, 18.1.8]
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'

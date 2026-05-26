@@ -7,6 +7,8 @@ spack:
     all:
       target:
       - x86_64_v4
+      compiler:
+      - gcc@13.4.0
     c:
       prefer:
       - gcc@13.4.0
@@ -16,6 +18,14 @@ spack:
     fortran:
       prefer:
       - gcc@13.4.0
+    llvm:
+      version:
+      - 17.0.6
+      - 18.1.8
+    clang:
+      version:
+      - 17.0.6
+      - 18.1.8
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
@@ -34,7 +44,6 @@ spack:
             fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-x86_64_v4/gcc-13.3.0/gcc-13.4.0-isfd57qmlx2vukaklr5djoupyudhqdh6/bin/gfortran
     cuda:
       buildable: false
-  specs: []
   modules:
     default:
       enable:
