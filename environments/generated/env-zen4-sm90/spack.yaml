@@ -7,8 +7,6 @@ spack:
     all:
       target:
       - zen4
-      compiler:
-      - gcc@13.4.0
     c:
       prefer:
       - gcc@13.4.0

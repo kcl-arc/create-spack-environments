@@ -6,7 +6,6 @@ spack:
   packages:
     all:
       target: [sapphirerapids]
-      compiler: [gcc@13.4.0]
     c:
       prefer:
         - gcc@13.4.0
