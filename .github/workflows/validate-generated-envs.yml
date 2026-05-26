@@ -1,0 +1,45 @@
+name: Validate Generated Environments
+
+on:
+  pull_request:
+    paths:
+      - matrix/**
+      - templates/**
+      - environments/generated/**
+      - environments/index.yaml
+      - environments/root_install_queue.yaml
+      - scripts/generate_envs.py
+      - scripts/export_root_install_queue.py
+      - .github/workflows/validate-generated-envs.yml
+  push:
+    branches: [production]
+    paths:
+      - matrix/**
+      - templates/**
+      - environments/generated/**
+      - environments/index.yaml
+      - environments/root_install_queue.yaml
+      - scripts/generate_envs.py
+      - scripts/export_root_install_queue.py
+
+jobs:
+  validate-generated-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Validate generated environments are current
+        run: python3 scripts/generate_envs.py --check
+
+      - name: Validate root install queue is current
+        run: python3 scripts/export_root_install_queue.py --check
