@@ -2,6 +2,7 @@ name: Validate Generated Environments
 
 on:
   pull_request:
+    branches: [staging]
     paths:
       - matrix/**
       - templates/**
@@ -38,8 +39,8 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
-      - name: Validate generated environments are current
-        run: python3 scripts/generate_envs.py --check
-
       - name: Validate root install queue is current
         run: python3 scripts/export_root_install_queue.py --check
+
+      - name: Validate generated environments are current
+        run: python3 scripts/generate_envs.py --check
