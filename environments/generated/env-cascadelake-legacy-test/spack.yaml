@@ -2,10 +2,20 @@ spack:
   view: false
   concretizer:
     unify: when_possible
+    reuse: false
   packages:
     all:
       target:
       - cascadelake
+    c:
+      prefer:
+      - gcc@13.4.0
+    cxx:
+      prefer:
+      - gcc@13.4.0
+    fortran:
+      prefer:
+      - gcc@13.4.0
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
@@ -15,6 +25,13 @@ spack:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
+      - spec: gcc@13.4.0 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-13.4.0-2zff664xmp72rfxxrvrhikvwey5m7ini
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-13.4.0-2zff664xmp72rfxxrvrhikvwey5m7ini/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-13.4.0-2zff664xmp72rfxxrvrhikvwey5m7ini/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-13.4.0-2zff664xmp72rfxxrvrhikvwey5m7ini/bin/gfortran
     cuda:
       version:
       - '11.8'
