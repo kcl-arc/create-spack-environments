@@ -7,17 +7,15 @@ spack:
     all:
       target:
       - zen4
-      compiler:
-      - gcc@13.4.0
     c:
       prefer:
-      - gcc@13.4.0
+      - gcc@13.3.0
     cxx:
       prefer:
-      - gcc@13.4.0
+      - gcc@13.3.0
     fortran:
       prefer:
-      - gcc@13.4.0
+      - gcc@13.3.0
     llvm:
       version:
       - 17.0.6
