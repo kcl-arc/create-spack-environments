@@ -3,10 +3,10 @@
 
 mappings:
   - features: [zen2, ib]
-    cpu_family: amd_legacy
+    cpu_family: zen2
     gpu_family: cpu
   - features: [zen2]
-    cpu_family: amd_legacy
+    cpu_family: zen2
     gpu_family: cpu
   - features: [icelake, a100, a100_40g, ib]
     cpu_family: icelake
@@ -15,40 +15,40 @@ mappings:
     cpu_family: zen4
     gpu_family: cpu
   - features: [zen2, a100, a100_40g]
-    cpu_family: amd_legacy
+    cpu_family: zen2
     gpu_family: sm80
   - features: [skylake_avx512]
-    cpu_family: intel_legacy
+    cpu_family: skylake
     gpu_family: cpu
   - features: [cascadelake, rtx3090]
-    cpu_family: intel_legacy
+    cpu_family: cascadelake
     gpu_family: legacy
   - features: [skylake_avx512, titan_xp]
-    cpu_family: intel_legacy
+    cpu_family: skylake
     gpu_family: legacy
   - features: [skylake_avx512, titan_x]
-    cpu_family: intel_legacy
+    cpu_family: skylake
     gpu_family: legacy
   - features: [skylake_avx512, titan_v]
-    cpu_family: intel_legacy
+    cpu_family: skylake
     gpu_family: legacy
   - features: [skylake_avx512, rtx2070]
-    cpu_family: intel_legacy
+    cpu_family: skylake
     gpu_family: legacy
   - features: [cascadelake, rtx2080]
-    cpu_family: intel_legacy
+    cpu_family: cascadelake
     gpu_family: legacy
   - features: [icelake, a40]
     cpu_family: icelake
     gpu_family: sm80
   - features: [cascadelake]
-    cpu_family: intel_legacy
+    cpu_family: cascadelake
     gpu_family: cpu
   - features: [skylake_avx512, titan_rtx, titan_xp]
-    cpu_family: intel_legacy
+    cpu_family: skylake
     gpu_family: legacy
   - features: [cascadelake, rtx3070]
-    cpu_family: intel_legacy
+    cpu_family: cascadelake
     gpu_family: legacy
   - features: [zen3]
     cpu_family: zen3
@@ -78,19 +78,19 @@ mappings:
     cpu_family: icelake
     gpu_family: sm90
   - features: [sapphirerapids]
-    cpu_family: sprrds
+    cpu_family: sapphirerapids
     gpu_family: cpu
   - features: [zen4, rtx6000]
     cpu_family: zen4
     gpu_family: rtx6000_l40s
   - features: [sapphirerapids, rtx6000]
-    cpu_family: sprrds
+    cpu_family: sapphirerapids
     gpu_family: rtx6000_l40s
   - features: [sapphirerapids, h200]
-    cpu_family: sprrds
+    cpu_family: sapphirerapids
     gpu_family: sm90
   - features: [sapphirerapids, b200]
-    cpu_family: sprrds
+    cpu_family: sapphirerapids
     gpu_family: sm100
   - features: [x86_64_v4, l40s]
     cpu_family: x86v4
