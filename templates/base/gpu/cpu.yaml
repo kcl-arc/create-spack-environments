@@ -2,4 +2,3 @@ spack:
   packages:
     cuda:
       buildable: false
-  specs: []

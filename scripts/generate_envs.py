@@ -14,7 +14,8 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MATRIX_FILE = ROOT / "matrix" / "env_matrix.yaml"
 CPU_TEMPLATE_DIR = ROOT / "templates" / "base" / "cpu"
-GPU_TEMPLATE_DIR = ROOT / "templates" / "overlay" / "gpu"
+GPU_TEMPLATE_DIR = ROOT / "templates" / "base" / "gpu"
+ENV_TEMPLATE_DIR = ROOT / "templates" / "overlay" / "env"
 TEST_TEMPLATE_DIR = ROOT / "templates" / "overlay" / "test"
 ENV_ROOT = ROOT / "environments"
 GENERATED_DIR = ENV_ROOT / "generated"
@@ -40,13 +41,30 @@ def merge_list_unique(dst_list: list[Any], src_list: list[Any], normalize_string
     return merged
 
 
+def should_replace_list(path: tuple[str, ...]) -> bool:
+    replace_paths = {
+        ("spack", "packages", "all", "compiler"),
+        ("spack", "packages", "c", "prefer"),
+        ("spack", "packages", "cxx", "prefer"),
+        ("spack", "packages", "fortran", "prefer"),
+        ("spack", "packages", "llvm", "version"),
+        ("spack", "packages", "clang", "version"),
+        ("spack", "packages", "gcc", "externals"),
+    }
+    return path in replace_paths
+
+
 def deep_merge(dst: dict[str, Any], src: dict[str, Any], path: tuple[str, ...] = ()) -> dict[str, Any]:
     for key, value in src.items():
         if key in dst and isinstance(dst[key], dict) and isinstance(value, dict):
             deep_merge(dst[key], value, path + (key,))
         elif key in dst and isinstance(dst[key], list) and isinstance(value, list):
-            normalize_strings = path + (key,) == ("spack", "specs")
-            dst[key] = merge_list_unique(dst[key], value, normalize_strings=normalize_strings)
+            list_path = path + (key,)
+            if should_replace_list(list_path):
+                dst[key] = copy.deepcopy(value)
+            else:
+                normalize_strings = list_path == ("spack", "specs")
+                dst[key] = merge_list_unique(dst[key], value, normalize_strings=normalize_strings)
         else:
             dst[key] = copy.deepcopy(value)
     return dst
@@ -91,29 +109,34 @@ def write_yaml(path: pathlib.Path, data: dict[str, Any]) -> None:
 def render(
     cpu_family: str,
     gpu_family: str,
+    env_name: str,
     is_test: bool = False,
-    test_env_name: str | None = None,
 ) -> dict[str, Any]:
     cpu_path = CPU_TEMPLATE_DIR / f"{cpu_family}.yaml"
     gpu_path = GPU_TEMPLATE_DIR / f"{gpu_family}.yaml"
+    env_path = ENV_TEMPLATE_DIR / f"{env_name}.yaml"
     cpu_doc = normalize_fragment(load_yaml(cpu_path))
     gpu_doc = normalize_fragment(load_yaml(gpu_path))
 
     merged: dict[str, Any] = {}
     deep_merge(merged, cpu_doc)
     deep_merge(merged, gpu_doc)
+
+    if env_path.exists():
+        env_doc = normalize_fragment(load_yaml(env_path))
+        deep_merge(merged, env_doc)
     
     if is_test:
         test_cpu_path = TEST_TEMPLATE_DIR / f"{cpu_family}.yaml"
         test_gpu_path = TEST_TEMPLATE_DIR / f"{gpu_family}.yaml"
-        test_env_path = TEST_TEMPLATE_DIR / f"{test_env_name}.yaml" if test_env_name else None
+        test_env_path = TEST_TEMPLATE_DIR / f"{env_name}.yaml"
         if test_cpu_path.exists():
             test_cpu_doc = normalize_fragment(load_yaml(test_cpu_path))
             deep_merge(merged, test_cpu_doc)
         if test_gpu_path.exists():
             test_gpu_doc = normalize_fragment(load_yaml(test_gpu_path))
             deep_merge(merged, test_gpu_doc)
-        if test_env_path and test_env_path.exists():
+        if test_env_path.exists():
             test_env_doc = normalize_fragment(load_yaml(test_env_path))
             deep_merge(merged, test_env_doc)
     
@@ -191,13 +214,13 @@ def main() -> None:
         env_name = f"env-{cpu_family}-{gpu_family}"
         
         # Prod environment
-        prod_data = render(cpu_family, gpu_family, is_test=False)
+        prod_data = render(cpu_family, gpu_family, env_name, is_test=False)
         prod_data = ensure_generated_structure(prod_data, env_name, settings)
         prod_path = GENERATED_DIR / env_name / "spack.yaml"
         
         # Test environment
         test_env_name = f"{env_name}-test"
-        test_data = render(cpu_family, gpu_family, is_test=True, test_env_name=test_env_name)
+        test_data = render(cpu_family, gpu_family, test_env_name, is_test=True)
         test_data = ensure_generated_structure(test_data, test_env_name, settings)
         test_path = GENERATED_DIR / test_env_name / "spack.yaml"
 

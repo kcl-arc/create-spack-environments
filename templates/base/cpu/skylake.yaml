@@ -6,15 +6,20 @@ spack:
   packages:
     all:
       target: [skylake_avx512]
+      compiler: [gcc@12.5.0]
     c:
       prefer:
-        - gcc@13.4.0
+        - gcc@12.5.0
     cxx:
       prefer:
-        - gcc@13.4.0
+        - gcc@12.5.0
     fortran:
       prefer:
-        - gcc@13.4.0
+        - gcc@12.5.0
+    llvm:
+      version: [15.0.7]
+    clang:
+      version: [15.0.7]
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
@@ -24,10 +29,10 @@ spack:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-13.4.0-k7nidb6fl34yq6s55ttaqojdbx6mlt5u
+      - spec: gcc@12.5.0 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap
         extra_attributes:
           compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-13.4.0-k7nidb6fl34yq6s55ttaqojdbx6mlt5u/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-13.4.0-k7nidb6fl34yq6s55ttaqojdbx6mlt5u/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-13.4.0-k7nidb6fl34yq6s55ttaqojdbx6mlt5u/bin/gfortran
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap/bin/gfortran
