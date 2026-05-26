@@ -2,6 +2,7 @@ spack:
   view: false
   concretizer:
     unify: when_possible
+    reuse: false
   packages:
     all:
       target: [icelake]
@@ -21,3 +22,12 @@ spack:
             c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-13.4.0-jjr6dlmwmblaqupv7vbgvj3gu4ecdzms/bin/gcc
             cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-13.4.0-jjr6dlmwmblaqupv7vbgvj3gu4ecdzms/bin/g++
             fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-13.4.0-jjr6dlmwmblaqupv7vbgvj3gu4ecdzms/bin/gfortran
+      c:
+        prefer:
+          - gcc@13.4.0
+      cxx:
+        prefer:
+          - gcc@13.4.0
+      fortran:
+        prefer:
+          - gcc@13.4.0
