@@ -9,13 +9,13 @@ spack:
       - icelake
     c:
       prefer:
-      - gcc@13.3.0
+      - gcc@12.5.0
     cxx:
       prefer:
-      - gcc@13.3.0
+      - gcc@12.5.0
     fortran:
       prefer:
-      - gcc@13.3.0
+      - gcc@12.5.0
     llvm:
       version:
       - 15.0.7
