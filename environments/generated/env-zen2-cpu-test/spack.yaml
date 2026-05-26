@@ -2,10 +2,20 @@ spack:
   view: false
   concretizer:
     unify: when_possible
+    reuse: false
   packages:
     all:
       target:
       - zen2
+    c:
+      prefer:
+      - gcc@13.4.0
+    cxx:
+      prefer:
+      - gcc@13.4.0
+    fortran:
+      prefer:
+      - gcc@13.4.0
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
@@ -15,6 +25,13 @@ spack:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
+      - spec: gcc@13.4.0 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen2/gcc-13.3.0/gcc-13.4.0-iaqvhjoxo72l2emkcyzsgcp4rtelck65
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen2/gcc-13.3.0/gcc-13.4.0-iaqvhjoxo72l2emkcyzsgcp4rtelck65/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen2/gcc-13.3.0/gcc-13.4.0-iaqvhjoxo72l2emkcyzsgcp4rtelck65/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen2/gcc-13.3.0/gcc-13.4.0-iaqvhjoxo72l2emkcyzsgcp4rtelck65/bin/gfortran
     cuda:
       buildable: false
   specs: []
