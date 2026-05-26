@@ -1,5 +1,37 @@
 items:
 - env: env-cascadelake-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: icelake
+- env: env-sapphirerapids-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: sapphirerapids
+- env: env-skylake-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86v4-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: zen2
+- env: env-zen3-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: zen3
+- env: env-zen4-cpu-test
+  spec: fmt@12.1.0
+  source: environments
+  constraint: zen4
+- env: env-cascadelake-cpu-test
   spec: zlib@1.3.1
   source: environments
   constraint: cascadelake
