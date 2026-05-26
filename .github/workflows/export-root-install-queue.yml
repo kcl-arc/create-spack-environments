@@ -50,7 +50,7 @@ jobs:
             exit 0
           fi
           git commit -m "chore: regenerate root install queue"
-          git push origin "${GITHUB_HEAD_REF}"
+          git push origin "HEAD:${GITHUB_HEAD_REF}"
 
       - name: Upload queue artifact
         uses: actions/upload-artifact@v4
