@@ -3,7 +3,6 @@ name: Export Root Install Queue
 on:
   workflow_dispatch:
   pull_request:
-    branches: [production]
     paths:
       - environments/index.yaml
       - environments/generated/**
