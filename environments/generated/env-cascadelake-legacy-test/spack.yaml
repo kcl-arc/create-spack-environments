@@ -40,7 +40,7 @@ spack:
             fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-12.5.0-wdpj2dhhnhrhfhzgg65kgvgy7tf3oge4/bin/gfortran
     cuda:
       version:
-      - '11.8'
+      - '12.2'
     lammps:
       variants: +cuda cuda_arch=70
     nccl:
