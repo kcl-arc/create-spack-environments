@@ -40,9 +40,6 @@ spack:
             fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen3/gcc-13.3.0/gcc-12.5.0-h4ka7a4un6d4s4h77aqmgkduxr5fgnbo/bin/gfortran
     cuda:
       buildable: false
-  specs:
-  - zlib@1.3.1
-  - fmt@12.1.0
   modules:
     default:
       enable:
