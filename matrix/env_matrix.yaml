@@ -28,7 +28,7 @@ gpu_families:
     slurm_features: []
   legacy:
     cuda_enabled: true
-    preferred_cuda_version: "11.8"
+    preferred_cuda_version: "12.2"
     preferred_cuda_arch: "70"
     slurm_features: [rtx2070, rtx2080, rtx3070, rtx3090, titan_x, titan_xp, titan_v, titan_rtx]
   sm80:
