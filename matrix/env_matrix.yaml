@@ -5,7 +5,7 @@ settings:
   container_format: singularity
   modules_tcl_projections:
     all: "{name}/{version}-{compiler.name}-{compiler.version}"
-    +mpi: "{name}/{version}-mpi-{compiler.name}-{compiler.version}"
+    +mpi: "{name}/{version}-{compiler.name}-{compiler.version}-mpi"
 
 cpu_families:
   icelake:

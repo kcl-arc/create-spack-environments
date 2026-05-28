@@ -19,4 +19,4 @@ spack:
       tcl:
         projections:
           all: "{name}/{version}-{compiler.name}-{compiler.version}"
-          +mpi: "{name}/{version}-mpi-{compiler.name}-{compiler.version}"
+          +mpi: "{name}/{version}-{compiler.name}-{compiler.version}-mpi"
