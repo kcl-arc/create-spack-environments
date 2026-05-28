@@ -64,27 +64,27 @@ items:
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
-  spec: llvm_openmp@20.1.8
+  spec: llvm-openmp@20.1.8
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
-  spec: llvm_openmp@20.1.8
+  spec: llvm-openmp@20.1.8
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
-  spec: netcdf_c@4.9.3
+  spec: netcdf-c@4.9.3
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
-  spec: netcdf_c@4.9.3
+  spec: netcdf-c@4.9.3
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
-  spec: netlib_scalapack@2.2.2+shared build_type=Release
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
-  spec: netlib_scalapack@2.2.2+shared build_type=Release
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
