@@ -21,6 +21,20 @@ Additional `README.md` files are in `templates/overlay/test/` and `environments/
 - `templates/overlay/env/*.yaml` (optional, for named environment overrides)
 - `templates/overlay/test/*.yaml` (optional, for test-specific overrides)
 
+### Module naming projections (TCL)
+
+- Set global/default projection rules in `matrix/env_matrix.yaml` under:
+	- `settings.modules_tcl_projections`
+- Example:
+	- `all: "{name}/{version}-{compiler.name}-{compiler.version}"`
+	- `+mpi: "{name}/{version}-mpi-{compiler.name}-{compiler.version}"`
+- Override per generated environment by setting `spack.modules.default.tcl.projections` in:
+	- `templates/overlay/env/env-<cpu>-<gpu>.yaml`
+	- `templates/overlay/env/env-<cpu>-<gpu>-test.yaml`
+	- or family-level test overlays such as `templates/overlay/test/cascadelake.yaml`
+
+Projection precedence is: env/test overlay values first, then matrix defaults.
+
 ### Generator outputs
 
 - `environments/generated/env-<arch>/spack.yaml`
