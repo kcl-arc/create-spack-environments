@@ -24,18 +24,24 @@ The env-specific overlay applies only to the matching generated test environment
 
 ### Example
 
-To add a test-specific override for the `amd_legacy` CPU family:
+To add a test-specific override for the `cascadelake` CPU family:
 
-**File**: `templates/overlay/test/amd_legacy.yaml`
+**File**: `templates/overlay/test/cascadelake.yaml`
 
 ```yaml
 spack:
   specs:
     - "cmake@3.27.0"  # Test a specific version
     - "zlib~optimize"  # Test without optimization
+  modules:
+    default:
+      tcl:
+        projections:
+          all: "{name}/{version}-{compiler.name}-{compiler.version}"
+          +mpi: "{name}/{version}-{compiler.name}-{compiler.version}-mpi"
 ```
 
-This would override/augment the specs in the prod `amd_legacy.yaml` template for all test environments like `env-amd_legacy-cpu-test` and `env-amd_legacy-sm80-test`.
+This would override/augment the specs and projections in the prod `cascadelake.yaml` template for all test environments like `env-cascadelake-cpu-test` and `env-cascadelake-legacy-test`.
 
 ## Notes
 
