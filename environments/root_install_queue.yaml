@@ -43,7 +43,15 @@ items:
   spec: intel-oneapi-compilers@2025.3.1
   source: environments
   constraint: cascadelake
+- env: env-cascadelake-legacy-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy-test
   spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
   source: environments
   constraint: cascadelake
@@ -52,19 +60,11 @@ items:
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
-  spec: intel_oneapi_compilers@2025.3.1
-  source: environments
-  constraint: cascadelake
-- env: env-cascadelake-legacy-test
-  spec: intel_oneapi_mkl@2025.3.0+shared threads=openmp
-  source: environments
-  constraint: cascadelake
-- env: env-cascadelake-legacy-test
-  spec: intel_oneapi_mpi@2021.17.0
+  spec: intel-oneapi-mpi@2021.17.0
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
-  spec: llvm-openmp@20.1.8
+  spec: llvm_openmp@20.1.8
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
@@ -72,7 +72,7 @@ items:
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
-  spec: netcdf-c@4.9.3
+  spec: netcdf_c@4.9.3
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
@@ -80,7 +80,7 @@ items:
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-cpu-test
-  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  spec: netlib_scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: cascadelake
 - env: env-cascadelake-legacy-test
