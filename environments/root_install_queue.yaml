@@ -1,5 +1,13 @@
 items:
+- env: env-cascadelake-cpu
+  spec: cmake@4.1.2
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: cmake@4.1.2
   source: environments
   constraint: cascadelake
@@ -7,7 +15,47 @@ items:
   spec: cmake@4.1.2
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: cmake@4.1.2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: cmake@4.1.2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: cmake@4.1.2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: cmake@4.1.2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: curl@8.15.0
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: curl@8.15.0
   source: environments
   constraint: cascadelake
@@ -15,7 +63,47 @@ items:
   spec: curl@8.15.0
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: curl@8.15.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: curl@8.15.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: curl@8.15.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: curl@8.15.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: fmt
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: fmt
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: fmt
   source: environments
   constraint: cascadelake
@@ -23,7 +111,47 @@ items:
   spec: fmt
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: fmt
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: fmt
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: fmt
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: fmt
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: fmt
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: fmt
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: fmt
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: fmt
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
   source: environments
   constraint: cascadelake
@@ -31,7 +159,47 @@ items:
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: hdf5@1.14.6~mpi +hl
   source: environments
   constraint: cascadelake
@@ -39,7 +207,47 @@ items:
   spec: hdf5@1.14.6~mpi +hl
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: intel-oneapi-compilers@2025.3.1
   source: environments
   constraint: cascadelake
@@ -47,7 +255,47 @@ items:
   spec: intel-oneapi-compilers@2025.3.1
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
   source: environments
   constraint: cascadelake
@@ -55,7 +303,47 @@ items:
   spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: intel-oneapi-mpi@2021.17.0
   source: environments
   constraint: cascadelake
@@ -63,7 +351,47 @@ items:
   spec: intel-oneapi-mpi@2021.17.0
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: llvm-openmp@20.1.8
   source: environments
   constraint: cascadelake
@@ -71,7 +399,47 @@ items:
   spec: llvm-openmp@20.1.8
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: netcdf-c@4.9.3
   source: environments
   constraint: cascadelake
@@ -79,7 +447,47 @@ items:
   spec: netcdf-c@4.9.3
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: cascadelake
@@ -87,7 +495,47 @@ items:
   spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: openmpi@5.0.8
   source: environments
   constraint: cascadelake
@@ -95,7 +543,47 @@ items:
   spec: openmpi@5.0.8
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: zlib@1.3.1
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: zlib@1.3.1
   source: environments
   constraint: cascadelake
@@ -103,7 +591,47 @@ items:
   spec: zlib@1.3.1
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: zlib@1.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: zlib@1.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: zlib@1.3.1
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: zlib@1.3.1
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: zen2
+- env: env-cascadelake-cpu
+  spec: zstd
+  source: environments
+  constraint: cascadelake
 - env: env-cascadelake-cpu-test
+  spec: zstd
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-legacy
   spec: zstd
   source: environments
   constraint: cascadelake
@@ -111,3 +639,35 @@ items:
   spec: zstd
   source: environments
   constraint: cascadelake
+- env: env-skylake-cpu
+  spec: zstd
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: zstd
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy
+  spec: zstd
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-legacy-test
+  spec: zstd
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu
+  spec: zstd
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: zstd
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: zstd
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: zstd
+  source: environments
+  constraint: zen2
