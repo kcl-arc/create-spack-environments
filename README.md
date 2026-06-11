@@ -88,22 +88,28 @@ This means local execution is optional (although still useful to check the resul
 	- regenerates files
 	- commits and pushes directly to `staging` if changes exist
 
-## CPU families
+## CPU architectures
 
-- `amd_legacy`: `zen2`, `zen3`
-- `intel_legacy`: `skylake_avx512`, `cascadelake`
-- `icelake`: `icelake`
-- `zen4_spr`: `zen4`, `sapphirerapids`
-- `x86v4`: `x86_64_v4`
+- `icelake` (`icelake`)
+- `skylake` (`skylake_avx512`)
+- `cascadelake` (`cascadelake`)
+- `sapphirerapids` (`sapphirerapids`)
+- `x86v4` (`x86_64_v4`)
+- `zen2` (`zen2`)
+- `zen3` (`zen3`)
+- `zen4` (`zen4`)
 
 ## GPU families
 
 - `cpu` (no GPU)
-- `legacy` (`rtx2070`, `rtx2080`, `rtx3070`, `rtx3090`, `titan_x`, `titan_xp`, `titan_v`, `titan_rtx`)
-- `sm80` (`a30`, `a40`, `a100`, `a100_40g`, `a100_80g`)
+- `sm61` (`titan_x`, `titan_xp`) — Pascal; deprecated in CUDA 12.8
+- `sm70` (`titan_v`) — Volta; deprecated in CUDA 12.8
+- `sm75` (`rtx2070`, `rtx2080`, `titan_rtx`) — Turing
+- `sm80` (`a30`, `a100`, `a100_40g`, `a100_80g`) — Ampere data-centre
+- `sm86` (`rtx3070`, `rtx3090`, `a40`) — Ampere client
 - `sm90` (`h100`, `h200`)
-- `sm100` (`b200`)
-- `rtx6000_l40s` (`rtx6000`, `l40s`)
+- `sm89` (`l40s`)
+- `sm100` (`b200`, `rtx6000`)
 
 ## CUDA policy in this model
 

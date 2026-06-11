@@ -6,16 +6,16 @@ spack:
   packages:
     all:
       target:
-      - sapphirerapids
+      - icelake
     c:
       prefer:
-      - gcc@13.4.0
+      - gcc@12.5.0
     cxx:
       prefer:
-      - gcc@13.4.0
+      - gcc@12.5.0
     fortran:
       prefer:
-      - gcc@13.4.0
+      - gcc@12.5.0
     llvm:
       version:
       - 18.1.8
@@ -31,26 +31,26 @@ spack:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti
+      - spec: gcc@12.5.0 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2
         extra_attributes:
           compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gfortran
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/gfortran
     cuda:
       version:
       - '12.8'
     lammps:
-      variants: +cuda cuda_arch=89
+      variants: +cuda cuda_arch=86
     nccl:
-      variants: +cuda cuda_arch=89
+      variants: +cuda cuda_arch=86
   modules:
     default:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-sapphirerapids-rtx6000_l40s-test/
+        tcl: /software/spack_v1_1_1/install/modules/env-icelake-sm86-test/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'

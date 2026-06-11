@@ -22,34 +22,35 @@ mappings:
     gpu_family: cpu
   - features: [cascadelake, rtx3090]
     cpu_family: cascadelake
-    gpu_family: legacy
+    gpu_family: sm86
   - features: [skylake_avx512, titan_xp]
     cpu_family: skylake
-    gpu_family: legacy
+    gpu_family: sm61
   - features: [skylake_avx512, titan_x]
     cpu_family: skylake
-    gpu_family: legacy
+    gpu_family: sm61
   - features: [skylake_avx512, titan_v]
     cpu_family: skylake
-    gpu_family: legacy
+    gpu_family: sm70
   - features: [skylake_avx512, rtx2070]
     cpu_family: skylake
-    gpu_family: legacy
+    gpu_family: sm75
   - features: [cascadelake, rtx2080]
     cpu_family: cascadelake
-    gpu_family: legacy
+    gpu_family: sm75
   - features: [icelake, a40]
     cpu_family: icelake
-    gpu_family: sm80
+    gpu_family: sm86
   - features: [cascadelake]
     cpu_family: cascadelake
     gpu_family: cpu
   - features: [skylake_avx512, titan_rtx, titan_xp]
     cpu_family: skylake
-    gpu_family: legacy
+    gpu_family: sm75
+    # titan_rtx is sm_75 (Turing); titan_xp is sm_61 (Pascal) — mapping to sm75 (higher arch)
   - features: [cascadelake, rtx3070]
     cpu_family: cascadelake
-    gpu_family: legacy
+    gpu_family: sm86
   - features: [zen3]
     cpu_family: zen3
     gpu_family: cpu
@@ -70,7 +71,7 @@ mappings:
     gpu_family: sm80
   - features: [zen4, l40s]
     cpu_family: zen4
-    gpu_family: rtx6000_l40s
+    gpu_family: sm89
   - features: [zen4, h100]
     cpu_family: zen4
     gpu_family: sm90
@@ -82,10 +83,10 @@ mappings:
     gpu_family: cpu
   - features: [zen4, rtx6000]
     cpu_family: zen4
-    gpu_family: rtx6000_l40s
+    gpu_family: sm100
   - features: [sapphirerapids, rtx6000]
     cpu_family: sapphirerapids
-    gpu_family: rtx6000_l40s
+    gpu_family: sm100
   - features: [sapphirerapids, h200]
     cpu_family: sapphirerapids
     gpu_family: sm90
@@ -94,7 +95,7 @@ mappings:
     gpu_family: sm100
   - features: [x86_64_v4, l40s]
     cpu_family: x86v4
-    gpu_family: rtx6000_l40s
+    gpu_family: sm89
   - features: [x86_64_v4, a100, a100_80g]
     cpu_family: x86v4
     gpu_family: sm80

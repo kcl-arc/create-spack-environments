@@ -6,7 +6,7 @@ spack:
   packages:
     all:
       target:
-      - sapphirerapids
+      - zen4
     c:
       prefer:
       - gcc@13.4.0
@@ -32,12 +32,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt
         extra_attributes:
           compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gfortran
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/gfortran
     cuda:
       version:
       - '12.8'
@@ -50,7 +50,7 @@ spack:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-sapphirerapids-rtx6000_l40s/
+        tcl: /software/spack_v1_1_1/install/modules/env-zen4-sm89-test/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'

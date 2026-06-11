@@ -29,13 +29,33 @@ environments:
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-legacy
-  manifest: environments/generated/env-skylake-legacy/spack.yaml
+- name: env-skylake-sm61
+  manifest: environments/generated/env-skylake-sm61/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-legacy-test
-  manifest: environments/generated/env-skylake-legacy-test/spack.yaml
+- name: env-skylake-sm61-test
+  manifest: environments/generated/env-skylake-sm61-test/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm70
+  manifest: environments/generated/env-skylake-sm70/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm70-test
+  manifest: environments/generated/env-skylake-sm70-test/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm75
+  manifest: environments/generated/env-skylake-sm75/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm75-test
+  manifest: environments/generated/env-skylake-sm75-test/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
@@ -49,13 +69,23 @@ environments:
   constraint: cascadelake
   source: generated
   enabled: true
-- name: env-cascadelake-legacy
-  manifest: environments/generated/env-cascadelake-legacy/spack.yaml
+- name: env-cascadelake-sm75
+  manifest: environments/generated/env-cascadelake-sm75/spack.yaml
   constraint: cascadelake
   source: generated
   enabled: true
-- name: env-cascadelake-legacy-test
-  manifest: environments/generated/env-cascadelake-legacy-test/spack.yaml
+- name: env-cascadelake-sm75-test
+  manifest: environments/generated/env-cascadelake-sm75-test/spack.yaml
+  constraint: cascadelake
+  source: generated
+  enabled: true
+- name: env-cascadelake-sm86
+  manifest: environments/generated/env-cascadelake-sm86/spack.yaml
+  constraint: cascadelake
+  source: generated
+  enabled: true
+- name: env-cascadelake-sm86-test
+  manifest: environments/generated/env-cascadelake-sm86-test/spack.yaml
   constraint: cascadelake
   source: generated
   enabled: true
@@ -76,6 +106,16 @@ environments:
   enabled: true
 - name: env-icelake-sm80-test
   manifest: environments/generated/env-icelake-sm80-test/spack.yaml
+  constraint: icelake
+  source: generated
+  enabled: true
+- name: env-icelake-sm86
+  manifest: environments/generated/env-icelake-sm86/spack.yaml
+  constraint: icelake
+  source: generated
+  enabled: true
+- name: env-icelake-sm86-test
+  manifest: environments/generated/env-icelake-sm86-test/spack.yaml
   constraint: icelake
   source: generated
   enabled: true
@@ -129,13 +169,13 @@ environments:
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sapphirerapids-rtx6000_l40s
-  manifest: environments/generated/env-sapphirerapids-rtx6000_l40s/spack.yaml
+- name: env-sapphirerapids-sm89
+  manifest: environments/generated/env-sapphirerapids-sm89/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sapphirerapids-rtx6000_l40s-test
-  manifest: environments/generated/env-sapphirerapids-rtx6000_l40s-test/spack.yaml
+- name: env-sapphirerapids-sm89-test
+  manifest: environments/generated/env-sapphirerapids-sm89-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
@@ -199,13 +239,13 @@ environments:
   constraint: zen4
   source: generated
   enabled: true
-- name: env-zen4-rtx6000_l40s
-  manifest: environments/generated/env-zen4-rtx6000_l40s/spack.yaml
+- name: env-zen4-sm89
+  manifest: environments/generated/env-zen4-sm89/spack.yaml
   constraint: zen4
   source: generated
   enabled: true
-- name: env-zen4-rtx6000_l40s-test
-  manifest: environments/generated/env-zen4-rtx6000_l40s-test/spack.yaml
+- name: env-zen4-sm89-test
+  manifest: environments/generated/env-zen4-sm89-test/spack.yaml
   constraint: zen4
   source: generated
   enabled: true
@@ -229,13 +269,13 @@ environments:
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-rtx6000_l40s
-  manifest: environments/generated/env-x86v4-rtx6000_l40s/spack.yaml
+- name: env-x86v4-sm89
+  manifest: environments/generated/env-x86v4-sm89/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-rtx6000_l40s-test
-  manifest: environments/generated/env-x86v4-rtx6000_l40s-test/spack.yaml
+- name: env-x86v4-sm89-test
+  manifest: environments/generated/env-x86v4-sm89-test/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true

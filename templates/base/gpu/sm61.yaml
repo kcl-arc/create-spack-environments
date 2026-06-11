@@ -1,0 +1,14 @@
+# Pascal architecture (sm_61): Titan X, Titan Xp
+# Note: Pascal is deprecated in CUDA 12.8 — compiler will emit deprecation warnings.
+spack:
+  packages:
+    cuda:
+      version: ["12.8"]
+    lammps:
+      variants: +cuda cuda_arch=61
+    nccl:
+      variants: +cuda cuda_arch=61
+    llvm:
+      version: [15.0.7]
+    clang:
+      version: [15.0.7]
