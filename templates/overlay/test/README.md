@@ -4,7 +4,7 @@ This directory contains optional test-specific overrides for Spack environment c
 
 ## How it works
 
-When `generate_envs.py` creates test environments (e.g., `env-amd_legacy-cpu-test`), it applies the standard CPU and GPU base templates, then optionally merges env/test overlays **if they exist**.
+When `generate_envs.py` creates test environments (e.g., `env-skylake-sm70-test`), it applies the standard CPU and GPU base templates, then optionally merges env/test overlays **if they exist**.
 
 ### Merge order for test environments:
 1. `templates/base/cpu/{cpu_family}.yaml`  
@@ -41,7 +41,7 @@ spack:
           +mpi: "{name}/{version}-{compiler.name}-{compiler.version}-mpi"
 ```
 
-This would override/augment the specs and projections in the prod `cascadelake.yaml` template for all test environments like `env-cascadelake-cpu-test` and `env-cascadelake-legacy-test`.
+This would override/augment the specs and projections in the prod `cascadelake.yaml` template for all test environments like `env-cascadelake-cpu-test` and `env-cascadelake-sm70-test`.
 
 ## Notes
 

@@ -1,7 +1,8 @@
+# Hopper architecture (sm_90): H100, H200
 spack:
   packages:
     cuda:
-      version: ["12.4"]
+      version: ["12.8"]
     lammps:
       variants: +cuda cuda_arch=90
     nccl:

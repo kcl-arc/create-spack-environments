@@ -1,0 +1,13 @@
+# Ada Lovelace architecture (sm_89): L40S
+spack:
+  packages:
+    cuda:
+      version: ["12.8"]
+    lammps:
+      variants: +cuda cuda_arch=89
+    nccl:
+      variants: +cuda cuda_arch=89
+    llvm:
+      version: [18.1.8]
+    clang:
+      version: [18.1.8]

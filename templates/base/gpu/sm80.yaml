@@ -1,7 +1,8 @@
+# Ampere data-centre architecture (sm_80): A30, A100 (40 GB), A100 (80 GB)
 spack:
   packages:
     cuda:
-      version: ["12.2"]
+      version: ["12.8"]
     lammps:
       variants: +cuda cuda_arch=80
     nccl:
