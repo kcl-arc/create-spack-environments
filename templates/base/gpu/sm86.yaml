@@ -1,0 +1,13 @@
+# Ampere client architecture (sm_86): RTX 3070, RTX 3090, A40
+spack:
+  packages:
+    cuda:
+      version: ["12.8"]
+    lammps:
+      variants: +cuda cuda_arch=86
+    nccl:
+      variants: +cuda cuda_arch=86
+    llvm:
+      version: [18.1.8]
+    clang:
+      version: [18.1.8]

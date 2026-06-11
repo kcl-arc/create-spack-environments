@@ -1,11 +1,12 @@
+# Turing architecture (sm_75): RTX 2070, RTX 2080, Titan RTX
 spack:
   packages:
     cuda:
       version: ["12.8"]
     lammps:
-      variants: +cuda cuda_arch=89
+      variants: +cuda cuda_arch=75
     nccl:
-      variants: +cuda cuda_arch=89
+      variants: +cuda cuda_arch=75
     llvm:
       version: [18.1.8]
     clang:

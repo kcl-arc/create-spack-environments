@@ -6,7 +6,7 @@ spack:
   packages:
     all:
       target:
-      - cascadelake
+      - skylake_avx512
     c:
       prefer:
       - gcc@12.5.0
@@ -18,10 +18,10 @@ spack:
       - gcc@12.5.0
     llvm:
       version:
-      - 15.0.7
+      - 18.1.8
     clang:
       version:
-      - 15.0.7
+      - 18.1.8
     gcc:
       externals:
       - spec: gcc@13.3.0 languages:='c,c++,fortran'
@@ -32,19 +32,19 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@12.5.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-12.5.0-wdpj2dhhnhrhfhzgg65kgvgy7tf3oge4
+        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap
         extra_attributes:
           compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-12.5.0-wdpj2dhhnhrhfhzgg65kgvgy7tf3oge4/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-12.5.0-wdpj2dhhnhrhfhzgg65kgvgy7tf3oge4/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-cascadelake/gcc-13.3.0/gcc-12.5.0-wdpj2dhhnhrhfhzgg65kgvgy7tf3oge4/bin/gfortran
+            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap/bin/gcc
+            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap/bin/g++
+            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-skylake_avx512/gcc-13.3.0/gcc-12.5.0-zsjk6hibvffifypq4yzdeb4c5d7nifap/bin/gfortran
     cuda:
       version:
-      - '12.2'
+      - '12.8'
     lammps:
-      variants: +cuda cuda_arch=70
+      variants: +cuda cuda_arch=75
     nccl:
-      variants: +cuda cuda_arch=70
+      variants: +cuda cuda_arch=75
   specs:
   - cmake@4.1.2
   - curl@8.15.0
@@ -62,15 +62,15 @@ spack:
   - zstd
   modules:
     default:
-      tcl:
-        projections:
-          all: '{name}/{version}-{compiler.name}-{compiler.version}'
-          +mpi: '{name}/{version}-{compiler.name}-{compiler.version}-mpi'
-        hash_length: 0
-        naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-cascadelake-legacy-test/
+        tcl: /software/spack_v1_1_1/install/modules/env-skylake-sm75-test/
+      tcl:
+        hash_length: 0
+        naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
+        projections:
+          all: '{name}/{version}-{compiler.name}-{compiler.version}'
+          +mpi: '{name}/{version}-{compiler.name}-{compiler.version}-mpi'
   container:
     format: singularity

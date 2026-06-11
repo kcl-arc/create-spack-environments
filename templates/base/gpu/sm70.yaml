@@ -1,7 +1,9 @@
+# Volta architecture (sm_70): Titan V
+# Note: Volta is deprecated in CUDA 12.8 — compiler will emit deprecation warnings.
 spack:
   packages:
     cuda:
-      version: ["12.2"]
+      version: ["12.8"]
     lammps:
       variants: +cuda cuda_arch=70
     nccl:
