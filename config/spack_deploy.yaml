@@ -7,4 +7,4 @@ defaults:
     name: gcc
     version: 13.2.0
   lmod:
-    version: 8.5.6
+    version: 8.7.57
