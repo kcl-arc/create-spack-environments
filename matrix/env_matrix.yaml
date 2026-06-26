@@ -41,36 +41,37 @@ gpu_families:
     slurm_features: [titan_v]
   sm75:
     cuda_enabled: true
-    preferred_cuda_version: "12.8"
+    preferred_cuda_version: "13.3"
     preferred_cuda_arch: "75"
     slurm_features: [rtx2070, rtx2080, titan_rtx]
   sm86:
     cuda_enabled: true
-    preferred_cuda_version: "12.8"
+    preferred_cuda_version: "13.3"
     preferred_cuda_arch: "86"
     slurm_features: [rtx3070, rtx3090, a40]
   sm80:
     cuda_enabled: true
-    preferred_cuda_version: "12.8"
+    preferred_cuda_version: "13.3"
     preferred_cuda_arch: "80"
     slurm_features: [a30, a100, a100_40g, a100_80g]
   sm90:
     cuda_enabled: true
-    preferred_cuda_version: "12.8"
+    preferred_cuda_version: "13.3"
     preferred_cuda_arch: "90"
     slurm_features: [h100, h200]
   sm100:
     cuda_enabled: true
-    preferred_cuda_version: "12.8"
+    preferred_cuda_version: "13.3"
     preferred_cuda_arch: "100"
     slurm_features: [b200, rtx6000]
   sm89:
     cuda_enabled: true
-    preferred_cuda_version: "12.8"
+    preferred_cuda_version: "13.3"
     preferred_cuda_arch: "89"
     slurm_features: [l40s]
 
 # Enabled environment pairs to render.
+# TODO: Generate this list dynamically (see features_to_family.yaml) to avoid hard-coding.
 enabled_pairs:
   - [zen2, cpu]
   - [zen2, sm80]
