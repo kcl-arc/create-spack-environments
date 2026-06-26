@@ -40,11 +40,117 @@ spack:
             fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen2/gcc-13.3.0/gcc-12.5.0-pgh5mmj73ysde63evpgbdc4kvz4i23nc/bin/gfortran
     cuda:
       version:
-      - '12.8'
+      - '13.3'
     lammps:
       variants: +cuda cuda_arch=80
     nccl:
       variants: +cuda cuda_arch=80
+  providers:
+    awk:
+    - gawk
+    blas:
+    - openblas
+    - amdblis
+    D:
+    - ldc
+    daal:
+    - intel-daal
+    elf:
+    - elfutils
+    fftw-api:
+    - fftw
+    - amdfftw
+    flame:
+    - libflame
+    - amdlibflame
+    fuse:
+    - libfuse
+    gl:
+    - mesa+opengl
+    - mesa18
+    - opengl
+    glu:
+    - mesa-glu
+    - openglu
+    glx:
+    - mesa+glx
+    - mesa18+glx
+    - opengl
+    golang:
+    - gcc
+    iconv:
+    - libiconv
+    ipp:
+    - intel-ipp
+    java:
+    - openjdk
+    - jdk
+    - ibm-java
+    jpeg:
+    - libjpeg-turbo
+    - libjpeg
+    lapack:
+    - openblas
+    - amdlibflame
+    libllvm:
+    - llvm
+    - llvm-amdgpu
+    lua-lang:
+    - lua
+    - lua-luajit
+    mariadb-client:
+    - mariadb-c-client
+    - mariadb
+    mkl:
+    - intel-mkl
+    mpe:
+    - mpe2
+    mpi:
+    - openmpi
+    - mpich
+    mysql-client:
+    - mysql
+    - mariadb-c-client
+    opencl:
+    - pocl
+    onedal:
+    - intel-oneapi-dal
+    osmesa:
+    - mesa+osmesa
+    - mesa18+osmesa
+    pbs:
+    - openpbs
+    - torque
+    pil:
+    - py-pillow
+    pkgconfig:
+    - pkgconf
+    - pkg-config
+    rpc:
+    - libtirpc
+    scalapack:
+    - netlib-scalapack
+    - amdscalapack
+    sycl:
+    - hipsycl
+    szip:
+    - libaec
+    - libszip
+    tbb:
+    - intel-tbb
+    unwind:
+    - libunwind
+    uuid:
+    - util-linux-uuid
+    - libuuid
+    xxd:
+    - xxd-standalone
+    - vim
+    yacc:
+    - bison
+    - byacc
+    ziglang:
+    - zig
   specs:
   - cmake@4.1.2
   - curl@8.15.0
@@ -60,6 +166,78 @@ spack:
   - zlib@1.3.1
   - fmt
   - zstd
+  - bazel
+  - beagle
+  - bedtools2
+  - bgen
+  - bismark
+  - bison
+  - blast-plus
+  - bwa
+  - circos
+  - coordgen
+  - cryoef
+  - eigen build_type=RelWithDebInfo
+  - exonerate
+  - fastp
+  - fastqc
+  - ffmpeg
+  - gatk
+  - gdal
+  - gemma
+  - git_lfs
+  - gnuplot
+  - gradle
+  - hisat2
+  - impute2
+  - ldak
+  - libhugetlbfs
+  - libwebp +libwebpmux
+  - libxc
+  - meme +magick
+  - mesa
+  - meson
+  - miniforge3
+  - mysql +client_only
+  - nextflow
+  - openbabel ~python ~gui
+  - p7zip
+  - parallel
+  - pcre
+  - perl_appconfig
+  - perl_config_simple
+  - perl_file_remove
+  - perl_file_sharedir
+  - perl_file_slurp
+  - perl_getopt_argvfile
+  - perl_http_date
+  - perl_module_install
+  - perl_parallel_forkmanager
+  - perl_parse_yapp
+  - perl_parselex
+  - perl_parsetemplate
+  - perl_pathtools
+  - perl_termreadkey
+  - perl_test_leaktrace
+  - picard
+  - plink2
+  - postgresql +client_only
+  - py_gsutil
+  - py_multiqc
+  - py_mysql_connector_python
+  - samtools
+  - shapeit4
+  - spark +hadoop
+  - star
+  - stringtie
+  - subread
+  - tabix
+  - tcsh
+  - trimgalore
+  - trimmomatic
+  - vcftools
+  - wget
+  - wtdbg2
   modules:
     default:
       enable:
