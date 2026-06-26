@@ -1,5 +1,7 @@
 # Map each observed Slurm Features set to CPU and GPU families.
 # Source: .repomix/input/features.md
+# TODO: Generate this list dynamically from slurm.conf
+# TODO: investigate why there are icelake-test environments (shouldn't they be deleted?)
 
 mappings:
   - features: [zen2, ib]
