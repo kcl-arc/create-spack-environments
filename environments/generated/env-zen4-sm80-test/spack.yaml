@@ -45,7 +45,7 @@ spack:
               NVCC_APPEND_FLAGS: -allow-unsupported-compiler
     cuda:
       version:
-      - '12.8'
+      - '13.3'
     lammps:
       variants: +cuda cuda_arch=80
     nccl:

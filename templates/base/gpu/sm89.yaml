@@ -2,7 +2,7 @@
 spack:
   packages:
     cuda:
-      version: ["12.8"]
+      version: ["13.3"]
     lammps:
       variants: +cuda cuda_arch=89
     nccl:

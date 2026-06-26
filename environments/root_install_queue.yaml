@@ -1,4 +1,148 @@
 items:
+- env: env-zen2-cpu
+  spec: bazel
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: bazel
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: bazel
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bazel
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: beagle
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: beagle
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: beagle
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: beagle
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: bedtools2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: bedtools2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: bedtools2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bedtools2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: bgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: bgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: bgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: bismark
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: bismark
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: bismark
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bismark
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: bison
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: bison
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: bison
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bison
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: blast-plus
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: blast-plus
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: blast-plus
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: blast-plus
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: bwa
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: bwa
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: bwa
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bwa
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: circos
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: circos
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: circos
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: circos
+  source: environments
+  constraint: zen2
 - env: env-cascadelake-cpu
   spec: cmake@4.1.2
   source: environments
@@ -23,6 +167,38 @@ items:
   spec: cmake@4.1.2
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: cmake@4.1.2
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: cmake@4.1.2
   source: environments
@@ -71,6 +247,38 @@ items:
   spec: cmake@4.1.2
   source: environments
   constraint: zen2
+- env: env-zen2-cpu
+  spec: coordgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: coordgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: coordgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: coordgen
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: cryoef
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: cryoef
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: cryoef
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: cryoef
+  source: environments
+  constraint: zen2
 - env: env-cascadelake-cpu
   spec: curl@8.15.0
   source: environments
@@ -95,6 +303,38 @@ items:
   spec: curl@8.15.0
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: curl@8.15.0
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: curl@8.15.0
   source: environments
@@ -143,6 +383,86 @@ items:
   spec: curl@8.15.0
   source: environments
   constraint: zen2
+- env: env-zen2-cpu
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: exonerate
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: exonerate
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: exonerate
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: exonerate
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: fastp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: fastp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: fastp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: fastp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: fastqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: fastqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: fastqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: fastqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: ffmpeg
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: ffmpeg
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: ffmpeg
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: ffmpeg
+  source: environments
+  constraint: zen2
 - env: env-cascadelake-cpu
   spec: fmt
   source: environments
@@ -167,6 +487,38 @@ items:
   spec: fmt
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: fmt
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: fmt
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: fmt
   source: environments
@@ -215,6 +567,102 @@ items:
   spec: fmt
   source: environments
   constraint: zen2
+- env: env-zen2-cpu
+  spec: gatk
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: gatk
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: gatk
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: gatk
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: gdal
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: gdal
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: gdal
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: gdal
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: gemma
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: gemma
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: gemma
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: gemma
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: git_lfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: git_lfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: git_lfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: git_lfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: gnuplot
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: gnuplot
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: gnuplot
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: gnuplot
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: gradle
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: gradle
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: gradle
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: gradle
+  source: environments
+  constraint: zen2
 - env: env-cascadelake-cpu
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
   source: environments
@@ -239,6 +687,38 @@ items:
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
   source: environments
@@ -311,6 +791,38 @@ items:
   spec: hdf5@1.14.6~mpi +hl
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: hdf5@1.14.6~mpi +hl
   source: environments
@@ -357,6 +869,38 @@ items:
   constraint: zen2
 - env: env-zen2-sm80-test
   spec: hdf5@1.14.6~mpi +hl
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: hisat2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: hisat2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: hisat2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: hisat2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: impute2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: impute2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: impute2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: impute2
   source: environments
   constraint: zen2
 - env: env-cascadelake-cpu
@@ -383,6 +927,38 @@ items:
   spec: intel-oneapi-compilers@2025.3.1
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: intel-oneapi-compilers@2025.3.1
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: intel-oneapi-compilers@2025.3.1
   source: environments
@@ -455,6 +1031,38 @@ items:
   spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: intel-oneapi-mkl@2025.3.0+shared threads=openmp
   source: environments
@@ -527,6 +1135,38 @@ items:
   spec: intel-oneapi-mpi@2021.17.0
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: intel-oneapi-mpi@2021.17.0
   source: environments
@@ -573,6 +1213,70 @@ items:
   constraint: zen2
 - env: env-zen2-sm80-test
   spec: intel-oneapi-mpi@2021.17.0
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: ldak
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: ldak
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: ldak
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: ldak
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: libhugetlbfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: libhugetlbfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: libhugetlbfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: libhugetlbfs
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: libxc
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: libxc
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: libxc
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: libxc
   source: environments
   constraint: zen2
 - env: env-cascadelake-cpu
@@ -599,6 +1303,38 @@ items:
   spec: llvm-openmp@20.1.8
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: llvm-openmp@20.1.8
   source: environments
@@ -645,6 +1381,86 @@ items:
   constraint: zen2
 - env: env-zen2-sm80-test
   spec: llvm-openmp@20.1.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: meme +magick
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: meme +magick
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: meme +magick
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: meme +magick
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: mesa
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: mesa
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: mesa
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: mesa
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: meson
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: meson
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: meson
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: meson
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: miniforge3
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: miniforge3
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: miniforge3
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: miniforge3
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: mysql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: mysql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: mysql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: mysql +client_only
   source: environments
   constraint: zen2
 - env: env-cascadelake-cpu
@@ -671,6 +1487,38 @@ items:
   spec: netcdf-c@4.9.3
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: netcdf-c@4.9.3
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: netcdf-c@4.9.3
   source: environments
@@ -743,6 +1591,38 @@ items:
   spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
@@ -789,6 +1669,38 @@ items:
   constraint: zen2
 - env: env-zen2-sm80-test
   spec: netlib-scalapack@2.2.2+shared build_type=Release
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: nextflow
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: nextflow
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: nextflow
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: nextflow
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: openbabel ~python ~gui
   source: environments
   constraint: zen2
 - env: env-cascadelake-cpu
@@ -815,6 +1727,38 @@ items:
   spec: openmpi@5.0.8
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: openmpi@5.0.8
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: openmpi@5.0.8
   source: environments
@@ -861,6 +1805,598 @@ items:
   constraint: zen2
 - env: env-zen2-sm80-test
   spec: openmpi@5.0.8
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: p7zip
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: p7zip
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: p7zip
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: p7zip
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: parallel
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: parallel
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: parallel
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: parallel
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: pcre
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: pcre
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: pcre
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: pcre
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_appconfig
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_appconfig
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_appconfig
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_appconfig
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_config_simple
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_config_simple
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_config_simple
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_config_simple
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_file_remove
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_file_remove
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_file_remove
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_file_remove
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_file_sharedir
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_file_sharedir
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_file_sharedir
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_file_sharedir
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_file_slurp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_file_slurp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_file_slurp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_file_slurp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_getopt_argvfile
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_getopt_argvfile
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_getopt_argvfile
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_getopt_argvfile
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_http_date
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_http_date
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_http_date
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_http_date
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_module_install
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_module_install
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_module_install
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_module_install
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_parallel_forkmanager
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_parallel_forkmanager
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_parallel_forkmanager
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_parallel_forkmanager
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_parse_yapp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_parse_yapp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_parse_yapp
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_parse_yapp
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_parselex
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_parselex
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_parselex
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_parselex
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_parsetemplate
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_parsetemplate
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_parsetemplate
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_parsetemplate
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_pathtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_pathtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_pathtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_pathtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_termreadkey
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_termreadkey
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_termreadkey
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_termreadkey
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: perl_test_leaktrace
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: perl_test_leaktrace
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: perl_test_leaktrace
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: perl_test_leaktrace
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: picard
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: picard
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: picard
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: picard
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: plink2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: plink2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: plink2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: plink2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: postgresql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: postgresql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: postgresql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: postgresql +client_only
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: py_gsutil
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: py_gsutil
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: py_gsutil
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: py_gsutil
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: py_multiqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: py_multiqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: py_multiqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: py_multiqc
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: py_mysql_connector_python
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: py_mysql_connector_python
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: py_mysql_connector_python
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: py_mysql_connector_python
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: samtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: samtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: samtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: samtools
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: shapeit4
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: shapeit4
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: shapeit4
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: shapeit4
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: spark +hadoop
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: spark +hadoop
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: spark +hadoop
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: spark +hadoop
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: star
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: star
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: star
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: star
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: stringtie
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: stringtie
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: stringtie
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: stringtie
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: subread
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: subread
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: subread
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: subread
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: tabix
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: tabix
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: tabix
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: tabix
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: tcsh
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: tcsh
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: tcsh
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: tcsh
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: trimgalore
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: trimgalore
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: trimgalore
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: trimgalore
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: trimmomatic
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: trimmomatic
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: trimmomatic
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: trimmomatic
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: vcftools
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: vcftools
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: vcftools
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: vcftools
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: wget
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: wget
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: wget
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: wget
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu
+  spec: wtdbg2
+  source: environments
+  constraint: zen2
+- env: env-zen2-cpu-test
+  spec: wtdbg2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80
+  spec: wtdbg2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: wtdbg2
   source: environments
   constraint: zen2
 - env: env-cascadelake-cpu
@@ -887,6 +2423,38 @@ items:
   spec: zlib@1.3.1
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: zlib@1.3.1
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: zlib@1.3.1
   source: environments
@@ -959,6 +2527,38 @@ items:
   spec: zstd
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: zstd
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: zstd
+  source: environments
+  constraint: icelake
 - env: env-skylake-cpu
   spec: zstd
   source: environments
