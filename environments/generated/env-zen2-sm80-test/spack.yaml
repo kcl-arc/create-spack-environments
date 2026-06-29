@@ -7,6 +7,112 @@ spack:
     all:
       target:
       - zen2
+      providers:
+        awk:
+        - gawk
+        blas:
+        - openblas
+        - amdblis
+        D:
+        - ldc
+        daal:
+        - intel-daal
+        elf:
+        - elfutils
+        fftw-api:
+        - fftw
+        - amdfftw
+        flame:
+        - libflame
+        - amdlibflame
+        fuse:
+        - libfuse
+        gl:
+        - mesa+opengl
+        - mesa18
+        - opengl
+        glu:
+        - mesa-glu
+        - openglu
+        glx:
+        - mesa+glx
+        - mesa18+glx
+        - opengl
+        golang:
+        - gcc
+        iconv:
+        - libiconv
+        ipp:
+        - intel-ipp
+        java:
+        - openjdk
+        - jdk
+        - ibm-java
+        jpeg:
+        - libjpeg-turbo
+        - libjpeg
+        lapack:
+        - openblas
+        - amdlibflame
+        libllvm:
+        - llvm
+        - llvm-amdgpu
+        lua-lang:
+        - lua
+        - lua-luajit
+        mariadb-client:
+        - mariadb-c-client
+        - mariadb
+        mkl:
+        - intel-mkl
+        mpe:
+        - mpe2
+        mpi:
+        - openmpi
+        - mpich
+        mysql-client:
+        - mysql
+        - mariadb-c-client
+        opencl:
+        - pocl
+        onedal:
+        - intel-oneapi-dal
+        osmesa:
+        - mesa+osmesa
+        - mesa18+osmesa
+        pbs:
+        - openpbs
+        - torque
+        pil:
+        - py-pillow
+        pkgconfig:
+        - pkgconf
+        - pkg-config
+        rpc:
+        - libtirpc
+        scalapack:
+        - netlib-scalapack
+        - amdscalapack
+        sycl:
+        - hipsycl
+        szip:
+        - libaec
+        - libszip
+        tbb:
+        - intel-tbb
+        unwind:
+        - libunwind
+        uuid:
+        - util-linux-uuid
+        - libuuid
+        xxd:
+        - xxd-standalone
+        - vim
+        yacc:
+        - bison
+        - byacc
+        ziglang:
+        - zig
     c:
       prefer:
       - gcc@12.5.0
@@ -45,112 +151,6 @@ spack:
       variants: +cuda cuda_arch=80
     nccl:
       variants: +cuda cuda_arch=80
-  providers:
-    awk:
-    - gawk
-    blas:
-    - openblas
-    - amdblis
-    D:
-    - ldc
-    daal:
-    - intel-daal
-    elf:
-    - elfutils
-    fftw-api:
-    - fftw
-    - amdfftw
-    flame:
-    - libflame
-    - amdlibflame
-    fuse:
-    - libfuse
-    gl:
-    - mesa+opengl
-    - mesa18
-    - opengl
-    glu:
-    - mesa-glu
-    - openglu
-    glx:
-    - mesa+glx
-    - mesa18+glx
-    - opengl
-    golang:
-    - gcc
-    iconv:
-    - libiconv
-    ipp:
-    - intel-ipp
-    java:
-    - openjdk
-    - jdk
-    - ibm-java
-    jpeg:
-    - libjpeg-turbo
-    - libjpeg
-    lapack:
-    - openblas
-    - amdlibflame
-    libllvm:
-    - llvm
-    - llvm-amdgpu
-    lua-lang:
-    - lua
-    - lua-luajit
-    mariadb-client:
-    - mariadb-c-client
-    - mariadb
-    mkl:
-    - intel-mkl
-    mpe:
-    - mpe2
-    mpi:
-    - openmpi
-    - mpich
-    mysql-client:
-    - mysql
-    - mariadb-c-client
-    opencl:
-    - pocl
-    onedal:
-    - intel-oneapi-dal
-    osmesa:
-    - mesa+osmesa
-    - mesa18+osmesa
-    pbs:
-    - openpbs
-    - torque
-    pil:
-    - py-pillow
-    pkgconfig:
-    - pkgconf
-    - pkg-config
-    rpc:
-    - libtirpc
-    scalapack:
-    - netlib-scalapack
-    - amdscalapack
-    sycl:
-    - hipsycl
-    szip:
-    - libaec
-    - libszip
-    tbb:
-    - intel-tbb
-    unwind:
-    - libunwind
-    uuid:
-    - util-linux-uuid
-    - libuuid
-    xxd:
-    - xxd-standalone
-    - vim
-    yacc:
-    - bison
-    - byacc
-    ziglang:
-    - zig
   specs:
   - cmake@4.1.2
   - curl@8.15.0
