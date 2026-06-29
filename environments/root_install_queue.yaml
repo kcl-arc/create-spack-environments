@@ -1936,163 +1936,163 @@ items:
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_getopt_argvfile
+  spec: perl-getopt-argvfile
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_getopt_argvfile
+  spec: perl-getopt-argvfile
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_getopt_argvfile
+  spec: perl-getopt-argvfile
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_getopt_argvfile
+  spec: perl-getopt-argvfile
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_http_date
+  spec: perl-http-date
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_http_date
+  spec: perl-http-date
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_http_date
+  spec: perl-http-date
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_http_date
+  spec: perl-http-date
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_module_install
+  spec: perl-module-install
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_module_install
+  spec: perl-module-install
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_module_install
+  spec: perl-module-install
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_module_install
+  spec: perl-module-install
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_parallel_forkmanager
+  spec: perl-parallel-forkmanager
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_parallel_forkmanager
+  spec: perl-parallel-forkmanager
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_parallel_forkmanager
+  spec: perl-parallel-forkmanager
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_parallel_forkmanager
+  spec: perl-parallel-forkmanager
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_parse_yapp
+  spec: perl-parse-yapp
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_parse_yapp
+  spec: perl-parse-yapp
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_parse_yapp
+  spec: perl-parse-yapp
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_parse_yapp
+  spec: perl-parse-yapp
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_parselex
+  spec: perl-parselex
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_parselex
+  spec: perl-parselex
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_parselex
+  spec: perl-parselex
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_parselex
+  spec: perl-parselex
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_parsetemplate
+  spec: perl-parsetemplate
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_parsetemplate
+  spec: perl-parsetemplate
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_parsetemplate
+  spec: perl-parsetemplate
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_parsetemplate
+  spec: perl-parsetemplate
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_pathtools
+  spec: perl-pathtools
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_pathtools
+  spec: perl-pathtools
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_pathtools
+  spec: perl-pathtools
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_pathtools
+  spec: perl-pathtools
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_termreadkey
+  spec: perl-termreadkey
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_termreadkey
+  spec: perl-termreadkey
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_termreadkey
+  spec: perl-termreadkey
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_termreadkey
+  spec: perl-termreadkey
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_test_leaktrace
+  spec: perl-test-leaktrace
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_test_leaktrace
+  spec: perl-test-leaktrace
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_test_leaktrace
+  spec: perl-test-leaktrace
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_test_leaktrace
+  spec: perl-test-leaktrace
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
@@ -2144,51 +2144,51 @@ items:
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: py_gsutil
+  spec: py-gsutil
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: py_gsutil
+  spec: py-gsutil
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: py_gsutil
+  spec: py-gsutil
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: py_gsutil
+  spec: py-gsutil
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: py_multiqc
+  spec: py-multiqc
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: py_multiqc
+  spec: py-multiqc
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: py_multiqc
+  spec: py-multiqc
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: py_multiqc
+  spec: py-multiqc
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: py_mysql_connector_python
+  spec: py-mysql-connector-python
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: py_mysql_connector_python
+  spec: py-mysql-connector-python
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: py_mysql_connector_python
+  spec: py-mysql-connector-python
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: py_mysql_connector_python
+  spec: py-mysql-connector-python
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
