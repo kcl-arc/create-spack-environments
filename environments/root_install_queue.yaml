@@ -616,19 +616,19 @@ items:
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: git_lfs
+  spec: git-lfs
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: git_lfs
+  spec: git-lfs
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: git_lfs
+  spec: git-lfs
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: git_lfs
+  spec: git-lfs
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
@@ -1856,83 +1856,83 @@ items:
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_appconfig
+  spec: perl-appconfig
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_appconfig
+  spec: perl-appconfig
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_appconfig
+  spec: perl-appconfig
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_appconfig
+  spec: perl-appconfig
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_config_simple
+  spec: perl-config-simple
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_config_simple
+  spec: perl-config-simple
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_config_simple
+  spec: perl-config-simple
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_config_simple
+  spec: perl-config-simple
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_file_remove
+  spec: perl-file-remove
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_file_remove
+  spec: perl-file-remove
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_file_remove
+  spec: perl-file-remove
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_file_remove
+  spec: perl-file-remove
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_file_sharedir
+  spec: perl-file-sharedir
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_file_sharedir
+  spec: perl-file-sharedir
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_file_sharedir
+  spec: perl-file-sharedir
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_file_sharedir
+  spec: perl-file-sharedir
   source: environments
   constraint: zen2
 - env: env-zen2-cpu
-  spec: perl_file_slurp
+  spec: perl-file-slurp
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: perl_file_slurp
+  spec: perl-file-slurp
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: perl_file_slurp
+  spec: perl-file-slurp
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: perl_file_slurp
+  spec: perl-file-slurp
   source: environments
   constraint: zen2
 - env: env-zen2-cpu

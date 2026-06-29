@@ -185,7 +185,7 @@ spack:
   - gatk
   - gdal
   - gemma
-  - git_lfs
+  - git-lfs
   - gnuplot
   - gradle
   - hisat2
@@ -204,11 +204,11 @@ spack:
   - p7zip
   - parallel
   - pcre
-  - perl_appconfig
-  - perl_config_simple
-  - perl_file_remove
-  - perl_file_sharedir
-  - perl_file_slurp
+  - perl-appconfig
+  - perl-config-simple
+  - perl-file-remove
+  - perl-file-sharedir
+  - perl-file-slurp
   - perl_getopt_argvfile
   - perl_http_date
   - perl_module_install
