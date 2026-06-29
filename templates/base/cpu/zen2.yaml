@@ -134,22 +134,22 @@ spack:
     - perl-file-remove
     - perl-file-sharedir
     - perl-file-slurp
-    - perl_getopt_argvfile
-    - perl_http_date
-    - perl_module_install
-    - perl_parallel_forkmanager
-    - perl_parse_yapp
-    - perl_parselex
-    - perl_parsetemplate
-    - perl_pathtools
-    - perl_termreadkey
-    - perl_test_leaktrace
+    - perl-getopt-argvfile
+    - perl-http-date
+    - perl-module-install
+    - perl-parallel-forkmanager
+    - perl-parse-yapp
+    - perl-parselex
+    - perl-parsetemplate
+    - perl-pathtools
+    - perl-termreadkey
+    - perl-test-leaktrace
     - picard
     - plink2
     - postgresql +client_only
-    - py_gsutil
-    - py_multiqc
-    - py_mysql_connector_python
+    - py-gsutil
+    - py-multiqc
+    - py-mysql-connector-python
     - samtools
     - shapeit4
     - spark +hadoop
