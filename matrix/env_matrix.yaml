@@ -4,8 +4,8 @@ settings:
   modules_root_base: /software/spack_v1_1_1/install/modules
   container_format: singularity
   modules_tcl_projections:
-    all: "{name}/{version}-{compiler.name}-{compiler.version}"
-    +mpi: "{name}/{version}-{compiler.name}-{compiler.version}-mpi"
+    all: "{name}/{version}"
+    +mpi: "{name}/{version}-mpi"
 
 cpu_families:
   icelake:
