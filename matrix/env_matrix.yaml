@@ -71,7 +71,7 @@ gpu_families:
     slurm_features: [l40s]
 
 # Enabled environment pairs to render.
-# TODO: Generate this list dynamically (see features_to_family.yaml) to avoid hard-coding.
+# If omitted or left empty, generator derives pairs from matrix/features_to_family.yaml.
 enabled_pairs:
   - [zen2, cpu]
   - [zen2, sm80]

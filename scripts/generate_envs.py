@@ -13,6 +13,7 @@ import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MATRIX_FILE = ROOT / "matrix" / "env_matrix.yaml"
+FEATURES_TO_FAMILY_FILE = ROOT / "matrix" / "features_to_family.yaml"
 CPU_TEMPLATE_DIR = ROOT / "templates" / "base" / "cpu"
 GPU_TEMPLATE_DIR = ROOT / "templates" / "base" / "gpu"
 ENV_TEMPLATE_DIR = ROOT / "templates" / "overlay" / "env"
@@ -202,13 +203,79 @@ def write_index(entries: list[dict[str, Any]]) -> None:
     write_yaml(INDEX_FILE, payload)
 
 
+def _parse_enabled_pairs(enabled_pairs: Any, matrix: dict[str, Any]) -> list[tuple[str, str]]:
+    cpu_families = set(matrix.get("cpu_families", {}).keys())
+    gpu_families = set(matrix.get("gpu_families", {}).keys())
+
+    if not isinstance(enabled_pairs, list):
+        raise ValueError("'enabled_pairs' must be a list of [cpu_family, gpu_family] pairs")
+
+    pairs: list[tuple[str, str]] = []
+    for idx, pair in enumerate(enabled_pairs):
+        if not isinstance(pair, list) or len(pair) != 2:
+            raise ValueError(f"enabled_pairs[{idx}] must be a two-item list")
+
+        cpu_family = str(pair[0])
+        gpu_family = str(pair[1])
+
+        if cpu_family not in cpu_families:
+            raise ValueError(f"enabled_pairs[{idx}] has unknown cpu family '{cpu_family}'")
+        if gpu_family not in gpu_families:
+            raise ValueError(f"enabled_pairs[{idx}] has unknown gpu family '{gpu_family}'")
+
+        if (cpu_family, gpu_family) not in pairs:
+            pairs.append((cpu_family, gpu_family))
+
+    return pairs
+
+
+def _derive_enabled_pairs_from_mappings(matrix: dict[str, Any]) -> list[tuple[str, str]]:
+    cpu_families = set(matrix.get("cpu_families", {}).keys())
+    gpu_families = set(matrix.get("gpu_families", {}).keys())
+
+    features_map = load_yaml(FEATURES_TO_FAMILY_FILE)
+    mappings = features_map.get("mappings", [])
+    if not isinstance(mappings, list):
+        raise ValueError("'mappings' in features_to_family.yaml must be a list")
+
+    pairs: set[tuple[str, str]] = set()
+    for idx, item in enumerate(mappings):
+        if not isinstance(item, dict):
+            raise ValueError(f"mappings[{idx}] must be a mapping object")
+
+        cpu_family = str(item.get("cpu_family", "")).strip()
+        gpu_family = str(item.get("gpu_family", "")).strip()
+        if not cpu_family or not gpu_family:
+            raise ValueError(f"mappings[{idx}] must define cpu_family and gpu_family")
+
+        if cpu_family not in cpu_families:
+            raise ValueError(
+                f"mappings[{idx}] has unknown cpu family '{cpu_family}' (not in env_matrix.yaml)"
+            )
+        if gpu_family not in gpu_families:
+            raise ValueError(
+                f"mappings[{idx}] has unknown gpu family '{gpu_family}' (not in env_matrix.yaml)"
+            )
+
+        pairs.add((cpu_family, gpu_family))
+
+    return sorted(pairs)
+
+
+def get_enabled_pairs(matrix: dict[str, Any]) -> list[tuple[str, str]]:
+    enabled_pairs = matrix.get("enabled_pairs")
+    if enabled_pairs:
+        return _parse_enabled_pairs(enabled_pairs, matrix)
+    return _derive_enabled_pairs_from_mappings(matrix)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="check generated files are up to date")
     args = parser.parse_args()
 
     matrix = load_yaml(MATRIX_FILE)
-    enabled_pairs = matrix.get("enabled_pairs", [])
+    enabled_pairs = get_enabled_pairs(matrix)
     settings = matrix.get("settings", {})
     stale = []
     generated_index_entries: list[dict[str, Any]] = []
