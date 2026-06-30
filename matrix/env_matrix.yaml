@@ -71,33 +71,5 @@ gpu_families:
     slurm_features: [l40s]
 
 # Enabled environment pairs to render.
-# If omitted or left empty, generator derives pairs from matrix/features_to_family.yaml.
-enabled_pairs:
-  - [zen2, cpu]
-  - [zen2, sm80]
-  - [skylake, cpu]
-  - [skylake, sm61]
-  - [skylake, sm70]
-  - [skylake, sm75]
-  - [cascadelake, cpu]
-  - [cascadelake, sm75]
-  - [cascadelake, sm86]
-  - [icelake, cpu]
-  - [icelake, sm80]
-  - [icelake, sm86]
-  - [icelake, sm90]
-  - [sapphirerapids, cpu]
-  - [sapphirerapids, sm80]
-  - [sapphirerapids, sm90]
-  - [sapphirerapids, sm100]
-  - [sapphirerapids, sm89]
-  - [zen3, cpu]
-  - [zen3, sm80]
-  - [zen4, cpu]
-  - [zen4, sm80]
-  - [zen4, sm90]
-  - [zen4, sm100]
-  - [zen4, sm89]
-  - [x86v4, cpu]
-  - [x86v4, sm80]
-  - [x86v4, sm89]
+# If omitted or left empty, refresh_env_matrix.sh called and derives pairs from matrix/features_to_family.yaml.
+# enabled_pairs:
