@@ -60,6 +60,78 @@ spack:
   - zlib@1.3.1
   - fmt
   - zstd
+  - bazel
+  - beagle
+  - bedtools2
+  - bgen
+  - bismark
+  - bison
+  - blast-plus
+  - bwa
+  - circos
+  - coordgen
+  - cryoef
+  - eigen build_type=RelWithDebInfo
+  - exonerate
+  - fastp
+  - fastqc
+  - ffmpeg
+  - gatk
+  - gdal
+  - gemma
+  - git-lfs
+  - gnuplot
+  - gradle
+  - hisat2
+  - impute2
+  - ldak
+  - libhugetlbfs
+  - libwebp +libwebpmux
+  - libxc
+  - meme +magick
+  - mesa
+  - meson
+  - miniforge3
+  - mysql +client_only
+  - nextflow
+  - openbabel ~python ~gui
+  - p7zip
+  - parallel
+  - pcre
+  - perl-appconfig
+  - perl-config-simple
+  - perl-file-remove
+  - perl-file-sharedir
+  - perl-file-slurp
+  - perl-getopt-argvfile
+  - perl-http-date
+  - perl-module-install
+  - perl-parallel-forkmanager
+  - perl-parse-yapp
+  - perl-parselex
+  - perl-parsetemplate
+  - perl-pathtools
+  - perl-termreadkey
+  - perl-test-leaktrace
+  - picard
+  - plink2
+  - postgresql +client_only
+  - py-gsutil
+  - py-multiqc
+  - py-mysql-connector-python
+  - samtools
+  - shapeit4
+  - spark +hadoop
+  - star
+  - stringtie
+  - subread
+  - tabix
+  - tcsh
+  - trimgalore
+  - trimmomatic
+  - vcftools
+  - wget
+  - wtdbg2
   modules:
     default:
       enable:
