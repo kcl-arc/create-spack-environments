@@ -16,10 +16,35 @@ Additional `README.md` files are in `templates/overlay/test/` and `environments/
 ### Generator inputs
 
 - `matrix/env_matrix.yaml`
+- `matrix/features_to_family.yaml` (used to derive pairs when `enabled_pairs` is omitted/empty)
 - `templates/base/cpu/*.yaml`
 - `templates/base/gpu/*.yaml`
 - `templates/overlay/env/*.yaml` (optional, for named environment overrides)
 - `templates/overlay/test/*.yaml` (optional, for test-specific overrides)
+
+### Update feature-to-family mappings
+
+Generate `matrix/features_to_family.yaml` from scheduler feature data:
+
+```bash
+python scripts/update_features_to_family.py
+```
+
+Optional overrides can be added in `matrix/features_to_family_overrides.yaml`.
+
+### Run on cluster (recommended deployment pre-step)
+
+When you want mappings and generated environments to reflect live Slurm state, run this on a cluster host with `scontrol` (automatically called by `spack_deploy.py` in hpc-spack_core repo):
+
+```bash
+./scripts/refresh_env_matrix.sh
+```
+
+This performs, in order:
+1. Collect node `Features=` values from Slurm.
+2. Regenerate `matrix/features_to_family.yaml`.
+3. Regenerate `environments/generated/**` and `environments/index.yaml`.
+4. Regenerate `environments/root_install_queue.yaml`.
 
 ### Module naming projections (TCL)
 

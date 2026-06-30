@@ -1,0 +1,4 @@
+# Optional explicit overrides for auto-generated feature mappings.
+# Entries here replace or add mappings keyed by the exact `features` set.
+
+mappings: []
