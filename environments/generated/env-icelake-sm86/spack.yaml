@@ -68,9 +68,9 @@ spack:
         tcl: /software/spack_v1_1_1/install/modules/env-icelake-sm86/
       tcl:
         hash_length: 0
-        naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
+        naming_scheme: '{name}/{version}'
         projections:
-          all: '{name}/{version}-{compiler.name}-{compiler.version}'
-          +mpi: '{name}/{version}-{compiler.name}-{compiler.version}-mpi'
+          all: '{name}/{version}'
+          +mpi: '{name}/{version}-mpi'
   container:
     format: singularity
