@@ -1,64 +1,4 @@
 environments:
-- name: env-zen2-cpu
-  manifest: environments/generated/env-zen2-cpu/spack.yaml
-  constraint: zen2
-  source: generated
-  enabled: true
-- name: env-zen2-cpu-test
-  manifest: environments/generated/env-zen2-cpu-test/spack.yaml
-  constraint: zen2
-  source: generated
-  enabled: true
-- name: env-zen2-sm80
-  manifest: environments/generated/env-zen2-sm80/spack.yaml
-  constraint: zen2
-  source: generated
-  enabled: true
-- name: env-zen2-sm80-test
-  manifest: environments/generated/env-zen2-sm80-test/spack.yaml
-  constraint: zen2
-  source: generated
-  enabled: true
-- name: env-skylake-cpu
-  manifest: environments/generated/env-skylake-cpu/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-cpu-test
-  manifest: environments/generated/env-skylake-cpu-test/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-sm61
-  manifest: environments/generated/env-skylake-sm61/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-sm61-test
-  manifest: environments/generated/env-skylake-sm61-test/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-sm70
-  manifest: environments/generated/env-skylake-sm70/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-sm70-test
-  manifest: environments/generated/env-skylake-sm70-test/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-sm75
-  manifest: environments/generated/env-skylake-sm75/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
-- name: env-skylake-sm75-test
-  manifest: environments/generated/env-skylake-sm75-test/spack.yaml
-  constraint: skylake_avx512
-  source: generated
-  enabled: true
 - name: env-cascadelake-cpu
   manifest: environments/generated/env-cascadelake-cpu/spack.yaml
   constraint: cascadelake
@@ -139,13 +79,13 @@ environments:
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sapphirerapids-sm80
-  manifest: environments/generated/env-sapphirerapids-sm80/spack.yaml
+- name: env-sapphirerapids-sm100
+  manifest: environments/generated/env-sapphirerapids-sm100/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sapphirerapids-sm80-test
-  manifest: environments/generated/env-sapphirerapids-sm80-test/spack.yaml
+- name: env-sapphirerapids-sm100-test
+  manifest: environments/generated/env-sapphirerapids-sm100-test/spack.yaml
   constraint: sapphirerapids
   source: generated
   enabled: true
@@ -159,24 +99,94 @@ environments:
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-sapphirerapids-sm100
-  manifest: environments/generated/env-sapphirerapids-sm100/spack.yaml
-  constraint: sapphirerapids
+- name: env-skylake-cpu
+  manifest: environments/generated/env-skylake-cpu/spack.yaml
+  constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-sapphirerapids-sm100-test
-  manifest: environments/generated/env-sapphirerapids-sm100-test/spack.yaml
-  constraint: sapphirerapids
+- name: env-skylake-cpu-test
+  manifest: environments/generated/env-skylake-cpu-test/spack.yaml
+  constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-sapphirerapids-sm89
-  manifest: environments/generated/env-sapphirerapids-sm89/spack.yaml
-  constraint: sapphirerapids
+- name: env-skylake-sm61
+  manifest: environments/generated/env-skylake-sm61/spack.yaml
+  constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-sapphirerapids-sm89-test
-  manifest: environments/generated/env-sapphirerapids-sm89-test/spack.yaml
-  constraint: sapphirerapids
+- name: env-skylake-sm61-test
+  manifest: environments/generated/env-skylake-sm61-test/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm70
+  manifest: environments/generated/env-skylake-sm70/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm70-test
+  manifest: environments/generated/env-skylake-sm70-test/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm75
+  manifest: environments/generated/env-skylake-sm75/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-skylake-sm75-test
+  manifest: environments/generated/env-skylake-sm75-test/spack.yaml
+  constraint: skylake_avx512
+  source: generated
+  enabled: true
+- name: env-x86v4-cpu
+  manifest: environments/generated/env-x86v4-cpu/spack.yaml
+  constraint: x86_64_v4
+  source: generated
+  enabled: true
+- name: env-x86v4-cpu-test
+  manifest: environments/generated/env-x86v4-cpu-test/spack.yaml
+  constraint: x86_64_v4
+  source: generated
+  enabled: true
+- name: env-x86v4-sm80
+  manifest: environments/generated/env-x86v4-sm80/spack.yaml
+  constraint: x86_64_v4
+  source: generated
+  enabled: true
+- name: env-x86v4-sm80-test
+  manifest: environments/generated/env-x86v4-sm80-test/spack.yaml
+  constraint: x86_64_v4
+  source: generated
+  enabled: true
+- name: env-x86v4-sm89
+  manifest: environments/generated/env-x86v4-sm89/spack.yaml
+  constraint: x86_64_v4
+  source: generated
+  enabled: true
+- name: env-x86v4-sm89-test
+  manifest: environments/generated/env-x86v4-sm89-test/spack.yaml
+  constraint: x86_64_v4
+  source: generated
+  enabled: true
+- name: env-zen2-cpu
+  manifest: environments/generated/env-zen2-cpu/spack.yaml
+  constraint: zen2
+  source: generated
+  enabled: true
+- name: env-zen2-cpu-test
+  manifest: environments/generated/env-zen2-cpu-test/spack.yaml
+  constraint: zen2
+  source: generated
+  enabled: true
+- name: env-zen2-sm80
+  manifest: environments/generated/env-zen2-sm80/spack.yaml
+  constraint: zen2
+  source: generated
+  enabled: true
+- name: env-zen2-sm80-test
+  manifest: environments/generated/env-zen2-sm80-test/spack.yaml
+  constraint: zen2
   source: generated
   enabled: true
 - name: env-zen3-cpu
@@ -209,26 +219,6 @@ environments:
   constraint: zen4
   source: generated
   enabled: true
-- name: env-zen4-sm80
-  manifest: environments/generated/env-zen4-sm80/spack.yaml
-  constraint: zen4
-  source: generated
-  enabled: true
-- name: env-zen4-sm80-test
-  manifest: environments/generated/env-zen4-sm80-test/spack.yaml
-  constraint: zen4
-  source: generated
-  enabled: true
-- name: env-zen4-sm90
-  manifest: environments/generated/env-zen4-sm90/spack.yaml
-  constraint: zen4
-  source: generated
-  enabled: true
-- name: env-zen4-sm90-test
-  manifest: environments/generated/env-zen4-sm90-test/spack.yaml
-  constraint: zen4
-  source: generated
-  enabled: true
 - name: env-zen4-sm100
   manifest: environments/generated/env-zen4-sm100/spack.yaml
   constraint: zen4
@@ -236,6 +226,16 @@ environments:
   enabled: true
 - name: env-zen4-sm100-test
   manifest: environments/generated/env-zen4-sm100-test/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm80
+  manifest: environments/generated/env-zen4-sm80/spack.yaml
+  constraint: zen4
+  source: generated
+  enabled: true
+- name: env-zen4-sm80-test
+  manifest: environments/generated/env-zen4-sm80-test/spack.yaml
   constraint: zen4
   source: generated
   enabled: true
@@ -249,33 +249,13 @@ environments:
   constraint: zen4
   source: generated
   enabled: true
-- name: env-x86v4-cpu
-  manifest: environments/generated/env-x86v4-cpu/spack.yaml
-  constraint: x86_64_v4
+- name: env-zen4-sm90
+  manifest: environments/generated/env-zen4-sm90/spack.yaml
+  constraint: zen4
   source: generated
   enabled: true
-- name: env-x86v4-cpu-test
-  manifest: environments/generated/env-x86v4-cpu-test/spack.yaml
-  constraint: x86_64_v4
-  source: generated
-  enabled: true
-- name: env-x86v4-sm80
-  manifest: environments/generated/env-x86v4-sm80/spack.yaml
-  constraint: x86_64_v4
-  source: generated
-  enabled: true
-- name: env-x86v4-sm80-test
-  manifest: environments/generated/env-x86v4-sm80-test/spack.yaml
-  constraint: x86_64_v4
-  source: generated
-  enabled: true
-- name: env-x86v4-sm89
-  manifest: environments/generated/env-x86v4-sm89/spack.yaml
-  constraint: x86_64_v4
-  source: generated
-  enabled: true
-- name: env-x86v4-sm89-test
-  manifest: environments/generated/env-x86v4-sm89-test/spack.yaml
-  constraint: x86_64_v4
+- name: env-zen4-sm90-test
+  manifest: environments/generated/env-zen4-sm90-test/spack.yaml
+  constraint: zen4
   source: generated
   enabled: true
