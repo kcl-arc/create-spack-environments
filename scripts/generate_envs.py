@@ -159,7 +159,7 @@ def ensure_generated_structure(data: dict[str, Any], env_name: str, settings: di
 
     tcl = default.setdefault("tcl", {})
     tcl.setdefault("hash_length", 0)
-    tcl.setdefault("naming_scheme", "{name}/{version}-{compiler.name}-{compiler.version}")
+    tcl.setdefault("naming_scheme", "{name}/{version}")
     configured_projections = settings.get("modules_tcl_projections")
     if isinstance(configured_projections, dict):
         tcl.setdefault("projections", configured_projections)

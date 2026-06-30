@@ -37,8 +37,8 @@ spack:
     default:
       tcl:
         projections:
-          all: "{name}/{version}-{compiler.name}-{compiler.version}"
-          +mpi: "{name}/{version}-{compiler.name}-{compiler.version}-mpi"
+          all: "{name}/{version}"
+          +mpi: "{name}/{version}-mpi"
 ```
 
 This would override/augment the specs and projections in the prod `cascadelake.yaml` template for all test environments like `env-cascadelake-cpu-test` and `env-cascadelake-sm70-test`.
