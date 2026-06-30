@@ -40,7 +40,7 @@ jobs:
         run: python3 scripts/export_root_install_queue.py
 
       - name: Commit generated root install queue to current branch
-        if: ${{ github.event_name == 'pull_request' }}
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref != 'staging' && github.head_ref != 'production' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
