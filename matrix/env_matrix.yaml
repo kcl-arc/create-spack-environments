@@ -10,13 +10,13 @@ settings:
 cpu_families:
   icelake:
     slurm_features: [icelake]
-  skylake:
+  skylake_avx512:
     slurm_features: [skylake_avx512]
   cascadelake:
     slurm_features: [cascadelake]
   sapphirerapids:
     slurm_features: [sapphirerapids]
-  x86v4:
+  x86_64_v4:
     slurm_features: [x86_64_v4]
   zen2:
     slurm_features: [zen2]
