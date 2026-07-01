@@ -42,9 +42,9 @@ spack:
       version:
       - '12.8'
     lammps:
-      variants: +cuda cuda_arch=70
+      variants: +cuda cuda_arch=61
     nccl:
-      variants: +cuda cuda_arch=70
+      variants: +cuda cuda_arch=61
   specs:
   - cmake@4.1.2
   - curl@8.15.0
@@ -137,7 +137,7 @@ spack:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-skylake-sm70/
+        tcl: /software/spack_v1_1_1/install/modules/env-skylake_avx512-sm61/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}'

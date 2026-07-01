@@ -29,8 +29,8 @@ CPU_TOKEN_TO_FAMILY: list[tuple[str, str]] = [
     ("icelake", "icelake"),
     ("cascadelake", "cascadelake"),
     ("sapphirerapids", "sapphirerapids"),
-    ("x86_64_v4", "x86v4"),
-    ("skylake_avx512", "skylake"),
+    ("x86_64_v4", "x86_64_v4"),
+    ("skylake_avx512", "skylake_avx512"),
 ]
 
 # Higher rank wins when multiple GPU tokens are present.
