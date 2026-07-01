@@ -161,7 +161,7 @@ spack:
   - zlib@1.3.1
   - fmt
   - zstd
-  - bazel
+  - bazel@7.4.1
   - beagle
   - bedtools2
   - bgen
@@ -215,7 +215,7 @@ spack:
   - perl-termreadkey
   - perl-test-leaktrace
   - picard
-  - plink2
+  - plink2@2.0.0-a.6.9
   - postgresql +client_only
   - py-gsutil
   - py-multiqc

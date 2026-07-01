@@ -1,20 +1,84 @@
 items:
+- env: env-skylake-cpu
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: bazel@7.4.1
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
-  spec: bazel
+  spec: bazel@7.4.1
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: bazel
+  spec: bazel@7.4.1
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: bazel
+  spec: bazel@7.4.1
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: bazel
+  spec: bazel@7.4.1
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: beagle
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: beagle
   source: environments
@@ -31,6 +95,38 @@ items:
   spec: beagle
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: bedtools2
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: bedtools2
   source: environments
@@ -47,6 +143,38 @@ items:
   spec: bedtools2
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: bgen
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: bgen
   source: environments
@@ -63,6 +191,38 @@ items:
   spec: bgen
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: bismark
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: bismark
   source: environments
@@ -79,6 +239,38 @@ items:
   spec: bismark
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: bison
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: bison
   source: environments
@@ -95,6 +287,38 @@ items:
   spec: bison
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: blast-plus
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: blast-plus
   source: environments
@@ -111,6 +335,38 @@ items:
   spec: blast-plus
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: bwa
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: bwa
   source: environments
@@ -127,6 +383,38 @@ items:
   spec: bwa
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: circos
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: circos
   source: environments
@@ -247,6 +535,38 @@ items:
   spec: cmake@4.1.2
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: coordgen
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: coordgen
   source: environments
@@ -263,6 +583,38 @@ items:
   spec: coordgen
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: cryoef
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: cryoef
   source: environments
@@ -383,6 +735,38 @@ items:
   spec: curl@8.15.0
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: eigen build_type=RelWithDebInfo
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: eigen build_type=RelWithDebInfo
   source: environments
@@ -399,6 +783,38 @@ items:
   spec: eigen build_type=RelWithDebInfo
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: exonerate
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: exonerate
   source: environments
@@ -415,6 +831,38 @@ items:
   spec: exonerate
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: fastp
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: fastp
   source: environments
@@ -431,6 +879,38 @@ items:
   spec: fastp
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: fastqc
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: fastqc
   source: environments
@@ -447,6 +927,38 @@ items:
   spec: fastqc
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: ffmpeg
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: ffmpeg
   source: environments
@@ -567,6 +1079,38 @@ items:
   spec: fmt
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: gatk
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: gatk
   source: environments
@@ -583,6 +1127,38 @@ items:
   spec: gatk
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: gdal
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: gdal
   source: environments
@@ -599,6 +1175,38 @@ items:
   spec: gdal
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: gemma
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: gemma
   source: environments
@@ -615,6 +1223,38 @@ items:
   spec: gemma
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: git-lfs
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: git-lfs
   source: environments
@@ -631,6 +1271,38 @@ items:
   spec: git-lfs
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: gnuplot
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: gnuplot
   source: environments
@@ -647,6 +1319,38 @@ items:
   spec: gnuplot
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: gradle
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: gradle
   source: environments
@@ -871,6 +1575,38 @@ items:
   spec: hdf5@1.14.6~mpi +hl
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: hisat2
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: hisat2
   source: environments
@@ -887,6 +1623,38 @@ items:
   spec: hisat2
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: impute2
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: impute2
   source: environments
@@ -1215,6 +1983,38 @@ items:
   spec: intel-oneapi-mpi@2021.17.0
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: ldak
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: ldak
   source: environments
@@ -1231,6 +2031,38 @@ items:
   spec: ldak
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: libhugetlbfs
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: libhugetlbfs
   source: environments
@@ -1247,6 +2079,38 @@ items:
   spec: libhugetlbfs
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: libwebp +libwebpmux
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: libwebp +libwebpmux
   source: environments
@@ -1263,6 +2127,38 @@ items:
   spec: libwebp +libwebpmux
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: libxc
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: libxc
   source: environments
@@ -1383,6 +2279,38 @@ items:
   spec: llvm-openmp@20.1.8
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: meme +magick
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: meme +magick
   source: environments
@@ -1399,6 +2327,38 @@ items:
   spec: meme +magick
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: mesa
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: mesa
   source: environments
@@ -1415,6 +2375,38 @@ items:
   spec: mesa
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: meson
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: meson
   source: environments
@@ -1431,6 +2423,38 @@ items:
   spec: meson
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: miniforge3
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: miniforge3
   source: environments
@@ -1447,6 +2471,38 @@ items:
   spec: miniforge3
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: mysql +client_only
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: mysql +client_only
   source: environments
@@ -1671,6 +2727,38 @@ items:
   spec: netlib-scalapack@2.2.2+shared build_type=Release
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: nextflow
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: nextflow
   source: environments
@@ -1687,6 +2775,38 @@ items:
   spec: nextflow
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: openbabel ~python ~gui
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: openbabel ~python ~gui
   source: environments
@@ -1807,6 +2927,38 @@ items:
   spec: openmpi@5.0.8
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: p7zip
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: p7zip
   source: environments
@@ -1823,6 +2975,38 @@ items:
   spec: p7zip
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: parallel
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: parallel
   source: environments
@@ -1839,6 +3023,38 @@ items:
   spec: parallel
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: pcre
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: pcre
   source: environments
@@ -1855,6 +3071,38 @@ items:
   spec: pcre
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-appconfig
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-appconfig
   source: environments
@@ -1871,6 +3119,38 @@ items:
   spec: perl-appconfig
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-config-simple
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-config-simple
   source: environments
@@ -1887,6 +3167,38 @@ items:
   spec: perl-config-simple
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-file-remove
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-file-remove
   source: environments
@@ -1903,6 +3215,38 @@ items:
   spec: perl-file-remove
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-file-sharedir
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-file-sharedir
   source: environments
@@ -1919,6 +3263,38 @@ items:
   spec: perl-file-sharedir
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-file-slurp
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-file-slurp
   source: environments
@@ -1935,6 +3311,38 @@ items:
   spec: perl-file-slurp
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-getopt-argvfile
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-getopt-argvfile
   source: environments
@@ -1951,6 +3359,38 @@ items:
   spec: perl-getopt-argvfile
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-http-date
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-http-date
   source: environments
@@ -1967,6 +3407,38 @@ items:
   spec: perl-http-date
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-module-install
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-module-install
   source: environments
@@ -1983,6 +3455,38 @@ items:
   spec: perl-module-install
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-parallel-forkmanager
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-parallel-forkmanager
   source: environments
@@ -1999,6 +3503,38 @@ items:
   spec: perl-parallel-forkmanager
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-parse-yapp
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-parse-yapp
   source: environments
@@ -2015,6 +3551,38 @@ items:
   spec: perl-parse-yapp
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-parselex
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-parselex
   source: environments
@@ -2031,6 +3599,38 @@ items:
   spec: perl-parselex
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-parsetemplate
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-parsetemplate
   source: environments
@@ -2047,6 +3647,38 @@ items:
   spec: perl-parsetemplate
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-pathtools
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-pathtools
   source: environments
@@ -2063,6 +3695,38 @@ items:
   spec: perl-pathtools
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-termreadkey
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-termreadkey
   source: environments
@@ -2079,6 +3743,38 @@ items:
   spec: perl-termreadkey
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: perl-test-leaktrace
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: perl-test-leaktrace
   source: environments
@@ -2095,6 +3791,38 @@ items:
   spec: perl-test-leaktrace
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: picard
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: picard
   source: environments
@@ -2111,22 +3839,86 @@ items:
   spec: picard
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: plink2@2.0.0-a.6.9
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
-  spec: plink2
+  spec: plink2@2.0.0-a.6.9
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: plink2
+  spec: plink2@2.0.0-a.6.9
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: plink2
+  spec: plink2@2.0.0-a.6.9
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: plink2
+  spec: plink2@2.0.0-a.6.9
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: postgresql +client_only
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: postgresql +client_only
   source: environments
@@ -2143,6 +3935,38 @@ items:
   spec: postgresql +client_only
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: py-gsutil
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: py-gsutil
   source: environments
@@ -2159,6 +3983,38 @@ items:
   spec: py-gsutil
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: py-multiqc
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: py-multiqc
   source: environments
@@ -2175,6 +4031,38 @@ items:
   spec: py-multiqc
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: py-mysql-connector-python
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: py-mysql-connector-python
   source: environments
@@ -2191,6 +4079,38 @@ items:
   spec: py-mysql-connector-python
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: samtools
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: samtools
   source: environments
@@ -2207,6 +4127,38 @@ items:
   spec: samtools
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: shapeit4
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: shapeit4
   source: environments
@@ -2223,6 +4175,38 @@ items:
   spec: shapeit4
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: spark +hadoop
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: spark +hadoop
   source: environments
@@ -2239,6 +4223,38 @@ items:
   spec: spark +hadoop
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: star
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: star
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: star
   source: environments
@@ -2255,6 +4271,38 @@ items:
   spec: star
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: stringtie
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: stringtie
   source: environments
@@ -2271,6 +4319,38 @@ items:
   spec: stringtie
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: subread
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: subread
   source: environments
@@ -2287,6 +4367,38 @@ items:
   spec: subread
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: tabix
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: tabix
   source: environments
@@ -2303,6 +4415,38 @@ items:
   spec: tabix
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: tcsh
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: tcsh
   source: environments
@@ -2319,6 +4463,38 @@ items:
   spec: tcsh
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: trimgalore
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: trimgalore
   source: environments
@@ -2335,6 +4511,38 @@ items:
   spec: trimgalore
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: trimmomatic
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: trimmomatic
   source: environments
@@ -2351,6 +4559,38 @@ items:
   spec: trimmomatic
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: vcftools
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: vcftools
   source: environments
@@ -2367,6 +4607,38 @@ items:
   spec: vcftools
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: wget
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: wget
   source: environments
@@ -2383,6 +4655,38 @@ items:
   spec: wget
   source: environments
   constraint: zen2
+- env: env-skylake-cpu
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-cpu-test
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm61-test
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm70-test
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake-sm75-test
+  spec: wtdbg2
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: wtdbg2
   source: environments
