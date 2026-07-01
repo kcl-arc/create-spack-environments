@@ -99,73 +99,73 @@ environments:
   constraint: sapphirerapids
   source: generated
   enabled: true
-- name: env-skylake-cpu
-  manifest: environments/generated/env-skylake-cpu/spack.yaml
+- name: env-skylake_avx512-cpu
+  manifest: environments/generated/env-skylake_avx512-cpu/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-cpu-test
-  manifest: environments/generated/env-skylake-cpu-test/spack.yaml
+- name: env-skylake_avx512-cpu-test
+  manifest: environments/generated/env-skylake_avx512-cpu-test/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-sm61
-  manifest: environments/generated/env-skylake-sm61/spack.yaml
+- name: env-skylake_avx512-sm61
+  manifest: environments/generated/env-skylake_avx512-sm61/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-sm61-test
-  manifest: environments/generated/env-skylake-sm61-test/spack.yaml
+- name: env-skylake_avx512-sm61-test
+  manifest: environments/generated/env-skylake_avx512-sm61-test/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-sm70
-  manifest: environments/generated/env-skylake-sm70/spack.yaml
+- name: env-skylake_avx512-sm70
+  manifest: environments/generated/env-skylake_avx512-sm70/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-sm70-test
-  manifest: environments/generated/env-skylake-sm70-test/spack.yaml
+- name: env-skylake_avx512-sm70-test
+  manifest: environments/generated/env-skylake_avx512-sm70-test/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-sm75
-  manifest: environments/generated/env-skylake-sm75/spack.yaml
+- name: env-skylake_avx512-sm75
+  manifest: environments/generated/env-skylake_avx512-sm75/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-skylake-sm75-test
-  manifest: environments/generated/env-skylake-sm75-test/spack.yaml
+- name: env-skylake_avx512-sm75-test
+  manifest: environments/generated/env-skylake_avx512-sm75-test/spack.yaml
   constraint: skylake_avx512
   source: generated
   enabled: true
-- name: env-x86v4-cpu
-  manifest: environments/generated/env-x86v4-cpu/spack.yaml
+- name: env-x86_64_v4-cpu
+  manifest: environments/generated/env-x86_64_v4-cpu/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-cpu-test
-  manifest: environments/generated/env-x86v4-cpu-test/spack.yaml
+- name: env-x86_64_v4-cpu-test
+  manifest: environments/generated/env-x86_64_v4-cpu-test/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-sm80
-  manifest: environments/generated/env-x86v4-sm80/spack.yaml
+- name: env-x86_64_v4-sm80
+  manifest: environments/generated/env-x86_64_v4-sm80/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-sm80-test
-  manifest: environments/generated/env-x86v4-sm80-test/spack.yaml
+- name: env-x86_64_v4-sm80-test
+  manifest: environments/generated/env-x86_64_v4-sm80-test/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-sm89
-  manifest: environments/generated/env-x86v4-sm89/spack.yaml
+- name: env-x86_64_v4-sm89
+  manifest: environments/generated/env-x86_64_v4-sm89/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true
-- name: env-x86v4-sm89-test
-  manifest: environments/generated/env-x86v4-sm89-test/spack.yaml
+- name: env-x86_64_v4-sm89-test
+  manifest: environments/generated/env-x86_64_v4-sm89-test/spack.yaml
   constraint: x86_64_v4
   source: generated
   enabled: true

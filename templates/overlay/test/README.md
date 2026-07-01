@@ -4,7 +4,7 @@ This directory contains optional test-specific overrides for Spack environment c
 
 ## How it works
 
-When `generate_envs.py` creates test environments (e.g., `env-skylake-sm70-test`), it applies the standard CPU and GPU base templates, then optionally merges env/test overlays **if they exist**.
+When `generate_envs.py` creates test environments (e.g., `env-skylake_avx512-sm70-test`), it applies the standard CPU and GPU base templates, then optionally merges env/test overlays **if they exist**.
 
 ### Merge order for test environments:
 1. `templates/base/cpu/{cpu_family}.yaml`  
