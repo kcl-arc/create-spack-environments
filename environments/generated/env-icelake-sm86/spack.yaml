@@ -7,37 +7,15 @@ spack:
     all:
       target:
       - icelake
-    c:
-      prefer:
-      - gcc@12.5.0
-    cxx:
-      prefer:
-      - gcc@12.5.0
-    fortran:
-      prefer:
-      - gcc@12.5.0
-    llvm:
-      version:
-      - 18.1.8
-    clang:
-      version:
-      - 18.1.8
     gcc:
       externals:
-      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+      - spec: gcc@14.3.1 languages:='c,c++,fortran'
         prefix: /usr
         extra_attributes:
           compilers:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@12.5.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2
-        extra_attributes:
-          compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-icelake/gcc-13.3.0/gcc-12.5.0-eypqskxwjysr3iayxmxyg4itmr66n7f2/bin/gfortran
     cuda:
       version:
       - '13.3'
@@ -45,27 +23,21 @@ spack:
       variants: +cuda cuda_arch=86
     nccl:
       variants: +cuda cuda_arch=86
+    llvm:
+      version:
+      - 18.1.8
+    clang:
+      version:
+      - 18.1.8
   specs:
-  - cmake@4.1.2
-  - curl@8.15.0
-  - hdf5@1.14.6~mpi +hl
-  - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
-  - intel-oneapi-compilers@2025.3.1
-  - intel-oneapi-mkl@2025.3.0+shared threads=openmp
-  - intel-oneapi-mpi@2021.17.0
-  - netcdf-c@4.9.3
-  - netlib-scalapack@2.2.2+shared build_type=Release
-  - openmpi@5.0.8
-  - llvm-openmp@20.1.8
-  - zlib@1.3.1
-  - fmt
-  - zstd
+  - gcc@12.5.0
+  - llvm@15.0.7
   modules:
     default:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-icelake-sm86/
+        tcl: /software/spack_v1_2_1/install/modules/env-icelake-sm86/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}'
