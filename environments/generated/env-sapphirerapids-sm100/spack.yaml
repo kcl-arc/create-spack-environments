@@ -7,37 +7,15 @@ spack:
     all:
       target:
       - sapphirerapids
-    c:
-      prefer:
-      - gcc@13.4.0
-    cxx:
-      prefer:
-      - gcc@13.4.0
-    fortran:
-      prefer:
-      - gcc@13.4.0
-    llvm:
-      version:
-      - 18.1.8
-    clang:
-      version:
-      - 18.1.8
     gcc:
       externals:
-      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+      - spec: gcc@14.3.1 languages:='c,c++,fortran'
         prefix: /usr
         extra_attributes:
           compilers:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti
-        extra_attributes:
-          compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-sapphirerapids/gcc-13.3.0/gcc-13.4.0-7tjk3qchkrkshf6r3rbt4tgytooj6iti/bin/gfortran
     cuda:
       version:
       - '13.3'
@@ -45,12 +23,22 @@ spack:
       variants: +cuda cuda_arch=100
     nccl:
       variants: +cuda cuda_arch=100
+    llvm:
+      version:
+      - 18.1.8
+    clang:
+      version:
+      - 18.1.8
+  specs:
+  - gcc@13.4.0
+  - llvm@17.0.6
+  - llvm@18.1.8
   modules:
     default:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-sapphirerapids-sm100/
+        tcl: /software/spack_v1_2_1/install/modules/env-sapphirerapids-sm100/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}'
