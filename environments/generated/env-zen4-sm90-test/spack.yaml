@@ -7,37 +7,15 @@ spack:
     all:
       target:
       - zen4
-    c:
-      prefer:
-      - gcc@13.4.0
-    cxx:
-      prefer:
-      - gcc@13.4.0
-    fortran:
-      prefer:
-      - gcc@13.4.0
-    llvm:
-      version:
-      - 17.0.6
-    clang:
-      version:
-      - 17.0.6
     gcc:
       externals:
-      - spec: gcc@13.3.0 languages:='c,c++,fortran'
+      - spec: gcc@14.3.1 languages:='c,c++,fortran'
         prefix: /usr
         extra_attributes:
           compilers:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@13.4.0 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt
-        extra_attributes:
-          compilers:
-            c: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/gcc
-            cxx: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/g++
-            fortran: /software/spack_v1_1_1/install/apps/linux-ubuntu24.04-zen4/gcc-13.3.0/gcc-13.4.0-wr6hgh2fgxoqxjpdul5nbm5eqtpvkipt/bin/gfortran
     cuda:
       version:
       - '13.3'
@@ -45,12 +23,22 @@ spack:
       variants: +cuda cuda_arch=90
     nccl:
       variants: +cuda cuda_arch=90
+    llvm:
+      version:
+      - 17.0.6
+    clang:
+      version:
+      - 17.0.6
+  specs:
+  - gcc@13.4.0
+  - llvm@17.0.6
+  - llvm@18.1.8
   modules:
     default:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_1_1/install/modules/env-zen4-sm90-test/
+        tcl: /software/spack_v1_2_1/install/modules/env-zen4-sm90-test/
       tcl:
         hash_length: 0
         naming_scheme: '{name}/{version}'
