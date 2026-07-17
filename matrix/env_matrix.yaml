@@ -1,7 +1,7 @@
 # CPU x GPU family matrix used to generate concrete environments.
 
 settings:
-  modules_root_base: /software/spack_v1_1_1/install/modules
+  modules_root_base: /software/spack_v1_2_1/install/modules
   container_format: singularity
   modules_tcl_projections:
     all: "{name}/{version}"
