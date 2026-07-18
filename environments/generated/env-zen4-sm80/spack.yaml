@@ -31,8 +31,6 @@ spack:
       - 15.0.7
   specs:
   - gcc@13.4.0
-  - llvm@17.0.6
-  - llvm@18.1.8
   modules:
     default:
       enable:
