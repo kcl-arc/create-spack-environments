@@ -17,4 +17,4 @@ spack:
             fortran: /usr/bin/gfortran
   specs:
     - gcc@12.5.0
-    - llvm@15.0.7
+    # - llvm@15.0.7
