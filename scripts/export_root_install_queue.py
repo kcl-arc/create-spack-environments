@@ -33,6 +33,19 @@ def normalize_spec(spec: str) -> str:
     return " ".join(spec.split())
 
 
+def has_target_constraint(spec: str) -> bool:
+    return bool(re.search(r"(^|\s)target=", spec))
+
+
+def with_target_constraint(spec: str, constraint: str | None) -> str:
+    normalized = normalize_spec(spec)
+    if not constraint:
+        return normalized
+    if has_target_constraint(normalized):
+        return normalized
+    return f"{normalized} target={constraint}"
+
+
 def _extract_spec_strings(node: Any) -> list[str]:
     if isinstance(node, str):
         return [node]
@@ -112,9 +125,10 @@ def queue_items_from_index(index: dict[str, Any]) -> list[dict[str, Any]]:
     for spec, constraint in sorted(grouped.keys()):
         envs = sorted(grouped[(spec, constraint)]["envs"])
         for env_name in envs:
+            constrained_spec = with_target_constraint(spec, constraint)
             item = {
                 "env": env_name,
-                "spec": spec,
+                "spec": constrained_spec,
                 "source": "environments",
             }
             if constraint:
