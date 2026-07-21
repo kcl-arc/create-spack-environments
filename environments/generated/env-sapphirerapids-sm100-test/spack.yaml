@@ -130,14 +130,14 @@ spack:
       - 18.1.8
     gcc:
       externals:
-      - spec: gcc@14.3.1 languages:='c,c++,fortran'
+      - spec: gcc@14.3.1 target=sapphirerapids languages:='c,c++,fortran'
         prefix: /usr
         extra_attributes:
           compilers:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@13.4.0 languages:='c,c++,fortran'
+      - spec: gcc@13.4.0 target=sapphirerapids languages:='c,c++,fortran'
         prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-tmoasguzk5j3vwh4tdhp2yzlv7gucvfd
         extra_attributes:
           compilers:

@@ -130,14 +130,14 @@ spack:
       - 15.0.7
     gcc:
       externals:
-      - spec: gcc@14.3.1 languages:='c,c++,fortran'
+      - spec: gcc@14.3.1 target=zen2 languages:='c,c++,fortran'
         prefix: /usr
         extra_attributes:
           compilers:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      - spec: gcc@12.5.0 languages:='c,c++,fortran'
+      - spec: gcc@12.5.0 target=zen2 languages:='c,c++,fortran'
         prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle
         extra_attributes:
           compilers:
