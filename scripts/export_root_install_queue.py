@@ -37,6 +37,10 @@ def has_target_constraint(spec: str) -> bool:
     return bool(re.search(r"(^|\s)target=", spec))
 
 
+def has_compiler_constraint(spec: str) -> bool:
+    return bool(re.search(r"(^|\s)%[^\s]+", spec))
+
+
 def with_target_constraint(spec: str, constraint: str | None) -> str:
     normalized = normalize_spec(spec)
     if not constraint:
@@ -44,6 +48,19 @@ def with_target_constraint(spec: str, constraint: str | None) -> str:
     if has_target_constraint(normalized):
         return normalized
     return f"{normalized} target={constraint}"
+
+
+def with_compiler_constraint(spec: str, compiler: str | None) -> str:
+    normalized = normalize_spec(spec)
+    if not compiler:
+        return normalized
+    if has_compiler_constraint(normalized):
+        return normalized
+
+    compiler_value = compiler.lstrip("%")
+    if not compiler_value:
+        return normalized
+    return f"{normalized} %{compiler_value}"
 
 
 def _extract_spec_strings(node: Any) -> list[str]:
@@ -74,9 +91,52 @@ def is_root_spec(spec: str) -> bool:
     return bool(re.match(r"^[A-Za-z0-9][A-Za-z0-9_.-]*", value))
 
 
+def _first_preferred_compiler(packages: dict[str, Any], key: str) -> str | None:
+    section = packages.get(key)
+    if not isinstance(section, dict):
+        return None
+
+    preferred = section.get("prefer")
+    if not isinstance(preferred, list) or not preferred:
+        return None
+
+    first = preferred[0]
+    if not isinstance(first, str):
+        return None
+    value = normalize_spec(first).lstrip("%")
+    return value or None
+
+
+def extract_compiler_pin(spack_cfg: dict[str, Any]) -> str | None:
+    packages = spack_cfg.get("packages")
+    if not isinstance(packages, dict):
+        return None
+
+    all_pkg = packages.get("all")
+    if isinstance(all_pkg, dict):
+        compiler_list = all_pkg.get("compiler")
+        if isinstance(compiler_list, list) and compiler_list:
+            first_compiler = compiler_list[0]
+            if isinstance(first_compiler, str):
+                candidate = normalize_spec(first_compiler).lstrip("%")
+                if candidate:
+                    return candidate
+
+    preferred_compilers = {
+        _first_preferred_compiler(packages, "c"),
+        _first_preferred_compiler(packages, "cxx"),
+        _first_preferred_compiler(packages, "fortran"),
+    }
+    preferred_compilers.discard(None)
+
+    if len(preferred_compilers) == 1:
+        return next(iter(preferred_compilers))
+    return None
+
+
 def queue_items_from_index(index: dict[str, Any]) -> list[dict[str, Any]]:
     entries = index.get("environments", [])
-    grouped: dict[tuple[str, str | None], dict[str, Any]] = {}
+    grouped: dict[tuple[str, str | None, str | None], dict[str, Any]] = {}
 
     for entry in entries:
         if not isinstance(entry, dict):
@@ -106,26 +166,29 @@ def queue_items_from_index(index: dict[str, Any]) -> list[dict[str, Any]]:
         manifest_doc = load_yaml(manifest_path)
         spack_cfg = manifest_doc.get("spack", {}) if isinstance(manifest_doc, dict) else {}
         specs_node = spack_cfg.get("specs", []) if isinstance(spack_cfg, dict) else []
+        compiler_pin = extract_compiler_pin(spack_cfg) if isinstance(spack_cfg, dict) else None
 
         for raw_spec in _extract_spec_strings(specs_node):
             if not is_root_spec(raw_spec):
                 continue
 
             spec = normalize_spec(raw_spec)
-            key = (spec, constraint)
+            key = (spec, constraint, compiler_pin)
             if key not in grouped:
                 grouped[key] = {
                     "spec": spec,
                     "constraint": constraint,
+                    "compiler": compiler_pin,
                     "envs": set(),
                 }
             grouped[key]["envs"].add(env_name)
 
     items: list[dict[str, Any]] = []
-    for spec, constraint in sorted(grouped.keys()):
-        envs = sorted(grouped[(spec, constraint)]["envs"])
+    for spec, constraint, compiler_pin in sorted(grouped.keys()):
+        envs = sorted(grouped[(spec, constraint, compiler_pin)]["envs"])
         for env_name in envs:
-            constrained_spec = with_target_constraint(spec, constraint)
+            constrained_spec = with_compiler_constraint(spec, compiler_pin)
+            constrained_spec = with_target_constraint(constrained_spec, constraint)
             item = {
                 "env": env_name,
                 "spec": constrained_spec,
