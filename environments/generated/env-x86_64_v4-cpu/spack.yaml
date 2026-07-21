@@ -1,7 +1,7 @@
 spack:
   view: false
   concretizer:
-    unify: when_possible
+    unify: false
     reuse: false
   packages:
     all:
