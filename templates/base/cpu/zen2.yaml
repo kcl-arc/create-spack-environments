@@ -60,6 +60,8 @@ spack:
       version: [15.0.7]
     clang:
       version: [15.0.7]
+    boost:
+      require: "@1.77:"
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen2 languages:='c,c++,fortran'
@@ -101,7 +103,7 @@ spack:
     - blast-plus
     - bwa
     - circos
-    - coordgen ^boost@1.77.0
+    - coordgen
     - cryoef
     - eigen build_type=RelWithDebInfo
     - exonerate
