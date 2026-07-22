@@ -5,7 +5,7 @@ spack:
     reuse: false
   packages:
     all:
-      target: [sapphirerapids]
+      require: [sapphirerapids]
       providers:
         awk: [gawk]
         blas: [openblas, amdblis]
