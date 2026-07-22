@@ -424,19 +424,19 @@ items:
   source: environments
   constraint: cascadelake
 - env: env-zen2-cpu
-  spec: coordgen ^boost@1.77.0 %gcc@12.5.0 target=zen2
+  spec: coordgen %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
 - env: env-zen2-cpu-test
-  spec: coordgen ^boost@1.77.0 %gcc@12.5.0 target=zen2
+  spec: coordgen %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
 - env: env-zen2-sm80
-  spec: coordgen ^boost@1.77.0 %gcc@12.5.0 target=zen2
+  spec: coordgen %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
 - env: env-zen2-sm80-test
-  spec: coordgen ^boost@1.77.0 %gcc@12.5.0 target=zen2
+  spec: coordgen %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
 - env: env-cascadelake-cpu
