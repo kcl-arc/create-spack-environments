@@ -5,7 +5,7 @@ spack:
     reuse: false
   packages:
     all:
-      target: [x86_64_v4]
+      require: [x86_64_v4]
       providers:
         awk: [gawk]
         blas: [openblas, amdblis]

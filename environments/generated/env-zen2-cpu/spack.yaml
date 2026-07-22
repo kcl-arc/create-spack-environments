@@ -5,7 +5,7 @@ spack:
     reuse: false
   packages:
     all:
-      target:
+      require:
       - zen2
       providers:
         awk:

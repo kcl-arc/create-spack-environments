@@ -5,7 +5,7 @@ spack:
     reuse: false
   packages:
     all:
-      target: [skylake_avx512]
+      require: [skylake_avx512]
       providers:
         awk: [gawk]
         blas: [openblas, amdblis]
