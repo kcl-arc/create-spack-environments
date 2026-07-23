@@ -5,7 +5,25 @@ settings:
   container_format: singularity
   modules_tcl_projections:
     all: "{name}/{version}"
-    +mpi: "{name}/{version}-mpi"
+    ^mpi: "{name}/{version}-mpi-{^mpi.name}"
+    boost+container: "{name}/{version}-container"
+    eigen build_type=Release: "{name}/{version}-release"
+    threads=openmp: "{name}/{version}-omp"
+    llvm ^hwloc: "{name}/{version}-hwloc{^hwloc.version}"
+    mesa ^hwloc: "{name}/{version}-hwloc{^hwloc.version}"
+  modules_tcl_exclude:
+    - meson
+    - ninja
+    - re2c
+    - rust
+    - cairo
+    - glib
+    - glib-bootstrap
+    - gobject-introspection
+    - harfbuzz
+    - pixman
+    - python-venv
+    - "py-*"
 
 cpu_families:
   icelake:
