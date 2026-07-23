@@ -50,15 +50,28 @@ This performs, in order:
 
 - Set global/default projection rules in `matrix/env_matrix.yaml` under:
 	- `settings.modules_tcl_projections`
+	- `settings.modules_tcl_exclude` (package names/patterns to skip module generation for entirely)
 - Example:
-	- `all: "{name}/{version}-{compiler.name}-{compiler.version}"`
-	- `+mpi: "{name}/{version}-mpi-{compiler.name}-{compiler.version}"`
-- Override per generated environment by setting `spack.modules.default.tcl.projections` in:
+	- `all: "{name}/{version}"`
+	- `^mpi: "{name}/{version}-mpi-{^mpi.name}"`
+	- `boost+container: "{name}/{version}-container"`
+- Override per generated environment by setting `spack.modules.default.tcl.projections` (or `.exclude`) in:
 	- `templates/overlay/env/env-<cpu>-<gpu>.yaml`
 	- `templates/overlay/env/env-<cpu>-<gpu>-test.yaml`
 	- or family-level test overlays such as `templates/overlay/test/cascadelake.yaml`
 
 Projection precedence is: env/test overlay values first, then matrix defaults.
+
+With `concretizer.unify: false`, the same package/version can be concretized
+independently more than once (once per root spec that needs it), producing
+distinct module-file name clashes if the naming scheme can't tell the copies
+apart. Prefer a variant- or dependency-qualified projection key
+(`pkg+variant`, `pkg build_type=...`, `^dep`, `^dep.version`) over a bare
+content hash, since a hash suffix changes on every rebuild and would force
+users to update job scripts each time. For packages that are pure build-time/
+transitive dependencies and are never meant to be loaded directly (build
+tools, font/graphics-stack internals, pip bootstrap packages), add them to
+`modules_tcl_exclude` instead of trying to disambiguate them.
 
 ### Generator outputs
 
