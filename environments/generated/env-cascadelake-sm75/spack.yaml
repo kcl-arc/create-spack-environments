@@ -270,6 +270,40 @@ spack:
         - harfbuzz
         - pixman
         - python-venv
-        - py-*
+        - py-attrs
+        - py-calver
+        - py-certifi
+        - py-cffi
+        - py-cryptography
+        - py-cython
+        - py-flit-core
+        - py-gsutil
+        - py-hatch-fancy-pypi-readme
+        - py-hatch-vcs
+        - py-hatchling
+        - py-idna
+        - py-markupsafe
+        - py-maturin
+        - py-multiqc
+        - py-mysql-connector-python
+        - py-packaging
+        - py-pathspec
+        - py-pillow
+        - py-pip
+        - py-pluggy
+        - py-poetry-core
+        - py-pycparser
+        - py-pyparsing
+        - py-pyyaml
+        - py-requests
+        - py-semantic-version
+        - py-setuptools
+        - py-setuptools-rust
+        - py-setuptools-scm
+        - py-six
+        - py-trove-classifiers
+        - py-typing-extensions
+        - py-urllib3
+        - py-wheel
   container:
     format: singularity
