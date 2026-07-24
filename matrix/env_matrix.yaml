@@ -5,7 +5,8 @@ settings:
   container_format: singularity
   modules_tcl_projections:
     all: "{name}/{version}"
-    ^mpi: "{name}/{version}-{^mpi.name}{^mpi.version}"
+    ^mpi: "{name}/{version}-{^mpi.name}_{^mpi.version}"
+    ^python: "{name}/{version}-{^python.name}_{^python.version}"
     boost+container: "{name}/{version}-container"
     eigen build_type=Release: "{name}/{version}-release"
     threads=openmp: "{name}/{version}-omp"
@@ -15,7 +16,6 @@ settings:
     - meson
     - ninja
     - re2c
-    - rust
     - cairo
     - glib
     - glib-bootstrap
