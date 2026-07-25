@@ -6,9 +6,9 @@ settings:
   modules_tcl_projections:
     all: "{name}/{version}"
     ^mpi: "{name}/{version}-{^mpi.name}_{^mpi.version}"
-    ^python: "{name}/{version}-{^python.name}_{^python.version}"
-    ^llvm: "{name}/{version}-{^llvm.name}_{^llvm.version}"
     ^hwloc: "{name}/{version}-hwloc_{^hwloc.version}"
+    ^llvm: "{name}/{version}-{^llvm.name}_{^llvm.version}"
+    ^python: "{name}/{version}-{^python.name}_{^python.version}"
     boost+container: "{name}/{version}-container"
     eigen build_type=Release: "{name}/{version}-release"
     threads=openmp: "{name}/{version}-omp"
