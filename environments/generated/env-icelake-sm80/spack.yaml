@@ -164,17 +164,17 @@ spack:
         naming_scheme: '{name}/{version}'
         projections:
           all: '{name}/{version}'
-          ^mpi: '{name}/{version}-{^mpi.name}{^mpi.version}'
+          ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
+          ^python: '{name}/{version}-{^python.name}_{^python.version}'
+          ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
+          ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
           boost+container: '{name}/{version}-container'
           eigen build_type=Release: '{name}/{version}-release'
           threads=openmp: '{name}/{version}-omp'
-          llvm ^hwloc: '{name}/{version}-hwloc{^hwloc.version}'
-          mesa ^hwloc: '{name}/{version}-hwloc{^hwloc.version}'
         exclude:
         - meson
         - ninja
         - re2c
-        - rust
         - cairo
         - glib
         - glib-bootstrap
