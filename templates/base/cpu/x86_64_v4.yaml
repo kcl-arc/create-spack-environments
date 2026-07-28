@@ -60,6 +60,8 @@ spack:
       version: [17.0.6, 18.1.8]
     clang:
       version: [17.0.6, 18.1.8]
+    boost:
+      require: "@1.77:"
     gcc:
       externals:
       - spec: gcc@14.3.1 target=x86_64_v4 languages:='c,c++,fortran'
