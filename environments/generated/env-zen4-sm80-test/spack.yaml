@@ -128,6 +128,8 @@ spack:
     clang:
       version:
       - 15.0.7
+    boost:
+      require: '@1.77:'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen4 languages:='c,c++,fortran'
