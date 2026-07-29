@@ -23,6 +23,38 @@ items:
   spec: bazel %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bazel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: bazel %gcc@12.5.0 target=zen2
   source: environments
@@ -119,6 +151,38 @@ items:
   spec: beagle %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: beagle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: beagle %gcc@12.5.0 target=zen2
   source: environments
@@ -215,6 +279,38 @@ items:
   spec: bedtools2 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bedtools2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: bedtools2 %gcc@12.5.0 target=zen2
   source: environments
@@ -311,6 +407,38 @@ items:
   spec: bgen %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: bgen %gcc@12.5.0 target=zen2
   source: environments
@@ -407,6 +535,38 @@ items:
   spec: bismark %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bismark %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: bismark %gcc@12.5.0 target=zen2
   source: environments
@@ -503,6 +663,38 @@ items:
   spec: bison %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bison %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: bison %gcc@12.5.0 target=zen2
   source: environments
@@ -599,6 +791,38 @@ items:
   spec: blast-plus %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: blast-plus %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: blast-plus %gcc@12.5.0 target=zen2
   source: environments
@@ -695,6 +919,38 @@ items:
   spec: bwa %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bwa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: bwa %gcc@12.5.0 target=zen2
   source: environments
@@ -791,6 +1047,38 @@ items:
   spec: circos %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: circos %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: circos %gcc@12.5.0 target=zen2
   source: environments
@@ -887,6 +1175,38 @@ items:
   spec: cmake@3.31.11 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: cmake@3.31.11 %gcc@12.5.0 target=zen2
   source: environments
@@ -983,6 +1303,38 @@ items:
   spec: coordgen %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: coordgen %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: coordgen %gcc@12.5.0 target=zen2
   source: environments
@@ -1079,6 +1431,38 @@ items:
   spec: cryoef %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: cryoef %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: cryoef %gcc@12.5.0 target=zen2
   source: environments
@@ -1175,6 +1559,38 @@ items:
   spec: curl %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: curl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: curl %gcc@12.5.0 target=zen2
   source: environments
@@ -1271,6 +1687,38 @@ items:
   spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=zen2
   source: environments
@@ -1367,6 +1815,38 @@ items:
   spec: exonerate %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: exonerate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: exonerate %gcc@12.5.0 target=zen2
   source: environments
@@ -1463,6 +1943,38 @@ items:
   spec: fastp %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: fastp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: fastp %gcc@12.5.0 target=zen2
   source: environments
@@ -1559,6 +2071,38 @@ items:
   spec: fastqc %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: fastqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: fastqc %gcc@12.5.0 target=zen2
   source: environments
@@ -1655,6 +2199,38 @@ items:
   spec: ffmpeg %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: ffmpeg %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: ffmpeg %gcc@12.5.0 target=zen2
   source: environments
@@ -1751,6 +2327,38 @@ items:
   spec: fmt %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: fmt %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: fmt %gcc@12.5.0 target=zen2
   source: environments
@@ -1847,6 +2455,38 @@ items:
   spec: gatk %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: gatk %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: gatk %gcc@12.5.0 target=zen2
   source: environments
@@ -2151,6 +2791,38 @@ items:
   spec: gdal %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: gdal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: gdal %gcc@12.5.0 target=zen2
   source: environments
@@ -2247,6 +2919,38 @@ items:
   spec: gemma %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: gemma %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: gemma %gcc@12.5.0 target=zen2
   source: environments
@@ -2343,6 +3047,38 @@ items:
   spec: git-lfs %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: git-lfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: git-lfs %gcc@12.5.0 target=zen2
   source: environments
@@ -2439,6 +3175,38 @@ items:
   spec: gnuplot %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: gnuplot %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: gnuplot %gcc@12.5.0 target=zen2
   source: environments
@@ -2535,6 +3303,38 @@ items:
   spec: gradle %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: gradle %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: gradle %gcc@12.5.0 target=zen2
   source: environments
@@ -2631,6 +3431,38 @@ items:
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=zen2
   source: environments
@@ -2727,6 +3559,38 @@ items:
   spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=zen2
   source: environments
@@ -2823,6 +3687,38 @@ items:
   spec: hisat2 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: hisat2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: hisat2 %gcc@12.5.0 target=zen2
   source: environments
@@ -2919,6 +3815,38 @@ items:
   spec: impute2 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: impute2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: impute2 %gcc@12.5.0 target=zen2
   source: environments
@@ -3015,6 +3943,38 @@ items:
   spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=zen2
   source: environments
@@ -3111,6 +4071,38 @@ items:
   spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=zen2
   source: environments
@@ -3207,6 +4199,38 @@ items:
   spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=zen2
   source: environments
@@ -3303,6 +4327,38 @@ items:
   spec: ldak %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: ldak %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: ldak %gcc@12.5.0 target=zen2
   source: environments
@@ -3399,6 +4455,38 @@ items:
   spec: libhugetlbfs %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: libhugetlbfs %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: libhugetlbfs %gcc@12.5.0 target=zen2
   source: environments
@@ -3495,6 +4583,38 @@ items:
   spec: libwebp +libwebpmux %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: libwebp +libwebpmux %gcc@12.5.0 target=zen2
   source: environments
@@ -3591,6 +4711,38 @@ items:
   spec: libxc %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: libxc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: libxc %gcc@12.5.0 target=zen2
   source: environments
@@ -3687,6 +4839,38 @@ items:
   spec: llvm-openmp %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: llvm-openmp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: llvm-openmp %gcc@12.5.0 target=zen2
   source: environments
@@ -3783,6 +4967,38 @@ items:
   spec: meme +magick %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: meme +magick %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: meme +magick %gcc@12.5.0 target=zen2
   source: environments
@@ -3879,6 +5095,38 @@ items:
   spec: mesa %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: mesa %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: mesa %gcc@12.5.0 target=zen2
   source: environments
@@ -3975,6 +5223,38 @@ items:
   spec: meson %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: meson %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: meson %gcc@12.5.0 target=zen2
   source: environments
@@ -4071,6 +5351,38 @@ items:
   spec: miniforge3 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: miniforge3 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: miniforge3 %gcc@12.5.0 target=zen2
   source: environments
@@ -4167,6 +5479,38 @@ items:
   spec: mysql +client_only %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: mysql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: mysql +client_only %gcc@12.5.0 target=zen2
   source: environments
@@ -4263,6 +5607,38 @@ items:
   spec: netcdf-c %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: netcdf-c %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: netcdf-c %gcc@12.5.0 target=zen2
   source: environments
@@ -4359,6 +5735,38 @@ items:
   spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=zen2
   source: environments
@@ -4455,6 +5863,38 @@ items:
   spec: nextflow %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: nextflow %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: nextflow %gcc@12.5.0 target=zen2
   source: environments
@@ -4551,6 +5991,38 @@ items:
   spec: openbabel ~python ~gui %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: openbabel ~python ~gui %gcc@12.5.0 target=zen2
   source: environments
@@ -4647,6 +6119,38 @@ items:
   spec: openmpi %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: openmpi %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: openmpi %gcc@12.5.0 target=zen2
   source: environments
@@ -4743,6 +6247,38 @@ items:
   spec: p7zip %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: p7zip %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: p7zip %gcc@12.5.0 target=zen2
   source: environments
@@ -4839,6 +6375,38 @@ items:
   spec: parallel %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: parallel %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: parallel %gcc@12.5.0 target=zen2
   source: environments
@@ -4935,6 +6503,38 @@ items:
   spec: pcre %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: pcre %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: pcre %gcc@12.5.0 target=zen2
   source: environments
@@ -5031,6 +6631,38 @@ items:
   spec: perl-appconfig %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-appconfig %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-appconfig %gcc@12.5.0 target=zen2
   source: environments
@@ -5127,6 +6759,38 @@ items:
   spec: perl-config-simple %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-config-simple %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-config-simple %gcc@12.5.0 target=zen2
   source: environments
@@ -5223,6 +6887,38 @@ items:
   spec: perl-file-remove %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-file-remove %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-file-remove %gcc@12.5.0 target=zen2
   source: environments
@@ -5319,6 +7015,38 @@ items:
   spec: perl-file-sharedir %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-file-sharedir %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-file-sharedir %gcc@12.5.0 target=zen2
   source: environments
@@ -5415,6 +7143,38 @@ items:
   spec: perl-file-slurp %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-file-slurp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-file-slurp %gcc@12.5.0 target=zen2
   source: environments
@@ -5511,6 +7271,38 @@ items:
   spec: perl-getopt-argvfile %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-getopt-argvfile %gcc@12.5.0 target=zen2
   source: environments
@@ -5607,6 +7399,38 @@ items:
   spec: perl-http-date %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-http-date %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-http-date %gcc@12.5.0 target=zen2
   source: environments
@@ -5703,6 +7527,38 @@ items:
   spec: perl-module-install %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-module-install %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-module-install %gcc@12.5.0 target=zen2
   source: environments
@@ -5799,6 +7655,38 @@ items:
   spec: perl-parallel-forkmanager %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-parallel-forkmanager %gcc@12.5.0 target=zen2
   source: environments
@@ -5895,6 +7783,38 @@ items:
   spec: perl-parse-yapp %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-parse-yapp %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-parse-yapp %gcc@12.5.0 target=zen2
   source: environments
@@ -5991,6 +7911,38 @@ items:
   spec: perl-parselex %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-parselex %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-parselex %gcc@12.5.0 target=zen2
   source: environments
@@ -6087,6 +8039,38 @@ items:
   spec: perl-parsetemplate %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-parsetemplate %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-parsetemplate %gcc@12.5.0 target=zen2
   source: environments
@@ -6183,6 +8167,38 @@ items:
   spec: perl-pathtools %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-pathtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-pathtools %gcc@12.5.0 target=zen2
   source: environments
@@ -6279,6 +8295,38 @@ items:
   spec: perl-termreadkey %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-termreadkey %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-termreadkey %gcc@12.5.0 target=zen2
   source: environments
@@ -6375,6 +8423,38 @@ items:
   spec: perl-test-leaktrace %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: perl-test-leaktrace %gcc@12.5.0 target=zen2
   source: environments
@@ -6471,6 +8551,38 @@ items:
   spec: picard %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: picard %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: picard %gcc@12.5.0 target=zen2
   source: environments
@@ -6567,6 +8679,38 @@ items:
   spec: plink2 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: plink2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: plink2 %gcc@12.5.0 target=zen2
   source: environments
@@ -6663,6 +8807,38 @@ items:
   spec: postgresql +client_only %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: postgresql +client_only %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: postgresql +client_only %gcc@12.5.0 target=zen2
   source: environments
@@ -6759,6 +8935,38 @@ items:
   spec: py-gsutil %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: py-gsutil %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: py-gsutil %gcc@12.5.0 target=zen2
   source: environments
@@ -6855,6 +9063,38 @@ items:
   spec: py-multiqc %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: py-multiqc %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: py-multiqc %gcc@12.5.0 target=zen2
   source: environments
@@ -6951,6 +9191,38 @@ items:
   spec: py-mysql-connector-python %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: py-mysql-connector-python %gcc@12.5.0 target=zen2
   source: environments
@@ -7047,6 +9319,38 @@ items:
   spec: samtools %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: samtools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: samtools %gcc@12.5.0 target=zen2
   source: environments
@@ -7143,6 +9447,38 @@ items:
   spec: shapeit4 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: shapeit4 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: shapeit4 %gcc@12.5.0 target=zen2
   source: environments
@@ -7239,6 +9575,38 @@ items:
   spec: spark +hadoop %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: spark +hadoop %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: spark +hadoop %gcc@12.5.0 target=zen2
   source: environments
@@ -7335,6 +9703,38 @@ items:
   spec: star %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: star %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: star %gcc@12.5.0 target=zen2
   source: environments
@@ -7431,6 +9831,38 @@ items:
   spec: stringtie %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: stringtie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: stringtie %gcc@12.5.0 target=zen2
   source: environments
@@ -7527,6 +9959,38 @@ items:
   spec: subread %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: subread %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: subread %gcc@12.5.0 target=zen2
   source: environments
@@ -7623,6 +10087,38 @@ items:
   spec: tabix %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: tabix %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: tabix %gcc@12.5.0 target=zen2
   source: environments
@@ -7719,6 +10215,38 @@ items:
   spec: tcsh %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: tcsh %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: tcsh %gcc@12.5.0 target=zen2
   source: environments
@@ -7815,6 +10343,38 @@ items:
   spec: trimgalore %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: trimgalore %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: trimgalore %gcc@12.5.0 target=zen2
   source: environments
@@ -7911,6 +10471,38 @@ items:
   spec: trimmomatic %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: trimmomatic %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: trimmomatic %gcc@12.5.0 target=zen2
   source: environments
@@ -8007,6 +10599,38 @@ items:
   spec: vcftools %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: vcftools %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: vcftools %gcc@12.5.0 target=zen2
   source: environments
@@ -8103,6 +10727,38 @@ items:
   spec: wget %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: wget %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: wget %gcc@12.5.0 target=zen2
   source: environments
@@ -8199,6 +10855,38 @@ items:
   spec: wtdbg2 %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: wtdbg2 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: wtdbg2 %gcc@12.5.0 target=zen2
   source: environments
@@ -8295,6 +10983,38 @@ items:
   spec: zlib %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: zlib %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: zlib %gcc@12.5.0 target=zen2
   source: environments
@@ -8391,6 +11111,38 @@ items:
   spec: zstd %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-cpu-test
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: zstd %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-zen2-cpu
   spec: zstd %gcc@12.5.0 target=zen2
   source: environments
