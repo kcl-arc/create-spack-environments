@@ -48,12 +48,15 @@ spack:
         yacc: [bison, byacc]
         ziglang: [zig]
     c:
+      require: "target=x86_64_v4"
       prefer:
         - gcc@13.4.0
     cxx:
+      require: "target=x86_64_v4"
       prefer:
         - gcc@13.4.0
     fortran:
+      require: "target=x86_64_v4"
       prefer:
         - gcc@13.4.0
     llvm:
