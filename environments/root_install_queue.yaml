@@ -55,6 +55,30 @@ items:
   spec: bazel %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: bazel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: bazel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: bazel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bazel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: bazel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bazel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: bazel %gcc@12.5.0 target=zen2
   source: environments
@@ -183,6 +207,30 @@ items:
   spec: beagle %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: beagle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: beagle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: beagle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: beagle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: beagle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: beagle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: beagle %gcc@12.5.0 target=zen2
   source: environments
@@ -311,6 +359,30 @@ items:
   spec: bedtools2 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: bedtools2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: bedtools2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: bedtools2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bedtools2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: bedtools2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bedtools2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: bedtools2 %gcc@12.5.0 target=zen2
   source: environments
@@ -439,6 +511,30 @@ items:
   spec: bgen %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: bgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: bgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: bgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: bgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: bgen %gcc@12.5.0 target=zen2
   source: environments
@@ -567,6 +663,30 @@ items:
   spec: bismark %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: bismark %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: bismark %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: bismark %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bismark %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: bismark %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bismark %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: bismark %gcc@12.5.0 target=zen2
   source: environments
@@ -695,6 +815,30 @@ items:
   spec: bison %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: bison %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: bison %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: bison %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bison %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: bison %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bison %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: bison %gcc@12.5.0 target=zen2
   source: environments
@@ -823,6 +967,30 @@ items:
   spec: blast-plus %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: blast-plus %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: blast-plus %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: blast-plus %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: blast-plus %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: blast-plus %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: blast-plus %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: blast-plus %gcc@12.5.0 target=zen2
   source: environments
@@ -951,6 +1119,30 @@ items:
   spec: bwa %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: bwa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: bwa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: bwa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bwa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: bwa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bwa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: bwa %gcc@12.5.0 target=zen2
   source: environments
@@ -1079,6 +1271,30 @@ items:
   spec: circos %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: circos %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: circos %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: circos %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: circos %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: circos %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: circos %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: circos %gcc@12.5.0 target=zen2
   source: environments
@@ -1207,6 +1423,30 @@ items:
   spec: cmake@3.31.11 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: cmake@3.31.11 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: cmake@3.31.11 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: cmake@3.31.11 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: cmake@3.31.11 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: cmake@3.31.11 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: cmake@3.31.11 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: cmake@3.31.11 %gcc@12.5.0 target=zen2
   source: environments
@@ -1335,6 +1575,30 @@ items:
   spec: coordgen %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: coordgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: coordgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: coordgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: coordgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: coordgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: coordgen %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: coordgen %gcc@12.5.0 target=zen2
   source: environments
@@ -1463,6 +1727,30 @@ items:
   spec: cryoef %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: cryoef %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: cryoef %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: cryoef %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: cryoef %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: cryoef %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: cryoef %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: cryoef %gcc@12.5.0 target=zen2
   source: environments
@@ -1591,6 +1879,30 @@ items:
   spec: curl %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: curl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: curl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: curl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: curl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: curl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: curl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: curl %gcc@12.5.0 target=zen2
   source: environments
@@ -1719,6 +2031,30 @@ items:
   spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: eigen build_type=RelWithDebInfo %gcc@12.5.0 target=zen2
   source: environments
@@ -1847,6 +2183,30 @@ items:
   spec: exonerate %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: exonerate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: exonerate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: exonerate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: exonerate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: exonerate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: exonerate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: exonerate %gcc@12.5.0 target=zen2
   source: environments
@@ -1975,6 +2335,30 @@ items:
   spec: fastp %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: fastp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: fastp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: fastp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: fastp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: fastp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: fastp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: fastp %gcc@12.5.0 target=zen2
   source: environments
@@ -2103,6 +2487,30 @@ items:
   spec: fastqc %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: fastqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: fastqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: fastqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: fastqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: fastqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: fastqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: fastqc %gcc@12.5.0 target=zen2
   source: environments
@@ -2231,6 +2639,30 @@ items:
   spec: ffmpeg %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: ffmpeg %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: ffmpeg %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: ffmpeg %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: ffmpeg %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: ffmpeg %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: ffmpeg %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: ffmpeg %gcc@12.5.0 target=zen2
   source: environments
@@ -2359,6 +2791,30 @@ items:
   spec: fmt %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: fmt %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: fmt %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: fmt %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: fmt %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: fmt %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: fmt %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: fmt %gcc@12.5.0 target=zen2
   source: environments
@@ -2487,6 +2943,30 @@ items:
   spec: gatk %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: gatk %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: gatk %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: gatk %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: gatk %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: gatk %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: gatk %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: gatk %gcc@12.5.0 target=zen2
   source: environments
@@ -2823,6 +3303,30 @@ items:
   spec: gdal %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: gdal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: gdal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: gdal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: gdal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: gdal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: gdal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: gdal %gcc@12.5.0 target=zen2
   source: environments
@@ -2951,6 +3455,30 @@ items:
   spec: gemma %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: gemma %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: gemma %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: gemma %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: gemma %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: gemma %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: gemma %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: gemma %gcc@12.5.0 target=zen2
   source: environments
@@ -3079,6 +3607,30 @@ items:
   spec: git-lfs %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: git-lfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: git-lfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: git-lfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: git-lfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: git-lfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: git-lfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: git-lfs %gcc@12.5.0 target=zen2
   source: environments
@@ -3207,6 +3759,30 @@ items:
   spec: gnuplot %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: gnuplot %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: gnuplot %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: gnuplot %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: gnuplot %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: gnuplot %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: gnuplot %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: gnuplot %gcc@12.5.0 target=zen2
   source: environments
@@ -3335,6 +3911,30 @@ items:
   spec: gradle %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: gradle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: gradle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: gradle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: gradle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: gradle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: gradle %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: gradle %gcc@12.5.0 target=zen2
   source: environments
@@ -3463,6 +4063,30 @@ items:
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=zen2
   source: environments
@@ -3591,6 +4215,30 @@ items:
   spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=zen2
   source: environments
@@ -3719,6 +4367,30 @@ items:
   spec: hisat2 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: hisat2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: hisat2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: hisat2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: hisat2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: hisat2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: hisat2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: hisat2 %gcc@12.5.0 target=zen2
   source: environments
@@ -3847,6 +4519,30 @@ items:
   spec: impute2 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: impute2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: impute2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: impute2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: impute2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: impute2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: impute2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: impute2 %gcc@12.5.0 target=zen2
   source: environments
@@ -3975,6 +4671,30 @@ items:
   spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=zen2
   source: environments
@@ -4103,6 +4823,30 @@ items:
   spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=zen2
   source: environments
@@ -4231,6 +4975,30 @@ items:
   spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=zen2
   source: environments
@@ -4359,6 +5127,30 @@ items:
   spec: ldak %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: ldak %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: ldak %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: ldak %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: ldak %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: ldak %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: ldak %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: ldak %gcc@12.5.0 target=zen2
   source: environments
@@ -4487,6 +5279,30 @@ items:
   spec: libhugetlbfs %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: libhugetlbfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: libhugetlbfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: libhugetlbfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: libhugetlbfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: libhugetlbfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: libhugetlbfs %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: libhugetlbfs %gcc@12.5.0 target=zen2
   source: environments
@@ -4615,6 +5431,30 @@ items:
   spec: libwebp +libwebpmux %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: libwebp +libwebpmux %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: libwebp +libwebpmux %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: libwebp +libwebpmux %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: libwebp +libwebpmux %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: libwebp +libwebpmux %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: libwebp +libwebpmux %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: libwebp +libwebpmux %gcc@12.5.0 target=zen2
   source: environments
@@ -4743,6 +5583,30 @@ items:
   spec: libxc %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: libxc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: libxc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: libxc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: libxc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: libxc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: libxc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: libxc %gcc@12.5.0 target=zen2
   source: environments
@@ -4871,6 +5735,30 @@ items:
   spec: llvm-openmp %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: llvm-openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: llvm-openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: llvm-openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: llvm-openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: llvm-openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: llvm-openmp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: llvm-openmp %gcc@12.5.0 target=zen2
   source: environments
@@ -4999,6 +5887,30 @@ items:
   spec: meme +magick %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: meme +magick %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: meme +magick %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: meme +magick %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: meme +magick %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: meme +magick %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: meme +magick %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: meme +magick %gcc@12.5.0 target=zen2
   source: environments
@@ -5127,6 +6039,30 @@ items:
   spec: mesa %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: mesa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: mesa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: mesa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: mesa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: mesa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: mesa %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: mesa %gcc@12.5.0 target=zen2
   source: environments
@@ -5255,6 +6191,30 @@ items:
   spec: meson %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: meson %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: meson %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: meson %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: meson %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: meson %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: meson %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: meson %gcc@12.5.0 target=zen2
   source: environments
@@ -5383,6 +6343,30 @@ items:
   spec: miniforge3 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: miniforge3 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: miniforge3 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: miniforge3 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: miniforge3 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: miniforge3 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: miniforge3 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: miniforge3 %gcc@12.5.0 target=zen2
   source: environments
@@ -5511,6 +6495,30 @@ items:
   spec: mysql +client_only %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: mysql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: mysql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: mysql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: mysql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: mysql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: mysql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: mysql +client_only %gcc@12.5.0 target=zen2
   source: environments
@@ -5639,6 +6647,30 @@ items:
   spec: netcdf-c %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: netcdf-c %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: netcdf-c %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: netcdf-c %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: netcdf-c %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: netcdf-c %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: netcdf-c %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: netcdf-c %gcc@12.5.0 target=zen2
   source: environments
@@ -5767,6 +6799,30 @@ items:
   spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=zen2
   source: environments
@@ -5895,6 +6951,30 @@ items:
   spec: nextflow %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: nextflow %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: nextflow %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: nextflow %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: nextflow %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: nextflow %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: nextflow %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: nextflow %gcc@12.5.0 target=zen2
   source: environments
@@ -6023,6 +7103,30 @@ items:
   spec: openbabel ~python ~gui %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: openbabel ~python ~gui %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: openbabel ~python ~gui %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: openbabel ~python ~gui %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: openbabel ~python ~gui %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: openbabel ~python ~gui %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: openbabel ~python ~gui %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: openbabel ~python ~gui %gcc@12.5.0 target=zen2
   source: environments
@@ -6151,6 +7255,30 @@ items:
   spec: openmpi %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: openmpi %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: openmpi %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: openmpi %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: openmpi %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: openmpi %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: openmpi %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: openmpi %gcc@12.5.0 target=zen2
   source: environments
@@ -6279,6 +7407,30 @@ items:
   spec: p7zip %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: p7zip %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: p7zip %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: p7zip %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: p7zip %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: p7zip %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: p7zip %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: p7zip %gcc@12.5.0 target=zen2
   source: environments
@@ -6407,6 +7559,30 @@ items:
   spec: parallel %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: parallel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: parallel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: parallel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: parallel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: parallel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: parallel %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: parallel %gcc@12.5.0 target=zen2
   source: environments
@@ -6535,6 +7711,30 @@ items:
   spec: pcre %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: pcre %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: pcre %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: pcre %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: pcre %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: pcre %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: pcre %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: pcre %gcc@12.5.0 target=zen2
   source: environments
@@ -6663,6 +7863,30 @@ items:
   spec: perl-appconfig %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-appconfig %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-appconfig %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-appconfig %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-appconfig %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-appconfig %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-appconfig %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-appconfig %gcc@12.5.0 target=zen2
   source: environments
@@ -6791,6 +8015,30 @@ items:
   spec: perl-config-simple %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-config-simple %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-config-simple %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-config-simple %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-config-simple %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-config-simple %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-config-simple %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-config-simple %gcc@12.5.0 target=zen2
   source: environments
@@ -6919,6 +8167,30 @@ items:
   spec: perl-file-remove %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-file-remove %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-file-remove %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-file-remove %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-file-remove %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-file-remove %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-file-remove %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-file-remove %gcc@12.5.0 target=zen2
   source: environments
@@ -7047,6 +8319,30 @@ items:
   spec: perl-file-sharedir %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-file-sharedir %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-file-sharedir %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-file-sharedir %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-file-sharedir %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-file-sharedir %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-file-sharedir %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-file-sharedir %gcc@12.5.0 target=zen2
   source: environments
@@ -7175,6 +8471,30 @@ items:
   spec: perl-file-slurp %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-file-slurp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-file-slurp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-file-slurp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-file-slurp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-file-slurp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-file-slurp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-file-slurp %gcc@12.5.0 target=zen2
   source: environments
@@ -7303,6 +8623,30 @@ items:
   spec: perl-getopt-argvfile %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-getopt-argvfile %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-getopt-argvfile %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-getopt-argvfile %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-getopt-argvfile %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-getopt-argvfile %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-getopt-argvfile %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-getopt-argvfile %gcc@12.5.0 target=zen2
   source: environments
@@ -7431,6 +8775,30 @@ items:
   spec: perl-http-date %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-http-date %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-http-date %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-http-date %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-http-date %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-http-date %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-http-date %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-http-date %gcc@12.5.0 target=zen2
   source: environments
@@ -7559,6 +8927,30 @@ items:
   spec: perl-module-install %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-module-install %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-module-install %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-module-install %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-module-install %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-module-install %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-module-install %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-module-install %gcc@12.5.0 target=zen2
   source: environments
@@ -7687,6 +9079,30 @@ items:
   spec: perl-parallel-forkmanager %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-parallel-forkmanager %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-parallel-forkmanager %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-parallel-forkmanager %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-parallel-forkmanager %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-parallel-forkmanager %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-parallel-forkmanager %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-parallel-forkmanager %gcc@12.5.0 target=zen2
   source: environments
@@ -7815,6 +9231,30 @@ items:
   spec: perl-parse-yapp %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-parse-yapp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-parse-yapp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-parse-yapp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-parse-yapp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-parse-yapp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-parse-yapp %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-parse-yapp %gcc@12.5.0 target=zen2
   source: environments
@@ -7943,6 +9383,30 @@ items:
   spec: perl-parselex %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-parselex %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-parselex %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-parselex %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-parselex %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-parselex %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-parselex %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-parselex %gcc@12.5.0 target=zen2
   source: environments
@@ -8071,6 +9535,30 @@ items:
   spec: perl-parsetemplate %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-parsetemplate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-parsetemplate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-parsetemplate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-parsetemplate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-parsetemplate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-parsetemplate %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-parsetemplate %gcc@12.5.0 target=zen2
   source: environments
@@ -8199,6 +9687,30 @@ items:
   spec: perl-pathtools %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-pathtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-pathtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-pathtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-pathtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-pathtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-pathtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-pathtools %gcc@12.5.0 target=zen2
   source: environments
@@ -8327,6 +9839,30 @@ items:
   spec: perl-termreadkey %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-termreadkey %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-termreadkey %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-termreadkey %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-termreadkey %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-termreadkey %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-termreadkey %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-termreadkey %gcc@12.5.0 target=zen2
   source: environments
@@ -8455,6 +9991,30 @@ items:
   spec: perl-test-leaktrace %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: perl-test-leaktrace %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: perl-test-leaktrace %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: perl-test-leaktrace %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: perl-test-leaktrace %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: perl-test-leaktrace %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: perl-test-leaktrace %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: perl-test-leaktrace %gcc@12.5.0 target=zen2
   source: environments
@@ -8583,6 +10143,30 @@ items:
   spec: picard %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: picard %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: picard %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: picard %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: picard %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: picard %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: picard %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: picard %gcc@12.5.0 target=zen2
   source: environments
@@ -8711,6 +10295,30 @@ items:
   spec: plink2 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: plink2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: plink2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: plink2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: plink2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: plink2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: plink2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: plink2 %gcc@12.5.0 target=zen2
   source: environments
@@ -8839,6 +10447,30 @@ items:
   spec: postgresql +client_only %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: postgresql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: postgresql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: postgresql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: postgresql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: postgresql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: postgresql +client_only %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: postgresql +client_only %gcc@12.5.0 target=zen2
   source: environments
@@ -8967,6 +10599,30 @@ items:
   spec: py-gsutil %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: py-gsutil %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: py-gsutil %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: py-gsutil %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: py-gsutil %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: py-gsutil %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: py-gsutil %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: py-gsutil %gcc@12.5.0 target=zen2
   source: environments
@@ -9095,6 +10751,30 @@ items:
   spec: py-multiqc %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: py-multiqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: py-multiqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: py-multiqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: py-multiqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: py-multiqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: py-multiqc %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: py-multiqc %gcc@12.5.0 target=zen2
   source: environments
@@ -9223,6 +10903,30 @@ items:
   spec: py-mysql-connector-python %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: py-mysql-connector-python %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: py-mysql-connector-python %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: py-mysql-connector-python %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: py-mysql-connector-python %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: py-mysql-connector-python %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: py-mysql-connector-python %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: py-mysql-connector-python %gcc@12.5.0 target=zen2
   source: environments
@@ -9351,6 +11055,30 @@ items:
   spec: samtools %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: samtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: samtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: samtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: samtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: samtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: samtools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: samtools %gcc@12.5.0 target=zen2
   source: environments
@@ -9479,6 +11207,30 @@ items:
   spec: shapeit4 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: shapeit4 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: shapeit4 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: shapeit4 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: shapeit4 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: shapeit4 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: shapeit4 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: shapeit4 %gcc@12.5.0 target=zen2
   source: environments
@@ -9607,6 +11359,30 @@ items:
   spec: spark +hadoop %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: spark +hadoop %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: spark +hadoop %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: spark +hadoop %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: spark +hadoop %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: spark +hadoop %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: spark +hadoop %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: spark +hadoop %gcc@12.5.0 target=zen2
   source: environments
@@ -9735,6 +11511,30 @@ items:
   spec: star %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: star %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: star %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: star %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: star %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: star %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: star %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: star %gcc@12.5.0 target=zen2
   source: environments
@@ -9863,6 +11663,30 @@ items:
   spec: stringtie %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: stringtie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: stringtie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: stringtie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: stringtie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: stringtie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: stringtie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: stringtie %gcc@12.5.0 target=zen2
   source: environments
@@ -9991,6 +11815,30 @@ items:
   spec: subread %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: subread %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: subread %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: subread %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: subread %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: subread %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: subread %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: subread %gcc@12.5.0 target=zen2
   source: environments
@@ -10119,6 +11967,30 @@ items:
   spec: tabix %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: tabix %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: tabix %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: tabix %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: tabix %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: tabix %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: tabix %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: tabix %gcc@12.5.0 target=zen2
   source: environments
@@ -10247,6 +12119,30 @@ items:
   spec: tcsh %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: tcsh %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: tcsh %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: tcsh %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: tcsh %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: tcsh %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: tcsh %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: tcsh %gcc@12.5.0 target=zen2
   source: environments
@@ -10375,6 +12271,30 @@ items:
   spec: trimgalore %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: trimgalore %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: trimgalore %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: trimgalore %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: trimgalore %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: trimgalore %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: trimgalore %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: trimgalore %gcc@12.5.0 target=zen2
   source: environments
@@ -10503,6 +12423,30 @@ items:
   spec: trimmomatic %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: trimmomatic %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: trimmomatic %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: trimmomatic %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: trimmomatic %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: trimmomatic %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: trimmomatic %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: trimmomatic %gcc@12.5.0 target=zen2
   source: environments
@@ -10631,6 +12575,30 @@ items:
   spec: vcftools %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: vcftools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: vcftools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: vcftools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: vcftools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: vcftools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: vcftools %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: vcftools %gcc@12.5.0 target=zen2
   source: environments
@@ -10759,6 +12727,30 @@ items:
   spec: wget %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: wget %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: wget %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: wget %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: wget %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: wget %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: wget %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: wget %gcc@12.5.0 target=zen2
   source: environments
@@ -10887,6 +12879,30 @@ items:
   spec: wtdbg2 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: wtdbg2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: wtdbg2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: wtdbg2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: wtdbg2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: wtdbg2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: wtdbg2 %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: wtdbg2 %gcc@12.5.0 target=zen2
   source: environments
@@ -11015,6 +13031,30 @@ items:
   spec: zlib %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: zlib %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: zlib %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: zlib %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: zlib %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: zlib %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: zlib %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: zlib %gcc@12.5.0 target=zen2
   source: environments
@@ -11143,6 +13183,30 @@ items:
   spec: zstd %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-x86_64_v4-cpu
+  spec: zstd %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-cpu-test
+  spec: zstd %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80
+  spec: zstd %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: zstd %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89
+  spec: zstd %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: zstd %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
 - env: env-zen2-cpu
   spec: zstd %gcc@12.5.0 target=zen2
   source: environments
