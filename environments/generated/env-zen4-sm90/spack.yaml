@@ -130,6 +130,7 @@ spack:
       version:
       - 17.0.6
     clang:
+      require: target=zen4
       version:
       - 17.0.6
     intel-oneapi-compilers:

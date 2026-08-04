@@ -131,6 +131,7 @@ spack:
       - 17.0.6
       - 18.1.8
     clang:
+      require: target=zen4
       version:
       - 17.0.6
       - 18.1.8
