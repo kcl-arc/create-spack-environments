@@ -48,12 +48,15 @@ spack:
         yacc: [bison, byacc]
         ziglang: [zig]
     c:
+      require: "gcc target=icelake"
       prefer:
         - gcc@12.5.0
     cxx:
+      require: "gcc target=icelake"
       prefer:
         - gcc@12.5.0
     fortran:
+      require: "gcc target=icelake"
       prefer:
         - gcc@12.5.0
     llvm:
