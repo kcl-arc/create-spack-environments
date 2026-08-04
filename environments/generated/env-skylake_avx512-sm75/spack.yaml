@@ -126,11 +126,15 @@ spack:
       prefer:
       - gcc@12.5.0
     llvm:
+      require: target=skylake_avx512
       version:
       - 18.1.8
     clang:
+      require: target=skylake_avx512
       version:
       - 18.1.8
+    intel-oneapi-compilers:
+      require: target=skylake_avx512
     boost:
       require: '@1.77:'
     gcc:
