@@ -126,11 +126,14 @@ spack:
       prefer:
       - gcc@13.4.0
     llvm:
+      require: target=zen4
       version:
       - 15.0.7
     clang:
       version:
       - 15.0.7
+    intel-oneapi-compilers:
+      require: target=zen4
     boost:
       require: '@1.77:'
     gcc:
