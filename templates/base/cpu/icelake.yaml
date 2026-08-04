@@ -60,9 +60,13 @@ spack:
       prefer:
         - gcc@12.5.0
     llvm:
+      require: "target=icelake"
       version: [15.0.7]
     clang:
+      require: "target=icelake"
       version: [15.0.7]
+    intel-oneapi-compilers:
+      require: "target=icelake"
     boost:
       require: "@1.77:"
     gcc:
