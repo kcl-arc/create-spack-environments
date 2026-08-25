@@ -259,3 +259,13 @@ environments:
   constraint: zen4
   source: generated
   enabled: true
+- name: env-zen5-sm89
+  manifest: environments/generated/env-zen5-sm89/spack.yaml
+  constraint: zen5
+  source: generated
+  enabled: true
+- name: env-zen5-sm89-test
+  manifest: environments/generated/env-zen5-sm89-test/spack.yaml
+  constraint: zen5
+  source: generated
+  enabled: true
