@@ -1,0 +1,308 @@
+spack:
+  view: false
+  concretizer:
+    unify: false
+    reuse: false
+  packages:
+    all:
+      require:
+      - zen5
+      providers:
+        awk:
+        - gawk
+        blas:
+        - openblas
+        - amdblis
+        D:
+        - ldc
+        daal:
+        - intel-daal
+        elf:
+        - elfutils
+        fftw-api:
+        - fftw
+        - amdfftw
+        flame:
+        - libflame
+        - amdlibflame
+        fuse:
+        - libfuse
+        gl:
+        - mesa+opengl
+        - mesa18
+        - opengl
+        glu:
+        - mesa-glu
+        - openglu
+        glx:
+        - mesa+glx
+        - mesa18+glx
+        - opengl
+        golang:
+        - gcc
+        iconv:
+        - libiconv
+        ipp:
+        - intel-ipp
+        java:
+        - openjdk
+        - jdk
+        - ibm-java
+        jpeg:
+        - libjpeg-turbo
+        - libjpeg
+        lapack:
+        - openblas
+        - amdlibflame
+        libllvm:
+        - llvm
+        - llvm-amdgpu
+        lua-lang:
+        - lua
+        - lua-luajit
+        mariadb-client:
+        - mariadb-c-client
+        - mariadb
+        mkl:
+        - intel-mkl
+        mpe:
+        - mpe2
+        mpi:
+        - openmpi
+        - mpich
+        mysql-client:
+        - mysql
+        - mariadb-c-client
+        opencl:
+        - pocl
+        onedal:
+        - intel-oneapi-dal
+        osmesa:
+        - mesa+osmesa
+        - mesa18+osmesa
+        pbs:
+        - openpbs
+        - torque
+        pil:
+        - py-pillow
+        pkgconfig:
+        - pkgconf
+        - pkg-config
+        rpc:
+        - libtirpc
+        scalapack:
+        - netlib-scalapack
+        - amdscalapack
+        sycl:
+        - hipsycl
+        szip:
+        - libaec
+        - libszip
+        tbb:
+        - intel-tbb
+        unwind:
+        - libunwind
+        uuid:
+        - util-linux-uuid
+        - libuuid
+        xxd:
+        - xxd-standalone
+        - vim
+        yacc:
+        - bison
+        - byacc
+        ziglang:
+        - zig
+    c:
+      require: gcc target=zen5
+      prefer:
+      - gcc@14.3.1
+    cxx:
+      require: gcc target=zen5
+      prefer:
+      - gcc@14.3.1
+    fortran:
+      require: gcc target=zen5
+      prefer:
+      - gcc@14.3.1
+    llvm:
+      require: target=zen5
+      version:
+      - 18.1.8
+    clang:
+      require: target=zen5
+      version:
+      - 18.1.8
+    intel-oneapi-compilers:
+      require: target=zen5
+    boost:
+      require: '@1.77:'
+    gcc:
+      externals:
+      - spec: gcc@14.3.1 target=zen5 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
+    cuda:
+      version:
+      - '13.3'
+    lammps:
+      variants: +cuda cuda_arch=89
+    nccl:
+      variants: +cuda cuda_arch=89
+  specs:
+  - cmake
+  - curl
+  - hdf5@1.14.6~mpi +hl
+  - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  - intel-oneapi-compilers@2026.0.0
+  - intel-oneapi-mkl@2026.0.0+shared threads=openmp
+  - intel-oneapi-mpi@2021.18.0
+  - netcdf-c
+  - netlib-scalapack@2.2.3+shared build_type=Release
+  - openmpi
+  - llvm-openmp
+  - zlib
+  - fmt
+  - zstd
+  - bazel
+  - beagle
+  - bedtools2
+  - bgen
+  - bismark
+  - bison
+  - blast-plus
+  - bwa
+  - circos
+  - coordgen
+  - cryoef
+  - eigen build_type=RelWithDebInfo
+  - exonerate
+  - fastp
+  - fastqc
+  - ffmpeg
+  - gatk
+  - gdal
+  - gemma
+  - git-lfs
+  - gnuplot
+  - gradle
+  - hisat2
+  - impute2
+  - ldak
+  - libhugetlbfs
+  - libwebp +libwebpmux
+  - libxc
+  - meme +magick
+  - mesa
+  - meson
+  - miniforge3
+  - mysql +client_only
+  - nextflow
+  - openbabel ~python ~gui
+  - p7zip
+  - parallel
+  - pcre
+  - perl-appconfig
+  - perl-config-simple
+  - perl-file-remove
+  - perl-file-sharedir
+  - perl-file-slurp
+  - perl-getopt-argvfile
+  - perl-http-date
+  - perl-module-install
+  - perl-parallel-forkmanager
+  - perl-parse-yapp
+  - perl-parselex
+  - perl-parsetemplate
+  - perl-pathtools
+  - perl-termreadkey
+  - perl-test-leaktrace
+  - picard
+  - plink2
+  - postgresql +client_only
+  - py-gsutil
+  - py-multiqc
+  - py-mysql-connector-python
+  - samtools
+  - shapeit4
+  - spark +hadoop
+  - star
+  - stringtie
+  - subread
+  - tabix
+  - tcsh
+  - trimgalore
+  - trimmomatic
+  - vcftools
+  - wget
+  - wtdbg2
+  modules:
+    default:
+      enable:
+      - tcl
+      roots:
+        tcl: /software/spack_v1_2_1/install/modules/env-zen5-sm89-test/
+      tcl:
+        hash_length: 0
+        naming_scheme: '{name}/{version}'
+        projections:
+          all: '{name}/{version}'
+          ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
+          ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
+          ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
+          ^python: '{name}/{version}-{^python.name}_{^python.version}'
+          boost+container: '{name}/{version}-container'
+          eigen build_type=Release: '{name}/{version}-release'
+          threads=openmp: '{name}/{version}-omp'
+        exclude:
+        - meson
+        - ninja
+        - re2c
+        - cairo
+        - glib
+        - glib-bootstrap
+        - gobject-introspection
+        - harfbuzz
+        - pixman
+        - python-venv
+        - py-attrs
+        - py-calver
+        - py-certifi
+        - py-cffi
+        - py-cryptography
+        - py-cython
+        - py-flit-core
+        - py-gsutil
+        - py-hatch-fancy-pypi-readme
+        - py-hatch-vcs
+        - py-hatchling
+        - py-idna
+        - py-markupsafe
+        - py-maturin
+        - py-multiqc
+        - py-mysql-connector-python
+        - py-packaging
+        - py-pathspec
+        - py-pillow
+        - py-pip
+        - py-pluggy
+        - py-poetry-core
+        - py-pycparser
+        - py-pyparsing
+        - py-pyyaml
+        - py-requests
+        - py-semantic-version
+        - py-setuptools
+        - py-setuptools-rust
+        - py-setuptools-scm
+        - py-six
+        - py-trove-classifiers
+        - py-typing-extensions
+        - py-urllib3
+        - py-wheel
+  container:
+    format: singularity

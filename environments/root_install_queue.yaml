@@ -327,6 +327,14 @@ items:
   spec: bazel %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: bazel %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: bazel %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: bcftools %gcc@13.4.0 target=zen4
   source: environments
@@ -575,6 +583,14 @@ items:
   spec: beagle %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: beagle %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: beagle %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: bedtools2 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -783,6 +799,14 @@ items:
   spec: bedtools2 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: bedtools2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: bedtools2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: bgen %gcc@12.5.0 target=cascadelake
   source: environments
@@ -991,6 +1015,14 @@ items:
   spec: bgen %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: bgen %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: bgen %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: bismark %gcc@12.5.0 target=cascadelake
   source: environments
@@ -1199,6 +1231,14 @@ items:
   spec: bismark %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: bismark %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: bismark %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: bison %gcc@12.5.0 target=cascadelake
   source: environments
@@ -1407,6 +1447,14 @@ items:
   spec: bison %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: bison %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: bison %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: blast-plus %gcc@12.5.0 target=cascadelake
   source: environments
@@ -1615,6 +1663,14 @@ items:
   spec: blast-plus %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: blast-plus %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: blast-plus %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: bracken %gcc@13.4.0 target=zen4
   source: environments
@@ -1863,6 +1919,14 @@ items:
   spec: bwa %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: bwa %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: bwa %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: circos %gcc@12.5.0 target=cascadelake
   source: environments
@@ -2071,6 +2135,22 @@ items:
   spec: circos %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: circos %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: circos %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89
+  spec: cmake %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: cmake %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: cmake@3.31.11 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -2487,6 +2567,14 @@ items:
   spec: coordgen %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: coordgen %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: coordgen %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: cryoef %gcc@12.5.0 target=cascadelake
   source: environments
@@ -2695,6 +2783,14 @@ items:
   spec: cryoef %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: cryoef %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: cryoef %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: curl %gcc@12.5.0 target=cascadelake
   source: environments
@@ -2903,6 +2999,14 @@ items:
   spec: curl %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: curl %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: curl %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: dentist %gcc@13.4.0 target=zen4
   source: environments
@@ -3151,6 +3255,14 @@ items:
   spec: eigen build_type=RelWithDebInfo %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: eigen build_type=RelWithDebInfo %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: eigen build_type=RelWithDebInfo %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: eigensoft %gcc@13.4.0 target=zen4
   source: environments
@@ -3399,6 +3511,14 @@ items:
   spec: exonerate %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: exonerate %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: exonerate %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: fastp %gcc@12.5.0 target=cascadelake
   source: environments
@@ -3607,6 +3727,14 @@ items:
   spec: fastp %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: fastp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: fastp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: fastq-pair %gcc@13.4.0 target=zen4
   source: environments
@@ -3895,6 +4023,14 @@ items:
   spec: fastqc %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: fastqc %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: fastqc %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: ffmpeg %gcc@12.5.0 target=cascadelake
   source: environments
@@ -4103,6 +4239,14 @@ items:
   spec: ffmpeg %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: ffmpeg %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: ffmpeg %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: finestructure %gcc@13.4.0 target=zen4
   source: environments
@@ -4391,6 +4535,14 @@ items:
   spec: fmt %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: fmt %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: fmt %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: gatk %gcc@12.5.0 target=cascadelake
   source: environments
@@ -4599,6 +4751,14 @@ items:
   spec: gatk %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: gatk %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: gatk %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: gcc@12.5.0 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -5055,6 +5215,14 @@ items:
   spec: gdal %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: gdal %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: gdal %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: gemma %gcc@12.5.0 target=cascadelake
   source: environments
@@ -5263,6 +5431,14 @@ items:
   spec: gemma %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: gemma %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: gemma %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: git-lfs %gcc@12.5.0 target=cascadelake
   source: environments
@@ -5471,6 +5647,14 @@ items:
   spec: git-lfs %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: git-lfs %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: git-lfs %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: gnuplot %gcc@12.5.0 target=cascadelake
   source: environments
@@ -5679,6 +5863,14 @@ items:
   spec: gnuplot %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: gnuplot %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: gnuplot %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: gradle %gcc@12.5.0 target=cascadelake
   source: environments
@@ -5887,6 +6079,14 @@ items:
   spec: gradle %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: gradle %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: gradle %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -6095,6 +6295,14 @@ items:
   spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: hdf5@1.14.6+mpi +hl ^openmpi@5.0.8 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: hdf5@1.14.6~mpi +hl %gcc@12.5.0 target=cascadelake
   source: environments
@@ -6303,6 +6511,14 @@ items:
   spec: hdf5@1.14.6~mpi +hl %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: hdf5@1.14.6~mpi +hl %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: hdf5@1.14.6~mpi +hl %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: hisat2 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -6511,6 +6727,14 @@ items:
   spec: hisat2 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: hisat2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: hisat2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: ic %gcc@13.4.0 target=zen4
   source: environments
@@ -6759,6 +6983,14 @@ items:
   spec: impute2 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: impute2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: impute2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: intel-oneapi-compilers@2026.0.0 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -6967,6 +7199,14 @@ items:
   spec: intel-oneapi-compilers@2026.0.0 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: intel-oneapi-compilers@2026.0.0 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@12.5.0 target=cascadelake
   source: environments
@@ -7175,6 +7415,14 @@ items:
   spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: intel-oneapi-mkl@2026.0.0+shared threads=openmp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: intel-oneapi-mpi@2021.18.0 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -7383,6 +7631,14 @@ items:
   spec: intel-oneapi-mpi@2021.18.0 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: intel-oneapi-mpi@2021.18.0 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: ldak %gcc@12.5.0 target=cascadelake
   source: environments
@@ -7591,6 +7847,14 @@ items:
   spec: ldak %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: ldak %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: ldak %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: libhugetlbfs %gcc@12.5.0 target=cascadelake
   source: environments
@@ -7799,6 +8063,14 @@ items:
   spec: libhugetlbfs %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: libhugetlbfs %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: libhugetlbfs %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: libtool %gcc@13.4.0 target=zen4
   source: environments
@@ -8047,6 +8319,14 @@ items:
   spec: libwebp +libwebpmux %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: libwebp +libwebpmux %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: libwebp +libwebpmux %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: libxc %gcc@12.5.0 target=cascadelake
   source: environments
@@ -8255,6 +8535,14 @@ items:
   spec: libxc %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: libxc %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: libxc %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: llvm-openmp %gcc@12.5.0 target=cascadelake
   source: environments
@@ -8463,6 +8751,14 @@ items:
   spec: llvm-openmp %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: llvm-openmp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: llvm-openmp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: meme +magick %gcc@12.5.0 target=cascadelake
   source: environments
@@ -8671,6 +8967,14 @@ items:
   spec: meme +magick %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: meme +magick %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: meme +magick %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: mesa %gcc@12.5.0 target=cascadelake
   source: environments
@@ -8879,6 +9183,14 @@ items:
   spec: mesa %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: mesa %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: mesa %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: meson %gcc@12.5.0 target=cascadelake
   source: environments
@@ -9087,6 +9399,14 @@ items:
   spec: meson %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: meson %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: meson %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: metacarpa %gcc@13.4.0 target=zen4
   source: environments
@@ -9375,6 +9695,14 @@ items:
   spec: miniforge3 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: miniforge3 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: miniforge3 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: mitoscape %gcc@13.4.0 target=zen4
   source: environments
@@ -9623,6 +9951,14 @@ items:
   spec: mysql +client_only %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: mysql +client_only %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: mysql +client_only %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: netcdf-c %gcc@12.5.0 target=cascadelake
   source: environments
@@ -9831,6 +10167,14 @@ items:
   spec: netcdf-c %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: netcdf-c %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: netcdf-c %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@12.5.0 target=cascadelake
   source: environments
@@ -10039,6 +10383,14 @@ items:
   spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: netlib-scalapack@2.2.3+shared build_type=Release %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: nextflow %gcc@12.5.0 target=cascadelake
   source: environments
@@ -10247,6 +10599,14 @@ items:
   spec: nextflow %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: nextflow %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: nextflow %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: novactf %gcc@13.4.0 target=zen4
   source: environments
@@ -10495,6 +10855,14 @@ items:
   spec: openbabel ~python ~gui %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: openbabel ~python ~gui %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: openbabel ~python ~gui %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: openmpi %gcc@12.5.0 target=cascadelake
   source: environments
@@ -10703,6 +11071,14 @@ items:
   spec: openmpi %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: openmpi %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: openmpi %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: p7zip %gcc@12.5.0 target=cascadelake
   source: environments
@@ -10911,6 +11287,14 @@ items:
   spec: p7zip %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: p7zip %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: p7zip %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: palmer %gcc@13.4.0 target=zen4
   source: environments
@@ -11159,6 +11543,14 @@ items:
   spec: parallel %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: parallel %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: parallel %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: pcre %gcc@12.5.0 target=cascadelake
   source: environments
@@ -11367,6 +11759,14 @@ items:
   spec: pcre %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: pcre %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: pcre %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-appconfig %gcc@12.5.0 target=cascadelake
   source: environments
@@ -11575,6 +11975,14 @@ items:
   spec: perl-appconfig %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-appconfig %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-appconfig %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: perl-carp-assert %gcc@13.4.0 target=zen4
   source: environments
@@ -11823,6 +12231,14 @@ items:
   spec: perl-config-simple %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-config-simple %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-config-simple %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-file-remove %gcc@12.5.0 target=cascadelake
   source: environments
@@ -12031,6 +12447,14 @@ items:
   spec: perl-file-remove %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-file-remove %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-file-remove %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-file-sharedir %gcc@12.5.0 target=cascadelake
   source: environments
@@ -12239,6 +12663,14 @@ items:
   spec: perl-file-sharedir %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-file-sharedir %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-file-sharedir %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-file-slurp %gcc@12.5.0 target=cascadelake
   source: environments
@@ -12447,6 +12879,14 @@ items:
   spec: perl-file-slurp %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-file-slurp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-file-slurp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: perl-file-temp %gcc@13.4.0 target=zen4
   source: environments
@@ -12695,6 +13135,14 @@ items:
   spec: perl-getopt-argvfile %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-getopt-argvfile %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-getopt-argvfile %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-http-date %gcc@12.5.0 target=cascadelake
   source: environments
@@ -12903,6 +13351,14 @@ items:
   spec: perl-http-date %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-http-date %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-http-date %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: perl-libbi %gcc@13.4.0 target=zen4
   source: environments
@@ -13231,6 +13687,14 @@ items:
   spec: perl-module-install %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-module-install %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-module-install %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: perl-module-scandeps %gcc@13.4.0 target=zen4
   source: environments
@@ -13479,6 +13943,14 @@ items:
   spec: perl-parallel-forkmanager %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-parallel-forkmanager %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-parallel-forkmanager %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-parse-yapp %gcc@12.5.0 target=cascadelake
   source: environments
@@ -13687,6 +14159,14 @@ items:
   spec: perl-parse-yapp %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-parse-yapp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-parse-yapp %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-parselex %gcc@12.5.0 target=cascadelake
   source: environments
@@ -13895,6 +14375,14 @@ items:
   spec: perl-parselex %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-parselex %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-parselex %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-parsetemplate %gcc@12.5.0 target=cascadelake
   source: environments
@@ -14103,6 +14591,14 @@ items:
   spec: perl-parsetemplate %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-parsetemplate %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-parsetemplate %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-pathtools %gcc@12.5.0 target=cascadelake
   source: environments
@@ -14311,6 +14807,14 @@ items:
   spec: perl-pathtools %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-pathtools %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-pathtools %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: perl-template-toolkit %gcc@13.4.0 target=zen4
   source: environments
@@ -14559,6 +15063,14 @@ items:
   spec: perl-termreadkey %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-termreadkey %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-termreadkey %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: perl-test-leaktrace %gcc@12.5.0 target=cascadelake
   source: environments
@@ -14767,6 +15279,14 @@ items:
   spec: perl-test-leaktrace %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: perl-test-leaktrace %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: perl-test-leaktrace %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: perl-yaml-tiny %gcc@13.4.0 target=zen4
   source: environments
@@ -15015,6 +15535,14 @@ items:
   spec: picard %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: picard %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: picard %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: plink %gcc@13.4.0 target=zen4
   source: environments
@@ -15263,6 +15791,14 @@ items:
   spec: plink2 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: plink2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: plink2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: postgresql +client_only %gcc@12.5.0 target=cascadelake
   source: environments
@@ -15471,6 +16007,14 @@ items:
   spec: postgresql +client_only %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: postgresql +client_only %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: postgresql +client_only %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: py-annoy %gcc@13.4.0 target=zen4
   source: environments
@@ -15719,6 +16263,14 @@ items:
   spec: py-gsutil %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: py-gsutil %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: py-gsutil %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: py-multiqc %gcc@12.5.0 target=cascadelake
   source: environments
@@ -15927,6 +16479,14 @@ items:
   spec: py-multiqc %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: py-multiqc %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: py-multiqc %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: py-mysql-connector-python %gcc@12.5.0 target=cascadelake
   source: environments
@@ -16135,6 +16695,14 @@ items:
   spec: py-mysql-connector-python %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: py-mysql-connector-python %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: py-mysql-connector-python %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: py-nvidia-pyindex %gcc@13.4.0 target=zen4
   source: environments
@@ -16423,6 +16991,14 @@ items:
   spec: samtools %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: samtools %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: samtools %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: seqtk %gcc@13.4.0 target=zen4
   source: environments
@@ -16671,6 +17247,14 @@ items:
   spec: shapeit4 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: shapeit4 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: shapeit4 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: shapeit5 %gcc@13.4.0 target=zen4
   source: environments
@@ -16919,6 +17503,14 @@ items:
   spec: spark +hadoop %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: spark +hadoop %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: spark +hadoop %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: star %gcc@12.5.0 target=cascadelake
   source: environments
@@ -17127,6 +17719,14 @@ items:
   spec: star %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: star %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: star %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: stringtie %gcc@12.5.0 target=cascadelake
   source: environments
@@ -17335,6 +17935,14 @@ items:
   spec: stringtie %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: stringtie %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: stringtie %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: subread %gcc@12.5.0 target=cascadelake
   source: environments
@@ -17543,6 +18151,14 @@ items:
   spec: subread %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: subread %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: subread %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: susiex %gcc@13.4.0 target=zen4
   source: environments
@@ -17791,6 +18407,14 @@ items:
   spec: tabix %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: tabix %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: tabix %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: tcsh %gcc@12.5.0 target=cascadelake
   source: environments
@@ -17999,6 +18623,14 @@ items:
   spec: tcsh %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: tcsh %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: tcsh %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: trimgalore %gcc@12.5.0 target=cascadelake
   source: environments
@@ -18207,6 +18839,14 @@ items:
   spec: trimgalore %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: trimgalore %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: trimgalore %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: trimmomatic %gcc@12.5.0 target=cascadelake
   source: environments
@@ -18415,6 +19055,14 @@ items:
   spec: trimmomatic %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: trimmomatic %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: trimmomatic %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: vbz-compression %gcc@13.4.0 target=zen4
   source: environments
@@ -18663,6 +19311,14 @@ items:
   spec: vcftools %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: vcftools %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: vcftools %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: wget %gcc@12.5.0 target=cascadelake
   source: environments
@@ -18871,6 +19527,14 @@ items:
   spec: wget %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: wget %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: wget %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: wtdbg2 %gcc@12.5.0 target=cascadelake
   source: environments
@@ -19079,6 +19743,14 @@ items:
   spec: wtdbg2 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: wtdbg2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: wtdbg2 %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-zen4-cpu
   spec: xplor-nih %gcc@13.4.0 target=zen4
   source: environments
@@ -19327,6 +19999,14 @@ items:
   spec: zlib %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: zlib %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: zlib %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-cascadelake-cpu
   spec: zstd %gcc@12.5.0 target=cascadelake
   source: environments
@@ -19535,3 +20215,11 @@ items:
   spec: zstd %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-zen5-sm89
+  spec: zstd %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-zen5-sm89-test
+  spec: zstd %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
