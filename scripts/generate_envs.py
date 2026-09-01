@@ -174,8 +174,8 @@ def ensure_generated_structure(data: dict[str, Any], env_name: str, settings: di
 
 
 def infer_slurm_constraint(cpu_family: str, matrix: dict[str, Any]) -> str | None:
-    cpu_meta = matrix.get("cpu_families", {}).get(cpu_family, {})
-    features = cpu_meta.get("slurm_features", [])
+    cpu_meta = matrix.get("cpu_families", {}).get(cpu_family) or {}
+    features = cpu_meta.get("slurm_features") or [cpu_family]
     if not features:
         return None
     return str(features[0])

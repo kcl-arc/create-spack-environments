@@ -30,6 +30,21 @@ Generate `matrix/features_to_family.yaml` from scheduler feature data:
 python scripts/update_features_to_family.py
 ```
 
+Which Slurm feature token(s) map to which CPU/GPU family (and, for GPUs,
+which family wins when a node reports more than one GPU token) is read from
+`matrix/env_matrix.yaml`'s `cpu_families`/`gpu_families` sections, not
+hardcoded in the script. Adding a new architecture's token mapping is done by
+editing `matrix/env_matrix.yaml` alone (see "CPU architectures" below) — no
+script change needed. A CPU family's `slurm_features` defaults to
+`[<family name>]` when omitted, so a new CPU family is just `<name>: {}`;
+only set `slurm_features` explicitly if the live Slurm token(s) differ from
+the family name.
+
+With no `--input`, a source is auto-detected in order: `/etc/slurm/slurm.conf`
+(production), then live `scontrol show nodes` (if `scontrol` is on `PATH`).
+There is no repo-local fallback — pass `--input <path>` explicitly on a
+machine that is neither.
+
 Optional overrides can be added in `matrix/features_to_family_overrides.yaml`.
 
 ### Run on cluster (recommended deployment pre-step)
@@ -136,6 +151,7 @@ This means local execution is optional (although still useful to check the resul
 - `zen2` (`zen2`)
 - `zen3` (`zen3`)
 - `zen4` (`zen4`)
+- `zen5` (`zen5`)
 
 ## GPU families
 

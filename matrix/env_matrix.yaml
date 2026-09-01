@@ -59,23 +59,20 @@ settings:
     - py-urllib3
     - py-wheel
 
+# slurm_features defaults to [<family name>] when omitted -- every family
+# below uses a single Slurm feature token identical to its family name, so
+# adding a new one is just `<name>: {}`. Only set slurm_features explicitly
+# if a family's live Slurm token(s) differ from its family name.
 cpu_families:
-  icelake:
-    slurm_features: [icelake]
-  skylake_avx512:
-    slurm_features: [skylake_avx512]
-  cascadelake:
-    slurm_features: [cascadelake]
-  sapphirerapids:
-    slurm_features: [sapphirerapids]
-  x86_64_v4:
-    slurm_features: [x86_64_v4]
-  zen2:
-    slurm_features: [zen2]
-  zen3:
-    slurm_features: [zen3]
-  zen4:
-    slurm_features: [zen4]
+  icelake: {}
+  skylake_avx512: {}
+  cascadelake: {}
+  sapphirerapids: {}
+  x86_64_v4: {}
+  zen2: {}
+  zen3: {}
+  zen4: {}
+  zen5: {}
 
 gpu_families:
   cpu:
