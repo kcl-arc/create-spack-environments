@@ -185,7 +185,7 @@ spack:
     - perl-template-toolkit
     - perl-yaml-tiny
     - py-annoy
-    - py-nvidia-pyindex
+    # - py-nvidia-pyindex is now obsolete
     - anaconda3
     - fastq-pair
     - fastq-tools
@@ -197,7 +197,7 @@ spack:
     - susiex
     - vbz-compression
     - xplor-nih
-    - qctool
+    # - qctool will need to be built with gcc less than 13
     - ic
     - mitoscape
     - novactf
@@ -209,5 +209,5 @@ spack:
     - eigensoft
     - gctb
     # - kraken2
-    - bracken
-    - shapeit5
+    # - bracken will need re-visiting with kraken2 that has always been a PITA
+    # - shapeit5 repository has been disabled by GitHub Staff due to a violation
