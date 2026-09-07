@@ -163,7 +163,7 @@ spack:
   - intel-oneapi-mpi@2021.18.0
   - netcdf-c
   - netlib-scalapack@2.2.3+shared build_type=Release
-  - openmpi
+  - openmpi@5.0.8
   - llvm-openmp
   - zlib
   - fmt
