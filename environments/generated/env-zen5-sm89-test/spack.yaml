@@ -251,7 +251,8 @@ spack:
         naming_scheme: '{name}/{version}'
         projections:
           all: '{name}/{version}'
-          hdf5+hl: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
+          hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
+          hdf5+hl: '{name}/{version}-hl'
           ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
           ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
           ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
