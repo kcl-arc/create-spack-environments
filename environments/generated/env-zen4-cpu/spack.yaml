@@ -256,7 +256,6 @@ spack:
   - perl-template-toolkit
   - perl-yaml-tiny
   - py-annoy
-  - py-nvidia-pyindex
   - anaconda3
   - fastq-pair
   - fastq-tools
@@ -268,7 +267,6 @@ spack:
   - susiex
   - vbz-compression
   - xplor-nih
-  - qctool
   - ic
   - mitoscape
   - novactf
@@ -279,8 +277,6 @@ spack:
   - finestructure
   - eigensoft
   - gctb
-  - bracken
-  - shapeit5
   modules:
     default:
       enable:
