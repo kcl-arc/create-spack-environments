@@ -15,6 +15,22 @@ items:
   spec: admixture %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: admixture %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: admixture %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: admixture %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: admixture %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: admixture %gcc@13.4.0 target=zen4
   source: environments
@@ -71,6 +87,22 @@ items:
   spec: anaconda3 %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: anaconda3 %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: anaconda3 %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: anaconda3 %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: anaconda3 %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: anaconda3 %gcc@13.4.0 target=zen4
   source: environments
@@ -127,6 +159,22 @@ items:
   spec: automake %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: automake %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: automake %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: automake %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: automake %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: automake %gcc@13.4.0 target=zen4
   source: environments
@@ -399,6 +447,22 @@ items:
   spec: bcftools %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: bcftools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: bcftools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: bcftools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: bcftools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: bcftools %gcc@13.4.0 target=zen4
   source: environments
@@ -3047,6 +3111,22 @@ items:
   spec: dentist %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: dentist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: dentist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: dentist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: dentist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: dentist %gcc@13.4.0 target=zen4
   source: environments
@@ -3319,6 +3399,22 @@ items:
   spec: eigensoft %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: eigensoft %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: eigensoft %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: eigensoft %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: eigensoft %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: eigensoft %gcc@13.4.0 target=zen4
   source: environments
@@ -3807,6 +3903,22 @@ items:
   spec: fastq-pair %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: fastq-pair %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: fastq-pair %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: fastq-pair %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: fastq-pair %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: fastq-pair %gcc@13.4.0 target=zen4
   source: environments
@@ -3863,6 +3975,22 @@ items:
   spec: fastq-tools %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: fastq-tools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: fastq-tools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: fastq-tools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: fastq-tools %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: fastq-tools %gcc@13.4.0 target=zen4
   source: environments
@@ -4351,6 +4479,22 @@ items:
   spec: finestructure %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: finestructure %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: finestructure %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: finestructure %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: finestructure %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: finestructure %gcc@13.4.0 target=zen4
   source: environments
@@ -4407,6 +4551,22 @@ items:
   spec: flashpca %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: flashpca %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: flashpca %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: flashpca %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: flashpca %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: flashpca %gcc@13.4.0 target=zen4
   source: environments
@@ -5103,6 +5263,22 @@ items:
   spec: gctb %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: gctb %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: gctb %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: gctb %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: gctb %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: gctb %gcc@13.4.0 target=zen4
   source: environments
@@ -6887,6 +7063,22 @@ items:
   spec: ic %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: ic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: ic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: ic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: ic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: ic %gcc@13.4.0 target=zen4
   source: environments
@@ -8239,6 +8431,22 @@ items:
   spec: libtool %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: libtool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: libtool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: libtool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: libtool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: libtool %gcc@13.4.0 target=zen4
   source: environments
@@ -9591,6 +9799,22 @@ items:
   spec: metacarpa %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: metacarpa %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: metacarpa %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: metacarpa %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: metacarpa %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: metacarpa %gcc@13.4.0 target=zen4
   source: environments
@@ -9647,6 +9871,22 @@ items:
   spec: metal %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: metal %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: metal %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: metal %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: metal %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: metal %gcc@13.4.0 target=zen4
   source: environments
@@ -9919,6 +10159,22 @@ items:
   spec: mitoscape %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: mitoscape %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: mitoscape %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: mitoscape %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: mitoscape %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: mitoscape %gcc@13.4.0 target=zen4
   source: environments
@@ -10839,6 +11095,22 @@ items:
   spec: novactf %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: novactf %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: novactf %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: novactf %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: novactf %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: novactf %gcc@13.4.0 target=zen4
   source: environments
@@ -11543,6 +11815,22 @@ items:
   spec: palmer %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: palmer %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: palmer %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: palmer %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: palmer %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: palmer %gcc@13.4.0 target=zen4
   source: environments
@@ -12247,6 +12535,22 @@ items:
   spec: perl-carp-assert %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-carp-assert %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-carp-assert %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-carp-assert %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-carp-assert %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-carp-assert %gcc@13.4.0 target=zen4
   source: environments
@@ -13167,6 +13471,22 @@ items:
   spec: perl-file-temp %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-file-temp %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-file-temp %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-file-temp %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-file-temp %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-file-temp %gcc@13.4.0 target=zen4
   source: environments
@@ -13655,6 +13975,22 @@ items:
   spec: perl-libbi %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-libbi %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-libbi %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-libbi %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-libbi %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-libbi %gcc@13.4.0 target=zen4
   source: environments
@@ -13711,6 +14047,22 @@ items:
   spec: perl-math-symbolic %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-math-symbolic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-math-symbolic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-math-symbolic %gcc@13.4.0 target=zen4
   source: environments
@@ -13767,6 +14119,22 @@ items:
   spec: perl-module-corelist %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-module-corelist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-module-corelist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-module-corelist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-module-corelist %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-module-corelist %gcc@13.4.0 target=zen4
   source: environments
@@ -14039,6 +14407,22 @@ items:
   spec: perl-module-scandeps %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-module-scandeps %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-module-scandeps %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-module-scandeps %gcc@13.4.0 target=zen4
   source: environments
@@ -15175,6 +15559,22 @@ items:
   spec: perl-template-toolkit %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-template-toolkit %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-template-toolkit %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-template-toolkit %gcc@13.4.0 target=zen4
   source: environments
@@ -15663,6 +16063,22 @@ items:
   spec: perl-yaml-tiny %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: perl-yaml-tiny %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: perl-yaml-tiny %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: perl-yaml-tiny %gcc@13.4.0 target=zen4
   source: environments
@@ -15935,6 +16351,22 @@ items:
   spec: plink %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: plink %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: plink %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: plink %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: plink %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: plink %gcc@13.4.0 target=zen4
   source: environments
@@ -16423,6 +16855,22 @@ items:
   spec: py-annoy %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: py-annoy %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: py-annoy %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: py-annoy %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: py-annoy %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: py-annoy %gcc@13.4.0 target=zen4
   source: environments
@@ -17127,6 +17575,22 @@ items:
   spec: qctool %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: qctool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: qctool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: qctool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: qctool %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-cascadelake-cpu
   spec: samtools %gcc@12.5.0 target=cascadelake
   source: environments
@@ -17359,6 +17823,22 @@ items:
   spec: seqtk %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: seqtk %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: seqtk %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: seqtk %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: seqtk %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: seqtk %gcc@13.4.0 target=zen4
   source: environments
@@ -18495,6 +18975,22 @@ items:
   spec: susiex %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: susiex %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: susiex %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: susiex %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: susiex %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: susiex %gcc@13.4.0 target=zen4
   source: environments
@@ -19415,6 +19911,22 @@ items:
   spec: vbz-compression %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: vbz-compression %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: vbz-compression %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: vbz-compression %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: vbz-compression %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: vbz-compression %gcc@13.4.0 target=zen4
   source: environments
@@ -20119,6 +20631,22 @@ items:
   spec: xplor-nih %gcc@12.5.0 target=zen2
   source: environments
   constraint: zen2
+- env: env-zen3-cpu
+  spec: xplor-nih %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-cpu-test
+  spec: xplor-nih %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80
+  spec: xplor-nih %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
+- env: env-zen3-sm80-test
+  spec: xplor-nih %gcc@12.5.0 target=zen3
+  source: environments
+  constraint: zen3
 - env: env-zen4-cpu
   spec: xplor-nih %gcc@13.4.0 target=zen4
   source: environments
