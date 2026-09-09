@@ -55,6 +55,30 @@ items:
   spec: admixture %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: admixture %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: admixture %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: admixture %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: admixture %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: admixture %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: admixture %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: admixture %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -215,6 +239,30 @@ items:
   spec: anaconda3 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: anaconda3 %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -375,6 +423,30 @@ items:
   spec: automake %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: automake %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: automake %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: automake %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: automake %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: automake %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: automake %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: automake %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -751,6 +823,30 @@ items:
   spec: bcftools %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: bcftools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: bcftools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: bcftools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: bcftools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: bcftools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: bcftools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: bcftools %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -3503,6 +3599,30 @@ items:
   spec: dentist %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: dentist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: dentist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: dentist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: dentist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: dentist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: dentist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: dentist %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -3879,6 +3999,30 @@ items:
   spec: eigensoft %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: eigensoft %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: eigensoft %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: eigensoft %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: eigensoft %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: eigensoft %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: eigensoft %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: eigensoft %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -4471,6 +4615,30 @@ items:
   spec: fastq-pair %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: fastq-pair %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -4631,6 +4799,30 @@ items:
   spec: fastq-tools %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: fastq-tools %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -5223,6 +5415,30 @@ items:
   spec: finestructure %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: finestructure %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: finestructure %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: finestructure %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: finestructure %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: finestructure %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: finestructure %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: finestructure %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -5383,6 +5599,30 @@ items:
   spec: flashpca %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: flashpca %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: flashpca %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: flashpca %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: flashpca %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: flashpca %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: flashpca %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: flashpca %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -6183,6 +6423,30 @@ items:
   spec: gctb %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: gctb %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: gctb %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: gctb %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: gctb %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: gctb %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: gctb %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: gctb %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -8071,6 +8335,30 @@ items:
   spec: ic %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: ic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: ic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: ic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: ic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: ic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: ic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: ic %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -9527,6 +9815,30 @@ items:
   spec: libtool %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: libtool %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: libtool %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: libtool %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: libtool %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: libtool %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: libtool %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: libtool %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -10983,6 +11295,30 @@ items:
   spec: metacarpa %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: metacarpa %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: metacarpa %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: metacarpa %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: metacarpa %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: metacarpa %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: metacarpa %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: metacarpa %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -11143,6 +11479,30 @@ items:
   spec: metal %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: metal %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: metal %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: metal %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: metal %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: metal %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: metal %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: metal %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -11519,6 +11879,30 @@ items:
   spec: mitoscape %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: mitoscape %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: mitoscape %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: mitoscape %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: mitoscape %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: mitoscape %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: mitoscape %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: mitoscape %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -12543,6 +12927,30 @@ items:
   spec: novactf %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: novactf %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: novactf %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: novactf %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: novactf %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: novactf %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: novactf %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: novactf %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -13351,6 +13759,30 @@ items:
   spec: palmer %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: palmer %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: palmer %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: palmer %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: palmer %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: palmer %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: palmer %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: palmer %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -14159,6 +14591,30 @@ items:
   spec: perl-carp-assert %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-carp-assert %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -15183,6 +15639,30 @@ items:
   spec: perl-file-temp %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-file-temp %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -15775,6 +16255,30 @@ items:
   spec: perl-libbi %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-libbi %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -15935,6 +16439,30 @@ items:
   spec: perl-math-symbolic %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-math-symbolic %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -16095,6 +16623,30 @@ items:
   spec: perl-module-corelist %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-module-corelist %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -16471,6 +17023,30 @@ items:
   spec: perl-module-scandeps %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-module-scandeps %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -17711,6 +18287,30 @@ items:
   spec: perl-template-toolkit %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-template-toolkit %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -18303,6 +18903,30 @@ items:
   spec: perl-yaml-tiny %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: perl-yaml-tiny %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -18679,6 +19303,30 @@ items:
   spec: plink %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: plink %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: plink %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: plink %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: plink %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: plink %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: plink %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: plink %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -19271,6 +19919,30 @@ items:
   spec: py-annoy %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: py-annoy %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: py-annoy %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: py-annoy %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: py-annoy %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: py-annoy %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: py-annoy %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: py-annoy %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -20383,6 +21055,30 @@ items:
   spec: seqtk %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: seqtk %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: seqtk %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: seqtk %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: seqtk %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: seqtk %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: seqtk %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: seqtk %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -21623,6 +22319,30 @@ items:
   spec: susiex %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: susiex %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: susiex %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: susiex %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: susiex %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: susiex %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: susiex %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: susiex %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -22647,6 +23367,30 @@ items:
   spec: vbz-compression %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: vbz-compression %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -23455,6 +24199,30 @@ items:
   spec: xplor-nih %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-sapphirerapids-cpu
+  spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-cpu-test
+  spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100
+  spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm100-test
+  spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90
+  spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-sapphirerapids-sm90-test
+  spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-x86_64_v4-cpu
   spec: xplor-nih %gcc@13.4.0 target=x86_64_v4
   source: environments

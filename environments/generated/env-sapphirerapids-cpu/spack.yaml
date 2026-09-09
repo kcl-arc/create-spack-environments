@@ -245,6 +245,38 @@ spack:
   - vcftools
   - wget
   - wtdbg2
+  - automake
+  - libtool
+  - perl-carp-assert
+  - perl-file-temp
+  - perl-libbi
+  - perl-math-symbolic
+  - perl-module-corelist
+  - perl-module-scandeps
+  - perl-template-toolkit
+  - perl-yaml-tiny
+  - py-annoy
+  - anaconda3
+  - fastq-pair
+  - fastq-tools
+  - seqtk
+  - plink
+  - bcftools
+  - admixture
+  - flashpca
+  - susiex
+  - vbz-compression
+  - xplor-nih
+  - ic
+  - mitoscape
+  - novactf
+  - palmer
+  - metacarpa
+  - metal
+  - dentist
+  - finestructure
+  - eigensoft
+  - gctb
   modules:
     default:
       enable:
