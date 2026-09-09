@@ -173,3 +173,41 @@ spack:
     - vcftools
     - wget
     - wtdbg2
+    # - phase2
+    - automake
+    - libtool
+    - perl-carp-assert
+    - perl-file-temp
+    - perl-libbi
+    - perl-math-symbolic
+    - perl-module-corelist
+    - perl-module-scandeps
+    - perl-template-toolkit
+    - perl-yaml-tiny
+    - py-annoy
+    # - py-nvidia-pyindex is now obsolete
+    - anaconda3
+    - fastq-pair
+    - fastq-tools
+    - seqtk
+    - plink
+    - bcftools
+    - admixture
+    - flashpca
+    - susiex
+    - vbz-compression
+    - xplor-nih
+    # - qctool will need to be built with gcc less than 13
+    - ic
+    - mitoscape
+    - novactf
+    - palmer
+    - metacarpa
+    - metal
+    - dentist
+    - finestructure
+    - eigensoft
+    - gctb
+    # - kraken2
+    # - bracken will need re-visiting with kraken2 that has always been a PITA
+    # - shapeit5 repository has been disabled by GitHub Staff due to a violation
