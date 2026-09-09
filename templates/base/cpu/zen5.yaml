@@ -189,7 +189,7 @@ spack:
     - susiex
     - vbz-compression
     - xplor-nih
-    - qctool
+    # - qctool will need to be built with gcc less than 13
     - ic
     - mitoscape
     - novactf
