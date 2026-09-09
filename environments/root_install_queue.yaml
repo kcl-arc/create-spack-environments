@@ -1,4 +1,28 @@
 items:
+- env: env-cascadelake-cpu
+  spec: admixture %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: admixture %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: admixture %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: admixture %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: admixture %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: admixture %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: admixture %gcc@12.5.0 target=zen2
   source: environments
@@ -79,6 +103,30 @@ items:
   spec: admixture %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: anaconda3 %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: anaconda3 %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: anaconda3 %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: anaconda3 %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: anaconda3 %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: anaconda3 %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: anaconda3 %gcc@12.5.0 target=zen2
   source: environments
@@ -159,6 +207,30 @@ items:
   spec: anaconda3 %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: automake %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: automake %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: automake %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: automake %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: automake %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: automake %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: automake %gcc@12.5.0 target=zen2
   source: environments
@@ -455,6 +527,30 @@ items:
   spec: bazel %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: bcftools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: bcftools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: bcftools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: bcftools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: bcftools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: bcftools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: bcftools %gcc@12.5.0 target=zen2
   source: environments
@@ -3127,6 +3223,30 @@ items:
   spec: curl %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: dentist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: dentist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: dentist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: dentist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: dentist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: dentist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: dentist %gcc@12.5.0 target=zen2
   source: environments
@@ -3423,6 +3543,30 @@ items:
   spec: eigen build_type=RelWithDebInfo %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: eigensoft %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: eigensoft %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: eigensoft %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: eigensoft %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: eigensoft %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: eigensoft %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: eigensoft %gcc@12.5.0 target=zen2
   source: environments
@@ -3935,6 +4079,30 @@ items:
   spec: fastp %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: fastq-pair %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: fastq-pair %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: fastq-pair %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: fastq-pair %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: fastq-pair %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: fastq-pair %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: fastq-pair %gcc@12.5.0 target=zen2
   source: environments
@@ -4015,6 +4183,30 @@ items:
   spec: fastq-pair %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: fastq-tools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: fastq-tools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: fastq-tools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: fastq-tools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: fastq-tools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: fastq-tools %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: fastq-tools %gcc@12.5.0 target=zen2
   source: environments
@@ -4527,6 +4719,30 @@ items:
   spec: ffmpeg %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: finestructure %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: finestructure %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: finestructure %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: finestructure %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: finestructure %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: finestructure %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: finestructure %gcc@12.5.0 target=zen2
   source: environments
@@ -4607,6 +4823,30 @@ items:
   spec: finestructure %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: flashpca %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: flashpca %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: flashpca %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: flashpca %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: flashpca %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: flashpca %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: flashpca %gcc@12.5.0 target=zen2
   source: environments
@@ -5327,6 +5567,30 @@ items:
   spec: gcc@13.4.0 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-cascadelake-cpu
+  spec: gctb %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: gctb %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: gctb %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: gctb %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: gctb %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: gctb %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: gctb %gcc@12.5.0 target=zen2
   source: environments
@@ -7135,6 +7399,30 @@ items:
   spec: hisat2 %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: ic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: ic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: ic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: ic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: ic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: ic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: ic %gcc@12.5.0 target=zen2
   source: environments
@@ -8511,6 +8799,30 @@ items:
   spec: libhugetlbfs %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: libtool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: libtool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: libtool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: libtool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: libtool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: libtool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: libtool %gcc@12.5.0 target=zen2
   source: environments
@@ -9887,6 +10199,30 @@ items:
   spec: meson %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: metacarpa %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: metacarpa %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: metacarpa %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: metacarpa %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: metacarpa %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: metacarpa %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: metacarpa %gcc@12.5.0 target=zen2
   source: environments
@@ -9967,6 +10303,30 @@ items:
   spec: metacarpa %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: metal %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: metal %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: metal %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: metal %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: metal %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: metal %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: metal %gcc@12.5.0 target=zen2
   source: environments
@@ -10263,6 +10623,30 @@ items:
   spec: miniforge3 %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: mitoscape %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: mitoscape %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: mitoscape %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: mitoscape %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: mitoscape %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: mitoscape %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: mitoscape %gcc@12.5.0 target=zen2
   source: environments
@@ -11207,6 +11591,30 @@ items:
   spec: nextflow %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: novactf %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: novactf %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: novactf %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: novactf %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: novactf %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: novactf %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: novactf %gcc@12.5.0 target=zen2
   source: environments
@@ -11935,6 +12343,30 @@ items:
   spec: p7zip %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: palmer %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: palmer %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: palmer %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: palmer %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: palmer %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: palmer %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: palmer %gcc@12.5.0 target=zen2
   source: environments
@@ -12663,6 +13095,30 @@ items:
   spec: perl-appconfig %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-carp-assert %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-carp-assert %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-carp-assert %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-carp-assert %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-carp-assert %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-carp-assert %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-carp-assert %gcc@12.5.0 target=zen2
   source: environments
@@ -13607,6 +14063,30 @@ items:
   spec: perl-file-slurp %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-file-temp %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-file-temp %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-file-temp %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-file-temp %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-file-temp %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-file-temp %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-file-temp %gcc@12.5.0 target=zen2
   source: environments
@@ -14119,6 +14599,30 @@ items:
   spec: perl-http-date %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-libbi %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-libbi %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-libbi %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-libbi %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-libbi %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-libbi %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-libbi %gcc@12.5.0 target=zen2
   source: environments
@@ -14199,6 +14703,30 @@ items:
   spec: perl-libbi %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-math-symbolic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-math-symbolic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-math-symbolic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-math-symbolic %gcc@12.5.0 target=zen2
   source: environments
@@ -14279,6 +14807,30 @@ items:
   spec: perl-math-symbolic %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-module-corelist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-module-corelist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-module-corelist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-module-corelist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-module-corelist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-module-corelist %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-module-corelist %gcc@12.5.0 target=zen2
   source: environments
@@ -14575,6 +15127,30 @@ items:
   spec: perl-module-install %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-module-scandeps %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-module-scandeps %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-module-scandeps %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-module-scandeps %gcc@12.5.0 target=zen2
   source: environments
@@ -15735,6 +16311,30 @@ items:
   spec: perl-pathtools %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-template-toolkit %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-template-toolkit %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-template-toolkit %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-template-toolkit %gcc@12.5.0 target=zen2
   source: environments
@@ -16247,6 +16847,30 @@ items:
   spec: perl-test-leaktrace %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: perl-yaml-tiny %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: perl-yaml-tiny %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: perl-yaml-tiny %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: perl-yaml-tiny %gcc@12.5.0 target=zen2
   source: environments
@@ -16543,6 +17167,30 @@ items:
   spec: picard %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: plink %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: plink %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: plink %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: plink %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: plink %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: plink %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: plink %gcc@12.5.0 target=zen2
   source: environments
@@ -17055,6 +17703,30 @@ items:
   spec: postgresql +client_only %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: py-annoy %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: py-annoy %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: py-annoy %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: py-annoy %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: py-annoy %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: py-annoy %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: py-annoy %gcc@12.5.0 target=zen2
   source: environments
@@ -17783,6 +18455,30 @@ items:
   spec: py-mysql-connector-python %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: qctool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: qctool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: qctool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: qctool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: qctool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: qctool %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: qctool %gcc@12.5.0 target=zen2
   source: environments
@@ -18031,6 +18727,30 @@ items:
   spec: samtools %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: seqtk %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: seqtk %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: seqtk %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: seqtk %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: seqtk %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: seqtk %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: seqtk %gcc@12.5.0 target=zen2
   source: environments
@@ -19191,6 +19911,30 @@ items:
   spec: subread %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: susiex %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: susiex %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: susiex %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: susiex %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: susiex %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: susiex %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: susiex %gcc@12.5.0 target=zen2
   source: environments
@@ -20135,6 +20879,30 @@ items:
   spec: trimmomatic %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: vbz-compression %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: vbz-compression %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: vbz-compression %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: vbz-compression %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: vbz-compression %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: vbz-compression %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: vbz-compression %gcc@12.5.0 target=zen2
   source: environments
@@ -20863,6 +21631,30 @@ items:
   spec: wtdbg2 %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-cascadelake-cpu
+  spec: xplor-nih %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-cpu-test
+  spec: xplor-nih %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75
+  spec: xplor-nih %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm75-test
+  spec: xplor-nih %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86
+  spec: xplor-nih %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
+- env: env-cascadelake-sm86-test
+  spec: xplor-nih %gcc@12.5.0 target=cascadelake
+  source: environments
+  constraint: cascadelake
 - env: env-zen2-cpu
   spec: xplor-nih %gcc@12.5.0 target=zen2
   source: environments
