@@ -262,7 +262,6 @@ spack:
   - susiex
   - vbz-compression
   - xplor-nih
-  - qctool
   - ic
   - mitoscape
   - novactf
