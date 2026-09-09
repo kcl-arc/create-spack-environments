@@ -17815,14 +17815,6 @@ items:
   spec: qctool %gcc@12.5.0 target=zen3
   source: environments
   constraint: zen3
-- env: env-zen5-sm89
-  spec: qctool %gcc@14.3.1 target=zen5
-  source: environments
-  constraint: zen5
-- env: env-zen5-sm89-test
-  spec: qctool %gcc@14.3.1 target=zen5
-  source: environments
-  constraint: zen5
 - env: env-cascadelake-cpu
   spec: samtools %gcc@12.5.0 target=cascadelake
   source: environments
