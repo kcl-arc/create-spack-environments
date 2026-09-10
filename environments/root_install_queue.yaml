@@ -79,6 +79,38 @@ items:
   spec: admixture %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: admixture %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: admixture %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -263,6 +295,38 @@ items:
   spec: anaconda3 %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: anaconda3 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: anaconda3 %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -447,6 +511,38 @@ items:
   spec: automake %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: automake %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: automake %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -847,6 +943,38 @@ items:
   spec: bcftools %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: bcftools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: bcftools %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -3623,6 +3751,38 @@ items:
   spec: dentist %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: dentist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: dentist %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -4023,6 +4183,38 @@ items:
   spec: eigensoft %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: eigensoft %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: eigensoft %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -4639,6 +4831,38 @@ items:
   spec: fastq-pair %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: fastq-pair %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: fastq-pair %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -4823,6 +5047,38 @@ items:
   spec: fastq-tools %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: fastq-tools %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: fastq-tools %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -5439,6 +5695,38 @@ items:
   spec: finestructure %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: finestructure %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: finestructure %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -5623,6 +5911,38 @@ items:
   spec: flashpca %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: flashpca %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: flashpca %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -6447,6 +6767,38 @@ items:
   spec: gctb %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: gctb %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: gctb %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -8359,6 +8711,38 @@ items:
   spec: ic %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: ic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: ic %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -9839,6 +10223,38 @@ items:
   spec: libtool %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: libtool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: libtool %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -11319,6 +11735,38 @@ items:
   spec: metacarpa %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: metacarpa %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: metacarpa %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -11503,6 +11951,38 @@ items:
   spec: metal %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: metal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: metal %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -11903,6 +12383,38 @@ items:
   spec: mitoscape %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: mitoscape %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: mitoscape %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -12951,6 +13463,38 @@ items:
   spec: novactf %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: novactf %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: novactf %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -13783,6 +14327,38 @@ items:
   spec: palmer %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: palmer %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: palmer %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -14615,6 +15191,38 @@ items:
   spec: perl-carp-assert %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-carp-assert %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-carp-assert %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -15663,6 +16271,38 @@ items:
   spec: perl-file-temp %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-file-temp %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-file-temp %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -16279,6 +16919,38 @@ items:
   spec: perl-libbi %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-libbi %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-libbi %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -16463,6 +17135,38 @@ items:
   spec: perl-math-symbolic %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-math-symbolic %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-math-symbolic %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -16647,6 +17351,38 @@ items:
   spec: perl-module-corelist %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-module-corelist %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-module-corelist %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -17047,6 +17783,38 @@ items:
   spec: perl-module-scandeps %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-module-scandeps %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-module-scandeps %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -18311,6 +19079,38 @@ items:
   spec: perl-template-toolkit %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-template-toolkit %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-template-toolkit %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -18927,6 +19727,38 @@ items:
   spec: perl-yaml-tiny %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: perl-yaml-tiny %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: perl-yaml-tiny %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -19327,6 +20159,38 @@ items:
   spec: plink %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: plink %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: plink %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -19943,6 +20807,38 @@ items:
   spec: py-annoy %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: py-annoy %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: py-annoy %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -20751,6 +21647,38 @@ items:
   spec: qctool %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
+- env: env-skylake_avx512-cpu
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: qctool %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-zen2-cpu
   spec: qctool %gcc@12.5.0 target=zen2
   source: environments
@@ -21079,6 +22007,38 @@ items:
   spec: seqtk %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: seqtk %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: seqtk %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -22343,6 +23303,38 @@ items:
   spec: susiex %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: susiex %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: susiex %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -23391,6 +24383,38 @@ items:
   spec: vbz-compression %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: vbz-compression %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: vbz-compression %gcc@13.4.0 target=x86_64_v4
   source: environments
@@ -24223,6 +25247,38 @@ items:
   spec: xplor-nih %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: xplor-nih %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-x86_64_v4-cpu
   spec: xplor-nih %gcc@13.4.0 target=x86_64_v4
   source: environments
