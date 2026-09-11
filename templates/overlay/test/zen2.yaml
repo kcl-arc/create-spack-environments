@@ -1,0 +1,10 @@
+spack:
+  spec:
+    - cgal
+    - maeparser
+    - gcta
+    - magma-gwas
+    - bolt-lmm
+    - regenie
+    - petsc +batch
+ 

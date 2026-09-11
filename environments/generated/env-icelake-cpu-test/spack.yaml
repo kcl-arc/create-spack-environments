@@ -276,6 +276,14 @@ spack:
   - finestructure
   - eigensoft
   - gctb
+  spec:
+  - cgal
+  - maeparser
+  - gcta
+  - magma-gwas
+  - bolt-lmm
+  - regenie
+  - petsc +batch
   modules:
     default:
       enable:
