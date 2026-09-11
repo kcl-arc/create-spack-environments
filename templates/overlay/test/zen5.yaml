@@ -3,7 +3,7 @@ spack:
     - cgal
     - maeparser
     - gcta
-    - magma_gwas
-    - bolt_lmm
+    - magma-gwas
+    - bolt-lmm
     - regenie
     - petsc
