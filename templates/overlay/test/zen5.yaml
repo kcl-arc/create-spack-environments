@@ -6,4 +6,4 @@ spack:
     - magma-gwas
     - bolt-lmm
     - regenie
-    - petsc
+    - petsc +batch
