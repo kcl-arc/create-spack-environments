@@ -1,5 +1,5 @@
 spack:
-  specs:
+  spec:
     - cgal
     - maeparser
     - gcta
@@ -7,3 +7,4 @@ spack:
     - bolt-lmm
     - regenie
     - petsc +batch
+ 

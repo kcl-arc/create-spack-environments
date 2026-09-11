@@ -211,3 +211,4 @@ spack:
     # - kraken2
     # - bracken will need re-visiting with kraken2 that has always been a PITA
     # - shapeit5 repository has been disabled by GitHub Staff due to a violation
+
