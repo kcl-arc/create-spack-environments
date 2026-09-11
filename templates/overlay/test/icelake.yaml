@@ -1,5 +1,5 @@
 spack:
-  spec:
+  specs:
     - cgal
     - maeparser
     - gcta
