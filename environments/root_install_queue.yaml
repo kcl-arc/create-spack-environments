@@ -2376,7 +2376,7 @@ items:
   source: environments
   constraint: zen5
 - env: env-zen5-sm89-test
-  spec: bolt_lmm %gcc@14.3.1 target=zen5
+  spec: bolt-lmm %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
 - env: env-cascadelake-cpu
@@ -11024,7 +11024,7 @@ items:
   source: environments
   constraint: zen5
 - env: env-zen5-sm89-test
-  spec: magma_gwas %gcc@14.3.1 target=zen5
+  spec: magma-gwas %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
 - env: env-cascadelake-cpu
