@@ -281,7 +281,6 @@ spack:
   - finestructure
   - eigensoft
   - gctb
-  spec:
   - cgal
   - maeparser
   - gcta
