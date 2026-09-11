@@ -19884,7 +19884,7 @@ items:
   source: environments
   constraint: zen5
 - env: env-zen5-sm89-test
-  spec: petsc %gcc@14.3.1 target=zen5
+  spec: petsc +batch %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
 - env: env-cascadelake-cpu
