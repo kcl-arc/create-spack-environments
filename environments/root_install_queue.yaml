@@ -2399,6 +2399,22 @@ items:
   spec: bolt-lmm %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: bolt-lmm %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: bolt-lmm %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: bolt-lmm %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: bolt-lmm %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: bolt-lmm %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -2423,6 +2439,42 @@ items:
   spec: bolt-lmm %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: bolt-lmm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: bolt-lmm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: bolt-lmm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: bolt-lmm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: bolt-lmm %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: bolt-lmm %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: bolt-lmm %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: bolt-lmm %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: bolt-lmm %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: bolt-lmm %gcc@13.4.0 target=zen4
   source: environments
@@ -2711,6 +2763,22 @@ items:
   spec: cgal %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: cgal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: cgal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: cgal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: cgal %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: cgal %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -2735,6 +2803,42 @@ items:
   spec: cgal %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: cgal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: cgal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: cgal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: cgal %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: cgal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: cgal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: cgal %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: cgal %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: cgal %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: cgal %gcc@13.4.0 target=zen4
   source: environments
@@ -6903,6 +7007,22 @@ items:
   spec: gcta %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: gcta %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: gcta %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: gcta %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: gcta %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: gcta %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -6927,6 +7047,42 @@ items:
   spec: gcta %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: gcta %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: gcta %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: gcta %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: gcta %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: gcta %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: gcta %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: gcta %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: gcta %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: gcta %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: gcta %gcc@13.4.0 target=zen4
   source: environments
@@ -11319,6 +11475,22 @@ items:
   spec: maeparser %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: maeparser %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: maeparser %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: maeparser %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: maeparser %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: maeparser %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -11343,6 +11515,42 @@ items:
   spec: maeparser %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: maeparser %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: maeparser %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: maeparser %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: maeparser %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: maeparser %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: maeparser %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: maeparser %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: maeparser %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: maeparser %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: maeparser %gcc@13.4.0 target=zen4
   source: environments
@@ -11415,6 +11623,22 @@ items:
   spec: magma-gwas %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: magma-gwas %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: magma-gwas %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: magma-gwas %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: magma-gwas %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: magma-gwas %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -11439,6 +11663,42 @@ items:
   spec: magma-gwas %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: magma-gwas %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: magma-gwas %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: magma-gwas %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: magma-gwas %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: magma-gwas %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: magma-gwas %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: magma-gwas %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: magma-gwas %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: magma-gwas %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: magma-gwas %gcc@13.4.0 target=zen4
   source: environments
@@ -20367,6 +20627,22 @@ items:
   spec: petsc +batch %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: petsc +batch %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: petsc +batch %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: petsc +batch %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: petsc +batch %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: petsc +batch %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -20391,6 +20667,42 @@ items:
   spec: petsc +batch %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: petsc +batch %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: petsc +batch %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: petsc +batch %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: petsc +batch %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: petsc +batch %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: petsc +batch %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: petsc +batch %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: petsc +batch %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: petsc +batch %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: petsc +batch %gcc@13.4.0 target=zen4
   source: environments
@@ -22311,6 +22623,22 @@ items:
   spec: regenie %gcc@12.5.0 target=cascadelake
   source: environments
   constraint: cascadelake
+- env: env-icelake-cpu-test
+  spec: regenie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm80-test
+  spec: regenie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm86-test
+  spec: regenie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-icelake-sm90-test
+  spec: regenie %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
 - env: env-sapphirerapids-cpu
   spec: regenie %gcc@13.4.0 target=sapphirerapids
   source: environments
@@ -22335,6 +22663,42 @@ items:
   spec: regenie %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
+- env: env-skylake_avx512-cpu-test
+  spec: regenie %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: regenie %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: regenie %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: regenie %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-x86_64_v4-cpu-test
+  spec: regenie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm80-test
+  spec: regenie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-x86_64_v4-sm89-test
+  spec: regenie %gcc@13.4.0 target=x86_64_v4
+  source: environments
+  constraint: x86_64_v4
+- env: env-zen2-cpu-test
+  spec: regenie %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: regenie %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
 - env: env-zen4-cpu
   spec: regenie %gcc@13.4.0 target=zen4
   source: environments
