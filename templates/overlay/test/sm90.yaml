@@ -2,8 +2,8 @@ specs:
   - cuda@13.3
   - cudnn@9.21.0.82-13
   - namd +cuda cuda_arch=90
-  - lammps +cuda cuda_arch=90
+  # - lammps +cuda cuda_arch=90
   - dorado +cuda cuda_arch=90
-  - py-boltz +cuda
+  - py-boltz +cuda ^py-torch+cuda cuda_arch=90
   - aretomo
-  - cellranger@7.2.0
+  # - cellranger@7.2.0
