@@ -2803,18 +2803,6 @@ items:
   spec: bwa %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
-- env: env-icelake-sm90-test
-  spec: cellranger@7.2.0 %gcc@12.5.0 target=icelake
-  source: environments
-  constraint: icelake
-- env: env-sapphirerapids-sm90-test
-  spec: cellranger@7.2.0 %gcc@13.4.0 target=sapphirerapids
-  source: environments
-  constraint: sapphirerapids
-- env: env-zen4-sm90-test
-  spec: cellranger@7.2.0 %gcc@13.4.0 target=zen4
-  source: environments
-  constraint: zen4
 - env: env-cascadelake-cpu
   spec: cgal %gcc@12.5.0 target=cascadelake
   source: environments
@@ -10371,18 +10359,6 @@ items:
   spec: intel-oneapi-mpi@2021.18.0 %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
-- env: env-icelake-sm90-test
-  spec: lammps +cuda cuda_arch=90 %gcc@12.5.0 target=icelake
-  source: environments
-  constraint: icelake
-- env: env-sapphirerapids-sm90-test
-  spec: lammps +cuda cuda_arch=90 %gcc@13.4.0 target=sapphirerapids
-  source: environments
-  constraint: sapphirerapids
-- env: env-zen4-sm90-test
-  spec: lammps +cuda cuda_arch=90 %gcc@13.4.0 target=zen4
-  source: environments
-  constraint: zen4
 - env: env-cascadelake-cpu
   spec: ldak %gcc@12.5.0 target=cascadelake
   source: environments
@@ -22228,15 +22204,15 @@ items:
   source: environments
   constraint: zen5
 - env: env-icelake-sm90-test
-  spec: py-boltz +cuda %gcc@12.5.0 target=icelake
+  spec: py-boltz +cuda ^py-torch+cuda cuda_arch=90 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
 - env: env-sapphirerapids-sm90-test
-  spec: py-boltz +cuda %gcc@13.4.0 target=sapphirerapids
+  spec: py-boltz +cuda ^py-torch+cuda cuda_arch=90 %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
 - env: env-zen4-sm90-test
-  spec: py-boltz +cuda %gcc@13.4.0 target=zen4
+  spec: py-boltz +cuda ^py-torch+cuda cuda_arch=90 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
 - env: env-cascadelake-cpu
