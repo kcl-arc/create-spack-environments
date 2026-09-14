@@ -289,8 +289,10 @@ spack:
   - regenie
   - petsc +batch
   - cuda@13.3
+  - cuda@12.9
   - cudnn@9.21.0.82-13
-  - namd@3.0.2 +cuda cuda_arch=90
+  - cudnn@9.21.0.82-12
+  - namd@3.0.2 +cuda cuda_arch=90 ^cuda@12
   - dorado +cuda cuda_arch=90
   - aretomo
   modules:
