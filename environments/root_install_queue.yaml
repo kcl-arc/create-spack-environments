@@ -3876,6 +3876,18 @@ items:
   source: environments
   constraint: skylake_avx512
 - env: env-icelake-sm90-test
+  spec: cuda@12.9 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-sapphirerapids-sm90-test
+  spec: cuda@12.9 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
+- env: env-zen4-sm90-test
+  spec: cuda@12.9 %gcc@13.4.0 target=zen4
+  source: environments
+  constraint: zen4
+- env: env-icelake-sm90-test
   spec: cuda@13.3 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
@@ -3887,6 +3899,14 @@ items:
   spec: cuda@13.3 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-icelake-sm90-test
+  spec: cudnn@9.21.0.82-12 %gcc@12.5.0 target=icelake
+  source: environments
+  constraint: icelake
+- env: env-sapphirerapids-sm90-test
+  spec: cudnn@9.21.0.82-12 %gcc@13.4.0 target=sapphirerapids
+  source: environments
+  constraint: sapphirerapids
 - env: env-skylake_avx512-sm61-test
   spec: cudnn@9.21.0.82-12 %gcc@12.5.0 target=skylake_avx512
   source: environments
@@ -3895,6 +3915,10 @@ items:
   spec: cudnn@9.21.0.82-12 %gcc@12.5.0 target=skylake_avx512
   source: environments
   constraint: skylake_avx512
+- env: env-zen4-sm90-test
+  spec: cudnn@9.21.0.82-12 %gcc@13.4.0 target=zen4
+  source: environments
+  constraint: zen4
 - env: env-icelake-sm90-test
   spec: cudnn@9.21.0.82-13 %gcc@12.5.0 target=icelake
   source: environments
@@ -14048,15 +14072,15 @@ items:
   source: environments
   constraint: skylake_avx512
 - env: env-icelake-sm90-test
-  spec: namd@3.0.2 +cuda cuda_arch=90 %gcc@12.5.0 target=icelake
+  spec: namd@3.0.2 +cuda cuda_arch=90 ^cuda@12 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
 - env: env-sapphirerapids-sm90-test
-  spec: namd@3.0.2 +cuda cuda_arch=90 %gcc@13.4.0 target=sapphirerapids
+  spec: namd@3.0.2 +cuda cuda_arch=90 ^cuda@12 %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
 - env: env-zen4-sm90-test
-  spec: namd@3.0.2 +cuda cuda_arch=90 %gcc@13.4.0 target=zen4
+  spec: namd@3.0.2 +cuda cuda_arch=90 ^cuda@12 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
 - env: env-zen2-cpu-test
