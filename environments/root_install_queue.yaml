@@ -13783,16 +13783,88 @@ items:
   spec: mysql +client_only %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-skylake_avx512-sm61-test
+  spec: namd@2.14 +cuda cuda_arch=61 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: namd@2.14 +cuda cuda_arch=70 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-cpu-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen5-sm89-test
+  spec: namd@2.14 ~cuda ~rocm %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
+- env: env-skylake_avx512-sm61-test
+  spec: namd@3.0.2 +cuda cuda_arch=61 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: namd@3.0.2 +cuda cuda_arch=70 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen2-cpu-test
+  spec: namd@3.0.2 ~cuda ~rocm %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-zen2-sm80-test
+  spec: namd@3.0.2 ~cuda ~rocm %gcc@12.5.0 target=zen2
+  source: environments
+  constraint: zen2
+- env: env-skylake_avx512-cpu-test
+  spec: namd@3.0.2 ~cuda ~rocm +avxtiles %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm61-test
+  spec: namd@3.0.2 ~cuda ~rocm +avxtiles %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: namd@3.0.2 ~cuda ~rocm +avxtiles %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm75-test
+  spec: namd@3.0.2 ~cuda ~rocm +avxtiles %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-zen5-sm89-test
+  spec: namd@3.0.2 ~cuda ~rocm +avxtiles %gcc@14.3.1 target=zen5
+  source: environments
+  constraint: zen5
 - env: env-icelake-sm90-test
-  spec: namd +cuda cuda_arch=90 %gcc@12.5.0 target=icelake
+  spec: namd@3.02 +cuda cuda_arch=90 %gcc@12.5.0 target=icelake
   source: environments
   constraint: icelake
 - env: env-sapphirerapids-sm90-test
-  spec: namd +cuda cuda_arch=90 %gcc@13.4.0 target=sapphirerapids
+  spec: namd@3.02 +cuda cuda_arch=90 %gcc@13.4.0 target=sapphirerapids
   source: environments
   constraint: sapphirerapids
 - env: env-zen4-sm90-test
-  spec: namd +cuda cuda_arch=90 %gcc@13.4.0 target=zen4
+  spec: namd@3.02 +cuda cuda_arch=90 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
 - env: env-cascadelake-cpu
@@ -22203,18 +22275,6 @@ items:
   spec: py-annoy %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
-- env: env-icelake-sm90-test
-  spec: py-boltz +cuda ^py-torch+cuda cuda_arch=90 %gcc@12.5.0 target=icelake
-  source: environments
-  constraint: icelake
-- env: env-sapphirerapids-sm90-test
-  spec: py-boltz +cuda ^py-torch+cuda cuda_arch=90 %gcc@13.4.0 target=sapphirerapids
-  source: environments
-  constraint: sapphirerapids
-- env: env-zen4-sm90-test
-  spec: py-boltz +cuda ^py-torch+cuda cuda_arch=90 %gcc@13.4.0 target=zen4
-  source: environments
-  constraint: zen4
 - env: env-cascadelake-cpu
   spec: py-gsutil %gcc@12.5.0 target=cascadelake
   source: environments
