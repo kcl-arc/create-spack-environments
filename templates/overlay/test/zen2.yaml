@@ -1,3 +1,3 @@
 specs:
-  - namd@3.0.2 ~cuda ~rocm ^charmpp@7.0.0 # no +avxtiles on zen2 or zen3, only Intel and zen4/zen5
+  - namd@3.0.2 ~cuda ~rocm # no +avxtiles on zen2 or zen3, only Intel and zen4/zen5
   - namd@2.14 ~cuda ~rocm
