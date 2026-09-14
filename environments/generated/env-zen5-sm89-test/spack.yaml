@@ -154,6 +154,7 @@ spack:
     nccl:
       variants: +cuda cuda_arch=89
   specs:
+  - gcc@11.4.0
   - cmake
   - curl
   - hdf5@1.14.6~mpi +hl
@@ -280,7 +281,6 @@ spack:
   - regenie
   - petsc +batch
   - namd@3.0.2 ~cuda ~rocm +avxtiles
-  - namd@2.14 ~cuda ~rocm %gcc@11.4.0
   modules:
     default:
       enable:
