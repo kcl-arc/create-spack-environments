@@ -3867,6 +3867,14 @@ items:
   spec: cryoef %gcc@14.3.1 target=zen5
   source: environments
   constraint: zen5
+- env: env-skylake_avx512-sm61-test
+  spec: cuda@12.8 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: cuda@12.8 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-icelake-sm90-test
   spec: cuda@13.3 %gcc@12.5.0 target=icelake
   source: environments
@@ -3879,6 +3887,14 @@ items:
   spec: cuda@13.3 %gcc@13.4.0 target=zen4
   source: environments
   constraint: zen4
+- env: env-skylake_avx512-sm61-test
+  spec: cudnn@9.21.0.82-12 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
+- env: env-skylake_avx512-sm70-test
+  spec: cudnn@9.21.0.82-12 %gcc@12.5.0 target=skylake_avx512
+  source: environments
+  constraint: skylake_avx512
 - env: env-icelake-sm90-test
   spec: cudnn@9.21.0.82-13 %gcc@12.5.0 target=icelake
   source: environments
@@ -13784,15 +13800,11 @@ items:
   source: environments
   constraint: zen5
 - env: env-skylake_avx512-sm61-test
-  spec: namd@2.14 +cuda cuda_arch=61 cflags="-Wno-implicit-function-declaration -Wno-implicit-int
-    -Wno-incompatible-pointer-types" ^cuda@11.8.0 ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration
-    -Wno-implicit-int -Wno-incompatible-pointer-types" %gcc@12.5.0 target=skylake_avx512
+  spec: namd@2.14 +cuda cuda_arch=61 %gcc@11.4.0 ^cuda@11.8.0 ^charmpp@6.10.2 target=skylake_avx512
   source: environments
   constraint: skylake_avx512
 - env: env-skylake_avx512-sm70-test
-  spec: namd@2.14 +cuda cuda_arch=70 cflags="-Wno-implicit-function-declaration -Wno-implicit-int
-    -Wno-incompatible-pointer-types" ^cuda@11.8.0 ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration
-    -Wno-implicit-int -Wno-incompatible-pointer-types" %gcc@12.5.0 target=skylake_avx512
+  spec: namd@2.14 +cuda cuda_arch=70 %gcc@11.4.0 ^cuda@11.8.0 ^charmpp@6.10.2 target=skylake_avx512
   source: environments
   constraint: skylake_avx512
 - env: env-skylake_avx512-cpu-test
@@ -13820,9 +13832,7 @@ items:
   source: environments
   constraint: zen2
 - env: env-zen5-sm89-test
-  spec: namd@2.14 ~cuda ~rocm cflags="-Wno-implicit-function-declaration -Wno-implicit-int
-    -Wno-incompatible-pointer-types" ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration
-    -Wno-implicit-int -Wno-incompatible-pointer-types" %gcc@14.3.1 target=zen5
+  spec: namd@2.14 ~cuda ~rocm %gcc@11.4.0 target=zen5
   source: environments
   constraint: zen5
 - env: env-skylake_avx512-sm61-test
