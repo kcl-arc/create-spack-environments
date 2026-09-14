@@ -288,6 +288,10 @@ spack:
   - bolt-lmm
   - regenie
   - petsc +batch
+  - namd@3.0.2 ~cuda ~rocm +avxtiles
+  - namd@2.14 ~cuda ~rocm
+  - namd@3.0.2 +cuda cuda_arch=61
+  - namd@2.14 +cuda cuda_arch=61
   modules:
     default:
       enable:
