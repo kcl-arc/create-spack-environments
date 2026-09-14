@@ -162,7 +162,7 @@ spack:
       variants: +cuda cuda_arch=80
   specs:
   - gcc@13.4.0
-  - gcc@11.4.0
+  - gcc@11.5.0
   - cmake@3.31.11
   - curl
   - hdf5@1.14.6~mpi +hl
