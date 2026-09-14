@@ -87,7 +87,7 @@ spack:
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-3ypwwcfpn7yep6ptlg2oewkiqp4ldg63/bin/gfortran
   specs:
     - gcc@12.5.0
-    - gcc@11.4.0
+    - gcc@11.5.0
     - cmake@3.31.11
     - curl
     - hdf5@1.14.6~mpi +hl
