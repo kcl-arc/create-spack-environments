@@ -289,7 +289,7 @@ spack:
   - petsc +batch
   - cuda@13.3
   - cudnn@9.21.0.82-13
-  - namd@3.0.2 +cuda cuda_arch=90
+  - namd@3.0.2 +cuda cuda_arch=90 ^charmpp@7.0.0
   - dorado +cuda cuda_arch=90
   - aretomo
   modules:
