@@ -1,3 +1,3 @@
 specs:
-  - namd@3.0.2 +cuda cuda_arch=70 ^charmpp@7.0.0
-  - namd@2.14 +cuda cuda_arch=70
+  - namd@3.0.2 +cuda cuda_arch=70
+  - namd@2.14 +cuda cuda_arch=70 ^cuda@11.8.0 ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration -Wno-implicit-int -Wno-incompatible-pointer-types"
