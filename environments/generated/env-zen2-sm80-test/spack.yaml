@@ -288,7 +288,7 @@ spack:
   - bolt-lmm
   - regenie
   - petsc +batch
-  - namd@3.0.2 ~cuda ~rocm
+  - namd@3.0.2 ~cuda ~rocm ^charmpp@7.0.0
   - namd@2.14 ~cuda ~rocm
   modules:
     default:
