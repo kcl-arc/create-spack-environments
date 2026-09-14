@@ -291,7 +291,8 @@ spack:
   - namd@3.0.2 ~cuda ~rocm +avxtiles
   - namd@2.14 ~cuda ~rocm
   - namd@3.0.2 +cuda cuda_arch=70
-  - namd@2.14 +cuda cuda_arch=70 ^cuda@11.8.0 ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration
+  - namd@2.14 +cuda cuda_arch=70 cflags="-Wno-implicit-function-declaration -Wno-implicit-int
+    -Wno-incompatible-pointer-types" ^cuda@11.8.0 ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration
     -Wno-implicit-int -Wno-incompatible-pointer-types"
   modules:
     default:
