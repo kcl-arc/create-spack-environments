@@ -280,9 +280,7 @@ spack:
   - regenie
   - petsc +batch
   - namd@3.0.2 ~cuda ~rocm +avxtiles
-  - namd@2.14 ~cuda ~rocm cflags="-Wno-implicit-function-declaration -Wno-implicit-int
-    -Wno-incompatible-pointer-types" ^charmpp@6.10.2 cflags="-Wno-implicit-function-declaration
-    -Wno-implicit-int -Wno-incompatible-pointer-types"
+  - namd@2.14 ~cuda ~rocm %gcc@11.4.0
   modules:
     default:
       enable:
