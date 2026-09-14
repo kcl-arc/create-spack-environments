@@ -79,7 +79,7 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
   specs:
-    - gcc@11.4.0
+    - gcc@11.5.0
     - cmake
     - curl
     - hdf5@1.14.6~mpi +hl
