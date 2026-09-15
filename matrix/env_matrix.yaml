@@ -7,6 +7,8 @@ settings:
     all: "{name}/{version}"
     hdf5+hl ^mpi: "{name}/{version}-hl-{^mpi.name}_{^mpi.version}"
     hdf5+hl: "{name}/{version}-hl"
+    namd+cuda: "{name}/{version}-cuda{cuda_arch}"
+    namd+avxtiles: "{name}/{version}-avxtiles"
     ^mpi: "{name}/{version}-{^mpi.name}_{^mpi.version}"
     ^hwloc: "{name}/{version}-hwloc_{^hwloc.version}"
     ^llvm: "{name}/{version}-{^llvm.name}_{^llvm.version}"
@@ -74,6 +76,9 @@ settings:
     - py-urllib3
     - py-wheel
     - py-zipp
+    - findutils
+    - gettext
+    - libtool
 
 # slurm_features defaults to [<family name>] when omitted -- every family
 # below uses a single Slurm feature token identical to its family name, so
