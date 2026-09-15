@@ -310,6 +310,8 @@ spack:
           all: '{name}/{version}'
           hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
           hdf5+hl: '{name}/{version}-hl'
+          namd+cuda: '{name}/{version}-cuda{cuda_arch}'
+          namd+avxtiles: '{name}/{version}-avxtiles'
           ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
           ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
           ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
@@ -377,5 +379,8 @@ spack:
         - py-urllib3
         - py-wheel
         - py-zipp
+        - findutils
+        - gettext
+        - libtool
   container:
     format: singularity
