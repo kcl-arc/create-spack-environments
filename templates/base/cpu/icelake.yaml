@@ -85,6 +85,13 @@ spack:
             c: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2/bin/gcc
             cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2/bin/g++
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2/bin/gfortran
+      - spec: gcc@11.5.0 target=icelake languages:='c,c++,fortran'
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks/bin/gfortran
   specs:
     - gcc@12.5.0
     - gcc@11.5.0
@@ -209,8 +216,6 @@ spack:
     - finestructure
     - eigensoft
     - gctb
-    # - kraken2
-    # - bracken will need re-visiting with kraken2 that has always been a PITA
     # - shapeit5 repository has been disabled by GitHub Staff due to a violation
     - cgal
     - maeparser

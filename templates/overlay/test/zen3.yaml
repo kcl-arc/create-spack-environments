@@ -1,0 +1,9 @@
+specs:
+  # - quantum-espresso
+  - r +X +rmath
+  # - r-rgeos
+  # - r-sf
+  # - r-sp
+  # - rename
+  # - rsem
+  # - rstudio ^r +X +rmath
