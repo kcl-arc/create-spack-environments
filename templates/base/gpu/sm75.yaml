@@ -11,3 +11,12 @@ spack:
       version: [18.1.8]
     clang:
       version: [18.1.8]
+  specs:
+    - cuda@13.3
+    - cudnn@9.21.0.82-13
+    - namd@3.0.2 +cuda cuda_arch=75
+    # - namd@2.14 +cuda cuda_arch=75 %gcc@11.5.0 ^cuda@11.8.0 ^charmpp@6.10.2
+    - dorado +cuda cuda_arch=75
+    - py-boltz +cuda ^py-torch+cuda cuda_arch=75
+    - aretomo
+    - cellranger@7.2.0

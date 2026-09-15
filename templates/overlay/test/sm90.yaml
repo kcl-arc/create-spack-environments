@@ -1,11 +1,14 @@
 specs:
-  - cuda@13.3
-  - cuda@12.9
-  - cudnn@9.21.0.82-13
-  - cudnn@9.21.0.82-12
-  - namd@3.0.2 +cuda cuda_arch=90 ^cuda@12
   - lammps +cuda cuda_arch=90
-  - dorado +cuda cuda_arch=90
-  # - py-boltz +cuda ^py-torch+cuda cuda_arch=90
-  - aretomo
-  - cellranger@7.2.0
+  # - gromacs@2026.1 +mpi +cuda cuda_arch=90
+  # - magma +fortran +shared +cuda cuda_arch=90
+  # - py-tensorflow +nccl +cuda cuda_arch=90
+  # - quantum-espresso +cuda cuda_arch=90
+  # - quantum-espresso
+  # - r +X +rmath
+  # - r-rgeos
+  # - r-sf
+  # - r-sp
+  # - rename
+  # - rsem
+  # - rstudio ^r +X +rmath

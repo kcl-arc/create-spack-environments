@@ -153,6 +153,13 @@ spack:
             c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-flefgfk4ggtpc5ajggnxp5pbbyk5czl2/bin/gcc
             cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-flefgfk4ggtpc5ajggnxp5pbbyk5czl2/bin/g++
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-flefgfk4ggtpc5ajggnxp5pbbyk5czl2/bin/gfortran
+      - spec: gcc@11.5.0 target=zen4 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-13.4.0/gcc-11.5.0-brlxndj2isufamvxkmyaag7lcaflb2qk
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-13.4.0/gcc-11.5.0-brlxndj2isufamvxkmyaag7lcaflb2qk/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-13.4.0/gcc-11.5.0-brlxndj2isufamvxkmyaag7lcaflb2qk/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-13.4.0/gcc-11.5.0-brlxndj2isufamvxkmyaag7lcaflb2qk/bin/gfortran
     cuda:
       version:
       - '13.3'
@@ -288,6 +295,14 @@ spack:
   - bolt-lmm
   - regenie
   - petsc +batch
+  - namd@3.0.2 ~cuda ~rocm +avxtiles
+  - cuda@13.3
+  - cudnn@9.21.0.82-13
+  - namd@3.0.2 +cuda cuda_arch=89
+  - dorado +cuda cuda_arch=89
+  - py-boltz +cuda ^py-torch+cuda cuda_arch=89
+  - aretomo
+  - cellranger@7.2.0
   modules:
     default:
       enable:

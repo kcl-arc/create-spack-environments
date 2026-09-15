@@ -85,6 +85,13 @@ spack:
             c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle/bin/gcc
             cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle/bin/g++
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle/bin/gfortran
+      - spec: gcc@11.5.0 target=zen2 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-12.5.0/gcc-11.5.0-qdpgj752uxq4a5y7ekyrky5uthiug6uj
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-12.5.0/gcc-11.5.0-qdpgj752uxq4a5y7ekyrky5uthiug6uj/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-12.5.0/gcc-11.5.0-qdpgj752uxq4a5y7ekyrky5uthiug6uj/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-12.5.0/gcc-11.5.0-qdpgj752uxq4a5y7ekyrky5uthiug6uj/bin/gfortran
   specs:
     - gcc@12.5.0
     - gcc@11.5.0
@@ -209,8 +216,6 @@ spack:
     - finestructure
     - eigensoft
     - gctb
-    # - kraken2
-    # - bracken will need re-visiting with kraken2 that has always been a PITA
     # - shapeit5 repository has been disabled by GitHub Staff due to a violation
     - cgal
     - maeparser
@@ -219,3 +224,6 @@ spack:
     - bolt-lmm
     - regenie
     - petsc +batch
+    # phase 3 (GPU mainly)
+    - namd@3.0.2 ~cuda ~rocm # no +avxtiles on zen2 or zen3, only Intel and zen4/zen5
+    - namd@2.14 ~cuda ~rocm
