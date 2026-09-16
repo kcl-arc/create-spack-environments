@@ -59,7 +59,6 @@ This performs, in order:
 1. Collect node `Features=` values from Slurm.
 2. Regenerate `matrix/features_to_family.yaml`.
 3. Regenerate `environments/generated/**` and `environments/index.yaml`.
-4. Regenerate `environments/root_install_queue.yaml`.
 
 ### Module naming projections (TCL)
 
