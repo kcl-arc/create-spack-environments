@@ -8,9 +8,7 @@ on:
       - templates/**
       - environments/generated/**
       - environments/index.yaml
-      - environments/root_install_queue.yaml
       - scripts/generate_envs.py
-      - scripts/export_root_install_queue.py
       - .github/workflows/validate-generated-envs.yml
   push:
     branches: [production]
@@ -19,9 +17,7 @@ on:
       - templates/**
       - environments/generated/**
       - environments/index.yaml
-      - environments/root_install_queue.yaml
       - scripts/generate_envs.py
-      - scripts/export_root_install_queue.py
 
 jobs:
   validate-generated-files:
@@ -38,9 +34,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install pyyaml
-
-      - name: Validate root install queue is current
-        run: python3 scripts/export_root_install_queue.py --check
 
       - name: Validate generated environments are current
         run: python3 scripts/generate_envs.py --check
