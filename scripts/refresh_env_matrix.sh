@@ -28,7 +28,4 @@ python3 scripts/update_features_to_family.py --input "$TMP_FEATURES_FILE"
 echo "Regenerating environments/index..."
 python3 scripts/generate_envs.py
 
-echo "Refreshing root install queue..."
-python3 scripts/export_root_install_queue.py
-
 echo "Done. Review changes with: git status --short"
