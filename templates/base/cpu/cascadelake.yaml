@@ -79,12 +79,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@12.5.0 target=cascadelake languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-3ypwwcfpn7yep6ptlg2oewkiqp4ldg63
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-2eruie4m7ujhkhtobjhankqgrlzlbxla
         extra_attributes:
           compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-3ypwwcfpn7yep6ptlg2oewkiqp4ldg63/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-3ypwwcfpn7yep6ptlg2oewkiqp4ldg63/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-3ypwwcfpn7yep6ptlg2oewkiqp4ldg63/bin/gfortran
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-2eruie4m7ujhkhtobjhankqgrlzlbxla/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-2eruie4m7ujhkhtobjhankqgrlzlbxla/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-14.3.1/gcc-12.5.0-2eruie4m7ujhkhtobjhankqgrlzlbxla/bin/gfortran
       - spec: gcc@11.5.0 target=cascadelake languages:='c,c++,fortran'
         prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-cascadelake/gcc-12.5.0/gcc-11.5.0-wcvpoaxo2wb63zg35vjzjk336tss6jxn
         extra_attributes:
