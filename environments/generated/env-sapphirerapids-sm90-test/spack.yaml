@@ -147,12 +147,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@13.4.0 target=sapphirerapids languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-tmoasguzk5j3vwh4tdhp2yzlv7gucvfd
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl
         extra_attributes:
           compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-tmoasguzk5j3vwh4tdhp2yzlv7gucvfd/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-tmoasguzk5j3vwh4tdhp2yzlv7gucvfd/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-tmoasguzk5j3vwh4tdhp2yzlv7gucvfd/bin/gfortran
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl/bin/gfortran
       - spec: gcc@11.5.0 target=sapphirerapids languages:='c,c++,fortran'
         prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-13.4.0/gcc-11.5.0-g3qyf4iehz2iecd5lnudbiayiyax7n7v
         extra_attributes:
