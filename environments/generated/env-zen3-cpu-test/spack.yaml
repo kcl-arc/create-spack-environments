@@ -153,13 +153,6 @@ spack:
             c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3/bin/gcc
             cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3/bin/g++
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3/bin/gfortran
-      - spec: gcc@11.5.0 target=zen3 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp
-        extra_attributes:
-          compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp/bin/gfortran
     cuda:
       buildable: false
   specs:
