@@ -188,12 +188,13 @@ def discover_bespoke_entries() -> list[dict[str, Any]]:
 
     for manifest in sorted(BESPOKE_DIR.rglob("spack.yaml")):
         env_name = manifest.parent.name
-        if not env_name.startswith("env-"):
-            continue
+        meta_path = manifest.parent / "meta.yaml"
+        meta = load_yaml(meta_path) if meta_path.exists() else {}
         entries.append(
             {
                 "name": env_name,
                 "manifest": str(manifest.relative_to(ROOT)).replace("\\", "/"),
+                "constraint": meta.get("constraint"),
                 "source": "bespoke",
                 "enabled": True,
             }
