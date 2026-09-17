@@ -1,0 +1,391 @@
+spack:
+  view: false
+  concretizer:
+    unify: false
+    reuse: false
+  packages:
+    all:
+      require:
+      - zen4
+    #   providers:
+    #     awk:
+    #     - gawk
+    #     blas:
+    #     - openblas
+    #     - amdblis
+    #     D:
+    #     - ldc
+    #     daal:
+    #     - intel-daal
+    #     elf:
+    #     - elfutils
+    #     fftw-api:
+    #     - fftw
+    #     - amdfftw
+    #     flame:
+    #     - libflame
+    #     - amdlibflame
+    #     fuse:
+    #     - libfuse
+    #     gl:
+    #     - mesa+opengl
+    #     - mesa18
+    #     - opengl
+    #     glu:
+    #     - mesa-glu
+    #     - openglu
+    #     glx:
+    #     - mesa+glx
+    #     - mesa18+glx
+    #     - opengl
+    #     golang:
+    #     - gcc
+    #     iconv:
+    #     - libiconv
+    #     ipp:
+    #     - intel-ipp
+    #     java:
+    #     - openjdk
+    #     - jdk
+    #     - ibm-java
+    #     jpeg:
+    #     - libjpeg-turbo
+    #     - libjpeg
+    #     lapack:
+    #     - openblas
+    #     - amdlibflame
+    #     libllvm:
+    #     - llvm
+    #     - llvm-amdgpu
+    #     lua-lang:
+    #     - lua
+    #     - lua-luajit
+    #     mariadb-client:
+    #     - mariadb-c-client
+    #     - mariadb
+    #     mkl:
+    #     - intel-mkl
+    #     mpe:
+    #     - mpe2
+    #     mpi:
+    #     - openmpi
+    #     - mpich
+    #     mysql-client:
+    #     - mysql
+    #     - mariadb-c-client
+    #     opencl:
+    #     - pocl
+    #     onedal:
+    #     - intel-oneapi-dal
+    #     osmesa:
+    #     - mesa+osmesa
+    #     - mesa18+osmesa
+    #     pbs:
+    #     - openpbs
+    #     - torque
+    #     pil:
+    #     - py-pillow
+    #     pkgconfig:
+    #     - pkgconf
+    #     - pkg-config
+    #     rpc:
+    #     - libtirpc
+    #     scalapack:
+    #     - netlib-scalapack
+    #     - amdscalapack
+    #     sycl:
+    #     - hipsycl
+    #     szip:
+    #     - libaec
+    #     - libszip
+    #     tbb:
+    #     - intel-tbb
+    #     unwind:
+    #     - libunwind
+    #     uuid:
+    #     - util-linux-uuid
+    #     - libuuid
+    #     xxd:
+    #     - xxd-standalone
+    #     - vim
+    #     yacc:
+    #     - bison
+    #     - byacc
+    #     ziglang:
+    #     - zig
+    c:
+      require: gcc target=zen4
+    #   prefer:
+    #   - gcc@12.5.0
+    cxx:
+      require: gcc target=zen4
+    #   prefer:
+    #   - gcc@12.5.0
+    fortran:
+      require: gcc target=zen4
+    #   prefer:
+    #   - gcc@12.5.0
+    llvm:
+      require: target=zen4
+      version:
+      - 17.0.6
+      - 18.1.8
+    clang:
+      require: target=zen4
+      version:
+      - 17.0.6
+      - 18.1.8
+    intel-oneapi-compilers:
+      require: target=zen4
+    boost:
+      require: '@1.77:'
+    gcc:
+      externals:
+      - spec: gcc@14.3.1 target=zen4 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
+      # - spec: gcc@12.5.0 target=zen4 languages:='c,c++,fortran'
+      #   prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3
+      #   extra_attributes:
+      #     compilers:
+      #       c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3/bin/gcc
+      #       cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3/bin/g++
+      #       fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-14.3.1/gcc-12.5.0-apcjls4risyg3ydnqrreaqmglzjln6p3/bin/gfortran
+      # - spec: gcc@11.5.0 target=zen3 languages:='c,c++,fortran'
+      #   prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp
+      #   extra_attributes:
+      #     compilers:
+      #       c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp/bin/gcc
+      #       cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp/bin/g++
+      #       fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen3/gcc-12.5.0/gcc-11.5.0-n7tramza3y3jlzlue2ao3zjwraetawsp/bin/gfortran
+    cuda:
+      buildable: false
+  specs:
+  - gcc@12.5.0
+  # - gcc@11.5.0
+  # - cmake@3.31.11
+  # - curl
+  # - hdf5@1.14.6~mpi +hl
+  # - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  # - intel-oneapi-compilers@2026.0.0
+  # - intel-oneapi-mkl@2026.0.0+shared threads=openmp
+  # - intel-oneapi-mpi@2021.18.0
+  # - netcdf-c
+  # - netlib-scalapack@2.2.3+shared build_type=Release
+  # - openmpi@5.0.8
+  # - llvm-openmp
+  # - zlib
+  # - fmt
+  # - zstd
+  # - bazel
+  # - beagle
+  # - bedtools2
+  # - bgen
+  # - bismark
+  # - bison
+  # - blast-plus
+  # - bwa
+  # - circos
+  # - coordgen
+  # - cryoef
+  # - eigen build_type=RelWithDebInfo
+  # - exonerate
+  # - fastp
+  # - fastqc
+  # - ffmpeg
+  # - gatk
+  # - gdal
+  # - gemma
+  # - git-lfs
+  # - gnuplot
+  # - gradle
+  # - hisat2
+  # - impute2
+  # - ldak
+  # - libhugetlbfs
+  # - libwebp +libwebpmux
+  # - libxc
+  # - meme +magick
+  # - mesa
+  # - meson
+  # - miniforge3
+  # - mysql +client_only
+  # - nextflow
+  # - openbabel ~python ~gui
+  # - p7zip
+  # - parallel
+  # - pcre
+  # - perl-appconfig
+  # - perl-config-simple
+  # - perl-file-remove
+  # - perl-file-sharedir
+  # - perl-file-slurp
+  # - perl-getopt-argvfile
+  # - perl-http-date
+  # - perl-module-install
+  # - perl-parallel-forkmanager
+  # - perl-parse-yapp
+  # - perl-parselex
+  # - perl-parsetemplate
+  # - perl-pathtools
+  # - perl-termreadkey
+  # - perl-test-leaktrace
+  # - picard
+  # - plink2
+  # - postgresql +client_only
+  # - py-gsutil
+  # - py-multiqc
+  # - py-mysql-connector-python
+  # - samtools
+  # - shapeit4
+  # - spark +hadoop
+  # - star
+  # - stringtie
+  # - subread
+  # - tabix
+  # - tcsh
+  # - trimgalore
+  # - trimmomatic
+  # - vcftools
+  # - wget
+  # - wtdbg2
+  # - automake
+  # - libtool
+  # - perl-carp-assert
+  # - perl-file-temp
+  # - perl-libbi
+  # - perl-math-symbolic
+  # - perl-module-corelist
+  # - perl-module-scandeps
+  # - perl-template-toolkit
+  # - perl-yaml-tiny
+  # - py-annoy
+  # - anaconda3
+  # - fastq-pair
+  # - fastq-tools
+  # - seqtk
+  # - plink
+  # - bcftools
+  # - admixture
+  # - flashpca
+  # - susiex
+  # - vbz-compression
+  # - xplor-nih
+  # - qctool
+  # - ic
+  # - mitoscape
+  # - novactf
+  # - palmer
+  # - metacarpa
+  # - metal
+  # - dentist
+  # - finestructure
+  # - eigensoft
+  # - gctb
+  # - cgal
+  # - maeparser
+  # - gcta
+  # - magma-gwas
+  # - bolt-lmm
+  # - regenie
+  # - petsc +batch
+  # - namd@3.0.2 ~cuda ~rocm
+  # # - namd@2.14 ~cuda ~rocm
+  # modules:
+  #   default:
+  #     enable:
+  #     - tcl
+  #     roots:
+  #       tcl: /software/spack_v1_2_1/install/modules/env-zen3-cpu/
+  #     tcl:
+  #       hash_length: 0
+  #       naming_scheme: '{name}/{version}'
+  #       projections:
+  #         all: '{name}/{version}'
+  #         hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
+  #         hdf5+hl: '{name}/{version}-hl'
+  #         namd+cuda cuda_arch=61: '{name}/{version}-cuda61'
+  #         namd+cuda cuda_arch=70: '{name}/{version}-cuda70'
+  #         namd+cuda cuda_arch=75: '{name}/{version}-cuda75'
+  #         namd+cuda cuda_arch=80: '{name}/{version}-cuda80'
+  #         namd+cuda cuda_arch=86: '{name}/{version}-cuda86'
+  #         namd+cuda cuda_arch=89: '{name}/{version}-cuda89'
+  #         namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
+  #         namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
+  #         namd+avxtiles: '{name}/{version}-avxtiles'
+  #         ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
+  #         ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
+  #         ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
+  #         ^python: '{name}/{version}-{^python.name}_{^python.version}'
+  #         boost+container: '{name}/{version}-container'
+  #         boost+icu: '{name}/{version}-icu'
+  #         eigen build_type=Release: '{name}/{version}-release'
+  #         threads=openmp: '{name}/{version}-omp'
+  #       exclude:
+  #       - meson
+  #       - ninja
+  #       - re2c
+  #       - cairo
+  #       - glib
+  #       - glib-bootstrap
+  #       - gobject-introspection
+  #       - harfbuzz
+  #       - libraqm
+  #       - pixman
+  #       - python-venv
+  #       - py-attrs
+  #       - py-calver
+  #       - py-certifi
+  #       - py-cffi
+  #       - py-contourpy
+  #       - py-cppy
+  #       - py-cryptography
+  #       - py-cycler
+  #       - py-cython
+  #       - py-flit-core
+  #       - py-fonttools
+  #       - py-gsutil
+  #       - py-hatch-fancy-pypi-readme
+  #       - py-hatch-vcs
+  #       - py-hatchling
+  #       - py-idna
+  #       - py-importlib-metadata
+  #       - py-kiwisolver
+  #       - py-markupsafe
+  #       - py-matplotlib
+  #       - py-maturin
+  #       - py-meson-python
+  #       - py-multiqc
+  #       - py-mysql-connector-python
+  #       - py-packaging
+  #       - py-pathspec
+  #       - py-pillow
+  #       - py-pip
+  #       - py-pluggy
+  #       - py-poetry-core
+  #       - py-pybind11
+  #       - py-pycparser
+  #       - py-pyparsing
+  #       - py-python-dateutil
+  #       - py-pyyaml
+  #       - py-requests
+  #       - py-scikit-build-core
+  #       - py-semantic-version
+  #       - py-setuptools
+  #       - py-setuptools-rust
+  #       - py-setuptools-scm
+  #       - py-six
+  #       - py-trove-classifiers
+  #       - py-typing-extensions
+  #       - py-urllib3
+  #       - py-wheel
+  #       - py-zipp
+  #       - findutils
+  #       - gettext
+  #       - libtool
+  # container:
+  #   format: singularity
