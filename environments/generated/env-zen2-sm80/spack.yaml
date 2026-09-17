@@ -147,12 +147,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@12.5.0 target=zen2 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-i3i5xzs7b57vdusgyjq7yto3snpowd2h
         extra_attributes:
           compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-qrkhysigwmb7ni5yjpikoa2si7bsvvle/bin/gfortran
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-i3i5xzs7b57vdusgyjq7yto3snpowd2h/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-i3i5xzs7b57vdusgyjq7yto3snpowd2h/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-14.3.1/gcc-12.5.0-i3i5xzs7b57vdusgyjq7yto3snpowd2h/bin/gfortran
       - spec: gcc@11.5.0 target=zen2 languages:='c,c++,fortran'
         prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen2/gcc-12.5.0/gcc-11.5.0-qdpgj752uxq4a5y7ekyrky5uthiug6uj
         extra_attributes:
