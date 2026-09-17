@@ -7,6 +7,28 @@ spack:
     all:
       require:
       - zen4
+    c:
+      require: gcc target=zen4
+    #   prefer:
+    #   - gcc@13.4.0
+    cxx:
+      require: gcc target=zen4
+    #   prefer:
+    #   - gcc@13.4.0
+    fortran:
+      require: gcc target=zen4
+    #   prefer:
+    #   - gcc@13.4.0
+    llvm:
+      require: target=zen4
+      version:
+      - 17.0.6
+      - 18.1.8
+    clang:
+      require: target=zen4
+      version:
+      - 17.0.6
+      - 18.1.8
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen4 languages:='c,c++,fortran'
