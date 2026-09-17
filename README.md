@@ -100,8 +100,11 @@ Only matrix-enabled pairs are generated.
 
 Bespoke environments are created in:
 
-- `environments/bespoke/env-<arch>/spack.yaml`
-- `environments/bespoke/env-<arch>-test/spack.yaml`
+- `environments/bespoke/<name>/spack.yaml`
+
+`<name>` is freeform (not required to follow `env-<arch>`); see
+`environments/bespoke/README.md` for naming and the optional `meta.yaml`
+(Slurm `constraint`) sidecar.
 
 ### Generate manifests locally
 

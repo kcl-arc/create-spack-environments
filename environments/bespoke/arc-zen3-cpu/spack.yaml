@@ -1,0 +1,19 @@
+spack:
+  view: false
+  concretizer:
+    unify: when_possible
+    reuse: false
+  packages:
+    all:
+      target: [zen3]
+    gcc:
+      externals:
+      - spec: gcc@14.3.1 languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
+  specs:
+    - gcc@12.5.0

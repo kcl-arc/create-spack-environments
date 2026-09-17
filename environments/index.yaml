@@ -269,3 +269,8 @@ environments:
   constraint: zen5
   source: generated
   enabled: true
+- name: arc-zen3-cpu
+  manifest: environments/bespoke/arc-zen3-cpu/spack.yaml
+  constraint: zen3
+  source: bespoke
+  enabled: true
