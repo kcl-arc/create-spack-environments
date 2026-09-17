@@ -79,12 +79,12 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@12.5.0 target=icelake languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk
         extra_attributes:
           compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-b42bjh2qv47gghwphjofkkk4dpsxlda2/bin/gfortran
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk/bin/gfortran
       - spec: gcc@11.5.0 target=icelake languages:='c,c++,fortran'
         prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks
         extra_attributes:
