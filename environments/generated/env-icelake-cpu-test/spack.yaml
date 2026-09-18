@@ -153,13 +153,6 @@ spack:
             c: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk/bin/gcc
             cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk/bin/g++
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-14.3.1/gcc-12.5.0-6rtiyuwjfrxzeij5qjv6kmesvnxq65mk/bin/gfortran
-      - spec: gcc@11.5.0 target=icelake languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks
-        extra_attributes:
-          compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-icelake/gcc-12.5.0/gcc-11.5.0-euwk4iacjeftok6iau2z6wyq5nhpiiks/bin/gfortran
     cuda:
       buildable: false
   specs:
@@ -291,6 +284,7 @@ spack:
   - bolt-lmm
   - regenie
   - petsc +batch
+  - namd@3.0.2 ~cuda ~rocm +avxtiles
   - r +X +rmath
   modules:
     default:
