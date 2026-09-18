@@ -153,13 +153,6 @@ spack:
             c: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl/bin/gcc
             cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl/bin/g++
             fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-14.3.1/gcc-13.4.0-7ivyxcqhpvfztht4s4sui4qs4twelkjl/bin/gfortran
-      - spec: gcc@11.5.0 target=sapphirerapids languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-13.4.0/gcc-11.5.0-g3qyf4iehz2iecd5lnudbiayiyax7n7v
-        extra_attributes:
-          compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-13.4.0/gcc-11.5.0-g3qyf4iehz2iecd5lnudbiayiyax7n7v/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-13.4.0/gcc-11.5.0-g3qyf4iehz2iecd5lnudbiayiyax7n7v/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-sapphirerapids/gcc-13.4.0/gcc-11.5.0-g3qyf4iehz2iecd5lnudbiayiyax7n7v/bin/gfortran
     cuda:
       version:
       - '13.3'
@@ -295,9 +288,10 @@ spack:
   - bolt-lmm
   - regenie
   - petsc +batch
+  - namd@3.0.2 ~cuda ~rocm +avxtiles
   - cuda@13.3
-  - cuda@12.9
   - cudnn@9.21.0.82-13
+  - cuda@12.9
   - cudnn@9.21.0.82-12
   - namd@3.0.2 +cuda cuda_arch=90 ^cuda@12
   - dorado +cuda cuda_arch=90
