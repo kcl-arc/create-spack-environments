@@ -2,271 +2,325 @@ environments:
 - name: env-cascadelake-cpu
   manifest: environments/generated/env-cascadelake-cpu/spack.yaml
   constraint: cascadelake
+  resource_arch: cascadelake_cpu
   source: generated
   enabled: true
 - name: env-cascadelake-cpu-test
   manifest: environments/generated/env-cascadelake-cpu-test/spack.yaml
   constraint: cascadelake
+  resource_arch: cascadelake_cpu
   source: generated
   enabled: true
 - name: env-cascadelake-sm75
   manifest: environments/generated/env-cascadelake-sm75/spack.yaml
   constraint: cascadelake
+  resource_arch: cascadelake_sm75
   source: generated
   enabled: true
 - name: env-cascadelake-sm75-test
   manifest: environments/generated/env-cascadelake-sm75-test/spack.yaml
   constraint: cascadelake
+  resource_arch: cascadelake_sm75
   source: generated
   enabled: true
 - name: env-cascadelake-sm86
   manifest: environments/generated/env-cascadelake-sm86/spack.yaml
   constraint: cascadelake
+  resource_arch: cascadelake_sm86
   source: generated
   enabled: true
 - name: env-cascadelake-sm86-test
   manifest: environments/generated/env-cascadelake-sm86-test/spack.yaml
   constraint: cascadelake
+  resource_arch: cascadelake_sm86
   source: generated
   enabled: true
 - name: env-icelake-cpu
   manifest: environments/generated/env-icelake-cpu/spack.yaml
   constraint: icelake
+  resource_arch: icelake_cpu
   source: generated
   enabled: true
 - name: env-icelake-cpu-test
   manifest: environments/generated/env-icelake-cpu-test/spack.yaml
   constraint: icelake
+  resource_arch: icelake_cpu
   source: generated
   enabled: true
 - name: env-icelake-sm80
   manifest: environments/generated/env-icelake-sm80/spack.yaml
   constraint: icelake
+  resource_arch: icelake_sm80
   source: generated
   enabled: true
 - name: env-icelake-sm80-test
   manifest: environments/generated/env-icelake-sm80-test/spack.yaml
   constraint: icelake
+  resource_arch: icelake_sm80
   source: generated
   enabled: true
 - name: env-icelake-sm86
   manifest: environments/generated/env-icelake-sm86/spack.yaml
   constraint: icelake
+  resource_arch: icelake_sm86
   source: generated
   enabled: true
 - name: env-icelake-sm86-test
   manifest: environments/generated/env-icelake-sm86-test/spack.yaml
   constraint: icelake
+  resource_arch: icelake_sm86
   source: generated
   enabled: true
 - name: env-icelake-sm90
   manifest: environments/generated/env-icelake-sm90/spack.yaml
   constraint: icelake
+  resource_arch: icelake_sm90
   source: generated
   enabled: true
 - name: env-icelake-sm90-test
   manifest: environments/generated/env-icelake-sm90-test/spack.yaml
   constraint: icelake
+  resource_arch: icelake_sm90
   source: generated
   enabled: true
 - name: env-sapphirerapids-cpu
   manifest: environments/generated/env-sapphirerapids-cpu/spack.yaml
   constraint: sapphirerapids
+  resource_arch: sapphirerapids_cpu
   source: generated
   enabled: true
 - name: env-sapphirerapids-cpu-test
   manifest: environments/generated/env-sapphirerapids-cpu-test/spack.yaml
   constraint: sapphirerapids
+  resource_arch: sapphirerapids_cpu
   source: generated
   enabled: true
 - name: env-sapphirerapids-sm100
   manifest: environments/generated/env-sapphirerapids-sm100/spack.yaml
   constraint: sapphirerapids
+  resource_arch: sapphirerapids_sm100
   source: generated
   enabled: true
 - name: env-sapphirerapids-sm100-test
   manifest: environments/generated/env-sapphirerapids-sm100-test/spack.yaml
   constraint: sapphirerapids
+  resource_arch: sapphirerapids_sm100
   source: generated
   enabled: true
 - name: env-sapphirerapids-sm90
   manifest: environments/generated/env-sapphirerapids-sm90/spack.yaml
   constraint: sapphirerapids
+  resource_arch: sapphirerapids_sm90
   source: generated
   enabled: true
 - name: env-sapphirerapids-sm90-test
   manifest: environments/generated/env-sapphirerapids-sm90-test/spack.yaml
   constraint: sapphirerapids
+  resource_arch: sapphirerapids_sm90
   source: generated
   enabled: true
 - name: env-skylake_avx512-cpu
   manifest: environments/generated/env-skylake_avx512-cpu/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_cpu
   source: generated
   enabled: true
 - name: env-skylake_avx512-cpu-test
   manifest: environments/generated/env-skylake_avx512-cpu-test/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_cpu
   source: generated
   enabled: true
 - name: env-skylake_avx512-sm61
   manifest: environments/generated/env-skylake_avx512-sm61/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_sm61
   source: generated
   enabled: true
 - name: env-skylake_avx512-sm61-test
   manifest: environments/generated/env-skylake_avx512-sm61-test/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_sm61
   source: generated
   enabled: true
 - name: env-skylake_avx512-sm70
   manifest: environments/generated/env-skylake_avx512-sm70/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_sm70
   source: generated
   enabled: true
 - name: env-skylake_avx512-sm70-test
   manifest: environments/generated/env-skylake_avx512-sm70-test/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_sm70
   source: generated
   enabled: true
 - name: env-skylake_avx512-sm75
   manifest: environments/generated/env-skylake_avx512-sm75/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_sm75
   source: generated
   enabled: true
 - name: env-skylake_avx512-sm75-test
   manifest: environments/generated/env-skylake_avx512-sm75-test/spack.yaml
   constraint: skylake_avx512
+  resource_arch: skylake_avx512_sm75
   source: generated
   enabled: true
 - name: env-x86_64_v4-cpu
   manifest: environments/generated/env-x86_64_v4-cpu/spack.yaml
   constraint: x86_64_v4
+  resource_arch: x86_64_v4_cpu
   source: generated
   enabled: true
 - name: env-x86_64_v4-cpu-test
   manifest: environments/generated/env-x86_64_v4-cpu-test/spack.yaml
   constraint: x86_64_v4
+  resource_arch: x86_64_v4_cpu
   source: generated
   enabled: true
 - name: env-x86_64_v4-sm80
   manifest: environments/generated/env-x86_64_v4-sm80/spack.yaml
   constraint: x86_64_v4
+  resource_arch: x86_64_v4_sm80
   source: generated
   enabled: true
 - name: env-x86_64_v4-sm80-test
   manifest: environments/generated/env-x86_64_v4-sm80-test/spack.yaml
   constraint: x86_64_v4
+  resource_arch: x86_64_v4_sm80
   source: generated
   enabled: true
 - name: env-x86_64_v4-sm89
   manifest: environments/generated/env-x86_64_v4-sm89/spack.yaml
   constraint: x86_64_v4
+  resource_arch: x86_64_v4_sm89
   source: generated
   enabled: true
 - name: env-x86_64_v4-sm89-test
   manifest: environments/generated/env-x86_64_v4-sm89-test/spack.yaml
   constraint: x86_64_v4
+  resource_arch: x86_64_v4_sm89
   source: generated
   enabled: true
 - name: env-zen2-cpu
   manifest: environments/generated/env-zen2-cpu/spack.yaml
   constraint: zen2
+  resource_arch: zen2_cpu
   source: generated
   enabled: true
 - name: env-zen2-cpu-test
   manifest: environments/generated/env-zen2-cpu-test/spack.yaml
   constraint: zen2
+  resource_arch: zen2_cpu
   source: generated
   enabled: true
 - name: env-zen2-sm80
   manifest: environments/generated/env-zen2-sm80/spack.yaml
   constraint: zen2
+  resource_arch: zen2_sm80
   source: generated
   enabled: true
 - name: env-zen2-sm80-test
   manifest: environments/generated/env-zen2-sm80-test/spack.yaml
   constraint: zen2
+  resource_arch: zen2_sm80
   source: generated
   enabled: true
 - name: env-zen3-cpu
   manifest: environments/generated/env-zen3-cpu/spack.yaml
   constraint: zen3
+  resource_arch: zen3_cpu
   source: generated
   enabled: true
 - name: env-zen3-cpu-test
   manifest: environments/generated/env-zen3-cpu-test/spack.yaml
   constraint: zen3
+  resource_arch: zen3_cpu
   source: generated
   enabled: true
 - name: env-zen3-sm80
   manifest: environments/generated/env-zen3-sm80/spack.yaml
   constraint: zen3
+  resource_arch: zen3_sm80
   source: generated
   enabled: true
 - name: env-zen3-sm80-test
   manifest: environments/generated/env-zen3-sm80-test/spack.yaml
   constraint: zen3
+  resource_arch: zen3_sm80
   source: generated
   enabled: true
 - name: env-zen4-cpu
   manifest: environments/generated/env-zen4-cpu/spack.yaml
   constraint: zen4
+  resource_arch: zen4_cpu
   source: generated
   enabled: true
 - name: env-zen4-cpu-test
   manifest: environments/generated/env-zen4-cpu-test/spack.yaml
   constraint: zen4
+  resource_arch: zen4_cpu
   source: generated
   enabled: true
 - name: env-zen4-sm100
   manifest: environments/generated/env-zen4-sm100/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm100
   source: generated
   enabled: true
 - name: env-zen4-sm100-test
   manifest: environments/generated/env-zen4-sm100-test/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm100
   source: generated
   enabled: true
 - name: env-zen4-sm80
   manifest: environments/generated/env-zen4-sm80/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm80
   source: generated
   enabled: true
 - name: env-zen4-sm80-test
   manifest: environments/generated/env-zen4-sm80-test/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm80
   source: generated
   enabled: true
 - name: env-zen4-sm89
   manifest: environments/generated/env-zen4-sm89/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm89
   source: generated
   enabled: true
 - name: env-zen4-sm89-test
   manifest: environments/generated/env-zen4-sm89-test/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm89
   source: generated
   enabled: true
 - name: env-zen4-sm90
   manifest: environments/generated/env-zen4-sm90/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm90
   source: generated
   enabled: true
 - name: env-zen4-sm90-test
   manifest: environments/generated/env-zen4-sm90-test/spack.yaml
   constraint: zen4
+  resource_arch: zen4_sm90
   source: generated
   enabled: true
 - name: env-zen5-sm89
   manifest: environments/generated/env-zen5-sm89/spack.yaml
   constraint: zen5
+  resource_arch: zen5_sm89
   source: generated
   enabled: true
 - name: env-zen5-sm89-test
   manifest: environments/generated/env-zen5-sm89-test/spack.yaml
   constraint: zen5
+  resource_arch: zen5_sm89
   source: generated
   enabled: true
 - name: arc-zen3-cpu
