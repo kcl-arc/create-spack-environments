@@ -329,6 +329,7 @@ spack:
           boost+icu: '{name}/{version}-icu'
           eigen build_type=Release: '{name}/{version}-release'
           threads=openmp: '{name}/{version}-omp'
+          ^curl+libidn2: '{name}/{version}-idn2'
         exclude:
         - meson
         - ninja
@@ -391,5 +392,6 @@ spack:
         - findutils
         - gettext
         - libtool
+        - binutils
   container:
     format: singularity
