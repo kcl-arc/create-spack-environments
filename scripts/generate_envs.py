@@ -181,6 +181,14 @@ def infer_slurm_constraint(cpu_family: str, matrix: dict[str, Any]) -> str | Non
     return str(features[0])
 
 
+def infer_resource_arch(cpu_family: str, gpu_family: str) -> str:
+    """slurm_args.yaml resource-override lookup key. Kept separate from
+    infer_slurm_constraint()'s cpu-family-only value, which also drives
+    --constraint node selection and cross-arch concurrency bucketing in
+    spack_deploy.py and so can't be widened to include gpu_family."""
+    return f"{cpu_family}_{gpu_family}"
+
+
 def discover_bespoke_entries() -> list[dict[str, Any]]:
     entries: list[dict[str, Any]] = []
     if not BESPOKE_DIR.exists():
@@ -299,12 +307,14 @@ def main() -> None:
         test_path = GENERATED_DIR / test_env_name / "spack.yaml"
 
         constraint = infer_slurm_constraint(cpu_family, matrix)
+        resource_arch = infer_resource_arch(cpu_family, gpu_family)
         generated_index_entries.extend(
             [
                 {
                     "name": env_name,
                     "manifest": str(prod_path.relative_to(ROOT)).replace("\\", "/"),
                     "constraint": constraint,
+                    "resource_arch": resource_arch,
                     "source": "generated",
                     "enabled": True,
                 },
@@ -312,6 +322,7 @@ def main() -> None:
                     "name": test_env_name,
                     "manifest": str(test_path.relative_to(ROOT)).replace("\\", "/"),
                     "constraint": constraint,
+                    "resource_arch": resource_arch,
                     "source": "generated",
                     "enabled": True,
                 },
