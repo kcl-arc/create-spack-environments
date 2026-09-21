@@ -24,6 +24,7 @@ settings:
     boost+icu: "{name}/{version}-icu"
     eigen build_type=Release: "{name}/{version}-release"
     threads=openmp: "{name}/{version}-omp"
+    ^curl+libidn2: "{name}/{version}-idn2"
   modules_tcl_exclude:
     - meson
     - ninja
@@ -86,6 +87,7 @@ settings:
     - findutils
     - gettext
     - libtool
+    - binutils
 
 # slurm_features defaults to [<family name>] when omitted -- every family
 # below uses a single Slurm feature token identical to its family name, so
