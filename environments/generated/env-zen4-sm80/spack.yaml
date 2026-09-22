@@ -320,6 +320,7 @@ spack:
           namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
           namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
           namd+avxtiles: '{name}/{version}-avxtiles'
+          curl+libidn2: '{name}/{version}-idn2'
           ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
           ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
           ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
@@ -328,7 +329,6 @@ spack:
           boost+icu: '{name}/{version}-icu'
           eigen build_type=Release: '{name}/{version}-release'
           threads=openmp: '{name}/{version}-omp'
-          ^curl+libidn2: '{name}/{version}-idn2'
         exclude:
         - meson
         - ninja
@@ -340,6 +340,20 @@ spack:
         - harfbuzz
         - libraqm
         - pixman
+        - bdftopcf
+        - font-util
+        - fontconfig
+        - freetype
+        - graphite2
+        - libdeflate
+        - libjpeg-turbo
+        - libpng
+        - libtiff
+        - libxfont
+        - libxft
+        - mkfontdir
+        - mkfontscale
+        - pango
         - python-venv
         - py-attrs
         - py-calver
