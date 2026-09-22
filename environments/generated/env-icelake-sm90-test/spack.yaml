@@ -323,11 +323,10 @@ spack:
           namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
           namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
           namd+avxtiles: '{name}/{version}-avxtiles'
+          curl+libidn2: '{name}/{version}-idn2'
           ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
           ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
           ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
-          curl+libidn2: '{name}/{version}-idn2'
-          ^curl+libidn2: '{name}/{version}-idn2'
           ^python: '{name}/{version}-{^python.name}_{^python.version}'
           boost+container: '{name}/{version}-container'
           boost+icu: '{name}/{version}-icu'
@@ -344,6 +343,20 @@ spack:
         - harfbuzz
         - libraqm
         - pixman
+        - bdftopcf
+        - font-util
+        - fontconfig
+        - freetype
+        - graphite2
+        - libdeflate
+        - libjpeg-turbo
+        - libpng
+        - libtiff
+        - libxfont
+        - libxft
+        - mkfontdir
+        - mkfontscale
+        - pango
         - python-venv
         - py-attrs
         - py-calver
