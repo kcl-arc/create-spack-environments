@@ -297,7 +297,6 @@ spack:
   - r-sp
   - rename
   - rsem
-  - rstudio ^r +X +rmath
   - cuda@13.3
   - cudnn@9.21.0.82-13
   - cuda@12.9

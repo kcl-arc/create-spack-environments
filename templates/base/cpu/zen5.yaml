@@ -227,4 +227,4 @@ spack:
     - r-sp
     - rename
     - rsem
-    - rstudio ^r +X +rmath
+    # - rstudio ^r +X +rmath

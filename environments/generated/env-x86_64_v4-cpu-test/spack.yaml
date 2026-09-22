@@ -294,7 +294,6 @@ spack:
   - r-sp
   - rename
   - rsem
-  - rstudio ^r +X +rmath
   modules:
     default:
       enable:
