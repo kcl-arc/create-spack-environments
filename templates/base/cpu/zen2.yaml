@@ -69,6 +69,8 @@ spack:
       require: "target=zen2"
     boost:
       require: "@1.77:"
+    libxml2:
+      require: '@2.13.9'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen2 languages:='c,c++,fortran'
@@ -224,6 +226,12 @@ spack:
     - bolt-lmm
     - regenie
     - petsc +batch
-    # phase 3 (GPU mainly)
     - namd@3.0.2 ~cuda ~rocm # no +avxtiles on zen2 or zen3, only Intel and zen4/zen5
     # - namd@2.14 ~cuda ~rocm
+    - r +X +rmath
+    - r-rgeos
+    - r-sf
+    - r-sp
+    - rename
+    - rsem
+    - rstudio ^r +X +rmath

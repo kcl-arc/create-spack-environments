@@ -1,6 +1,6 @@
 specs:
   # - quantum-espresso
-  - r +X +rmath
+  # - r +X +rmath
   # - r-rgeos
   # - r-sf
   # - r-sp
