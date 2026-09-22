@@ -69,6 +69,8 @@ spack:
       require: "target=sapphirerapids"
     boost:
       require: "@1.77:"
+    libxml2:
+      require: '@2.13.9'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=sapphirerapids languages:='c,c++,fortran'
@@ -226,3 +228,45 @@ spack:
     - petsc +batch
     - namd@3.0.2 ~cuda ~rocm +avxtiles
     # - namd@2.14 ~cuda ~rocm
+    - r +X +rmath
+    - r-rgeos
+    - r-sf
+    - r-sp
+    - rename
+    - rsem
+    - rstudio ^r +X +rmath
+    - awscli-v2
+    - bracken
+    - crest
+    - gaussian_avx@09-E
+    - gaussian_avx@16-C
+    - gaussian_avx2@16-C
+    - gaussian_sse4@09-E
+    - gaussian_sse4@16-C
+    - geomxngspipeline
+    - gurobi
+    - imagemagick +ghostscript
+    - kraken2@2.17.1
+    - mathematica@14.0.0
+    - matlab@R2024b
+    - matlab@R2022a
+    - motioncor2
+    - nbo
+    - nwchem +openmp
+    - opencarp
+    - openfoam
+    - orca@6.0.1
+    - prsice
+    - psi4 %gcc@11.5.0
+    - py-htseq
+    - py-umi-tools
+    - qtltools
+    - ruby
+    - salmon
+    - snptest
+    - sox
+    - spaceranger
+    - sra-tools
+    - sumo
+    - warpx
+    - xtb
