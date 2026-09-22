@@ -69,6 +69,8 @@ spack:
       require: "target=zen3"
     boost:
       require: "@1.77:"
+    libxml2:
+      require: '@2.13.9'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen3 languages:='c,c++,fortran'
