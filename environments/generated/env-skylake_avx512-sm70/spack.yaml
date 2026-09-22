@@ -298,7 +298,6 @@ spack:
   - r-sp
   - rename
   - rsem
-  - rstudio ^r +X +rmath
   - cuda@12.8
   - cudnn@9.21.0.82-12
   - namd@3.0.2 +cuda cuda_arch=70

@@ -297,15 +297,14 @@ spack:
   - r-sp
   - rename
   - rsem
-  - rstudio ^r +X +rmath
   - awscli-v2
   - bracken
   - crest
-  - gaussian_avx@09-E
-  - gaussian_avx@16-C
-  - gaussian_avx2@16-C
-  - gaussian_sse4@09-E
-  - gaussian_sse4@16-C
+  - gaussian-avx@09-E
+  - gaussian-avx@16-C
+  - gaussian-avx2@16-C
+  - gaussian-sse4@09-E
+  - gaussian-sse4@16-C
   - geomxngspipeline
   - gurobi
   - imagemagick +ghostscript
