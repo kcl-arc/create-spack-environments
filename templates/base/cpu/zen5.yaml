@@ -221,3 +221,10 @@ spack:
     # phase 3 (GPU mainly)
     - namd@3.0.2 ~cuda ~rocm +avxtiles
     # - namd@2.14 ~cuda ~rocm %gcc@11.5.0
+    - r +X +rmath
+    - r-rgeos
+    - r-sf
+    - r-sp
+    - rename
+    - rsem
+    - rstudio ^r +X +rmath

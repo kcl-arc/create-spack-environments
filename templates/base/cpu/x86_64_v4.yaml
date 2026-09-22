@@ -228,3 +228,10 @@ spack:
     - petsc +batch
     - namd@3.0.2 ~cuda ~rocm +avxtiles
     # - namd@2.14 ~cuda ~rocm
+    - r +X +rmath
+    - r-rgeos
+    - r-sf
+    - r-sp
+    - rename
+    - rsem
+    - rstudio ^r +X +rmath

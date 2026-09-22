@@ -288,6 +288,13 @@ spack:
   - regenie
   - petsc +batch
   - namd@3.0.2 ~cuda ~rocm +avxtiles
+  - r +X +rmath
+  - r-rgeos
+  - r-sf
+  - r-sp
+  - rename
+  - rsem
+  - rstudio ^r +X +rmath
   modules:
     default:
       enable:
