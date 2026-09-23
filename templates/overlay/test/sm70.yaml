@@ -1,5 +1,5 @@
 specs:
-  - lammps +cuda cuda_arch=70
+  # - lammps +cuda cuda_arch=70
   # - gromacs@2026.1 +mpi +cuda cuda_arch=70
   # - magma +fortran +shared +cuda cuda_arch=70
   # - py-tensorflow +nccl +cuda cuda_arch=70
