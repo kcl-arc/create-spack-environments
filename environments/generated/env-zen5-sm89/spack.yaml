@@ -321,13 +321,24 @@ spack:
           namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
           namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
           namd+avxtiles: '{name}/{version}-avxtiles'
+          curl+libidn2 ^zlib: '{name}/{version}-idn2-zlib'
           curl+libidn2: '{name}/{version}-idn2'
           ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
+          ^hwloc ^zlib: '{name}/{version}-hwloc_{^hwloc.version}-zlib'
           ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
           ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
+          ^python ^zlib: '{name}/{version}-{^python.name}_{^python.version}-zlib'
           ^python: '{name}/{version}-{^python.name}_{^python.version}'
           boost+container: '{name}/{version}-container'
           boost+icu: '{name}/{version}-icu'
+          ^zlib: '{name}/{version}-zlib'
+          cmake@3.31.11 ^curl+libidn2: '{name}/{version}-idn2'
+          cmake@3.31.11 ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
+          git ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
+          gdal ^curl+libidn2: '{name}/{version}-idn2'
+          proj ^curl+libidn2: '{name}/{version}-idn2'
+          arrow ^cmake %curl+libidn2: '{name}/{version}-idn2'
+          geos ^cmake %curl+libidn2: '{name}/{version}-idn2'
           eigen build_type=Release: '{name}/{version}-release'
           threads=openmp: '{name}/{version}-omp'
         exclude:
@@ -407,5 +418,32 @@ spack:
         - gettext
         - libtool
         - binutils
+        - elfutils
+        - flatbuffers
+        - fribidi
+        - icu4c
+        - json-c
+        - json-glib
+        - krb5
+        - lerc
+        - libfontenc
+        - libgeotiff
+        - libgit2
+        - libtirpc
+        - libx11
+        - libxcb
+        - libxext
+        - libxml2
+        - libxmu
+        - libxrender
+        - libxscrnsaver
+        - libxt
+        - muparser
+        - qhull
+        - rapidjson
+        - xcb-proto
+        - xsimd
+        - flex
+        - texinfo
   container:
     format: singularity
