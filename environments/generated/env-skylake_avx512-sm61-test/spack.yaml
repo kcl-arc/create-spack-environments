@@ -162,8 +162,7 @@ spack:
       variants: +cuda cuda_arch=61
     nccl:
       variants: +cuda cuda_arch=61
-  specs:
-  - lammps +cuda cuda_arch=61
+  specs: null
   modules:
     default:
       enable:
