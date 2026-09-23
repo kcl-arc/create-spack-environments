@@ -254,7 +254,7 @@ spack:
     - nwchem +openmp
     - opencarp
     - openfoam
-    - orca@6.0.1
+    # - orca@6.0.1
     - prsice
     - psi4
     - py-htseq
