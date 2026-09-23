@@ -163,6 +163,150 @@ spack:
     nccl:
       variants: +cuda cuda_arch=89
   specs:
+  - gcc@13.4.0
+  - gcc@11.5.0
+  - cmake@3.31.11
+  - curl
+  - hdf5@1.14.6~mpi +hl
+  - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+  - intel-oneapi-compilers@2026.0.0
+  - intel-oneapi-mkl@2026.0.0+shared threads=openmp
+  - intel-oneapi-mpi@2021.18.0
+  - netcdf-c
+  - netlib-scalapack@2.2.3+shared build_type=Release
+  - openmpi@5.0.8
+  - llvm-openmp
+  - zlib
+  - fmt
+  - zstd
+  - bazel
+  - beagle
+  - bedtools2
+  - bgen
+  - bismark
+  - bison
+  - blast-plus
+  - bwa
+  - circos
+  - coordgen
+  - cryoef
+  - eigen build_type=RelWithDebInfo
+  - exonerate
+  - fastp
+  - fastqc
+  - ffmpeg
+  - gatk
+  - gdal
+  - gemma
+  - git-lfs
+  - gnuplot
+  - gradle
+  - hisat2
+  - impute2
+  - ldak
+  - libhugetlbfs
+  - libwebp +libwebpmux
+  - libxc
+  - meme +magick
+  - mesa
+  - meson
+  - miniforge3
+  - mysql +client_only
+  - nextflow
+  - openbabel ~python ~gui
+  - p7zip
+  - parallel
+  - pcre
+  - perl-appconfig
+  - perl-config-simple
+  - perl-file-remove
+  - perl-file-sharedir
+  - perl-file-slurp
+  - perl-getopt-argvfile
+  - perl-http-date
+  - perl-module-install
+  - perl-parallel-forkmanager
+  - perl-parse-yapp
+  - perl-parselex
+  - perl-parsetemplate
+  - perl-pathtools
+  - perl-termreadkey
+  - perl-test-leaktrace
+  - picard
+  - plink2
+  - postgresql +client_only
+  - py-gsutil
+  - py-multiqc
+  - py-mysql-connector-python
+  - samtools
+  - shapeit4
+  - spark +hadoop
+  - star
+  - stringtie
+  - subread
+  - tabix
+  - tcsh
+  - trimgalore
+  - trimmomatic
+  - vcftools
+  - wget
+  - wtdbg2
+  - automake
+  - libtool
+  - perl-carp-assert
+  - perl-file-temp
+  - perl-libbi
+  - perl-math-symbolic
+  - perl-module-corelist
+  - perl-module-scandeps
+  - perl-template-toolkit
+  - perl-yaml-tiny
+  - py-annoy
+  - anaconda3
+  - fastq-pair
+  - fastq-tools
+  - seqtk
+  - plink
+  - bcftools
+  - admixture
+  - flashpca
+  - susiex
+  - vbz-compression
+  - xplor-nih
+  - ic
+  - mitoscape
+  - novactf
+  - palmer
+  - metacarpa
+  - metal
+  - dentist
+  - finestructure
+  - eigensoft
+  - gctb
+  - cgal
+  - maeparser
+  - gcta
+  - magma-gwas
+  - bolt-lmm
+  - regenie
+  - petsc +batch
+  - namd@3.0.2 ~cuda ~rocm +avxtiles
+  - r +X +rmath
+  - r-rgeos
+  - r-sf
+  - r-sp
+  - rename
+  - rsem
+  - cuda@13.3
+  - cudnn@9.21.0.82-13
+  - cuda@12.9
+  - cudnn@9.21.0.82-12
+  - namd@3.0.2 +cuda cuda_arch=89 ^cuda@12
+  - dorado +cuda cuda_arch=89
+  - py-boltz +cuda ^py-torch+cuda cuda_arch=89
+  - aretomo
+  - cellranger@7.2.0
+  - motioncor2
   - lammps +cuda cuda_arch=89
   modules:
     default:

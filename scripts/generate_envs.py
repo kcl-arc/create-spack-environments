@@ -57,6 +57,10 @@ def should_replace_list(path: tuple[str, ...]) -> bool:
 
 def deep_merge(dst: dict[str, Any], src: dict[str, Any], path: tuple[str, ...] = ()) -> dict[str, Any]:
     for key, value in src.items():
+        if value is None:
+            # An empty key (e.g. a `specs:` list whose entries are all commented
+            # out) contributes nothing; don't let it overwrite the base value.
+            continue
         if key in dst and isinstance(dst[key], dict) and isinstance(value, dict):
             deep_merge(dst[key], value, path + (key,))
         elif key in dst and isinstance(dst[key], list) and isinstance(value, list):
