@@ -312,7 +312,6 @@ spack:
   - mathematica@14.0.0
   - matlab@R2024b
   - matlab@R2022a
-  - motioncor2
   - nbo
   - nwchem +openmp
   - opencarp
@@ -341,6 +340,7 @@ spack:
   - py-boltz +cuda ^py-torch+cuda cuda_arch=100
   - aretomo
   - cellranger@7.2.0
+  - motioncor2
   modules:
     default:
       enable:
