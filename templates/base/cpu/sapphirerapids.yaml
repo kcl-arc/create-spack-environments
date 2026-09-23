@@ -250,7 +250,6 @@ spack:
     - mathematica@14.0.0
     - matlab@R2024b
     - matlab@R2022a
-    - motioncor2
     - nbo
     - nwchem +openmp
     - opencarp

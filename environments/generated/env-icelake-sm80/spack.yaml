@@ -307,6 +307,7 @@ spack:
   - py-boltz +cuda ^py-torch+cuda cuda_arch=80
   - aretomo
   - cellranger@7.2.0
+  - motioncor2
   modules:
     default:
       enable:
