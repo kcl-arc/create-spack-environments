@@ -340,6 +340,7 @@ spack:
   - aretomo
   - cellranger@7.2.0
   - motioncor2
+  - lammps +cuda cuda_arch=100
   modules:
     default:
       enable:
