@@ -333,3 +333,8 @@ environments:
   constraint: zen4
   source: bespoke
   enabled: true
+- name: compiler-store
+  manifest: environments/bespoke/compiler-store/spack.yaml
+  constraint: null
+  source: bespoke
+  enabled: true
