@@ -1,20 +1,18 @@
 spack:
   specs:
   - /2eruie4m7ujhkhtobjhankqgrlzlbxla  # gcc@12.5.0 cascadelake
-  - /wcvpoaxo2wb63zg35vjzjk336tss6jxn  # gcc@11.5.0 cascadelake
-  - /6rtiyuwjfrxzeij5qjv6kmesvnxq65mk  # gcc@12.5.0 icelake
-  - /euwk4iacjeftok6iau2z6wyq5nhpiiks  # gcc@11.5.0 icelake
-  - /7ivyxcqhpvfztht4s4sui4qs4twelkjl  # gcc@13.4.0 sapphirerapids
-  - /g3qyf4iehz2iecd5lnudbiayiyax7n7v  # gcc@11.5.0 sapphirerapids
-  - /yypm3vgpibmywxis6kc3m2k3wuimv4dy  # gcc@12.5.0 skylake_avx512
-  - /rurpoqhy5drgpqqtrf3d7lgxeoo63435  # gcc@11.5.0 skylake_avx512
-  - /i3i5xzs7b57vdusgyjq7yto3snpowd2h  # gcc@12.5.0 zen2
-  - /qdpgj752uxq4a5y7ekyrky5uthiug6uj  # gcc@11.5.0 zen2
-  - /apcjls4risyg3ydnqrreaqmglzjln6p3  # gcc@12.5.0 zen3
-  - /n7tramza3y3jlzlue2ao3zjwraetawsp  # gcc@11.5.0 zen3
+  - /34mufjfipajhl66qvvqtmpqho7synrwa  # gcc@13.4.0 x86_64_v4
   - /5eiwbk3st5u4lwmpesm5mukt7ijwn6mm  # gcc@13.4.0 zen4
-  - /brlxndj2isufamvxkmyaag7lcaflb2qk  # gcc@11.5.0 zen4
-  - /jt3o3tp3zaxbvcyceki6pm6wnsrtj4by  # gcc@11.5.0 zen5
-  # ...one line per self-hosted compiler
+  - /6rtiyuwjfrxzeij5qjv6kmesvnxq65mk  # gcc@12.5.0 icelake
+  - /7ivyxcqhpvfztht4s4sui4qs4twelkjl  # gcc@13.4.0 sapphirerapids
+  - /apcjls4risyg3ydnqrreaqmglzjln6p3  # gcc@12.5.0 zen3
+  - /i3i5xzs7b57vdusgyjq7yto3snpowd2h  # gcc@12.5.0 zen2
+  - /yypm3vgpibmywxis6kc3m2k3wuimv4dy  # gcc@12.5.0 skylake_avx512
+  view: false
   concretizer:
     unify: false
+  modules:
+    default:
+      tcl:
+        exclude:
+        - gcc
