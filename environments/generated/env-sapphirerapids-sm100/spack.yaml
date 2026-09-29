@@ -139,6 +139,10 @@ spack:
       require: '@1.77:'
     libxml2:
       require: '@2.13.9'
+    petsc:
+      require: +batch
+    mctc-lib:
+      require: '@0.5.1:'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=sapphirerapids languages:='c,c++,fortran'
@@ -318,7 +322,7 @@ spack:
   - openfoam
   - prsice
   - psi4
-  - py-htseq
+  - py-htseq@2.1.2
   - py-umi-tools
   - qtltools
   - ruby
