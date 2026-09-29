@@ -5,48 +5,7 @@ spack:
     reuse: false
   packages:
     all:
-      require: [zen5]
-      providers:
-        awk: [gawk]
-        blas: [openblas, amdblis]
-        D: [ldc]
-        daal: [intel-daal]
-        elf: [elfutils]
-        fftw-api: [fftw, amdfftw]
-        flame: [libflame, amdlibflame]
-        fuse: [libfuse]
-        gl: [mesa+opengl, mesa18, opengl]
-        glu: [mesa-glu, openglu]
-        glx: [mesa+glx, mesa18+glx, opengl]
-        golang: [gcc]
-        iconv: [libiconv]
-        ipp: [intel-ipp]
-        java: [openjdk, jdk, ibm-java]
-        jpeg: [libjpeg-turbo, libjpeg]
-        lapack: [openblas, amdlibflame]
-        libllvm: [llvm, llvm-amdgpu]
-        lua-lang: [lua, lua-luajit]
-        mariadb-client: [mariadb-c-client, mariadb]
-        mkl: [intel-mkl]
-        mpe: [mpe2]
-        mpi: [openmpi, mpich]
-        mysql-client: [mysql, mariadb-c-client]
-        opencl: [pocl]
-        onedal: [intel-oneapi-dal]
-        osmesa: [mesa+osmesa, mesa18+osmesa]
-        pbs: [openpbs, torque]
-        pil: [py-pillow]
-        pkgconfig: [pkgconf, pkg-config]
-        rpc: [libtirpc]
-        scalapack: [netlib-scalapack, amdscalapack]
-        sycl: [hipsycl]
-        szip: [libaec, libszip]
-        tbb: [intel-tbb]
-        unwind: [libunwind]
-        uuid: [util-linux-uuid, libuuid]
-        xxd: [xxd-standalone, vim]
-        yacc: [bison, byacc]
-        ziglang: [zig]
+      require: ["target=zen5"]
     c:
       require: "gcc target=zen5"
       prefer:
@@ -68,9 +27,21 @@ spack:
     intel-oneapi-compilers:
       require: "target=zen5"
     boost:
-      require: "@1.77:"
+      require: "@1.77: target=zen5"
     libxml2:
-      require: '@2.13.9'
+      require: '@2.13.9 target=zen5'
+    petsc:
+      require: "+batch target=zen5"
+    mctc-lib:
+      require: "@0.5.1: target=zen5"
+    xtb:
+      require: "~tblite target=zen5"
+    curl:
+      require: "+libidn2 target=zen5"
+    openmpi:
+      require: ["target=zen5"]
+    r:
+      require: ["target=zen5"]
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen5 languages:='c,c++,fortran'
