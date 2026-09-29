@@ -145,6 +145,8 @@ spack:
       require: +batch
     mctc-lib:
       require: '@0.5.1:'
+    xtb:
+      require: ~tblite
     gcc:
       externals:
       - spec: gcc@14.3.1 target=sapphirerapids languages:='c,c++,fortran'
