@@ -11,6 +11,16 @@ spack:
   view: false
   concretizer:
     unify: false
+  packages:
+    gcc:
+      externals:
+      - spec: gcc@14.3.1 target=sapphirerapids languages:='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
   modules:
     default:
       tcl:
