@@ -1,20 +1,21 @@
 spack:
   specs:
-  - /2eruie4m7ujhkhtobjhankqgrlzlbxla  # gcc@12.5.0 cascadelake
-  - /34mufjfipajhl66qvvqtmpqho7synrwa  # gcc@13.4.0 x86_64_v4
-  - /5eiwbk3st5u4lwmpesm5mukt7ijwn6mm  # gcc@13.4.0 zen4
-  - /6rtiyuwjfrxzeij5qjv6kmesvnxq65mk  # gcc@12.5.0 icelake
-  - /7ivyxcqhpvfztht4s4sui4qs4twelkjl  # gcc@13.4.0 sapphirerapids
-  - /apcjls4risyg3ydnqrreaqmglzjln6p3  # gcc@12.5.0 zen3
-  - /i3i5xzs7b57vdusgyjq7yto3snpowd2h  # gcc@12.5.0 zen2
-  - /yypm3vgpibmywxis6kc3m2k3wuimv4dy  # gcc@12.5.0 skylake_avx512
+  - glib
+  # - /2eruie4m7ujhkhtobjhankqgrlzlbxla  # gcc@12.5.0 cascadelake
+  # - /34mufjfipajhl66qvvqtmpqho7synrwa  # gcc@13.4.0 x86_64_v4
+  # - /5eiwbk3st5u4lwmpesm5mukt7ijwn6mm  # gcc@13.4.0 zen4
+  # - /6rtiyuwjfrxzeij5qjv6kmesvnxq65mk  # gcc@12.5.0 icelake
+  # - /7ivyxcqhpvfztht4s4sui4qs4twelkjl  # gcc@13.4.0 sapphirerapids
+  # - /apcjls4risyg3ydnqrreaqmglzjln6p3  # gcc@12.5.0 zen3
+  # - /i3i5xzs7b57vdusgyjq7yto3snpowd2h  # gcc@12.5.0 zen2
+  # - /yypm3vgpibmywxis6kc3m2k3wuimv4dy  # gcc@12.5.0 skylake_avx512
   view: false
   concretizer:
     unify: false
   packages:
     gcc:
       externals:
-      - spec: gcc@14.3.1 target=sapphirerapids languages:='c,c++,fortran'
+      - spec: gcc@14.3.1 languages:='c,c++,fortran'
         prefix: /usr
         extra_attributes:
           compilers:
