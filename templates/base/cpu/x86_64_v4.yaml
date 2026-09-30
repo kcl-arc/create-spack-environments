@@ -8,16 +8,16 @@ spack:
       require: ["target=x86_64_v4"]
     c:
       require: "gcc target=x86_64_v4"
-      # prefer:
-      #   - gcc@13.4.0
+      prefer:
+        - gcc@13.4.0
     cxx:
       require: "gcc target=x86_64_v4"
-      # prefer:
-      #   - gcc@13.4.0
+      prefer:
+        - gcc@13.4.0
     fortran:
       require: "gcc target=x86_64_v4"
-      # prefer:
-      #   - gcc@13.4.0
+      prefer:
+        - gcc@13.4.0
     llvm:
       require: "target=x86_64_v4"
       version: [17.0.6, 18.1.8]
@@ -51,158 +51,185 @@ spack:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-      # - spec: gcc@13.4.0 target=x86_64_v4 languages:='c,c++,fortran'
-      #   prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-34mufjfipajhl66qvvqtmpqho7synrwa
-      #   extra_attributes:
-      #     compilers:
-      #       c: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-34mufjfipajhl66qvvqtmpqho7synrwa/bin/gcc
-      #       cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-34mufjfipajhl66qvvqtmpqho7synrwa/bin/g++
-      #       fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-34mufjfipajhl66qvvqtmpqho7synrwa/bin/gfortran
-      # # - spec: gcc@11.5.0 target=x86_64_v4 languages:='c,c++,fortran'
-      # #   prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-13.4.0/gcc-11.5.0-m72fu6jic3pdbfceblq24372yfo4gneh
-      # #   extra_attributes:
-      # #     compilers:
-      # #       c: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-13.4.0/gcc-11.5.0-m72fu6jic3pdbfceblq24372yfo4gneh/bin/gcc
-      # #       cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-13.4.0/gcc-11.5.0-m72fu6jic3pdbfceblq24372yfo4gneh/bin/g++
-      # #       fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-13.4.0/gcc-11.5.0-m72fu6jic3pdbfceblq24372yfo4gneh/bin/gfortran
+      - spec: gcc@13.4.0 target=x86_64_v4 languages:='c,c++,fortran'
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-t2negluj3ibo2lluvy3qsdba6dzqfnpi
+        extra_attributes:
+          compilers:
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-t2negluj3ibo2lluvy3qsdba6dzqfnpi/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-t2negluj3ibo2lluvy3qsdba6dzqfnpi/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-x86_64_v4/gcc-14.3.1/gcc-13.4.0-t2negluj3ibo2lluvy3qsdba6dzqfnpi/bin/gfortran
   specs:
     - gcc@13.4.0
-    # - gcc@11.5.0
-    # - cmake@3.31.11
-    # - curl
-    # - hdf5@1.14.6~mpi +hl
-    # - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
-    # - intel-oneapi-compilers@2026.0.0
-    # - intel-oneapi-mkl@2026.0.0+shared threads=openmp
-    # - intel-oneapi-mpi@2021.18.0
-    # - netcdf-c
-    # - netlib-scalapack@2.2.3+shared build_type=Release
-    # - openmpi@5.0.8
-    # - llvm-openmp
-    # - zlib
-    # - fmt
-    # - zstd
-    # - bazel
-    # - beagle
-    # - bedtools2
-    # - bgen
-    # - bismark
-    # - bison
-    # - blast-plus
-    # - bwa
-    # - circos
-    # - coordgen
-    # - cryoef
-    # - eigen build_type=RelWithDebInfo
-    # - exonerate
-    # - fastp
-    # - fastqc
-    # - ffmpeg
-    # - gatk
-    # - gdal
-    # - gemma
-    # - git-lfs
-    # - gnuplot
-    # - gradle
-    # - hisat2
-    # - impute2
-    # - ldak
-    # - libhugetlbfs
-    # - libwebp +libwebpmux
-    # - libxc
-    # - meme +magick
-    # - mesa
-    # - meson
-    # - miniforge3
-    # - mysql +client_only
-    # - nextflow
-    # - openbabel ~python ~gui
-    # - p7zip
-    # - parallel
-    # - pcre
-    # - perl-appconfig
-    # - perl-config-simple
-    # - perl-file-remove
-    # - perl-file-sharedir
-    # - perl-file-slurp
-    # - perl-getopt-argvfile
-    # - perl-http-date
-    # - perl-module-install
-    # - perl-parallel-forkmanager
-    # - perl-parse-yapp
-    # - perl-parselex
-    # - perl-parsetemplate
-    # - perl-pathtools
-    # - perl-termreadkey
-    # - perl-test-leaktrace
-    # - picard
-    # - plink2
-    # - postgresql +client_only
-    # - py-gsutil
-    # - py-multiqc
-    # - py-mysql-connector-python
-    # - samtools
-    # - shapeit4
-    # - spark +hadoop
-    # - star
-    # - stringtie
-    # - subread
-    # - tabix
-    # - tcsh
-    # - trimgalore
-    # - trimmomatic
-    # - vcftools
-    # - wget
-    # - wtdbg2
-    # # - phase2
-    # - automake
-    # - libtool
-    # - perl-carp-assert
-    # - perl-file-temp
-    # - perl-libbi
-    # - perl-math-symbolic
-    # - perl-module-corelist
-    # - perl-module-scandeps
-    # - perl-template-toolkit
-    # - perl-yaml-tiny
-    # - py-annoy
-    # # - py-nvidia-pyindex is now obsolete
-    # - anaconda3
-    # - fastq-pair
-    # - fastq-tools
-    # - seqtk
-    # - plink
-    # - bcftools
-    # - admixture
-    # - flashpca
-    # - susiex
-    # - vbz-compression
-    # - xplor-nih
-    # # - qctool will need to be built with gcc less than 13
-    # - ic
-    # - mitoscape
-    # - novactf
-    # - palmer
-    # - metacarpa
-    # - metal
-    # - dentist
-    # - finestructure
-    # - eigensoft
-    # - gctb
-    # # - shapeit5 repository has been disabled by GitHub Staff due to a violation
-    # - cgal
-    # - maeparser
-    # - gcta
-    # - magma-gwas
-    # - bolt-lmm
-    # - regenie
-    # - petsc +batch
-    # - namd@3.0.2 ~cuda ~rocm +avxtiles
-    # # - namd@2.14 ~cuda ~rocm
-    # - r +X +rmath
-    # - r-rgeos
-    # - r-sf
-    # - r-sp
-    # - rename
-    # - rsem
-    # # - rstudio ^r +X +rmath
+    - gcc@11.5.0
+    - cmake@3.31.11
+    - curl
+    - hdf5@1.14.6~mpi +hl
+    - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
+    - intel-oneapi-compilers@2026.0.0
+    - intel-oneapi-mkl@2026.0.0+shared threads=openmp
+    - intel-oneapi-mpi@2021.18.0
+    - netcdf-c
+    - netlib-scalapack@2.2.3+shared build_type=Release
+    - openmpi@5.0.8
+    - llvm-openmp
+    - zlib
+    - fmt
+    - zstd
+    - bazel
+    - beagle
+    - bedtools2
+    - bgen
+    - bismark
+    - bison
+    - blast-plus
+    - bwa
+    - circos
+    - coordgen
+    - cryoef
+    - eigen build_type=RelWithDebInfo
+    - exonerate
+    - fastp
+    - fastqc
+    - ffmpeg
+    - gatk
+    - gdal
+    - gemma
+    - git-lfs
+    - gnuplot
+    - gradle
+    - hisat2
+    - impute2
+    - ldak
+    - libhugetlbfs
+    - libwebp +libwebpmux
+    - libxc
+    - meme +magick
+    - mesa
+    - meson
+    - miniforge3
+    - mysql +client_only
+    - nextflow
+    - openbabel ~python ~gui
+    - p7zip
+    - parallel
+    - pcre
+    - perl-appconfig
+    - perl-config-simple
+    - perl-file-remove
+    - perl-file-sharedir
+    - perl-file-slurp
+    - perl-getopt-argvfile
+    - perl-http-date
+    - perl-module-install
+    - perl-parallel-forkmanager
+    - perl-parse-yapp
+    - perl-parselex
+    - perl-parsetemplate
+    - perl-pathtools
+    - perl-termreadkey
+    - perl-test-leaktrace
+    - picard
+    - plink2
+    - postgresql +client_only
+    - py-gsutil
+    - py-multiqc
+    - py-mysql-connector-python
+    - samtools
+    - shapeit4
+    - spark +hadoop
+    - star
+    - stringtie
+    - subread
+    - tabix
+    - tcsh
+    - trimgalore
+    - trimmomatic
+    - vcftools
+    - wget
+    - wtdbg2
+    # - phase2
+    - automake
+    - libtool
+    - perl-carp-assert
+    - perl-file-temp
+    - perl-libbi
+    - perl-math-symbolic
+    - perl-module-corelist
+    - perl-module-scandeps
+    - perl-template-toolkit
+    - perl-yaml-tiny
+    - py-annoy
+    # - py-nvidia-pyindex is now obsolete
+    - anaconda3
+    - fastq-pair
+    - fastq-tools
+    - seqtk
+    - plink
+    - bcftools
+    - admixture
+    - flashpca
+    - susiex
+    - vbz-compression
+    - xplor-nih
+    # - qctool will need to be built with gcc less than 13
+    - ic
+    - mitoscape
+    - novactf
+    - palmer
+    - metacarpa
+    - metal
+    - dentist
+    - finestructure
+    - eigensoft
+    - gctb
+    # - shapeit5 repository has been disabled by GitHub Staff due to a violation
+    - cgal
+    - maeparser
+    - gcta
+    - magma-gwas
+    - bolt-lmm
+    - regenie
+    - petsc +batch
+    - namd@3.0.2 ~cuda ~rocm +avxtiles
+    # - namd@2.14 ~cuda ~rocm
+    - r +X +rmath
+    - r-rgeos
+    - r-sf
+    - r-sp
+    - rename
+    - rsem
+    # - rstudio ^r +X +rmath
+    - awscli-v2
+    - bracken
+    - crest
+    - gaussian-avx@09-E
+    - gaussian-avx@16-C
+    - gaussian-avx2@16-C
+    - gaussian-sse4@09-E
+    - gaussian-sse4@16-C
+    - geomxngspipeline
+    - gurobi
+    - imagemagick +ghostscript
+    - kraken2@2.17.1
+    - mathematica@14.0.0
+    - matlab@R2024b
+    - matlab@R2022a
+    - nbo
+    - nwchem +openmp
+    - opencarp
+    - openfoam
+    # - orca@6.0.1
+    - prsice
+    - psi4
+    - py-htseq@2.1.2
+    - py-umi-tools
+    - qtltools
+    - ruby
+    - salmon
+    - snptest
+    - sox
+    - spaceranger
+    - sra-tools
+    - sumo
+    - warpx
+    - xtb
