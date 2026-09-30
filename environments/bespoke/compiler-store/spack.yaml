@@ -1,12 +1,12 @@
 spack:
   specs:
   - /isi54rzkepxc57felxolwefjvzhxpbja  # gcc@12.5.0 cascadelake
-  # - /34mufjfipajhl66qvvqtmpqho7synrwa  # gcc@13.4.0 x86_64_v4
+  - /t2negluj3ibo2lluvy3qsdba6dzqfnpi  # gcc@13.4.0 x86_64_v4
   - /lv6yyoj5u5v7trjt667nddsoaj5xo7sf  # gcc@13.4.0 zen4
-  # - /6rtiyuwjfrxzeij5qjv6kmesvnxq65mk  # gcc@12.5.0 icelake
+  - /a25vi5rb45p63eecjz52hw4vqlj6dl53  # gcc@12.5.0 icelake
   - /ydbendvp4dwxt6ieh7nfxv5bj5wwzzj3  # gcc@13.4.0 sapphirerapids
-  # - /apcjls4risyg3ydnqrreaqmglzjln6p3  # gcc@12.5.0 zen3
-  # - /i3i5xzs7b57vdusgyjq7yto3snpowd2h  # gcc@12.5.0 zen2
+  - /gugdkwubwh3fpeirqhnhvbvxfjryube4  # gcc@12.5.0 zen3
+  - /x76m7vlxlsi3kwmc2fvtxvws7vvyzz5h  # gcc@12.5.0 zen2
   # - /yypm3vgpibmywxis6kc3m2k3wuimv4dy  # gcc@12.5.0 skylake_avx512
   view: false
   concretizer:
