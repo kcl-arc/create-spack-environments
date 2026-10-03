@@ -47,6 +47,8 @@ spack:
     r:
       require:
       - target=zen5
+    charmpp:
+      require: cflags="-fpermissive" target=zen5
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen5 languages:='c,c++,fortran'
