@@ -119,42 +119,6 @@ environments:
   resource_arch: sapphirerapids_sm90
   source: generated
   enabled: true
-- name: env-skylake_avx512-cpu
-  manifest: environments/generated/env-skylake_avx512-cpu/spack.yaml
-  constraint: skylake_avx512
-  resource_arch: skylake_avx512_cpu
-  source: generated
-  enabled: true
-- name: env-skylake_avx512-cpu-test
-  manifest: environments/generated/env-skylake_avx512-cpu-test/spack.yaml
-  constraint: skylake_avx512
-  resource_arch: skylake_avx512_cpu
-  source: generated
-  enabled: true
-- name: env-skylake_avx512-sm61
-  manifest: environments/generated/env-skylake_avx512-sm61/spack.yaml
-  constraint: skylake_avx512
-  resource_arch: skylake_avx512_sm61
-  source: generated
-  enabled: true
-- name: env-skylake_avx512-sm61-test
-  manifest: environments/generated/env-skylake_avx512-sm61-test/spack.yaml
-  constraint: skylake_avx512
-  resource_arch: skylake_avx512_sm61
-  source: generated
-  enabled: true
-- name: env-skylake_avx512-sm70
-  manifest: environments/generated/env-skylake_avx512-sm70/spack.yaml
-  constraint: skylake_avx512
-  resource_arch: skylake_avx512_sm70
-  source: generated
-  enabled: true
-- name: env-skylake_avx512-sm70-test
-  manifest: environments/generated/env-skylake_avx512-sm70-test/spack.yaml
-  constraint: skylake_avx512
-  resource_arch: skylake_avx512_sm70
-  source: generated
-  enabled: true
 - name: env-skylake_avx512-sm75
   manifest: environments/generated/env-skylake_avx512-sm75/spack.yaml
   constraint: skylake_avx512
