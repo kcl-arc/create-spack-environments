@@ -134,29 +134,10 @@ mappings:
   gpu_family: cpu
 - features:
   - skylake_avx512
-  cpu_family: skylake_avx512
-  gpu_family: cpu
-- features:
-  - skylake_avx512
   - titan_rtx
   - titan_xp
   cpu_family: skylake_avx512
   gpu_family: sm75
-- features:
-  - skylake_avx512
-  - titan_v
-  cpu_family: skylake_avx512
-  gpu_family: sm70
-- features:
-  - skylake_avx512
-  - titan_x
-  cpu_family: skylake_avx512
-  gpu_family: sm61
-- features:
-  - skylake_avx512
-  - titan_xp
-  cpu_family: skylake_avx512
-  gpu_family: sm61
 - features:
   - x86_64_v4
   cpu_family: x86_64_v4
