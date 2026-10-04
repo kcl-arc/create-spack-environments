@@ -207,3 +207,5 @@ spack:
     # - rename
     # - rsem
     # # - rstudio ^r +X +rmath
+    # for later phase, TBD, GPU version on its own may be sufficient
+    # - quantum-espresso

@@ -233,3 +233,5 @@ spack:
     - sumo
     - warpx
     - xtb
+    # for later phase, TBD, GPU version on its own may be sufficient
+    # - quantum-espresso

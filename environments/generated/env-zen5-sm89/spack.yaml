@@ -199,6 +199,41 @@ spack:
   - r-sp
   - rename
   - rsem
+  - awscli-v2
+  - bracken
+  - crest
+  - gaussian-avx@09-E
+  - gaussian-avx@16-C
+  - gaussian-avx2@16-C
+  - gaussian-sse4@09-E
+  - gaussian-sse4@16-C
+  - geomxngspipeline
+  - gurobi
+  - imagemagick +ghostscript
+  - kraken2@2.17.1
+  - mathematica@14.0.0
+  - matlab@R2024b
+  - matlab@R2022a
+  - motioncor2
+  - nbo
+  - nwchem +openmp
+  - opencarp
+  - openfoam
+  - orca@6.0.1
+  - prsice
+  - psi4
+  - py-htseq
+  - py-umi-tools
+  - qtltools
+  - ruby
+  - salmon
+  - snptest
+  - sox
+  - spaceranger
+  - sra-tools
+  - sumo
+  - warpx
+  - xtb
   - cuda@13.3
   - cudnn@9.21.0.82-13
   - cuda@12.9
@@ -208,7 +243,6 @@ spack:
   - py-boltz +cuda ^py-torch+cuda cuda_arch=89
   - aretomo
   - cellranger@7.2.0
-  - motioncor2
   - lammps +cuda cuda_arch=89
   modules:
     default:

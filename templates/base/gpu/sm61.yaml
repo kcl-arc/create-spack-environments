@@ -21,3 +21,9 @@ spack:
     # - py-boltz +cuda ^py-torch+cuda cuda_arch=61
     # - aretomo
     # - cellranger@7.2.0
+    # to install next (moved from templates/overlay/test/, removed 2026-10-04)
+    # - lammps +cuda cuda_arch=61
+    # - gromacs@2026.1 +mpi +cuda cuda_arch=61
+    # - magma +fortran +shared +cuda cuda_arch=61
+    # - py-tensorflow +nccl +cuda cuda_arch=61
+    # - quantum-espresso +cuda cuda_arch=61
