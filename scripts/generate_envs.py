@@ -17,7 +17,6 @@ FEATURES_TO_FAMILY_FILE = ROOT / "matrix" / "features_to_family.yaml"
 CPU_TEMPLATE_DIR = ROOT / "templates" / "base" / "cpu"
 GPU_TEMPLATE_DIR = ROOT / "templates" / "base" / "gpu"
 ENV_TEMPLATE_DIR = ROOT / "templates" / "overlay" / "env"
-TEST_TEMPLATE_DIR = ROOT / "templates" / "overlay" / "test"
 ENV_ROOT = ROOT / "environments"
 GENERATED_DIR = ENV_ROOT / "generated"
 BESPOKE_DIR = ENV_ROOT / "bespoke"
@@ -115,7 +114,6 @@ def render(
     cpu_family: str,
     gpu_family: str,
     env_name: str,
-    is_test: bool = False,
 ) -> dict[str, Any]:
     cpu_path = CPU_TEMPLATE_DIR / f"{cpu_family}.yaml"
     gpu_path = GPU_TEMPLATE_DIR / f"{gpu_family}.yaml"
@@ -130,21 +128,7 @@ def render(
     if env_path.exists():
         env_doc = normalize_fragment(load_yaml(env_path))
         deep_merge(merged, env_doc)
-    
-    if is_test:
-        test_cpu_path = TEST_TEMPLATE_DIR / f"{cpu_family}.yaml"
-        test_gpu_path = TEST_TEMPLATE_DIR / f"{gpu_family}.yaml"
-        test_env_path = TEST_TEMPLATE_DIR / f"{env_name}.yaml"
-        if test_cpu_path.exists():
-            test_cpu_doc = normalize_fragment(load_yaml(test_cpu_path))
-            deep_merge(merged, test_cpu_doc)
-        if test_gpu_path.exists():
-            test_gpu_doc = normalize_fragment(load_yaml(test_gpu_path))
-            deep_merge(merged, test_gpu_doc)
-        if test_env_path.exists():
-            test_env_doc = normalize_fragment(load_yaml(test_env_path))
-            deep_merge(merged, test_env_doc)
-    
+
     return merged
 
 
@@ -298,51 +282,29 @@ def main() -> None:
 
     for cpu_family, gpu_family in enabled_pairs:
         env_name = f"env-{cpu_family}-{gpu_family}"
-        
-        # Prod environment
-        prod_data = render(cpu_family, gpu_family, env_name, is_test=False)
+        prod_data = render(cpu_family, gpu_family, env_name)
         prod_data = ensure_generated_structure(prod_data, env_name, settings)
         prod_path = GENERATED_DIR / env_name / "spack.yaml"
-        
-        # Test environment
-        test_env_name = f"{env_name}-test"
-        test_data = render(cpu_family, gpu_family, test_env_name, is_test=True)
-        test_data = ensure_generated_structure(test_data, test_env_name, settings)
-        test_path = GENERATED_DIR / test_env_name / "spack.yaml"
 
         constraint = infer_slurm_constraint(cpu_family, matrix)
         resource_arch = infer_resource_arch(cpu_family, gpu_family)
-        generated_index_entries.extend(
-            [
-                {
-                    "name": env_name,
-                    "manifest": str(prod_path.relative_to(ROOT)).replace("\\", "/"),
-                    "constraint": constraint,
-                    "resource_arch": resource_arch,
-                    "source": "generated",
-                    "enabled": True,
-                },
-                {
-                    "name": test_env_name,
-                    "manifest": str(test_path.relative_to(ROOT)).replace("\\", "/"),
-                    "constraint": constraint,
-                    "resource_arch": resource_arch,
-                    "source": "generated",
-                    "enabled": True,
-                },
-            ]
+        generated_index_entries.append(
+            {
+                "name": env_name,
+                "manifest": str(prod_path.relative_to(ROOT)).replace("\\", "/"),
+                "constraint": constraint,
+                "resource_arch": resource_arch,
+                "source": "generated",
+                "enabled": True,
+            }
         )
 
         if args.check:
             expected_prod = yaml.safe_dump(prod_data, sort_keys=False)
-            expected_test = yaml.safe_dump(test_data, sort_keys=False)
             if not prod_path.exists() or prod_path.read_text(encoding="utf-8") != expected_prod:
                 stale.append(str(prod_path))
-            if not test_path.exists() or test_path.read_text(encoding="utf-8") != expected_test:
-                stale.append(str(test_path))
         else:
             write_yaml(prod_path, prod_data)
-            write_yaml(test_path, test_data)
 
     index_entries = generated_index_entries + discover_bespoke_entries()
 

@@ -1,51 +1,12 @@
-# Test Overlay Templates
+# Install backlog (former test overlays)
 
-This directory contains optional test-specific overrides for Spack environment configurations.
+`-test` environments are no longer generated, and `generate_envs.py` no longer
+reads this directory.
 
-## How it works
+The files here are kept only for their commented-out specs: a reminder of what
+needs to be installed next for each CPU or GPU family (one file per family).
 
-When `generate_envs.py` creates test environments (e.g., `env-skylake_avx512-sm70-test`), it applies the standard CPU and GPU base templates, then optionally merges env/test overlays **if they exist**.
-
-### Merge order for test environments:
-1. `templates/base/cpu/{cpu_family}.yaml`  
-2. `templates/base/gpu/{gpu_family}.yaml`  
-3. `templates/overlay/env/env-<cpu_family>-<gpu_family>-test.yaml` (if exists)
-4. `templates/overlay/test/{cpu_family}.yaml` (if exists)  
-5. `templates/overlay/test/{gpu_family}.yaml` (if exists)
-6. `templates/overlay/test/env-<cpu_family>-<gpu_family>-test.yaml` (if exists)
-
-The env-specific overlay applies only to the matching generated test environment name.
-
-### Use cases
-
-- **Reduce scope**: Add a minimal spec list to test out a subset of packages before rolling out to production.
-- **Alternative variants**: Use different Spack variants or compiler flags for testing performance.
-- **Early validation**: Test new package versions or configurations before general availability.
-
-### Example
-
-To add a test-specific override for the `cascadelake` CPU family:
-
-**File**: `templates/overlay/test/cascadelake.yaml`
-
-```yaml
-spack:
-  specs:
-    - "cmake@3.27.0"  # Test a specific version
-    - "zlib~optimize"  # Test without optimization
-  modules:
-    default:
-      tcl:
-        projections:
-          all: "{name}/{version}"
-          +mpi: "{name}/{version}-mpi"
-```
-
-This would override/augment the specs and projections in the prod `cascadelake.yaml` template for all test environments like `env-cascadelake-cpu-test` and `env-cascadelake-sm70-test`.
-
-## Notes
-
-- Env and test overlays use the same merge logic as base templates: dictionaries are deep-merged, lists are deduplicated (with whitespace-normalization for Spack specs). Some policy lists (compiler/version preferences) are intentionally replaced by later overlays.
-- Prod environments ignore test overlays entirely.
-- Both CPU and GPU test overlays can exist independently—use only what you need.
-- Env-specific test overlays have the highest priority among test overlays and are merged last.
+To roll a spec out, add it to the matching base template
+(`templates/base/cpu/<family>.yaml` or `templates/base/gpu/<family>.yaml`), or
+to an env overlay (`templates/overlay/env/env-<cpu>-<gpu>.yaml`) for a single
+environment. Then remove the commented line here.

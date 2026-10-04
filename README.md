@@ -5,11 +5,11 @@ This repository implements a family-based environment approach:
 1. CPU base templates
 2. GPU base templates
 3. CPU x GPU matrix
-4. Optional env/test overlays
+4. Optional env overlays
 5. Generator script for concrete `env-<cpuFamily>-<gpuFamily>` manifests
 6. CI check for stale generated files
 
-Additional `README.md` files are in `templates/overlay/test/` and `environments/bespoke/`
+Additional `README.md` files are in `environments/bespoke/` and `templates/overlay/test/`
 
 ## Environment generator usage (`generate_envs.py`)
 
@@ -20,7 +20,6 @@ Additional `README.md` files are in `templates/overlay/test/` and `environments/
 - `templates/base/cpu/*.yaml`
 - `templates/base/gpu/*.yaml`
 - `templates/overlay/env/*.yaml` (optional, for named environment overrides)
-- `templates/overlay/test/*.yaml` (optional, for test-specific overrides)
 
 ### Update feature-to-family mappings
 
@@ -71,10 +70,8 @@ This performs, in order:
 	- `boost+container: "{name}/{version}-container"`
 - Override per generated environment by setting `spack.modules.default.tcl.projections` (or `.exclude`) in:
 	- `templates/overlay/env/env-<cpu>-<gpu>.yaml`
-	- `templates/overlay/env/env-<cpu>-<gpu>-test.yaml`
-	- or family-level test overlays such as `templates/overlay/test/cascadelake.yaml`
 
-Projection precedence is: env/test overlay values first, then matrix defaults.
+Projection precedence is: env overlay values first, then matrix defaults.
 
 With `concretizer.unify: false`, the same package/version can be concretized
 independently more than once (once per root spec that needs it), producing
@@ -87,10 +84,19 @@ transitive dependencies and are never meant to be loaded directly (build
 tools, font/graphics-stack internals, pip bootstrap packages), add them to
 `modules_tcl_exclude` instead of trying to disambiguate them.
 
+Don't exclude a package that something needs at run time, Python packages in
+particular. An excluded package gets no module, so dependents can't autoload
+it, and it drops out of their `PYTHONPATH`/`PATH`. The alternative is
+`hide_implicits: true` in an env overlay (as in
+`templates/overlay/env/env-sapphirerapids-*.yaml`). Every dependency then gets
+a module that is hidden from `module avail` and named with a hash suffix, so
+duplicate copies don't clash, and autoload still loads it. Only explicitly
+installed specs (env roots) stay visible, so add a package as a root if users
+should load it directly.
+
 ### Generator outputs
 
 - `environments/generated/env-<arch>/spack.yaml`
-- `environments/generated/env-<arch>-test/spack.yaml`
 - `environments/index.yaml`
 
 `environments/index.yaml` includes generated entries and any bespoke manifests
