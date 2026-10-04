@@ -1,6 +1,0 @@
-specs:
-  # - lammps +cuda cuda_arch=75
-  # - gromacs@2026.1 +mpi +cuda cuda_arch=75
-  # - magma +fortran +shared +cuda cuda_arch=75
-  # - py-tensorflow +nccl +cuda cuda_arch=75
-  # - quantum-espresso +cuda cuda_arch=75

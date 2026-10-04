@@ -22,3 +22,9 @@ spack:
     # - aretomo
     # - cellranger@7.2.0
     # - motioncor2
+    # to install next (moved from templates/overlay/test/, removed 2026-10-04)
+    # - lammps +cuda cuda_arch=70
+    # - gromacs@2026.1 +mpi +cuda cuda_arch=70
+    # - magma +fortran +shared +cuda cuda_arch=70
+    # - py-tensorflow +nccl +cuda cuda_arch=70
+    # - quantum-espresso +cuda cuda_arch=70
