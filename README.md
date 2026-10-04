@@ -9,7 +9,7 @@ This repository implements a family-based environment approach:
 5. Generator script for concrete `env-<cpuFamily>-<gpuFamily>` manifests
 6. CI check for stale generated files
 
-Additional `README.md` files are in `environments/bespoke/` and `templates/overlay/test/`
+An additional `README.md` is in `environments/bespoke/`
 
 ## Environment generator usage (`generate_envs.py`)
 
