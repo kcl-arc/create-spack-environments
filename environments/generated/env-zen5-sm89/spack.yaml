@@ -55,15 +55,24 @@ spack:
       require:
       - target=zen5
     c:
-      require: gcc target=zen5
+      require:
+      - any_of:
+        - gcc target=zen5
+        - nvhpc target=zen5
       prefer:
       - gcc@14.3.1
     cxx:
-      require: gcc target=zen5
+      require:
+      - any_of:
+        - gcc target=zen5
+        - nvhpc target=zen5
       prefer:
       - gcc@14.3.1
     fortran:
-      require: gcc target=zen5
+      require:
+      - any_of:
+        - gcc target=zen5
+        - nvhpc target=zen5
       prefer:
       - gcc@14.3.1
     llvm:
@@ -316,6 +325,6 @@ spack:
   - gromacs@2026.1 +mpi +cuda cuda_arch=89
   - magma +fortran +shared +cuda cuda_arch=89
   - py-tensorflow +nccl +cuda cuda_arch=89
-  - quantum-espresso +cuda cuda_arch=89
+  - quantum-espresso@7.5 +cuda cuda_arch=89 ^openmpi@5.0.8 %c,cxx,fortran=nvhpc
   container:
     format: singularity

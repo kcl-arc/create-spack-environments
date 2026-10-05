@@ -55,15 +55,24 @@ spack:
       require:
       - target=sapphirerapids
     c:
-      require: gcc target=sapphirerapids
+      require:
+      - any_of:
+        - gcc target=sapphirerapids
+        - nvhpc target=sapphirerapids
       prefer:
       - gcc@13.4.0
     cxx:
-      require: gcc target=sapphirerapids
+      require:
+      - any_of:
+        - gcc target=sapphirerapids
+        - nvhpc target=sapphirerapids
       prefer:
       - gcc@13.4.0
     fortran:
-      require: gcc target=sapphirerapids
+      require:
+      - any_of:
+        - gcc target=sapphirerapids
+        - nvhpc target=sapphirerapids
       prefer:
       - gcc@13.4.0
     llvm:

@@ -164,8 +164,6 @@ This means local execution is optional (although still useful to check the resul
 ## GPU families
 
 - `cpu` (no GPU)
-- `sm61` (`titan_x`, `titan_xp`) — Pascal; deprecated in CUDA 12.8
-- `sm70` (`titan_v`) — Volta; deprecated in CUDA 12.8
 - `sm75` (`rtx2070`, `rtx2080`, `titan_rtx`) — Turing
 - `sm80` (`a30`, `a100`, `a100_40g`, `a100_80g`) — Ampere data-centre
 - `sm86` (`rtx3070`, `rtx3090`, `a40`) — Ampere client

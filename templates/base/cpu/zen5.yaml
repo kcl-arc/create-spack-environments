@@ -12,15 +12,18 @@ spack:
     all:
       require: ["target=zen5"]
     c:
-      require: "gcc target=zen5"
+      require:
+        - any_of: ["gcc target=zen5", "nvhpc target=zen5"]
       prefer:
         - gcc@14.3.1
     cxx:
-      require: "gcc target=zen5"
+      require:
+        - any_of: ["gcc target=zen5", "nvhpc target=zen5"]
       prefer:
         - gcc@14.3.1
     fortran:
-      require: "gcc target=zen5"
+      require:
+        - any_of: ["gcc target=zen5", "nvhpc target=zen5"]
       prefer:
         - gcc@14.3.1
     llvm:
