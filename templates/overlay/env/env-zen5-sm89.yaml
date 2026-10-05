@@ -2,4 +2,4 @@ modules:
   default:
     tcl:
       hide_implicits: true
-      exclude: []
+      exclude: [gcc-runtime, glibc]
