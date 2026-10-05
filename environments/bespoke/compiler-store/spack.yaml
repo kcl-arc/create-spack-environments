@@ -7,7 +7,7 @@ spack:
   - /ydbendvp4dwxt6ieh7nfxv5bj5wwzzj3  # gcc@13.4.0 sapphirerapids
   - /gugdkwubwh3fpeirqhnhvbvxfjryube4  # gcc@12.5.0 zen3
   - /x76m7vlxlsi3kwmc2fvtxvws7vvyzz5h  # gcc@12.5.0 zen2
-  # - /yypm3vgpibmywxis6kc3m2k3wuimv4dy  # gcc@12.5.0 skylake_avx512
+  - /ppqz6sdptd563qh25zrqe47vy2sw4utm  # gcc@12.5.0 skylake_avx512
   view: false
   concretizer:
     unify: false
