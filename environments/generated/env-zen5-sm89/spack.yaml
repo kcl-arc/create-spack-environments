@@ -312,6 +312,7 @@ spack:
   - go
   - rust
   - llvm
+  - nvhpc@26.3 ~blas ~lapack ~mpi
   - cuda@13.3
   - cudnn@9.21.0.82-13
   - cuda@12.9
@@ -325,7 +326,5 @@ spack:
   - gromacs@2026.1 +mpi +cuda cuda_arch=89
   - magma +fortran +shared +cuda cuda_arch=89
   - py-tensorflow +nccl +cuda cuda_arch=89
-  - nvhpc@26.3 ~blas ~lapack ~mpi
-  - quantum-espresso@7.5 +cuda cuda_arch=89 ^openmpi@5.0.8 %c,cxx,fortran=nvhpc
   container:
     format: singularity
