@@ -28,5 +28,4 @@ spack:
     - gromacs@2026.1 +mpi +cuda cuda_arch=89
     - magma +fortran +shared +cuda cuda_arch=89
     - py-tensorflow +nccl +cuda cuda_arch=89
-    - nvhpc@26.3 ~blas ~lapack ~mpi
-    - quantum-espresso@7.5 +cuda cuda_arch=89 ^openmpi@5.0.8 %c,cxx,fortran=nvhpc
+    # - quantum-espresso@7.5 +cuda cuda_arch=89 ^openmpi@5.0.8 %c,cxx,fortran=nvhpc
