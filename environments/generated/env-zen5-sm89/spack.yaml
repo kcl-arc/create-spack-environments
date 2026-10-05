@@ -49,6 +49,13 @@ spack:
       - target=zen5
     charmpp:
       require: cflags="-fpermissive" target=zen5
+    hdf5:
+      require:
+      - target=zen5
+      - spec: cflags="-fpermissive"
+        when: '@:1.8'
+    sox:
+      require: cflags="-fpermissive" target=zen5
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen5 languages:='c,c++,fortran'
