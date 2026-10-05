@@ -12,15 +12,18 @@ spack:
     all:
       require: ["target=icelake"]
     c:
-      require: "gcc target=icelake"
+      require:
+        - any_of: ["gcc target=icelake", "nvhpc target=icelake"]
       prefer:
         - gcc@12.5.0
     cxx:
-      require: "gcc target=icelake"
+      require:
+        - any_of: ["gcc target=icelake", "nvhpc target=icelake"]
       prefer:
         - gcc@12.5.0
     fortran:
-      require: "gcc target=icelake"
+      require:
+        - any_of: ["gcc target=icelake", "nvhpc target=icelake"]
       prefer:
         - gcc@12.5.0
     llvm:

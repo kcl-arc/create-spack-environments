@@ -55,15 +55,24 @@ spack:
       require:
       - target=cascadelake
     c:
-      require: gcc target=cascadelake
+      require:
+      - any_of:
+        - gcc target=cascadelake
+        - nvhpc target=cascadelake
       prefer:
       - gcc@12.5.0
     cxx:
-      require: gcc target=cascadelake
+      require:
+      - any_of:
+        - gcc target=cascadelake
+        - nvhpc target=cascadelake
       prefer:
       - gcc@12.5.0
     fortran:
-      require: gcc target=cascadelake
+      require:
+      - any_of:
+        - gcc target=cascadelake
+        - nvhpc target=cascadelake
       prefer:
       - gcc@12.5.0
     llvm:
