@@ -1,5 +1,0 @@
-modules:
-  default:
-    tcl:
-      hide_implicits: true
-      exclude: [gcc-runtime, glibc]

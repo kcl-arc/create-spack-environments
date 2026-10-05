@@ -3,6 +3,11 @@ spack:
   concretizer:
     unify: false
     reuse: false
+  modules:
+    default:
+      tcl:
+        hide_implicits: true
+        exclude: [gcc-runtime, glibc]
   packages:
     all:
       require: ["target=icelake"]
@@ -233,5 +238,21 @@ spack:
     - sumo
     - warpx
     - xtb
+    # because modules are hidden now adding these as explicit
+    - python
+    - perl
+    - openjdk
+    - git
+    - boost
+    - fftw
+    - gsl
+    - openblas
+    - htslib
+    - bowtie2
+    - py-cutadapt
+    - sqlite
+    - go
+    - rust
+    - llvm
     # for later phase, TBD, GPU version on its own may be sufficient
     # - quantum-espresso
