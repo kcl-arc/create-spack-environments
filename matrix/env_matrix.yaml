@@ -61,16 +61,6 @@ gpu_families:
   cpu:
     cuda_enabled: false
     slurm_features: []
-  sm61:
-    cuda_enabled: true
-    preferred_cuda_version: "12.8"
-    preferred_cuda_arch: "61"
-    slurm_features: [titan_x, titan_xp]
-  sm70:
-    cuda_enabled: true
-    preferred_cuda_version: "12.8"
-    preferred_cuda_arch: "70"
-    slurm_features: [titan_v]
   sm75:
     cuda_enabled: true
     preferred_cuda_version: "13.3"

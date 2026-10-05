@@ -55,15 +55,24 @@ spack:
       require:
       - target=zen4
     c:
-      require: gcc target=zen4
+      require:
+      - any_of:
+        - gcc target=zen4
+        - nvhpc target=zen4
       prefer:
       - gcc@13.4.0
     cxx:
-      require: gcc target=zen4
+      require:
+      - any_of:
+        - gcc target=zen4
+        - nvhpc target=zen4
       prefer:
       - gcc@13.4.0
     fortran:
-      require: gcc target=zen4
+      require:
+      - any_of:
+        - gcc target=zen4
+        - nvhpc target=zen4
       prefer:
       - gcc@13.4.0
     llvm:
