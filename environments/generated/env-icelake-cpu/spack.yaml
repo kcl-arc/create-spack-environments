@@ -3,6 +3,53 @@ spack:
   concretizer:
     unify: false
     reuse: false
+  modules:
+    default:
+      tcl:
+        hide_implicits: true
+        exclude:
+        - gcc-runtime
+        - glibc
+        hash_length: 0
+        naming_scheme: '{name}/{version}'
+        projections:
+          all: '{name}/{version}'
+          hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
+          hdf5+hl: '{name}/{version}-hl'
+          namd+cuda cuda_arch=61: '{name}/{version}-cuda61'
+          namd+cuda cuda_arch=70: '{name}/{version}-cuda70'
+          namd+cuda cuda_arch=75: '{name}/{version}-cuda75'
+          namd+cuda cuda_arch=80: '{name}/{version}-cuda80'
+          namd+cuda cuda_arch=86: '{name}/{version}-cuda86'
+          namd+cuda cuda_arch=89: '{name}/{version}-cuda89'
+          namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
+          namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
+          namd+avxtiles: '{name}/{version}-avxtiles'
+          curl+libidn2: '{name}/{version}-idn2'
+          fftw+openmp ^mpi: '{name}/{version}-omp-{^mpi.name}_{^mpi.version}'
+          ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
+          ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
+          ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
+          ^python: '{name}/{version}-{^python.name}_{^python.version}'
+          boost+container+icu: '{name}/{version}-container-icu'
+          boost+container: '{name}/{version}-container'
+          boost+icu: '{name}/{version}-icu'
+          boost+pic: '{name}/{version}-pic'
+          htslib~libcurl: '{name}/{version}-nocurl'
+          cgal ^boost+icu: '{name}/{version}-icu'
+          cmake@3.31.11 ^curl+libidn2: '{name}/{version}-idn2'
+          cmake@3.31.11 ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
+          git ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
+          gdal ^curl+libidn2: '{name}/{version}-idn2'
+          proj ^curl+libidn2: '{name}/{version}-idn2'
+          arrow ^cmake %curl+libidn2: '{name}/{version}-idn2'
+          geos ^cmake %curl+libidn2: '{name}/{version}-idn2'
+          eigen build_type=Release: '{name}/{version}-release'
+          threads=openmp: '{name}/{version}-omp'
+      enable:
+      - tcl
+      roots:
+        tcl: /software/spack_v1_2_1/install/modules/env-icelake-cpu/
   packages:
     all:
       require:
@@ -234,165 +281,20 @@ spack:
   - sumo
   - warpx
   - xtb
-  modules:
-    default:
-      enable:
-      - tcl
-      roots:
-        tcl: /software/spack_v1_2_1/install/modules/env-icelake-cpu/
-      tcl:
-        hash_length: 0
-        naming_scheme: '{name}/{version}'
-        projections:
-          all: '{name}/{version}'
-          hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
-          hdf5+hl: '{name}/{version}-hl'
-          namd+cuda cuda_arch=61: '{name}/{version}-cuda61'
-          namd+cuda cuda_arch=70: '{name}/{version}-cuda70'
-          namd+cuda cuda_arch=75: '{name}/{version}-cuda75'
-          namd+cuda cuda_arch=80: '{name}/{version}-cuda80'
-          namd+cuda cuda_arch=86: '{name}/{version}-cuda86'
-          namd+cuda cuda_arch=89: '{name}/{version}-cuda89'
-          namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
-          namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
-          namd+avxtiles: '{name}/{version}-avxtiles'
-          curl+libidn2: '{name}/{version}-idn2'
-          fftw+openmp ^mpi: '{name}/{version}-omp-{^mpi.name}_{^mpi.version}'
-          ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
-          ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
-          ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
-          ^python: '{name}/{version}-{^python.name}_{^python.version}'
-          boost+container+icu: '{name}/{version}-container-icu'
-          boost+container: '{name}/{version}-container'
-          boost+icu: '{name}/{version}-icu'
-          boost+pic: '{name}/{version}-pic'
-          htslib~libcurl: '{name}/{version}-nocurl'
-          cgal ^boost+icu: '{name}/{version}-icu'
-          cmake@3.31.11 ^curl+libidn2: '{name}/{version}-idn2'
-          cmake@3.31.11 ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
-          git ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
-          gdal ^curl+libidn2: '{name}/{version}-idn2'
-          proj ^curl+libidn2: '{name}/{version}-idn2'
-          arrow ^cmake %curl+libidn2: '{name}/{version}-idn2'
-          geos ^cmake %curl+libidn2: '{name}/{version}-idn2'
-          eigen build_type=Release: '{name}/{version}-release'
-          threads=openmp: '{name}/{version}-omp'
-        exclude:
-        - meson
-        - ninja
-        - re2c
-        - cairo
-        - glib
-        - glib-bootstrap
-        - gobject-introspection
-        - harfbuzz
-        - libraqm
-        - pixman
-        - bdftopcf
-        - font-util
-        - fontconfig
-        - freetype
-        - graphite2
-        - libdeflate
-        - libjpeg-turbo
-        - libpng
-        - libtiff
-        - libxfont
-        - libxft
-        - mkfontdir
-        - mkfontscale
-        - pango
-        - python-venv
-        - py-attrs
-        - py-calver
-        - py-certifi
-        - py-cffi
-        - py-contourpy
-        - py-cppy
-        - py-cryptography
-        - py-cycler
-        - py-cython
-        - py-flit-core
-        - py-fonttools
-        - py-gsutil
-        - py-hatch-fancy-pypi-readme
-        - py-hatch-vcs
-        - py-hatchling
-        - py-idna
-        - py-importlib-metadata
-        - py-kiwisolver
-        - py-markupsafe
-        - py-matplotlib
-        - py-maturin
-        - py-meson-python
-        - py-multiqc
-        - py-mysql-connector-python
-        - py-packaging
-        - py-pathspec
-        - py-pillow
-        - py-pip
-        - py-pluggy
-        - py-poetry-core
-        - py-pybind11
-        - py-pycparser
-        - py-pyparsing
-        - py-python-dateutil
-        - py-pyyaml
-        - py-requests
-        - py-scikit-build-core
-        - py-semantic-version
-        - py-setuptools
-        - py-setuptools-rust
-        - py-setuptools-scm
-        - py-six
-        - py-trove-classifiers
-        - py-typing-extensions
-        - py-urllib3
-        - py-wheel
-        - py-zipp
-        - findutils
-        - gettext
-        - libtool
-        - binutils
-        - elfutils
-        - flatbuffers
-        - fribidi
-        - icu4c
-        - json-c
-        - json-glib
-        - krb5
-        - lerc
-        - libfontenc
-        - libgeotiff
-        - libgit2
-        - libtirpc
-        - libx11
-        - libxcb
-        - libxext
-        - libxml2
-        - libxmu
-        - libxrender
-        - libxscrnsaver
-        - libxt
-        - muparser
-        - qhull
-        - rapidjson
-        - xcb-proto
-        - xsimd
-        - flex
-        - texinfo
-        - py-pythran
-        - py-beniget
-        - py-gast
-        - py-ply
-        - py-platformdirs
-        - py-pydantic
-        - py-pydantic-core
-        - py-annotated-types
-        - py-typing-inspection
-        - py-python-dotenv
-        - zlib-ng
-        - py-scipy
-        - py-pandas
+  - python
+  - perl
+  - openjdk
+  - git
+  - boost
+  - fftw
+  - gsl
+  - openblas
+  - htslib
+  - bowtie2
+  - py-cutadapt
+  - sqlite
+  - go
+  - rust
+  - llvm
   container:
     format: singularity
