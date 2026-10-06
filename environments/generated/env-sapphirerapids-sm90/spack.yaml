@@ -280,6 +280,7 @@ spack:
   - nwchem +openmp
   - opencarp
   - openfoam
+  - orca@6.0.1
   - prsice
   - psi4
   - py-htseq@2.1.2
@@ -309,6 +310,7 @@ spack:
   - go
   - rust
   - llvm
+  - nvhpc@26.3 ~blas ~lapack ~mpi
   - cuda@13.3
   - cudnn@9.21.0.82-13
   - cuda@12.9
@@ -320,5 +322,8 @@ spack:
   - cellranger@7.2.0
   - motioncor2
   - lammps +cuda cuda_arch=90
+  - gromacs@2026.1 +mpi +cuda cuda_arch=90
+  - magma +fortran +shared +cuda cuda_arch=90
+  - py-tensorflow +nccl +cuda cuda_arch=90
   container:
     format: singularity
