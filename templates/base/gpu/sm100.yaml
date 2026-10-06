@@ -25,7 +25,7 @@ spack:
     - motioncor2
     - lammps +cuda cuda_arch=100
     # to install next (moved from templates/overlay/test/, removed 2026-10-04)
-    # - gromacs@2026.1 +mpi +cuda cuda_arch=100
-    # - magma +fortran +shared +cuda cuda_arch=100
-    # - py-tensorflow +nccl +cuda cuda_arch=100
+    - gromacs@2026.1 +mpi +cuda cuda_arch=100
+    - magma +fortran +shared +cuda cuda_arch=100
+    - py-tensorflow +nccl +cuda cuda_arch=100
     # - quantum-espresso@7.5 +cuda cuda_arch=100 ^openmpi@5.0.8 %c,cxx,fortran=nvhpc
