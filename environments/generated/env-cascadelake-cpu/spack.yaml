@@ -276,6 +276,7 @@ spack:
   - nwchem +openmp
   - opencarp
   - openfoam
+  - orca@6.0.1
   - prsice
   - psi4
   - py-htseq@2.1.2
@@ -305,5 +306,6 @@ spack:
   - go
   - rust
   - llvm
+  - nvhpc@26.3 ~blas ~lapack ~mpi
   container:
     format: singularity
