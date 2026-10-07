@@ -154,3 +154,7 @@ mappings:
   - zen4
   cpu_family: zen4
   gpu_family: cpu
+- features:
+  - zen5
+  cpu_family: zen5
+  gpu_family: cpu

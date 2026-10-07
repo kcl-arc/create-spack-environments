@@ -137,6 +137,12 @@ environments:
   resource_arch: zen4_sm90
   source: generated
   enabled: true
+- name: env-zen5-cpu
+  manifest: environments/generated/env-zen5-cpu/spack.yaml
+  constraint: zen5
+  resource_arch: zen5_cpu
+  source: generated
+  enabled: true
 - name: env-zen5-sm89
   manifest: environments/generated/env-zen5-sm89/spack.yaml
   constraint: zen5
