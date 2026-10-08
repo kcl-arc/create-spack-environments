@@ -262,6 +262,7 @@ spack:
   - r-sp
   - rename
   - rsem
+  - rstudio ^r +X +rmath
   - awscli-v2
   - bracken
   - crest
@@ -316,5 +317,6 @@ spack:
   - cudnn@9.21.0.82-13
   - cuda@12.9
   - cudnn@9.21.0.82-12
+  - gromacs@2026.1 +mpi +cuda cuda_arch=75
   container:
     format: singularity

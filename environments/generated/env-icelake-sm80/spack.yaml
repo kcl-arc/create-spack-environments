@@ -262,6 +262,7 @@ spack:
   - r-sp
   - rename
   - rsem
+  - rstudio ^r +X +rmath
   - awscli-v2
   - bracken
   - crest
@@ -326,5 +327,7 @@ spack:
   - gromacs@2026.1 +mpi +cuda cuda_arch=80
   - magma +fortran +shared +cuda cuda_arch=80
   - py-tensorflow +nccl +cuda cuda_arch=80
+  - quantum-espresso@7.5 +cuda cuda_arch=80 ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api]
+    fftw ^[virtuals=scalapack] netlib-scalapack %c=gcc ^openmpi@5.0.8 %c,cxx,fortran=nvhpc
   container:
     format: singularity
