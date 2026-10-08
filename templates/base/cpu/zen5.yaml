@@ -260,5 +260,3 @@ spack:
     - rust
     - llvm
     - nvhpc@26.3 ~blas ~lapack ~mpi
-    # for later phase, TBD, GPU version on its own may be sufficient
-    # - quantum-espresso

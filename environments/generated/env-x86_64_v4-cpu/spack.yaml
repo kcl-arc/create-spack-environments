@@ -308,5 +308,7 @@ spack:
   - rust
   - llvm
   - nvhpc@26.3 ~blas ~lapack ~mpi
+  - quantum-espresso@7.5 ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api] fftw
+    ^[virtuals=scalapack] netlib-scalapack ^openmpi@5.0.8
   container:
     format: singularity
