@@ -50,6 +50,9 @@ spack:
       require: ["target=zen3"]
     r:
       require: ["target=zen3"]
+    node-js:
+      # node-js@23: needs gcc 13+; spack-packages v2026.06.0 only blocks gcc@:12.1
+      require: "@:22 target=zen3"
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen3 languages:='c,c++,fortran'

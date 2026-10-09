@@ -94,6 +94,8 @@ spack:
     r:
       require:
       - target=skylake_avx512
+    node-js:
+      require: '@:22 target=skylake_avx512'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=skylake_avx512 languages:='c,c++,fortran'

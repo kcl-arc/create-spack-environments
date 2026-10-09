@@ -103,6 +103,8 @@ spack:
     r:
       require:
       - target=zen3
+    node-js:
+      require: '@:22 target=zen3'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen3 languages:='c,c++,fortran'

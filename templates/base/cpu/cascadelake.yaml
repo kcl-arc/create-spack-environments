@@ -50,6 +50,9 @@ spack:
       require: ["target=cascadelake"]
     r:
       require: ["target=cascadelake"]
+    node-js:
+      # node-js@23: needs gcc 13+; spack-packages v2026.06.0 only blocks gcc@:12.1
+      require: "@:22 target=cascadelake"
     gcc:
       externals:
       - spec: gcc@14.3.1 target=cascadelake languages:='c,c++,fortran'
