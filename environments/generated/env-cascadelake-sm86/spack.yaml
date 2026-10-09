@@ -103,6 +103,8 @@ spack:
     r:
       require:
       - target=cascadelake
+    node-js:
+      require: '@:22 target=cascadelake'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=cascadelake languages:='c,c++,fortran'

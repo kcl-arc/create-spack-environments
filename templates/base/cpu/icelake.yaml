@@ -50,6 +50,16 @@ spack:
       require: ["target=icelake"]
     r:
       require: ["target=icelake"]
+    node-js:
+      # node-js@23: needs gcc 13+; spack-packages v2026.06.0 only blocks gcc@:12.1
+      require: "@:22 target=icelake"
+    quantum-espresso:
+      # gfortran 12.5.0 hits an internal compiler error in the basic-block SLP
+      # vectoriser on devxlib's device_auxfunc.f90 (QE 7.5)
+      require:
+        - "target=icelake"
+        - spec: 'fflags="-fno-tree-slp-vectorize"'
+          when: "%fortran=gcc@12"
     gcc:
       externals:
       - spec: gcc@14.3.1 target=icelake languages:='c,c++,fortran'

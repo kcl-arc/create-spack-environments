@@ -103,6 +103,13 @@ spack:
     r:
       require:
       - target=icelake
+    node-js:
+      require: '@:22 target=icelake'
+    quantum-espresso:
+      require:
+      - target=icelake
+      - spec: fflags="-fno-tree-slp-vectorize"
+        when: '%fortran=gcc@12'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=icelake languages:='c,c++,fortran'
