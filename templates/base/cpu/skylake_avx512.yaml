@@ -47,6 +47,9 @@ spack:
       require: ["target=skylake_avx512"]
     r:
       require: ["target=skylake_avx512"]
+    node-js:
+      # node-js@23: needs gcc 13+; spack-packages v2026.06.0 only blocks gcc@:12.1
+      require: "@:22 target=skylake_avx512"
     gcc:
       externals:
       - spec: gcc@14.3.1 target=skylake_avx512 languages:='c,c++,fortran'
