@@ -105,6 +105,11 @@ spack:
       - target=cascadelake
     node-js:
       require: '@:22 target=cascadelake'
+    quantum-espresso:
+      require:
+      - target=cascadelake
+      - spec: fflags="-fno-tree-slp-vectorize"
+        when: '%fortran=gcc@12'
     gcc:
       externals:
       - spec: gcc@14.3.1 target=cascadelake languages:='c,c++,fortran'
