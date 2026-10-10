@@ -3,126 +3,76 @@ spack:
   concretizer:
     unify: false
     reuse: false
+  modules:
+    default:
+      tcl:
+        hide_implicits: true
+        exclude:
+        - gcc-runtime
+        - glibc
+        hash_length: 0
+        naming_scheme: '{name}/{version}'
+        projections:
+          all: '{name}/{version}'
+          hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
+          hdf5+hl: '{name}/{version}-hl'
+          namd+cuda cuda_arch=61: '{name}/{version}-cuda61'
+          namd+cuda cuda_arch=70: '{name}/{version}-cuda70'
+          namd+cuda cuda_arch=75: '{name}/{version}-cuda75'
+          namd+cuda cuda_arch=80: '{name}/{version}-cuda80'
+          namd+cuda cuda_arch=86: '{name}/{version}-cuda86'
+          namd+cuda cuda_arch=89: '{name}/{version}-cuda89'
+          namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
+          namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
+          namd+avxtiles: '{name}/{version}-avxtiles'
+          curl+libidn2: '{name}/{version}-idn2'
+          fftw+openmp ^mpi: '{name}/{version}-omp-{^mpi.name}_{^mpi.version}'
+          ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
+          ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
+          ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
+          ^python: '{name}/{version}-{^python.name}_{^python.version}'
+          boost+container+icu: '{name}/{version}-container-icu'
+          boost+container: '{name}/{version}-container'
+          boost+icu: '{name}/{version}-icu'
+          boost+pic: '{name}/{version}-pic'
+          htslib~libcurl: '{name}/{version}-nocurl'
+          cgal ^boost+icu: '{name}/{version}-icu'
+          cmake@3.31.11 ^curl+libidn2: '{name}/{version}-idn2'
+          cmake@3.31.11 ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
+          git ^curl@:8.15: '{name}/{version}-curl_{^curl.version}'
+          gdal ^curl+libidn2: '{name}/{version}-idn2'
+          proj ^curl+libidn2: '{name}/{version}-idn2'
+          arrow ^cmake %curl+libidn2: '{name}/{version}-idn2'
+          geos ^cmake %curl+libidn2: '{name}/{version}-idn2'
+          eigen build_type=Release: '{name}/{version}-release'
+          threads=openmp: '{name}/{version}-omp'
+      enable:
+      - tcl
+      roots:
+        tcl: /software/spack_v1_2_1/install/modules/env-zen4-cpu/
   packages:
     all:
       require:
-      - zen4
-      providers:
-        awk:
-        - gawk
-        blas:
-        - openblas
-        - amdblis
-        D:
-        - ldc
-        daal:
-        - intel-daal
-        elf:
-        - elfutils
-        fftw-api:
-        - fftw
-        - amdfftw
-        flame:
-        - libflame
-        - amdlibflame
-        fuse:
-        - libfuse
-        gl:
-        - mesa+opengl
-        - mesa18
-        - opengl
-        glu:
-        - mesa-glu
-        - openglu
-        glx:
-        - mesa+glx
-        - mesa18+glx
-        - opengl
-        golang:
-        - gcc
-        iconv:
-        - libiconv
-        ipp:
-        - intel-ipp
-        java:
-        - openjdk
-        - jdk
-        - ibm-java
-        jpeg:
-        - libjpeg-turbo
-        - libjpeg
-        lapack:
-        - openblas
-        - amdlibflame
-        libllvm:
-        - llvm
-        - llvm-amdgpu
-        lua-lang:
-        - lua
-        - lua-luajit
-        mariadb-client:
-        - mariadb-c-client
-        - mariadb
-        mkl:
-        - intel-mkl
-        mpe:
-        - mpe2
-        mpi:
-        - openmpi
-        - mpich
-        mysql-client:
-        - mysql
-        - mariadb-c-client
-        opencl:
-        - pocl
-        onedal:
-        - intel-oneapi-dal
-        osmesa:
-        - mesa+osmesa
-        - mesa18+osmesa
-        pbs:
-        - openpbs
-        - torque
-        pil:
-        - py-pillow
-        pkgconfig:
-        - pkgconf
-        - pkg-config
-        rpc:
-        - libtirpc
-        scalapack:
-        - netlib-scalapack
-        - amdscalapack
-        sycl:
-        - hipsycl
-        szip:
-        - libaec
-        - libszip
-        tbb:
-        - intel-tbb
-        unwind:
-        - libunwind
-        uuid:
-        - util-linux-uuid
-        - libuuid
-        xxd:
-        - xxd-standalone
-        - vim
-        yacc:
-        - bison
-        - byacc
-        ziglang:
-        - zig
+      - target=zen4
     c:
-      require: gcc target=zen4
+      require:
+      - any_of:
+        - gcc target=zen4
+        - nvhpc target=zen4
       prefer:
       - gcc@13.4.0
     cxx:
-      require: gcc target=zen4
+      require:
+      - any_of:
+        - gcc target=zen4
+        - nvhpc target=zen4
       prefer:
       - gcc@13.4.0
     fortran:
-      require: gcc target=zen4
+      require:
+      - any_of:
+        - gcc target=zen4
+        - nvhpc target=zen4
       prefer:
       - gcc@13.4.0
     llvm:
@@ -135,6 +85,26 @@ spack:
       version:
       - 17.0.6
       - 18.1.8
+    intel-oneapi-compilers:
+      require: target=zen4
+    boost:
+      require: '@1.77: target=zen4'
+    libxml2:
+      require: '@2.13.9 target=zen4'
+    petsc:
+      require: +batch target=zen4
+    mctc-lib:
+      require: '@0.5.1: target=zen4'
+    xtb:
+      require: ~tblite target=zen4
+    curl:
+      require: +libidn2 target=zen4
+    openmpi:
+      require:
+      - target=zen4
+    r:
+      require:
+      - target=zen4
     gcc:
       externals:
       - spec: gcc@14.3.1 target=zen4 languages:='c,c++,fortran'
@@ -145,19 +115,19 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
       - spec: gcc@13.4.0 target=zen4 languages:='c,c++,fortran'
-        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-5eiwbk3st5u4lwmpesm5mukt7ijwn6mm
+        prefix: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-lv6yyoj5u5v7trjt667nddsoaj5xo7sf
         extra_attributes:
           compilers:
-            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-5eiwbk3st5u4lwmpesm5mukt7ijwn6mm/bin/gcc
-            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-5eiwbk3st5u4lwmpesm5mukt7ijwn6mm/bin/g++
-            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-5eiwbk3st5u4lwmpesm5mukt7ijwn6mm/bin/gfortran
+            c: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-lv6yyoj5u5v7trjt667nddsoaj5xo7sf/bin/gcc
+            cxx: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-lv6yyoj5u5v7trjt667nddsoaj5xo7sf/bin/g++
+            fortran: /software/spack_v1_2_1/install/apps/linux-almalinux10-zen4/gcc-14.3.1/gcc-13.4.0-lv6yyoj5u5v7trjt667nddsoaj5xo7sf/bin/gfortran
     cuda:
       buildable: false
   specs:
   - gcc@13.4.0
   # - gcc@11.5.0
   # - cmake@3.31.11
-  # - curl
+  - curl
   # - hdf5@1.14.6~mpi +hl
   # - hdf5@1.14.6+mpi +hl ^openmpi@5.0.8
   # - intel-oneapi-compilers@2026.0.0
@@ -264,7 +234,6 @@ spack:
   # - susiex
   # - vbz-compression
   # - xplor-nih
-  # # - qctool
   # - ic
   # - mitoscape
   # - novactf
@@ -282,99 +251,65 @@ spack:
   # - bolt-lmm
   # - regenie
   # - petsc +batch
-  # - namd@3.0.2 ~cuda ~rocm
-  # - namd@2.14 ~cuda ~rocm
-  modules:
-    default:
-      enable:
-      - tcl
-      roots:
-        tcl: /software/spack_v1_2_1/install/modules/arc-zen4-cpu/
-      tcl:
-        hash_length: 0
-        naming_scheme: '{name}/{version}'
-        projections:
-          all: '{name}/{version}'
-          hdf5+hl ^mpi: '{name}/{version}-hl-{^mpi.name}_{^mpi.version}'
-          hdf5+hl: '{name}/{version}-hl'
-          namd+cuda cuda_arch=61: '{name}/{version}-cuda61'
-          namd+cuda cuda_arch=70: '{name}/{version}-cuda70'
-          namd+cuda cuda_arch=75: '{name}/{version}-cuda75'
-          namd+cuda cuda_arch=80: '{name}/{version}-cuda80'
-          namd+cuda cuda_arch=86: '{name}/{version}-cuda86'
-          namd+cuda cuda_arch=89: '{name}/{version}-cuda89'
-          namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
-          namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
-          namd+avxtiles: '{name}/{version}-avxtiles'
-          ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
-          ^hwloc: '{name}/{version}-hwloc_{^hwloc.version}'
-          ^llvm: '{name}/{version}-{^llvm.name}_{^llvm.version}'
-          ^python: '{name}/{version}-{^python.name}_{^python.version}'
-          boost+container: '{name}/{version}-container'
-          boost+icu: '{name}/{version}-icu'
-          eigen build_type=Release: '{name}/{version}-release'
-          threads=openmp: '{name}/{version}-omp'
-        exclude:
-        - meson
-        - ninja
-        - re2c
-        - cairo
-        - glib
-        - glib-bootstrap
-        - gobject-introspection
-        - harfbuzz
-        - libraqm
-        - pixman
-        - python-venv
-        - py-attrs
-        - py-calver
-        - py-certifi
-        - py-cffi
-        - py-contourpy
-        - py-cppy
-        - py-cryptography
-        - py-cycler
-        - py-cython
-        - py-flit-core
-        - py-fonttools
-        - py-gsutil
-        - py-hatch-fancy-pypi-readme
-        - py-hatch-vcs
-        - py-hatchling
-        - py-idna
-        - py-importlib-metadata
-        - py-kiwisolver
-        - py-markupsafe
-        - py-matplotlib
-        - py-maturin
-        - py-meson-python
-        - py-multiqc
-        - py-mysql-connector-python
-        - py-packaging
-        - py-pathspec
-        - py-pillow
-        - py-pip
-        - py-pluggy
-        - py-poetry-core
-        - py-pybind11
-        - py-pycparser
-        - py-pyparsing
-        - py-python-dateutil
-        - py-pyyaml
-        - py-requests
-        - py-scikit-build-core
-        - py-semantic-version
-        - py-setuptools
-        - py-setuptools-rust
-        - py-setuptools-scm
-        - py-six
-        - py-trove-classifiers
-        - py-typing-extensions
-        - py-urllib3
-        - py-wheel
-        - py-zipp
-        - findutils
-        - gettext
-        - libtool
+  # - namd@3.0.2 ~cuda ~rocm +avxtiles
+  # - r +X +rmath
+  # - r-rgeos
+  # - r-sf
+  # - r-sp
+  # - rename
+  # - rsem
+  # - rstudio ^r +X +rmath
+  # - awscli-v2
+  # - bracken
+  # - crest
+  # - gaussian-avx@09-E
+  # - gaussian-avx@16-C
+  # - gaussian-avx2@16-C
+  # - gaussian-sse4@09-E
+  # - gaussian-sse4@16-C
+  # - geomxngspipeline
+  # - gurobi
+  # - imagemagick +ghostscript
+  # - kraken2@2.17.1
+  # - mathematica@14.0.0
+  # - matlab@R2024b
+  # - matlab@R2022a
+  # - nbo
+  # - nwchem +openmp
+  # - opencarp
+  # - openfoam
+  # - orca@6.0.1
+  # - prsice
+  # - psi4
+  # - py-htseq@2.1.2
+  # - py-umi-tools
+  # - qtltools
+  # - ruby
+  # - salmon
+  # - snptest
+  # - sox
+  # - spaceranger
+  # - sra-tools
+  # - sumo
+  # - warpx
+  # - xtb
+  # - python
+  # - perl
+  # - openjdk
+  # - git
+  # - boost
+  # - fftw
+  # - gsl
+  # - openblas
+  # - htslib
+  # - bowtie2
+  # - py-cutadapt
+  # - sqlite
+  # - go
+  # - rust
+  # - llvm
+  # - nvhpc@26.3 ~blas ~lapack ~mpi
+  # - quantum-espresso@7.5 ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api] fftw
+  #   ^[virtuals=scalapack] netlib-scalapack ^openmpi@5.0.8
   container:
     format: singularity
