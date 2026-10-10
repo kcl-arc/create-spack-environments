@@ -93,5 +93,5 @@ gpu_families:
     slurm_features: [l40s]
 
 # Enabled environment pairs to render.
-# If omitted or left empty, refresh_env_matrix.sh called and derives pairs from matrix/features_to_family.yaml.
+# If omitted or left empty, generate_envs.py derives pairs from matrix/features_to_family.yaml.
 # enabled_pairs:
