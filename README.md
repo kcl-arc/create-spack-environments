@@ -1,5 +1,27 @@
 # er-spack-environments
 
+## Quick start
+
+The `create-spack-development` repository has been built in order to facilitate the development and testing of new packages. Once a package has been developed using the processes outlined it can be added to the appropriate environments.
+
+If the package needs a local override it will need to be in the `create-spack-packages` repository and the commit hash will need to be updated in `spack_core.pp` in the puppet repo.
+
+specs are added in yaml files in `create-spack-environments`.
+
+The majority of specs can be added in `templates/base/cpu/*.yaml` files.
+
+Packages that use GPUs for processing are added in `templates/base/gpu/sm*.yaml` files. To make a CPU bound version available add it in `templates/base/gpu/cpu.yaml` (an existing example is `quantum-espresso`).
+
+Specific environments can have additional specs (or any other adaptations) by adding `.yaml` file in `templates/overlay/env/`. The `.yaml` files can either be the same name as one of the existing base templates (e.g. `zen5.yaml` or `sm89.yaml`) or a spcific environment (e.g. `env-zen5-sm89.yaml`).
+
+Once a file has been added to these templates the `generate_envs.py` script should be run.
+
+Bespoke environments can also be created; this is with a view to being able to create environments for specific groups if required. A complete `spack.yaml` is entered in a directory with the desired name of the environment.
+
+An additional `README.md` is in `environments/bespoke/`
+
+## Details
+
 This repository implements a family-based environment approach:
 
 1. CPU base templates
@@ -9,55 +31,71 @@ This repository implements a family-based environment approach:
 5. Generator script for concrete `env-<cpuFamily>-<gpuFamily>` manifests
 6. CI check for stale generated files
 
-An additional `README.md` is in `environments/bespoke/`
-
 ## Environment generator usage (`generate_envs.py`)
 
 ### Generator inputs
 
 - `matrix/env_matrix.yaml`
-- `matrix/features_to_family.yaml` (used to derive pairs when `enabled_pairs` is omitted/empty)
+- `matrix/features_to_family.yaml` (maintained by hand; used to derive pairs when `enabled_pairs` is omitted/empty)
 - `templates/base/cpu/*.yaml`
 - `templates/base/gpu/*.yaml`
 - `templates/overlay/env/*.yaml` (optional, for named environment overrides)
 
 ### Update feature-to-family mappings
 
-Generate `matrix/features_to_family.yaml` from scheduler feature data:
+`matrix/features_to_family.yaml` decides which `env-<cpu>-<gpu>` environments
+are generated. Edit it by hand in this repo, then regenerate and commit.
+Nothing on the cluster updates it.
+
+1. Make sure the families exist in `matrix/env_matrix.yaml`:
+   - `cpu_families`: a new CPU family is just `<name>: {}`, plus a base
+     template in `templates/base/cpu/`. Its Slurm feature token (used as the
+     environment's `constraint` in `environments/index.yaml`) defaults to the
+     family name. Only set `slurm_features` if the live token differs.
+   - `gpu_families`: copy an existing `sm*` entry, plus a base template in
+     `templates/base/gpu/`.
+2. Add one mapping per node feature set (the `Features=` value in
+   `slurm.conf`). Keep entries sorted by `features`, as the script below
+   does, so cross-check diffs stay small:
+
+   ```yaml
+   - features:
+     - l40s
+     - zen5
+     cpu_family: zen5
+     gpu_family: sm89
+   ```
+
+   `generate_envs.py` only reads `cpu_family` and `gpu_family`; `features`
+   records which Slurm feature set the mapping covers. To stop building an
+   environment, remove its mappings (see "Remove an environment" in the
+   spack_core `env-ops.md`).
+3. Run `python scripts/generate_envs.py` and commit the result. The
+   `generate-env-index` Action doesn't run when only
+   `features_to_family.yaml` changes.
+
+#### Optional cross-check against Slurm
+
+`scripts/update_features_to_family.py` rebuilds the mappings from
+`Features=` lines, using the `slurm_features` tokens in `env_matrix.yaml`.
+Use it only to check the hand-edited file against a freshly copied
+`slurm.conf`:
 
 ```bash
-python scripts/update_features_to_family.py
+scp <slurm-controller>:/etc/slurm/slurm.conf /tmp/slurm.conf
+python scripts/update_features_to_family.py --input /tmp/slurm.conf
+git diff matrix/features_to_family.yaml
 ```
 
-Which Slurm feature token(s) map to which CPU/GPU family (and, for GPUs,
-which family wins when a node reports more than one GPU token) is read from
-`matrix/env_matrix.yaml`'s `cpu_families`/`gpu_families` sections, not
-hardcoded in the script. Adding a new architecture's token mapping is done by
-editing `matrix/env_matrix.yaml` alone (see "CPU architectures" below) — no
-script change needed. A CPU family's `slurm_features` defaults to
-`[<family name>]` when omitted, so a new CPU family is just `<name>: {}`;
-only set `slurm_features` explicitly if the live Slurm token(s) differ from
-the family name.
+Always review the diff before keeping any of it:
 
-With no `--input`, a source is auto-detected in order: `/etc/slurm/slurm.conf`
-(production), then live `scontrol show nodes` (if `scontrol` is on `PATH`).
-There is no repo-local fallback — pass `--input <path>` explicitly on a
-machine that is neither.
+- An old copy of `slurm.conf` brings back mappings for decommissioned nodes.
+- Nodes we deliberately don't build for come back too.
+- A GPU token with no `gpu_families` entry is mapped to `gpu_family: cpu`
+  without an error. Only unknown CPU tokens fail.
 
-Optional overrides can be added in `matrix/features_to_family_overrides.yaml`.
-
-### Run on cluster (recommended deployment pre-step)
-
-When you want mappings and generated environments to reflect live Slurm state, run this on a cluster host with `scontrol` (automatically called by `spack_deploy.py` in hpc-spack_core repo):
-
-```bash
-./scripts/refresh_env_matrix.sh
-```
-
-This performs, in order:
-1. Collect node `Features=` values from Slurm.
-2. Regenerate `matrix/features_to_family.yaml`.
-3. Regenerate `environments/generated/**` and `environments/index.yaml`.
+`matrix/features_to_family_overrides.yaml` is applied on top of the script's
+output. It can add or replace mappings, not remove them.
 
 ### Module naming projections (TCL)
 

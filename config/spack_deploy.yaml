@@ -5,5 +5,4 @@ defaults:
     version: 14.3.1
   os: almalinux10
   lmod:
-    version: 8.7.55
     package_path: /opt/module_tracking
