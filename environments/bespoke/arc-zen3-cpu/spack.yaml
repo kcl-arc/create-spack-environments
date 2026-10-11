@@ -49,7 +49,7 @@ spack:
       enable:
       - tcl
       roots:
-        tcl: /software/spack_v1_2_1/install/modules/env-zen3-cpu/
+        tcl: /software/spack_v1_2_1/install/modules/arc-zen3-cpu/
   packages:
     all:
       require:
