@@ -140,7 +140,7 @@ spack:
     - plink2
     - postgresql +client_only
     - py-gsutil
-    - py-multiqc
+    # - py-multiqc
     - py-mysql-connector-python
     - samtools
     - shapeit4
