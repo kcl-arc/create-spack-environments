@@ -155,9 +155,6 @@ def ensure_generated_structure(data: dict[str, Any], env_name: str, settings: di
     if isinstance(configured_exclude, list):
         tcl.setdefault("exclude", configured_exclude)
 
-    container = spack.setdefault("container", {})
-    container.setdefault("format", settings.get("container_format", "singularity"))
-
     return data
 
 

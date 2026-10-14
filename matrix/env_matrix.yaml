@@ -2,7 +2,6 @@
 
 settings:
   modules_root_base: /software/spack_v1_2_1/install/modules
-  container_format: singularity
   modules_tcl_projections:
     all: "{name}/{version}"
     hdf5+hl ^mpi: "{name}/{version}-hl-{^mpi.name}_{^mpi.version}"
@@ -15,7 +14,7 @@ settings:
     namd+cuda cuda_arch=89: "{name}/{version}-cuda89"
     namd+cuda cuda_arch=90: "{name}/{version}-cuda90"
     namd+cuda cuda_arch=100: "{name}/{version}-cuda100"
-    namd+avxtiles: "{name}/{version}-avxtiles"
+    namd~cuda: "{name}/{version}"
     # curl+libidn2 ^zlib: "{name}/{version}-idn2-zlib"
     curl+libidn2: "{name}/{version}-idn2"
     fftw+openmp ^mpi: "{name}/{version}-omp-{^mpi.name}_{^mpi.version}"

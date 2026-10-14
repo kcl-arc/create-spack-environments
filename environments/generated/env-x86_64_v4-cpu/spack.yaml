@@ -24,7 +24,7 @@ spack:
           namd+cuda cuda_arch=89: '{name}/{version}-cuda89'
           namd+cuda cuda_arch=90: '{name}/{version}-cuda90'
           namd+cuda cuda_arch=100: '{name}/{version}-cuda100'
-          namd+avxtiles: '{name}/{version}-avxtiles'
+          namd~cuda: '{name}/{version}'
           curl+libidn2: '{name}/{version}-idn2'
           fftw+openmp ^mpi: '{name}/{version}-omp-{^mpi.name}_{^mpi.version}'
           ^mpi: '{name}/{version}-{^mpi.name}_{^mpi.version}'
@@ -311,5 +311,3 @@ spack:
   - nvhpc@26.3 ~blas ~lapack ~mpi
   - quantum-espresso@7.5 ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api] fftw
     ^[virtuals=scalapack] netlib-scalapack ^openmpi@5.0.8
-  container:
-    format: singularity
