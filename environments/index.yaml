@@ -53,6 +53,18 @@ environments:
   resource_arch: sapphirerapids_sm100
   source: generated
   enabled: true
+- name: env-sapphirerapids-sm120
+  manifest: environments/generated/env-sapphirerapids-sm120/spack.yaml
+  constraint: sapphirerapids
+  resource_arch: sapphirerapids_sm120
+  source: generated
+  enabled: true
+- name: env-sapphirerapids-sm89
+  manifest: environments/generated/env-sapphirerapids-sm89/spack.yaml
+  constraint: sapphirerapids
+  resource_arch: sapphirerapids_sm89
+  source: generated
+  enabled: true
 - name: env-sapphirerapids-sm90
   manifest: environments/generated/env-sapphirerapids-sm90/spack.yaml
   constraint: sapphirerapids
@@ -141,6 +153,12 @@ environments:
   manifest: environments/generated/env-zen5-cpu/spack.yaml
   constraint: zen5
   resource_arch: zen5_cpu
+  source: generated
+  enabled: true
+- name: env-zen5-sm120
+  manifest: environments/generated/env-zen5-sm120/spack.yaml
+  constraint: zen5
+  resource_arch: zen5_sm120
   source: generated
   enabled: true
 - name: env-zen5-sm89
