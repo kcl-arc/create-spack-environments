@@ -1,0 +1,31 @@
+# Blackwell RTX architecture (sm_120): RTX PRO 6000 Blackwell
+spack:
+  packages:
+    cuda:
+      version: ["13.3"]
+    lammps:
+      variants: +cuda cuda_arch=120
+    nccl:
+      variants: +cuda cuda_arch=120
+    llvm:
+      version: [18.1.8]
+    clang:
+      version: [18.1.8]
+  specs:
+    - cuda@13.3
+    - cudnn@9.21.0.82-13
+    - cuda@12.9
+    - cudnn@9.21.0.82-12
+    - namd@3.0.2 +cuda cuda_arch=120 ^cuda@12
+    # - namd@2.14 +cuda cuda_arch=120 %gcc@11.5.0 ^cuda@11.8.0 ^charmpp@6.10.2
+    - dorado +cuda cuda_arch=120
+    - py-boltz +cuda ^py-torch+cuda cuda_arch=120
+    - aretomo
+    - cellranger@7.2.0
+    - motioncor2
+    - lammps +cuda cuda_arch=120
+    # to install next (moved from templates/overlay/test/, removed 2026-10-04)
+    - gromacs@2026.1 +mpi +cuda cuda_arch=120
+    - magma +fortran +shared +cuda cuda_arch=120
+    - py-tensorflow +nccl +cuda cuda_arch=120
+    - quantum-espresso@7.5 +cuda cuda_arch=120 ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api] fftw ^[virtuals=scalapack] netlib-scalapack %c=gcc ^openmpi@5.0.8 %c,cxx,fortran=nvhpc

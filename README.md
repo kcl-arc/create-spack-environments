@@ -207,7 +207,8 @@ This means local execution is optional (although still useful to check the resul
 - `sm86` (`rtx3070`, `rtx3090`, `a40`) — Ampere client
 - `sm90` (`h100`, `h200`)
 - `sm89` (`l40s`)
-- `sm100` (`b200`, `rtx6000`)
+- `sm100` (`b200`) — Blackwell data-centre
+- `sm120` (`rtx6000`) — Blackwell RTX PRO 6000
 
 ## CUDA policy in this model
 
