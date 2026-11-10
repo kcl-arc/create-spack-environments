@@ -98,6 +98,11 @@ mappings:
   gpu_family: cpu
 - features:
   - l40s
+  - sapphirerapids
+  cpu_family: sapphirerapids
+  gpu_family: sm89
+- features:
+  - l40s
   - x86_64_v4
   cpu_family: x86_64_v4
   gpu_family: sm89
@@ -120,12 +125,20 @@ mappings:
   - rtx6000
   - sapphirerapids
   cpu_family: sapphirerapids
-  gpu_family: sm100
+  gpu_family: sm120
+# Temporary: no node has this feature set any more (comp235-239 are now
+# zen5,rtx6000). Kept only so env-zen4-sm100 isn't deleted while it serves as
+# a stopgap module tree for those nodes. Remove once env-zen5-sm120 is built.
 - features:
   - rtx6000
   - zen4
   cpu_family: zen4
   gpu_family: sm100
+- features:
+  - rtx6000
+  - zen5
+  cpu_family: zen5
+  gpu_family: sm120
 - features:
   - sapphirerapids
   cpu_family: sapphirerapids

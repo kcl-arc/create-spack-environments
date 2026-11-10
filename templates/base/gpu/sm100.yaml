@@ -1,4 +1,4 @@
-# Blackwell architecture (sm_100): B200, RTX 6000 Blackwell
+# Blackwell data-centre architecture (sm_100): B200
 spack:
   packages:
     cuda:
