@@ -1,4 +1,4 @@
-# er-spack-environments
+# create-spack-environments
 
 ## Quick start
 
@@ -97,40 +97,55 @@ Always review the diff before keeping any of it:
 `matrix/features_to_family_overrides.yaml` is applied on top of the script's
 output. It can add or replace mappings, not remove them.
 
-### Module naming projections (TCL)
+### Module files (TCL)
 
-- Set global/default projection rules in `matrix/env_matrix.yaml` under:
-	- `settings.modules_tcl_projections`
-	- `settings.modules_tcl_exclude` (package names/patterns to skip module generation for entirely)
-- Example:
-	- `all: "{name}/{version}"`
-	- `^mpi: "{name}/{version}-mpi-{^mpi.name}"`
-	- `boost+container: "{name}/{version}-container"`
-- Override per generated environment by setting `spack.modules.default.tcl.projections` (or `.exclude`) in:
-	- `templates/overlay/env/env-<cpu>-<gpu>.yaml`
+Every CPU base template sets:
 
-Projection precedence is: env overlay values first, then matrix defaults.
+```yaml
+modules:
+  default:
+    tcl:
+      hide_implicits: true
+      exclude: [gcc-runtime, glibc]
+```
 
-With `concretizer.unify: false`, the same package/version can be concretized
-independently more than once (once per root spec that needs it), producing
-distinct module-file name clashes if the naming scheme can't tell the copies
-apart. Prefer a variant- or dependency-qualified projection key
-(`pkg+variant`, `pkg build_type=...`, `^dep`, `^dep.version`) over a bare
-content hash, since a hash suffix changes on every rebuild and would force
-users to update job scripts each time. For packages that are pure build-time/
-transitive dependencies and are never meant to be loaded directly (build
-tools, font/graphics-stack internals, pip bootstrap packages), add them to
-`modules_tcl_exclude` instead of trying to disambiguate them.
+- **Only roots are visible.** Each root spec gets a module named by the
+  rules below. Every other dependency gets a hidden module with a hash suffix
+  (e.g. `bzip2/1.0.8-ksfr4yl`). Autoload still loads it, and
+  `module --show-hidden avail` lists it. To let users load a package
+  directly, add it as a root.
+- **Roots of other environments can be visible too.** Spack takes
+  visible/hidden from the install database, not from the environment's roots.
+  A spec that is a root of another environment (same hash) is visible in
+  every environment that depends on it.
+- **Excludes.** An environment can contain more than one copy of
+  `gcc-runtime` and `glibc`, which made Lmod print warnings. Neither module
+  sets anything needed at run time, so both are excluded. Don't exclude
+  anything else that is: an excluded package is dropped from its dependents'
+  autoload (a Python package would drop out of their `PYTHONPATH`).
 
-Don't exclude a package that something needs at run time, Python packages in
-particular. An excluded package gets no module, so dependents can't autoload
-it, and it drops out of their `PYTHONPATH`/`PATH`. The alternative is
-`hide_implicits: true` in an env overlay (as in
-`templates/overlay/env/env-sapphirerapids-*.yaml`). Every dependency then gets
-a module that is hidden from `module avail` and named with a hash suffix, so
-duplicate copies don't clash, and autoload still loads it. Only explicitly
-installed specs (env roots) stay visible, so add a package as a root if users
-should load it directly.
+Naming:
+
+- Visible modules are `{name}/{version}`. `settings.modules_tcl_projections`
+  in `matrix/env_matrix.yaml` adds rules for every environment.
+- A rule is only needed when one environment has two roots with the same
+  name and version (e.g. hdf5 with and without MPI). Without one, the module
+  refresh fails with a name clash.
+- Rules are first-match-wins, so put specific rules first (`hdf5+hl ^mpi`
+  before `hdf5+hl`).
+- Tell copies apart by variant or dependency (`pkg+variant`, `^dep`), not by
+  hash, so names don't change when a package is rebuilt. `^dep` also matches
+  indirect link/run dependencies, so a broad rule such as `^mpi` renames many
+  unrelated packages.
+- Changing a rule renames modules, and a plain refresh leaves the old files
+  behind. Set the `--delete-tree` marker for each affected environment first
+  (spack_core `docs/submissions_overview.md`).
+
+Per environment: `projections` in an overlay (`templates/overlay/env/`)
+replace the matrix rules for that environment rather than adding to them, so
+repeat any matrix rules still needed. An `exclude` in an overlay adds to the
+base template's list. `settings.modules_tcl_exclude` has no effect at the
+moment, because every CPU base template sets `exclude`.
 
 ### Generator outputs
 
