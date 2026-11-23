@@ -4,3 +4,4 @@ spack:
       buildable: false
   specs:
     - quantum-espresso@7.5 ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api] fftw ^[virtuals=scalapack] netlib-scalapack ^openmpi@5.0.8
+    - gromacs@2026.1 +mpi ~cuda ^[virtuals=blas,lapack] openblas ^[virtuals=fftw-api] fftw ^openmpi@5.0.8
